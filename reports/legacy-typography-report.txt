@@ -1,4 +1,4 @@
-Relatório de tipografia legada — 2026-06-29T16:40:57.857Z
+Relatório de tipografia legada — 2026-07-02T21:23:53.058Z
 Total: 322 ocorrências
 ========================================================================
 src/components/ColorSection.tsx:48
@@ -913,34 +913,34 @@ src/pages/TelaListagemPage.tsx:521
 src/pages/TelaListagemPage.tsx:651
   <p className="text-sm font-bold text-secondary">Programas e Repasses</p>
 
-src/pages/TemplatesPage.tsx:185
+src/pages/TemplatesPage.tsx:186
   <p className="text-sm font-semibold text-[#0024A9] leading-tight">Título do Programa - Exemplo</p>
 
-src/pages/TemplatesPage.tsx:186
+src/pages/TemplatesPage.tsx:187
   <p className="text-xs text-[#0024A9]/70 leading-tight">Apenas um exemplo de subtítulo do programa</p>
 
-src/pages/TemplatesPage.tsx:773
+src/pages/TemplatesPage.tsx:774
   <p className="text-xs text-info/80 mt-1">Este é um alerta para informações neutras ou guias de sistema.</p>
 
-src/pages/TemplatesPage.tsx:780
+src/pages/TemplatesPage.tsx:781
   <p className="text-xs text-success/80 mt-1">Sua operação foi concluída com êxito conforme esperado.</p>
 
-src/pages/TemplatesPage.tsx:789
+src/pages/TemplatesPage.tsx:790
   <p className="text-xs text-warning/80 mt-1">Revise os dados antes de prosseguir com esta ação.</p>
 
-src/pages/TemplatesPage.tsx:796
+src/pages/TemplatesPage.tsx:797
   <p className="text-xs text-error/80 mt-1">Houve um problema ao processar sua solicitação no servidor.</p>
 
-src/pages/TemplatesPage.tsx:837
+src/pages/TemplatesPage.tsx:838
   <p className="text-xs text-muted-foreground mt-0.5">{variant.description}</p>
 
-src/pages/TemplatesPage.tsx:864
+src/pages/TemplatesPage.tsx:865
   <p className="text-xs text-muted-foreground mb-4">
 
-src/pages/TemplatesPage.tsx:1159
+src/pages/TemplatesPage.tsx:1170
   <p className="text-xs text-muted-foreground">{t.desc}</p>
 
-src/pages/TemplatesPage.tsx:1205
+src/pages/TemplatesPage.tsx:1216
   <p className="text-xs text-muted-foreground mb-3 truncate">
 
 src/pages/TokensPage.tsx:47
