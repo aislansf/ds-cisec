@@ -981,6 +981,16 @@ export default function TemplatesPage() {
         <HubPaineisImageSection />
       </div>
 
+      {/* ═══ FOOTER INSTITUCIONAL ═══ */}
+      <SectionHeader
+        id="footer"
+        title="Footer Institucional"
+        description="Rodapé padrão com marca SEBRAE, nome do projeto e versão alinhada à direita."
+      />
+      <div className="mb-12">
+        <SebraeFooterSection />
+      </div>
+
       {/* ═══ TEMPLATE CARDS (existing) ═══ */}
       <SectionHeader
         id="templates-modelos"
