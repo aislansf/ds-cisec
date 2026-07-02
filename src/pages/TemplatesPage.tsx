@@ -28,6 +28,7 @@ import AuthTemplatesSection from "@/components/templates/AuthTemplates";
 import CardSignInSection from "@/components/templates/CardSignIn";
 import DashboardTemplatesSection from "@/components/templates/DashboardTemplates";
 import HubPaineisSection, { HubPaineisImageSection } from "@/components/templates/HubPaineisTemplate";
+import SebraeFooterSection from "@/components/templates/SebraeFooter";
 import sebraeLogoAsset from "@/assets/sebrae-logo-cor.png.asset.json";
 import sebraeLogoWhite from "@/assets/sebrae-logo-white.svg";
 import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
