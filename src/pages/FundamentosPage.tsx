@@ -212,21 +212,21 @@ export default function FundamentosPage() {
   return (
     <div>
       <SEO
-        title="Fundamentos — Design System SEBRAE"
-        description="Tipografia, cores, ícones, grid e espaçamento do Design System SEBRAE-CE. Alicerces visuais que garantem consistência e acessibilidade nos produtos digitais."
+        title="Fundamentos — Design System CISEC"
+        description="Tipografia, cores, ícones, grid e espaçamento do Design System CISEC-CE. Alicerces visuais que garantem consistência e acessibilidade nos produtos digitais."
         path="/fundamentos"
       />
       <PageHeader
         badge="Fundamentos"
         title="Fundamentos"
-        description="Os alicerces visuais e técnicos do Design System SEBRAE-CE. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
+        description="Os alicerces visuais e técnicos do Design System CISEC-CE. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
       />
 
       {/* Tipografia */}
       <SectionHeader
         id="tipografia"
         title="Tipografia"
-        description="O Design System SEBRAE-CE adota o trio tipográfico alinhado ao portal sebrae.com.br: Figtree (primária, corpo/UI), Campuni (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
+        description="O Design System CISEC-CE adota o trio tipográfico alinhado ao portal cisec.com.br: Figtree (primária, corpo/UI), Campuni (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
       />
 
       {/* Famílias oficiais — grid responsivo com alturas equalizadas */}
@@ -238,7 +238,7 @@ export default function FundamentosPage() {
           source="Google Fonts · Open Source"
           name="Lato"
           fontStack="'Lato', system-ui, sans-serif"
-          summary="Sans-serif humanista de apoio, alinhada ao portal sebrae.com.br. Usada em microcopy institucional, legendas e contextos sistêmicos de leitura."
+          summary="Sans-serif humanista de apoio, alinhada ao portal cisec.com.br. Usada em microcopy institucional, legendas e contextos sistêmicos de leitura."
           weights={[
             { v: 300, name: "Light" }, { v: 400, name: "Regular" },
             { v: 700, name: "Bold" }, { v: 900, name: "Black" },
@@ -257,7 +257,7 @@ export default function FundamentosPage() {
           cssVar="--font-system"
           tailwindClass="font-system · font-lato"
           cssSnippet={`/* CSS puro */\n.legenda,\n.caption,\n.nota-rodape {\n  font-family: 'Lato', system-ui, sans-serif;\n  font-weight: 400;\n  font-size: 0.75rem;\n  line-height: 1.4;\n}`}
-          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: SEBRAE-CE · Dados de 2024\n</small>`}
+          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC-CE · Dados de 2024\n</small>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-system: 'Lato', 'Figtree', system-ui, sans-serif;\n  --font-lato: 'Lato', system-ui, sans-serif;\n}`}
           downloads={[
             { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Lato", note: "Inclui pesos 100–900 + itálicos. Licença SIL Open Font 1.1." },
@@ -292,7 +292,7 @@ export default function FundamentosPage() {
           cssVar="--font-sans"
           tailwindClass="font-sans"
           cssSnippet={`/* CSS puro */\n.elemento {\n  font-family: 'Figtree', system-ui, 'Helvetica Neue', Arial, sans-serif;\n  font-weight: 400;\n  line-height: 1.5;\n}`}
-          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">\n\n<p style="font-family: 'Figtree', sans-serif; font-weight: 500;">\n  Texto institucional Sebrae\n</p>`}
+          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">\n\n<p style="font-family: 'Figtree', sans-serif; font-weight: 500;">\n  Texto institucional Cisec\n</p>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-sans: 'Figtree', system-ui, sans-serif;\n  --font-weight-regular: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n}`}
           downloads={[
             { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Figtree", note: "Inclui todos os pesos (300–900) e licença SIL Open Font 1.1." },
@@ -305,7 +305,7 @@ export default function FundamentosPage() {
         <FontFamilyCard
           badge="Fonte Secundária"
           badgeClass="bg-secondary text-secondary-foreground"
-          source="Proprietária Sebrae · CDN AEM"
+          source="Proprietária Cisec · CDN AEM"
           name="Campuni"
           fontStack="'Campuni', 'Figtree', sans-serif"
           summary="Sans-serif de display com personalidade institucional. Reservada para títulos de impacto, hero e números em destaque."
@@ -314,7 +314,7 @@ export default function FundamentosPage() {
             "H2 e títulos de impacto em landing pages institucionais",
             "Hero, banners e capas de relatórios",
             "Números de destaque em dashboards (KPIs principais)",
-            "Apresentações e materiais editoriais Sebrae",
+            "Apresentações e materiais editoriais Cisec",
           ]}
           avoidFor={[
             "Corpo de texto e parágrafos longos (use Figtree)",
@@ -327,15 +327,15 @@ export default function FundamentosPage() {
           cssSnippet={`/* CSS puro */\n@font-face {\n  font-family: 'Campuni';\n  src: url('/fonts/campuni-bold.woff2') format('woff2');\n  font-weight: 700;\n  font-display: swap;\n}\n\n.titulo-hero {\n  font-family: 'Campuni', 'Figtree', sans-serif;\n  font-weight: 700;\n  line-height: 1.1;\n}`}
           htmlSnippet={`<!-- HTML standalone com fallback -->\n<style>\n  @font-face {\n    font-family: 'Campuni';\n    src: url('https://static-p134603-e1404735.adobeaemcloud.com/.../fonts/campuni-bold.woff2') format('woff2');\n    font-weight: 700;\n    font-display: swap;\n  }\n</style>\n\n<h1 style="font-family: 'Campuni', 'Figtree', sans-serif; font-weight: 700;">\n  Transformando vidas\n</h1>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-display: 'Campuni', 'Figtree', sans-serif;\n  --font-heading: 'Campuni', 'Figtree', sans-serif;\n}`}
-          footnote="Campuni é proprietária da Sebrae. Enquanto o arquivo oficial não estiver em /public/fonts/campuni-bold.woff2, o sistema usa Figtree como fallback automático."
+          footnote="Campuni é proprietária da Cisec. Enquanto o arquivo oficial não estiver em /public/fonts/campuni-bold.woff2, o sistema usa Figtree como fallback automático."
           downloads={[
-            { label: "Campuni Bold (WOFF2) — CDN oficial Sebrae AEM", url: "https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2", note: "Arquivo usado em sebrae.com.br. Hospedar localmente em /public/fonts/campuni-bold.woff2 para produção." },
-            { label: "Solicitação interna — Marca Sebrae", url: "mailto:marca@sebrae.com.br?subject=Solicitação%20da%20fonte%20Campuni%20(TTF/OTF)", note: "Para receber o pacote completo (TTF/OTF) com todos os pesos — uso em Power BI, PowerPoint e impressos." },
+            { label: "Campuni Bold (WOFF2) — CDN oficial Cisec AEM", url: "https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2", note: "Arquivo usado em cisec.com.br. Hospedar localmente em /public/fonts/campuni-bold.woff2 para produção." },
+            { label: "Solicitação interna — Marca Cisec", url: "mailto:marca@cisec.com.br?subject=Solicitação%20da%20fonte%20Campuni%20(TTF/OTF)", note: "Para receber o pacote completo (TTF/OTF) com todos os pesos — uso em Power BI, PowerPoint e impressos." },
           ]}
         />
       </div>
 
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-border">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Escala tipográfica dinâmica</h4>
           <div className="flex items-center gap-2 bg-muted/50 p-1 rounded-lg border border-border">
@@ -397,7 +397,7 @@ export default function FundamentosPage() {
       </div>
 
       {/* Guia de tipografia — exemplos prontos */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex items-center justify-between mb-6 pb-4 border-b border-border">
           <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Guia de tipografia — exemplos prontos
@@ -418,7 +418,7 @@ export default function FundamentosPage() {
             {/* Headings H1-H6 (Campuni) */}
             {[
               { tag: "h1", cls: "text-5xl font-black", sample: "Transformando vidas por meio da educação financeira", spec: "Campuni Bold · 48px / 1.1" },
-              { tag: "h2", cls: "text-4xl font-bold",  sample: "Conheça o Design System SEBRAE",          spec: "Campuni Bold · 36px / 1.15" },
+              { tag: "h2", cls: "text-4xl font-bold",  sample: "Conheça o Design System CISEC",          spec: "Campuni Bold · 36px / 1.15" },
               { tag: "h3", cls: "text-3xl font-bold",  sample: "Componentes, tokens e padrões",           spec: "Campuni Bold · 30px / 1.2" },
               { tag: "h4", cls: "text-2xl font-semibold", sample: "Diretrizes de uso da marca",           spec: "Campuni SemiBold · 24px / 1.25" },
               { tag: "h5", cls: "text-xl font-semibold",  sample: "Aplicações em produtos digitais",      spec: "Campuni SemiBold · 20px / 1.3" },
@@ -446,7 +446,7 @@ export default function FundamentosPage() {
                 Corpo de texto · Figtree
               </span>
               <p className="text-lg font-sans leading-relaxed mb-3">
-                <strong>Lead (text-lg).</strong> O SEBRAE-CE apoia o desenvolvimento de pequenos negócios com conteúdos, capacitações e ferramentas digitais acessíveis a todo empreendedor brasileiro.
+                <strong>Lead (text-lg).</strong> O CISEC-CE apoia o desenvolvimento de pequenos negócios com conteúdos, capacitações e ferramentas digitais acessíveis a todo empreendedor brasileiro.
               </p>
               <p className="text-base font-sans leading-relaxed mb-3">
                 <strong>Body padrão (text-base).</strong> Use Figtree em todo o texto corrido. A família suporta os pesos 300 a 900 e é otimizada para leitura em telas. Combine <em>itálico</em>, <strong>negrito</strong> e <span className="underline">sublinhado</span> com moderação.
@@ -485,7 +485,7 @@ export default function FundamentosPage() {
                 <p>
                   Link padrão:{" "}
                   <a href="#" className="text-primary underline underline-offset-2 hover:text-primary/80 font-medium">
-                    acesse o portal do SEBRAE
+                    acesse o portal do CISEC
                   </a>
                 </p>
                 <p>
@@ -503,8 +503,8 @@ export default function FundamentosPage() {
                 </p>
                 <p>
                   Link externo:{" "}
-                  <a href="https://sebrae.com.br" className="text-primary underline underline-offset-2 hover:text-primary/80 inline-flex items-center gap-1">
-                    sebrae.com.br
+                  <a href="https://cisec.com.br" className="text-primary underline underline-offset-2 hover:text-primary/80 inline-flex items-center gap-1">
+                    cisec.com.br
                     <span aria-hidden className="text-[10px]">↗</span>
                   </a>
                 </p>
@@ -602,7 +602,7 @@ export default function FundamentosPage() {
       </div>
 
       {/* Atlas de Tipografia */}
-      <div id="atlas-tipografia" className="sebrae-card mb-6">
+      <div id="atlas-tipografia" className="cisec-card mb-6">
         <div className="flex items-end justify-between mb-6 pb-4 border-b border-border">
           <div>
             <span className="text-[10px] font-mono font-bold uppercase bg-primary/10 text-primary px-2 py-0.5 rounded">
@@ -624,7 +624,7 @@ export default function FundamentosPage() {
             { cls: "text-7xl", token: "--text-7xl", lead: "--leading-7xl", sample: "Aa" },
             { cls: "text-6xl", token: "--text-6xl", lead: "--leading-6xl", sample: "Aa" },
             { cls: "text-5xl", token: "--text-5xl", lead: "--leading-5xl", sample: "Transformando vidas" },
-            { cls: "text-4xl", token: "--text-4xl", lead: "--leading-4xl", sample: "Design System SEBRAE" },
+            { cls: "text-4xl", token: "--text-4xl", lead: "--leading-4xl", sample: "Design System CISEC" },
             { cls: "text-3xl", token: "--text-3xl", lead: "--leading-3xl", sample: "Componentes e tokens" },
             { cls: "text-2xl", token: "--text-2xl", lead: "--leading-2xl", sample: "Diretrizes de uso" },
             { cls: "text-xl",  token: "--text-xl",  lead: "--leading-xl",  sample: "Aplicações em produtos digitais" },
@@ -664,7 +664,7 @@ export default function FundamentosPage() {
               { w: "font-extrabold",label: "ExtraBold · 800" },
             ].map((p) => (
               <div key={p.w} className="border border-border rounded-lg p-3">
-                <p className={`text-base ${p.w}`}>Aa Sebrae</p>
+                <p className={`text-base ${p.w}`}>Aa Cisec</p>
                 <code className="text-[10px] font-mono text-muted-foreground block mt-1">{p.w}</code>
                 <p className="text-[10px] text-muted-foreground">{p.label}</p>
               </div>
@@ -690,7 +690,7 @@ export default function FundamentosPage() {
               <div key={s.label} className="border border-border rounded-lg p-3">
                 <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold mb-1">{s.label}</p>
                 <p className={`text-sm ${s.cls}`}>
-                  O Sebrae apoia o empreendedor cearense.
+                  O Cisec apoia o empreendedor cearense.
                 </p>
                 <code className="text-[10px] font-mono text-muted-foreground block mt-1">{s.token}</code>
               </div>
@@ -716,7 +716,7 @@ export default function FundamentosPage() {
         </div>
       </div>
 
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-6">Aplicabilidade e Composição</h4>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -729,7 +729,7 @@ export default function FundamentosPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b pb-2">Título de Seção (H2)</h2>
               <p className="leading-relaxed">
-                Este é um exemplo de <strong>texto corrido</strong> (body text) demonstrando a legibilidade e o espaçamento entre linhas padrão do Design System SEBRAE-CE. 
+                Este é um exemplo de <strong>texto corrido</strong> (body text) demonstrando a legibilidade e o espaçamento entre linhas padrão do Design System CISEC-CE. 
                 Podemos utilizar variações como <em>texto em itálico</em> para dar ênfase, <span className="underline">texto sublinhado</span> para links ou termos específicos, 
                 e combinações de <strong><em>negrito com itálico</em></strong> quando necessário.
               </p>
@@ -780,7 +780,7 @@ export default function FundamentosPage() {
         code={`/* Figtree (primária) — Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Campuni (secundária) — fonte proprietária Sebrae */
+/* Campuni (secundária) — fonte proprietária Cisec */
 @font-face {
   font-family: 'Campuni';
   src: url('/fonts/campuni-bold.woff2') format('woff2');
@@ -814,9 +814,9 @@ h1, h2, h3, h4, h5, h6 {
       />
 
       {/* Cores */}
-      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca SEBRAE-CE 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
+      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC-CE 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
-      <figure className="sebrae-card mb-6 overflow-hidden">
+      <figure className="cisec-card mb-6 overflow-hidden">
         <button
           type="button"
           onClick={() => setPaletaOpen(true)}
@@ -825,7 +825,7 @@ h1, h2, h3, h4, h5, h6 {
         >
           <img
             src={paletaReferenciaBrasil.url}
-            alt="Paleta de cores Sebrae — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
+            alt="Paleta de cores Cisec — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
             className="w-full h-auto rounded-md transition-transform hover:scale-[1.01]"
             loading="lazy"
           />
@@ -839,16 +839,16 @@ h1, h2, h3, h4, h5, h6 {
         open={paletaOpen}
         onClose={() => setPaletaOpen(false)}
         src={paletaReferenciaBrasil.url}
-        alt="Paleta de cores Sebrae — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
+        alt="Paleta de cores Cisec — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
       />
 
       <ColorSection />
 
       {/* Iconografia */}
-      <SectionHeader id="iconografia" title="Iconografia" description="A biblioteca oficial do Design System é Lucide (lucide-react). Remix Icon é apresentada apenas como referência complementar, por ser a família utilizada no sebrae.com.br/conta." />
+      <SectionHeader id="iconografia" title="Iconografia" description="A biblioteca oficial do Design System é Lucide (lucide-react). Remix Icon é apresentada apenas como referência complementar, por ser a família utilizada no cisec.com.br/conta." />
 
       {/* Busca e filtros */}
-      <div className="sebrae-card mb-6 max-w-4xl">
+      <div className="cisec-card mb-6 max-w-4xl">
         <h4 className="text-sm font-semibold mb-3">Buscar ícone</h4>
         <div className="flex flex-col sm:flex-row gap-3 mb-4">
           <div className="relative flex-1">
@@ -895,7 +895,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       {/* === BIBLIOTECA OFICIAL: LUCIDE === */}
-      <div className="sebrae-card mb-6 max-w-4xl">
+      <div className="cisec-card mb-6 max-w-4xl">
         <div className="flex items-center justify-between mb-4">
           <h4 className="text-sm font-semibold">Biblioteca oficial — Lucide</h4>
           <span className="text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-2 py-1 rounded">Padrão DS</span>
@@ -954,13 +954,13 @@ h1, h2, h3, h4, h5, h6 {
       {/* === REFERÊNCIA: REMIX ICON === */}
       <div className="mt-10 mb-3 flex items-center gap-3">
         <span className="text-[10px] font-bold uppercase tracking-wider bg-muted text-muted-foreground px-2 py-1 rounded">Referência</span>
-        <h3 className="text-base font-semibold">Remix Icon — biblioteca usada no sebrae.com.br/conta</h3>
+        <h3 className="text-base font-semibold">Remix Icon — biblioteca usada no cisec.com.br/conta</h3>
       </div>
       <p className="text-xs text-muted-foreground max-w-4xl mb-4">
-        Apresentada apenas como referência para alinhamento visual com o portal Sebrae. <strong>Não é a biblioteca padrão deste Design System</strong> — use Lucide nos novos projetos. Os blocos abaixo servem para DEVs que precisarem incorporar Remix em projetos legados, Power BI ou widgets externos.
+        Apresentada apenas como referência para alinhamento visual com o portal Cisec. <strong>Não é a biblioteca padrão deste Design System</strong> — use Lucide nos novos projetos. Os blocos abaixo servem para DEVs que precisarem incorporar Remix em projetos legados, Power BI ou widgets externos.
       </p>
 
-      <div className="sebrae-card mb-6 max-w-4xl">
+      <div className="cisec-card mb-6 max-w-4xl">
         <h4 className="text-sm font-semibold mb-3">Download e instalação</h4>
         <p className="text-xs text-muted-foreground mb-4">Links oficiais para baixar a biblioteca, navegar o catálogo completo e incorporar em projetos React, sites e dashboards.</p>
         <div className="flex flex-col gap-2 mb-5">
@@ -990,7 +990,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       {/* Tamanhos padrão */}
-      <div className="sebrae-card mb-6 max-w-4xl">
+      <div className="cisec-card mb-6 max-w-4xl">
         <h4 className="text-sm font-semibold mb-1">Tamanhos padrão</h4>
         <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
         <div className="flex flex-wrap items-end gap-6 mb-2">
@@ -1013,10 +1013,10 @@ h1, h2, h3, h4, h5, h6 {
         </div>
       </div>
 
-      {/* Ícones migrados do sebrae.com.br/conta */}
-      <div className="sebrae-card mb-6 max-w-4xl">
-        <h4 className="text-sm font-semibold mb-1">Ícones migrados do sebrae.com.br/conta</h4>
-        <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Sebrae" — navegação, autenticação, serviços e atendimento.</p>
+      {/* Ícones migrados do cisec.com.br/conta */}
+      <div className="cisec-card mb-6 max-w-4xl">
+        <h4 className="text-sm font-semibold mb-1">Ícones migrados do cisec.com.br/conta</h4>
+        <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
           {[
             { icon: RiHome5Line, name: "RiHome5Line", label: "Início" },
@@ -1130,7 +1130,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       {/* Border Radius */}
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="text-sm font-semibold mb-4">Border Radius</h4>
         <div className="flex flex-wrap gap-4">
           {[
@@ -1153,7 +1153,7 @@ h1, h2, h3, h4, h5, h6 {
       {/* Motion */}
       <SectionHeader id="motion" title="Motion e Transições" description="Animações sutis para feedback e hierarquia de atenção." />
 
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="text-sm font-semibold mb-3">Durações</h4>
         <div className="space-y-2 mb-6">
           {[
@@ -1284,7 +1284,7 @@ h1, h2, h3, h4, h5, h6 {
       {/* Responsiveness */}
       <SectionHeader id="responsividade" title="Responsividade" description="Breakpoints do sistema para design responsivo." />
 
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>

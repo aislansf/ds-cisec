@@ -46,8 +46,8 @@ export default function ConteudoPage() {
   return (
     <div>
       <SEO
-        title="Conteúdo e Webwriting — Design System SEBRAE"
-        description="Princípios de webwriting e tom de voz do SEBRAE-CE: escaneabilidade, clareza, voz ativa e foco no usuário para conteúdos digitais."
+        title="Conteúdo e Webwriting — Design System CISEC"
+        description="Princípios de webwriting e tom de voz do CISEC-CE: escaneabilidade, clareza, voz ativa e foco no usuário para conteúdos digitais."
         path="/conteudo"
       />
       <PageHeader
@@ -56,10 +56,10 @@ export default function ConteudoPage() {
         description="O webwriting é o conjunto de técnicas de escrita e formatação voltado para a internet. Ele adapta a redação tradicional ao comportamento de leitura online, que é mais dinâmico e disperso. O objetivo é garantir que o conteúdo seja facilmente encontrado pelos buscadores, compreendido rapidamente e prenda a atenção do usuário."
       />
 
-      <SectionHeader id="principios" title="Princípios do Webwriting" description="Boas práticas sistêmicas que orientam toda escrita digital do SEBRAE-CE." />
+      <SectionHeader id="principios" title="Princípios do Webwriting" description="Boas práticas sistêmicas que orientam toda escrita digital do CISEC-CE." />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {principios.map(p => (
-          <div key={p.title} className="sebrae-card">
+          <div key={p.title} className="cisec-card">
             <h4 className="font-semibold text-sm mb-1">{p.title}</h4>
             <p className="text-xs text-muted-foreground">{p.desc}</p>
           </div>
@@ -67,7 +67,7 @@ export default function ConteudoPage() {
       </div>
 
       <SectionHeader id="estrutura" title="Estrutura do Texto" description="Organize o conteúdo em pirâmide invertida: o essencial primeiro, o detalhe depois." />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <ol className="space-y-3 text-sm">
           <li><strong>1. Título (H1)</strong> — claro, com a palavra-chave principal e até 60 caracteres.</li>
           <li><strong>2. Lide / abertura</strong> — resume a notícia em 2–3 linhas: o que, quem, quando, onde, por quê.</li>
@@ -81,7 +81,7 @@ export default function ConteudoPage() {
       <SectionHeader id="boas-praticas" title="Boas Práticas de Escrita" description="Exemplos práticos para padronizar a escrita em produtos digitais." />
       <div className="space-y-4 mb-8">
         {boasPraticas.map(bp => (
-          <div key={bp.title} className="sebrae-card">
+          <div key={bp.title} className="cisec-card">
             <h4 className="font-semibold text-sm mb-3">{bp.title}</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="bg-success-bg rounded-lg p-3">
@@ -98,7 +98,7 @@ export default function ConteudoPage() {
       </div>
 
       <SectionHeader id="faca-evite" title="Faça / Evite" description="Regras rápidas para manter consistência em qualquer texto." />
-      <div className="sebrae-card mb-8 overflow-hidden p-0">
+      <div className="cisec-card mb-8 overflow-hidden p-0">
         <table className="w-full text-sm">
           <thead className="bg-accent">
             <tr>
@@ -127,7 +127,7 @@ export default function ConteudoPage() {
           { t: "Texto alternativo", d: "Toda imagem precisa de alt descrevendo o conteúdo, não \"imagem 01\"." },
           { t: "Links descritivos", d: "Prefira \"baixar edital\" a \"clique aqui\" — ajuda usuário e buscador." },
         ].map(item => (
-          <div key={item.t} className="sebrae-card">
+          <div key={item.t} className="cisec-card">
             <h4 className="font-semibold text-sm mb-1">{item.t}</h4>
             <p className="text-xs text-muted-foreground">{item.d}</p>
           </div>
@@ -135,7 +135,7 @@ export default function ConteudoPage() {
       </div>
 
       <SectionHeader id="checklist" title="Checklist antes de publicar" description="Revise rapidamente seu texto com estes critérios." />
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <ul className="space-y-2 text-sm">
           {checklist.map(item => (
             <li key={item} className="flex gap-2">

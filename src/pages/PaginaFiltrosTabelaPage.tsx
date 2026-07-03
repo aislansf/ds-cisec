@@ -7,7 +7,7 @@ import {
   FileText, Bell, Shield, Settings, HelpCircle,
   PanelLeftClose, PanelLeftOpen,
 } from "lucide-react";
-import { sebraeCor as sebraeLogoReduzida, sebraeWhite as iconeSebraeNegativo } from "@/assets/sebrae";
+import { cisecCor as cisecLogoReduzida, cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
 import { useTheme } from "@/hooks/useTheme";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -21,7 +21,7 @@ const menuItems: MenuItem[] = [
     { label: "Cursos" }, { label: "Eventos" }, { label: "Empretec" },
   ]},
   { label: "Soluções", icon: <Wallet size={16} />, children: [
-    { label: "Consultoria" }, { label: "Sebraetec" }, { label: "ALI" },
+    { label: "Consultoria" }, { label: "Cisectec" }, { label: "ALI" },
   ]},
   { label: "Indicadores", icon: <BarChart3 size={16} /> },
   { label: "Documentos", icon: <FileText size={16} />, children: [
@@ -47,12 +47,12 @@ interface Row {
 const rows: Row[] = [
   { id: "SOL-0001", iniciativa: "Empretec — Seminário de Empreendedorismo", unidade: "UCAE", modalidade: "Capacitação presencial", uf: "CE", inicio: "10/03/2026", status: "Aprovado",   valor: "R$ 1.240.000,00" },
   { id: "SOL-0002", iniciativa: "ALI — Agentes Locais de Inovação",       unidade: "UAIN", modalidade: "Atendimento individual",  uf: "CE", inicio: "05/01/2026", status: "Em Análise", valor: "R$ 780.500,00" },
-  { id: "SOL-0003", iniciativa: "Sebraetec — Inovação e Tecnologia",      unidade: "UAIN", modalidade: "Consultoria tecnológica", uf: "CE", inicio: "20/04/2026", status: "Aprovado",   valor: "R$ 2.150.000,00" },
+  { id: "SOL-0003", iniciativa: "Cisectec — Inovação e Tecnologia",      unidade: "UAIN", modalidade: "Consultoria tecnológica", uf: "CE", inicio: "20/04/2026", status: "Aprovado",   valor: "R$ 2.150.000,00" },
   { id: "SOL-0004", iniciativa: "Negócio a Negócio",                      unidade: "UAPN", modalidade: "Atendimento individual",  uf: "CE", inicio: "15/05/2026", status: "Pendente",   valor: "R$ 4.890.000,00" },
-  { id: "SOL-0005", iniciativa: "Sebrae Mais — Pequenas Empresas",        unidade: "UAPN", modalidade: "Capacitação à distância", uf: "CE", inicio: "10/02/2026", status: "Aprovado",   valor: "R$ 6.320.000,00" },
+  { id: "SOL-0005", iniciativa: "Cisec Mais — Pequenas Empresas",        unidade: "UAPN", modalidade: "Capacitação à distância", uf: "CE", inicio: "10/02/2026", status: "Aprovado",   valor: "R$ 6.320.000,00" },
   { id: "SOL-0006", iniciativa: "MEI — Microempreendedor Individual",     unidade: "UAMP", modalidade: "Atendimento coletivo",    uf: "CE", inicio: "30/06/2026", status: "Rejeitado",  valor: "R$ 540.000,00" },
-  { id: "SOL-0007", iniciativa: "Sebrae Delas — Mulheres de Negócio",     unidade: "UAPN", modalidade: "Capacitação presencial",  uf: "CE", inicio: "31/03/2026", status: "Em Análise", valor: "R$ 1.890.000,00" },
-  { id: "SOL-0008", iniciativa: "Inovação Aberta — SEBRAE/CE",            unidade: "UAIN", modalidade: "Edital",                   uf: "CE", inicio: "12/07/2026", status: "Concluído",  valor: "R$ 320.000,00" },
+  { id: "SOL-0007", iniciativa: "Cisec Delas — Mulheres de Negócio",     unidade: "UAPN", modalidade: "Capacitação presencial",  uf: "CE", inicio: "31/03/2026", status: "Em Análise", valor: "R$ 1.890.000,00" },
+  { id: "SOL-0008", iniciativa: "Inovação Aberta — CISEC/CE",            unidade: "UAIN", modalidade: "Edital",                   uf: "CE", inicio: "12/07/2026", status: "Concluído",  valor: "R$ 320.000,00" },
 ];
 
 const STATUSES = ["Aprovado", "Em Análise", "Pendente", "Rejeitado", "Concluído"] as const;
@@ -141,7 +141,7 @@ export default function PaginaFiltrosTabelaPage() {
       {/* Back to DS */}
       <Link
         to="/templates"
-        className="sebrae-badge-secondary fixed top-3 right-3 z-50 inline-flex items-center gap-1.5 shadow-lg hover:opacity-90 transition-opacity"
+        className="cisec-badge-secondary fixed top-3 right-3 z-50 inline-flex items-center gap-1.5 shadow-lg hover:opacity-90 transition-opacity"
       >
         <ArrowLeft size={12} /> Voltar ao DS
       </Link>
@@ -156,14 +156,14 @@ export default function PaginaFiltrosTabelaPage() {
           <Menu size={18} className="text-[#0024A9]" />
           <span className="text-[10px] text-[#0024A9]/70 hidden sm:inline">Menu</span>
         </button>
-        <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-[40px] w-auto shrink-0" />
+        <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-[40px] w-auto shrink-0" />
         <div className="w-px h-8 bg-[#0024A9]/30 shrink-0" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-[#0024A9] leading-tight truncate">
-            Soluções Sebrae
+            Soluções Cisec
           </p>
           <p className="text-xs text-[#0024A9]/70 leading-tight truncate">
-            Catálogo de soluções para os pequenos negócios — SEBRAE/CE
+            Catálogo de soluções para os pequenos negócios — CISEC/CE
           </p>
         </div>
         <button
@@ -512,8 +512,8 @@ export default function PaginaFiltrosTabelaPage() {
 
           {/* Footer institucional */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-5 w-auto opacity-60" />
-            <span className="text-[10px] text-muted-foreground">Soluções Sebrae · v.1.0</span>
+            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
+            <span className="text-[10px] text-muted-foreground">Soluções Cisec · v.1.0</span>
           </div>
         </main>
       </div>

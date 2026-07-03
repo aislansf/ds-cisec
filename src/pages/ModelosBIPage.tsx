@@ -32,8 +32,8 @@ export default function ModelosBIPage() {
   return (
     <div className="container max-w-6xl py-10 space-y-8">
       <SEO
-        title="Modelos de BI — Design System SEBRAE"
-        description="Hub de painéis analíticos do SEBRAE-CE: Farol Estratégico, Planeja, MPI e Gestão de Pessoas, com versões e documentação técnica."
+        title="Modelos de BI — Design System CISEC"
+        description="Hub de painéis analíticos do CISEC-CE: Farol Estratégico, Planeja, MPI e Gestão de Pessoas, com versões e documentação técnica."
         path="/modelos-bi"
       />
       <header className="space-y-2">
@@ -42,7 +42,7 @@ export default function ModelosBIPage() {
         </span>
         <h1 className="text-3xl font-semibold text-foreground">Modelos de BI</h1>
         <p className="text-muted-foreground max-w-2xl">
-          Coleção de painéis analíticos do SEBRAE-CE. Cada painel terá suas próprias versões e histórias de uso.
+          Coleção de painéis analíticos do CISEC-CE. Cada painel terá suas próprias versões e histórias de uso.
         </p>
       </header>
 

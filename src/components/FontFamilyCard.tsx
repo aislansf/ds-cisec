@@ -23,10 +23,10 @@ export interface FontFamilyCardProps {
 
 /**
  * FontFamilyCard — card institucional reutilizável para apresentar uma
- * família tipográfica do Design System SEBRAE-CE (identidade, pesos,
+ * família tipográfica do Design System CISEC-CE (identidade, pesos,
  * tokens, exemplos aplicados, snippets e downloads oficiais).
  *
- * Mantém wrapper `.sebrae-card w-full h-full` para garantir paridade
+ * Mantém wrapper `.cisec-card w-full h-full` para garantir paridade
  * visual com os demais cards do DS em qualquer página/contexto.
  */
 export function FontFamilyCard({
@@ -36,7 +36,7 @@ export function FontFamilyCard({
   downloads,
 }: FontFamilyCardProps) {
   return (
-    <div className="sebrae-card w-full h-full min-w-0 flex flex-col p-5 sm:p-6 md:p-8">
+    <div className="cisec-card w-full h-full min-w-0 flex flex-col p-5 sm:p-6 md:p-8">
       {/* Cabeçalho */}
       <div className="flex items-center justify-between gap-3 mb-6 pb-4 border-b border-border">
         <span className={`text-[10px] font-bold uppercase tracking-wider ${badgeClass} px-2 py-1 rounded`}>
@@ -88,7 +88,7 @@ export function FontFamilyCard({
             <div style={{ fontFamily: fontStack }}>
               <h4 className="ds-heading-subsection">Transformando vidas por meio da educação</h4>
               <p className="ds-body-small mt-1 text-muted-foreground">
-                Texto de apoio em {name} demonstrando legibilidade em parágrafos e UI institucional do SEBRAE-CE.
+                Texto de apoio em {name} demonstrando legibilidade em parágrafos e UI institucional do CISEC-CE.
               </p>
               <div className="flex items-baseline gap-3 mt-3 pt-3 border-t border-border">
                 <span className="text-4xl font-bold text-primary">87%</span>

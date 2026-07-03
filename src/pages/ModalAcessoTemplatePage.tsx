@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Lock, Mail, Eye, EyeOff, ArrowLeft, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SebraeLogo } from "@/components/SebraeLogo";
+import { CisecLogo } from "@/components/CisecLogo";
 
 /**
  * Template "Modal de Acesso" — modal de senha de demonstração.
@@ -20,7 +20,7 @@ export default function ModalAcessoTemplatePage() {
   const [unlocked, setUnlocked] = useState(false);
 
   const DEMO_EMAIL = "admin@exemplo.com";
-  const DEMO_PASSWORD = "sebrae"; // apenas para demonstração do template
+  const DEMO_PASSWORD = "cisec"; // apenas para demonstração do template
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,7 +44,7 @@ export default function ModalAcessoTemplatePage() {
           <Link to="/templates" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
             <ArrowLeft size={16} /> Voltar para Templates
           </Link>
-          <SebraeLogo variant="auto" className="h-8" />
+          <CisecLogo variant="auto" className="h-8" />
         </div>
       </header>
 
@@ -55,7 +55,7 @@ export default function ModalAcessoTemplatePage() {
           </span>
           <h1 className="text-3xl font-bold text-foreground">Conteúdo protegido por senha</h1>
           <p className="text-muted-foreground">
-            Demonstração do modal de acesso. Use o e-mail <code className="px-1.5 py-0.5 rounded bg-muted text-foreground">{DEMO_EMAIL}</code> e a senha <code className="px-1.5 py-0.5 rounded bg-muted text-foreground">sebrae</code> para liberar.
+            Demonstração do modal de acesso. Use o e-mail <code className="px-1.5 py-0.5 rounded bg-muted text-foreground">{DEMO_EMAIL}</code> e a senha <code className="px-1.5 py-0.5 rounded bg-muted text-foreground">cisec</code> para liberar.
           </p>
           {unlocked && (
             <div className="mt-6 p-6 rounded-xl border border-success/30 bg-success/10 text-success-foreground">

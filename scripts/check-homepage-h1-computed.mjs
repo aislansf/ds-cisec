@@ -22,7 +22,7 @@
  * Qualquer outra cor (text-white, text-muted-foreground, text-[#...],
  * destructive, etc.) é considerada divergência do DS e falha o build.
  */
-const DEFAULT_URL = "https://sebrae-ce.dscreator.com.br/";
+const DEFAULT_URL = "https://cisec-ce.dscreator.com.br/";
 const url =
   process.argv.slice(2).find((a) => !a.startsWith("--")) ||
   process.env.CHECK_URL ||

@@ -9,11 +9,11 @@
  *
  * Uso:
  *   node scripts/smoke-public-url.mjs [url] [--render]
- *   SMOKE_URL=https://sebrae-ce.dscreator.com.br npm run test:smoke
+ *   SMOKE_URL=https://cisec-ce.dscreator.com.br npm run test:smoke
  *   npm run test:smoke:render
  */
 
-const DEFAULT_URL = "https://sebrae-ce.dscreator.com.br/";
+const DEFAULT_URL = "https://cisec-ce.dscreator.com.br/";
 const args = process.argv.slice(2);
 const renderMode = args.includes("--render") || process.env.SMOKE_RENDER === "1";
 const url = args.find((a) => !a.startsWith("--")) || process.env.SMOKE_URL || DEFAULT_URL;

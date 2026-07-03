@@ -10,7 +10,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   Legend, LabelList,
 } from "recharts";
-import { sebraeCor as sebraeLogoReduzida, sebraeWhite as iconeSebraeNegativo } from "@/assets/sebrae";
+import { cisecCor as cisecLogoReduzida, cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
 import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
 const headerBusinessBg = headerBusinessBgAsset.url;
 import { useTheme } from "@/hooks/useTheme";
@@ -163,7 +163,7 @@ export default function FarolEstrategicoPage() {
     <div className="min-h-screen bg-background flex flex-col font-sans">
       <Link
         to="/templates"
-        className="sebrae-badge-secondary fixed top-3 right-3 z-50 inline-flex items-center gap-1.5 shadow-lg hover:opacity-90 transition-opacity"
+        className="cisec-badge-secondary fixed top-3 right-3 z-50 inline-flex items-center gap-1.5 shadow-lg hover:opacity-90 transition-opacity"
       >
         <ArrowLeft size={12} /> Voltar ao DS
       </Link>
@@ -584,7 +584,7 @@ export default function FarolEstrategicoPage() {
 
           {/* Footer */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-5 w-auto opacity-60" />
+            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
             <span className="text-[10px] text-muted-foreground">Farol Estratégico · Painel Institucional v.1.0</span>
           </div>
         </main>

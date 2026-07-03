@@ -13,7 +13,7 @@ interface SEOProps {
  * the current route so canonical + og:url match the URL.
  */
 export function SEO({ title, description, path, jsonLd }: SEOProps) {
-  const url = `https://sebrae-ce.dscreator.com.br${path}`;
+  const url = `https://cisec-ce.dscreator.com.br${path}`;
   const blocks = jsonLd
     ? Array.isArray(jsonLd)
       ? jsonLd

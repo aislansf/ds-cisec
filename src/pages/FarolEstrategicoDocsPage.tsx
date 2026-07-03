@@ -10,7 +10,7 @@ import { PageHeader, SectionHeader } from "@/components/DSComponents";
 const componentes: { nome: string; origem: string; uso: string }[] = [
   { nome: "DSLayout (header + sidebar)", origem: "src/components/DSLayout.tsx", uso: "Padrão visual da plataforma — não é usado dentro do template (standalone)." },
   { nome: "SidebarMenuPreview pattern", origem: "src/components/SidebarMenuPreview.tsx", uso: "Inspiração para a sidebar interna com busca, mini-collapse e toggle no rodapé." },
-  { nome: "SebraeLogo", origem: "src/components/SebraeLogo.tsx", uso: "Marca institucional no header (variant=auto)." },
+  { nome: "CisecLogo", origem: "src/components/CisecLogo.tsx", uso: "Marca institucional no header (variant=auto)." },
   { nome: "BISkeletons", origem: "src/components/bi/BISkeletons.tsx", uso: "Estados de loading dos KPIs, gráficos e tabela durante refresh." },
   { nome: "Recharts (BarChart)", origem: "recharts", uso: "Gráficos Planejada × Executada por mês e detalhamento por Natureza." },
   { nome: "Filtros (Select nativo)", origem: "elemento <select> com tokens", uso: "8 filtros multidimensionais — PPA, Iniciativa, Ação, Natureza, Unidade, Eixo, Programa, Gestor." },
@@ -19,7 +19,7 @@ const componentes: { nome: string; origem: string; uso: string }[] = [
 ];
 
 const tokens: { token: string; valor: string; uso: string }[] = [
-  { token: "--primary", valor: "Azul institucional Sebrae", uso: "Botões primários, indicadores de seleção, links ativos." },
+  { token: "--primary", valor: "Azul institucional Cisec", uso: "Botões primários, indicadores de seleção, links ativos." },
   { token: "--secondary", valor: "Tom de apoio", uso: "Botão 'Dê seu feedback', badges secundários." },
   { token: "--background / --foreground", valor: "Surface base", uso: "Fundo do canvas e textos." },
   { token: "--card / --card-foreground", valor: "Superfície elevada", uso: "Cards de KPI, painel de gráficos, toolbar." },
@@ -75,7 +75,7 @@ export default function FarolEstrategicoDocsPage() {
       <SectionHeader
         id="visao-geral"
         title="Visão geral"
-        description="O template é uma página standalone (sem DSLayout) que reproduz a arquitetura de uma view do Power BI usando React + Tailwind + tokens do Design System Sebrae."
+        description="O template é uma página standalone (sem DSLayout) que reproduz a arquitetura de uma view do Power BI usando React + Tailwind + tokens do Design System Cisec."
         badge="Overview"
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -84,7 +84,7 @@ export default function FarolEstrategicoDocsPage() {
           { icon: <Boxes size={18} className="text-primary" />, title: "Stack", desc: "React 18 + TypeScript + Tailwind CSS + Recharts + lucide-react." },
           { icon: <Palette size={18} className="text-primary" />, title: "Identidade", desc: "100% tokens semânticos (HSL) · Poppins · Light/Dark mode automáticos." },
         ].map((c) => (
-          <div key={c.title} className="sebrae-card">
+          <div key={c.title} className="cisec-card">
             <div className="flex items-center gap-2 mb-2">{c.icon}<h4 className="font-semibold text-sm">{c.title}</h4></div>
             <p className="text-xs text-muted-foreground">{c.desc}</p>
           </div>
@@ -97,7 +97,7 @@ export default function FarolEstrategicoDocsPage() {
         description="Inventário dos blocos que compõem o template e onde encontrá-los no projeto."
         badge="Componentes"
       />
-      <div className="sebrae-card overflow-x-auto mb-8 p-0">
+      <div className="cisec-card overflow-x-auto mb-8 p-0">
         <table className="w-full text-sm">
           <thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
@@ -126,7 +126,7 @@ export default function FarolEstrategicoDocsPage() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         {tokens.map((t) => (
-          <div key={t.token} className="sebrae-card">
+          <div key={t.token} className="cisec-card">
             <code className="text-xs font-mono text-primary">{t.token}</code>
             <p className="text-sm font-semibold mt-1">{t.valor}</p>
             <p className="text-xs text-muted-foreground mt-1">{t.uso}</p>
@@ -140,7 +140,7 @@ export default function FarolEstrategicoDocsPage() {
         description="Mapa dos arquivos envolvidos para você localizar rapidamente o que editar."
         badge="Estrutura"
       />
-      <div className="sebrae-card mb-8 p-0 overflow-x-auto">
+      <div className="cisec-card mb-8 p-0 overflow-x-auto">
         <table className="w-full text-sm">
           <tbody>
             {arquivos.map((a, i) => (
@@ -161,7 +161,7 @@ export default function FarolEstrategicoDocsPage() {
       />
       <ol className="space-y-3 mb-8">
         {passos.map((p) => (
-          <li key={p.titulo} className="sebrae-card">
+          <li key={p.titulo} className="cisec-card">
             <h4 className="font-semibold text-sm mb-1 flex items-center gap-2"><Code2 size={14} className="text-primary" />{p.titulo}</h4>
             <p className="text-xs text-muted-foreground">{p.desc}</p>
           </li>
@@ -174,7 +174,7 @@ export default function FarolEstrategicoDocsPage() {
         description="Exemplo de como renderizar o template em uma rota nova."
         badge="Código"
       />
-      <pre className="sebrae-card overflow-x-auto text-xs font-mono leading-relaxed mb-8">
+      <pre className="cisec-card overflow-x-auto text-xs font-mono leading-relaxed mb-8">
 {`// src/App.tsx
 import { lazy } from "react";
 const FarolEstrategicoPage = lazy(() => import("@/pages/FarolEstrategicoPage"));
@@ -190,25 +190,25 @@ const FarolEstrategicoPage = lazy(() => import("@/pages/FarolEstrategicoPage"));
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">1 · Instale o visual</h4>
           <p className="text-xs text-muted-foreground">No Power BI Desktop &gt; <strong>Obter mais visuais</strong> &gt; busque <strong>“HTML Content”</strong> (by Daniel Marsh-Patrick) e adicione ao relatório.</p>
         </div>
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">2 · Crie a medida DAX</h4>
           <p className="text-xs text-muted-foreground">Em uma tabela qualquer (ex.: <code>Medidas</code>), crie a medida abaixo. O visual HTML Content renderiza o texto retornado pela medida arrastada para o campo <strong>Values</strong>.</p>
         </div>
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">3 · Vincule ao visual</h4>
           <p className="text-xs text-muted-foreground">Adicione o visual <strong>HTML Content</strong> ao canvas e arraste a medida <code>HTML Farol</code> para o campo <strong>Values</strong>. O dashboard será renderizado.</p>
         </div>
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">4 · Atualize dinamicamente</h4>
           <p className="text-xs text-muted-foreground">Para refletir dados do modelo, substitua os números fixos por <code>FORMAT([SuaMedida], "C0")</code> dentro da string DAX antes de concatenar.</p>
         </div>
       </div>
 
-      <pre className="sebrae-card overflow-x-auto text-xs font-mono leading-relaxed mb-4">
+      <pre className="cisec-card overflow-x-auto text-xs font-mono leading-relaxed mb-4">
 {`HTML Farol =
 VAR Css =
     "<style>
@@ -229,7 +229,7 @@ VAR Saldo    = FORMAT ( [Saldo Orcamentario], "\\R\\$ #,0,,.0\\M" )
 VAR Atend    = FORMAT ( [MEI Atendidos], "#,0" )
 VAR Html =
     "<div style='padding:12px'>" &
-        "<div class='h'><h1>Farol Estratégico — Sebrae</h1>" &
+        "<div class='h'><h1>Farol Estratégico — Cisec</h1>" &
         "<span style='font-size:11px;opacity:.8'>PPA 2022-2026</span></div>" &
         "<div class='k'>" &
             "<div class='c'><div class='v'>" & Despesa & "</div><div class='l'>Despesa executada</div></div>" &
@@ -243,7 +243,7 @@ RETURN
     "</head><body>" & Html & "</body></html>"`}
       </pre>
 
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="font-semibold text-sm mb-2">Versão completa com gráficos</h4>
         <p className="text-xs text-muted-foreground mb-2">
           Para a versão com Chart.js (gráficos, tabela e filtros), copie o conteúdo de
@@ -269,7 +269,7 @@ RETURN
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">Arquivo</h4>
           <p className="text-xs text-muted-foreground mb-2">
             Baixe ou abra o template publicado em:
@@ -286,11 +286,11 @@ RETURN
             <ArrowUpRight size={12} /> Abrir template
           </a>
         </div>
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <h4 className="font-semibold text-sm mb-1">Como funciona</h4>
           <ul className="list-disc pl-4 text-xs text-muted-foreground space-y-1">
             <li>CSS 100% inline em cada tag → renderiza no sandbox do HTML Content sem &lt;style&gt;.</li>
-            <li>Cores e tipografia já alinhadas aos tokens Sebrae.</li>
+            <li>Cores e tipografia já alinhadas aos tokens Cisec.</li>
             <li>Placeholders <code>{`{{NOME}}`}</code> trocados por <code>SUBSTITUTE</code> na medida DAX.</li>
             <li>Sem CDNs, sem scripts — compatível com qualquer relatório Power BI.</li>
           </ul>
@@ -303,7 +303,7 @@ RETURN
         description="Lista completa dos marcadores presentes no template. Substitua cada um pelo valor da sua medida DAX."
         badge="Referência"
       />
-      <div className="sebrae-card overflow-x-auto mb-4 p-0">
+      <div className="cisec-card overflow-x-auto mb-4 p-0">
         <table className="w-full text-sm">
           <thead className="bg-muted/50 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
@@ -315,7 +315,7 @@ RETURN
           <tbody>
             {[
               { p: "{{TITULO}}", s: "Título do header", e: "Farol Estratégico" },
-              { p: "{{SUBTITULO}}", s: "Subtítulo do header", e: "Painel executivo · Sebrae" },
+              { p: "{{SUBTITULO}}", s: "Subtítulo do header", e: "Painel executivo · Cisec" },
               { p: "{{PERIODO}}", s: "Badge de período", e: "PPA 2022-2026" },
               { p: "{{KPI_1_VALOR}} … {{KPI_4_VALOR}}", s: "Valores dos 4 KPIs", e: "R$ 74,9M" },
               { p: "{{KPI_1_LABEL}} … {{KPI_4_LABEL}}", s: "Rótulos dos 4 KPIs", e: "Despesa executada" },
@@ -342,7 +342,7 @@ RETURN
         description="Cole o HTML do template em uma variável e use SUBSTITUTE encadeado para injetar suas medidas. O resultado é arrastado para o campo Values do visual HTML Content."
         badge="DAX"
       />
-      <pre className="sebrae-card overflow-x-auto text-xs font-mono leading-relaxed mb-8">
+      <pre className="cisec-card overflow-x-auto text-xs font-mono leading-relaxed mb-8">
 {`HTML Farol Template =
 VAR Template =
     "<!doctype html><html><body style='margin:0;font-family:Segoe UI,sans-serif;background:#F5F7FB;color:#0F172A'>"
@@ -369,7 +369,7 @@ VAR Template =
     & "</div></body></html>"
 
 VAR R1 = SUBSTITUTE ( Template,  "{{TITULO}}",      "Farol Estratégico" )
-VAR R2 = SUBSTITUTE ( R1,        "{{SUBTITULO}}",   "Painel executivo · Sebrae" )
+VAR R2 = SUBSTITUTE ( R1,        "{{SUBTITULO}}",   "Painel executivo · Cisec" )
 VAR R3 = SUBSTITUTE ( R2,        "{{PERIODO}}",     "PPA 2022-2026" )
 VAR R4 = SUBSTITUTE ( R3,        "{{KPI_1_VALOR}}", FORMAT ( [Despesa Executada], "\\R\\$ #,0,,.0\\M" ) )
 VAR R5 = SUBSTITUTE ( R4,        "{{KPI_1_LABEL}}", "Despesa executada" )
@@ -383,7 +383,7 @@ VAR Rb = SUBSTITUTE ( Ra,        "{{KPI_4_LABEL}}", "MEI atendidos" )
 RETURN Rb`}
       </pre>
 
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="font-semibold text-sm mb-2">Boas práticas</h4>
         <ul className="list-disc pl-5 text-xs text-muted-foreground space-y-1">
           <li>Use sempre <code>SUBSTITUTE</code> com a string exata do placeholder, incluindo as chaves duplas.</li>

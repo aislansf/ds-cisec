@@ -156,7 +156,7 @@ const data = [
     <Legend />
     <Bar dataKey="pnae" name="Empretec" fill="hsl(var(--success))" radius={[2,2,0,0]} />
     <Bar dataKey="pnate" name="ALI" fill="hsl(var(--primary))" radius={[2,2,0,0]} />
-    <Bar dataKey="pdde" name="Sebraetec" fill="hsl(var(--info))" radius={[2,2,0,0]} />
+    <Bar dataKey="pdde" name="Cisectec" fill="hsl(var(--info))" radius={[2,2,0,0]} />
   </BarChart>
 </ResponsiveContainer>`;
 
@@ -186,7 +186,7 @@ const codeStackedColumn = `// Colunas empilhadas com labels internos
     <Bar dataKey="produto_b" name="ALI" stackId="a"
       fill="hsl(var(--primary))"
       label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
-    <Bar dataKey="produto_c" name="Sebraetec" stackId="a"
+    <Bar dataKey="produto_c" name="Cisectec" stackId="a"
       fill="hsl(var(--info))" radius={[4,4,0,0]}
       label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
   </BarChart>
@@ -208,7 +208,7 @@ const codeStacked100 = `// Colunas 100% empilhadas (valores em %)
       fill="hsl(var(--primary))"
       label={{ position: "inside", fontSize: 10, fill: "#fff",
         formatter: (v) => \`\${v}%\` }} />
-    <Bar dataKey="produto_c" name="Sebraetec" stackId="a"
+    <Bar dataKey="produto_c" name="Cisectec" stackId="a"
       fill="hsl(var(--info))" radius={[4,4,0,0]}
       label={{ position: "inside", fontSize: 10, fill: "#fff",
         formatter: (v) => \`\${v}%\` }} />
@@ -699,12 +699,12 @@ export default function ChartsSection() {
       {/* 11. Basic Column */}
       <ComponentPreview
         title="Colunas Básicas (Múltiplas séries)"
-        description="Barras agrupadas para comparar investimentos por programa SEBRAE-CE em cada período."
+        description="Barras agrupadas para comparar investimentos por programa CISEC-CE em cada período."
         code={codeBasicColumn}
         whenToUse={["Comparar 2-3 programas por período", "Análise de repasses por programa"]}
         whenNotToUse={["Mais de 4 séries (fica poluído)", "Dados contínuos (use linha/área)"]}
       >
-        <ChartCard title="Colunas Básicas — Programas SEBRAE-CE">
+        <ChartCard title="Colunas Básicas — Programas CISEC-CE">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={basicColumnData}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
@@ -714,7 +714,7 @@ export default function ChartsSection() {
               <Legend />
               <Bar dataKey="pnae" name="Empretec" fill="hsl(var(--success))" radius={[2, 2, 0, 0]} />
               <Bar dataKey="pnate" name="ALI" fill="hsl(var(--primary))" radius={[2, 2, 0, 0]} />
-              <Bar dataKey="pdde" name="Sebraetec" fill="hsl(var(--info))" radius={[2, 2, 0, 0]} />
+              <Bar dataKey="pdde" name="Cisectec" fill="hsl(var(--info))" radius={[2, 2, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -749,7 +749,7 @@ export default function ChartsSection() {
         whenToUse={["Exibir composição de um total por período", "Vendas por produto/trimestre"]}
         whenNotToUse={["Comparar valores individuais entre categorias", "Quando a contribuição de cada parte é pequena"]}
       >
-        <ChartCard title="Colunas Empilhadas — Programas SEBRAE-CE">
+        <ChartCard title="Colunas Empilhadas — Programas CISEC-CE">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={stackedColumnData}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
@@ -759,7 +759,7 @@ export default function ChartsSection() {
               <Legend />
               <Bar dataKey="produto_a" name="Empretec" stackId="a" fill="hsl(var(--success))" label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
               <Bar dataKey="produto_b" name="ALI" stackId="a" fill="hsl(var(--primary))" label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
-              <Bar dataKey="produto_c" name="Sebraetec" stackId="a" fill="hsl(var(--info))" radius={[4, 4, 0, 0]} label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
+              <Bar dataKey="produto_c" name="Cisectec" stackId="a" fill="hsl(var(--info))" radius={[4, 4, 0, 0]} label={{ position: "inside", fontSize: 10, fill: "#fff" }} />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>
@@ -773,7 +773,7 @@ export default function ChartsSection() {
         whenToUse={["Comparar proporções relativas", "Market share por período"]}
         whenNotToUse={["Valores absolutos são mais importantes", "Poucas categorias sem variação significativa"]}
       >
-        <ChartCard title="100% Empilhadas — Programas SEBRAE-CE">
+        <ChartCard title="100% Empilhadas — Programas CISEC-CE">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={stacked100Data}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
@@ -783,7 +783,7 @@ export default function ChartsSection() {
               <Legend />
               <Bar dataKey="produto_a" name="Empretec" stackId="a" fill="hsl(var(--success))" label={{ position: "inside", fontSize: 10, fill: "#fff", formatter: (v: number) => `${v}%` }} />
               <Bar dataKey="produto_b" name="ALI" stackId="a" fill="hsl(var(--primary))" label={{ position: "inside", fontSize: 10, fill: "#fff", formatter: (v: number) => `${v}%` }} />
-              <Bar dataKey="produto_c" name="Sebraetec" stackId="a" fill="hsl(var(--info))" radius={[4, 4, 0, 0]} label={{ position: "inside", fontSize: 10, fill: "#fff", formatter: (v: number) => `${v}%` }} />
+              <Bar dataKey="produto_c" name="Cisectec" stackId="a" fill="hsl(var(--info))" radius={[4, 4, 0, 0]} label={{ position: "inside", fontSize: 10, fill: "#fff", formatter: (v: number) => `${v}%` }} />
             </BarChart>
           </ResponsiveContainer>
         </ChartCard>

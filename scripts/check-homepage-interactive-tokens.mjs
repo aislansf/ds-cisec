@@ -22,7 +22,7 @@
  *   node scripts/check-homepage-interactive-tokens.mjs [url]
  *   CHECK_URL=http://localhost:8080 node scripts/check-homepage-interactive-tokens.mjs
  */
-const DEFAULT_URL = "https://sebrae-ce.dscreator.com.br/";
+const DEFAULT_URL = "https://cisec-ce.dscreator.com.br/";
 const url =
   process.argv.slice(2).find((a) => !a.startsWith("--")) ||
   process.env.CHECK_URL ||

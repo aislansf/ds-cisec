@@ -7,8 +7,8 @@ import {
   SearchX, Users, BarChart3
 } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
-import { sebraeCor as logoSebraeCompleta2 } from "@/assets/sebrae";
-import logoSebraeWhite from "@/assets/sebrae-logo-white-header.svg";
+import { cisecCor as logoCisecCompleta2 } from "@/assets/cisec";
+import logoCisecWhite from "@/assets/cisec-logo-white-header.svg";
 import { prefetchRoute, cancelPendingPrefetch } from "@/utils/prefetchRoutes";
 
 interface NavItem {
@@ -91,7 +91,7 @@ const navItems: NavItem[] = [
   {
     label: "Templates", path: "/templates", icon: <LayoutTemplate size={18} />,
     children: [
-      { label: "Header SEBRAE-CE", path: "/templates#header" },
+      { label: "Header CISEC-CE", path: "/templates#header" },
       { label: "Menu Lateral", path: "/templates#menu-lateral" },
       { label: "Modelos de Login", path: "/templates#modelos-login" },
       { label: "Modelo de login (Card Sign In)", path: "/templates#modelo-card" },
@@ -128,7 +128,7 @@ const navItems: NavItem[] = [
       { label: "Gestão de Pessoas - BI", path: "/modelos-bi/gestao-pessoas" },
     ],
   },
-  { label: "Marca SEBRAE", path: "/marca", icon: <Stamp size={18} /> },
+  { label: "Marca CISEC", path: "/marca", icon: <Stamp size={18} /> },
   { label: "Webwriting", path: "/conteudo", icon: <FileText size={18} /> },
   { label: "Acessibilidade", path: "/acessibilidade", icon: <Accessibility size={18} /> },
 ];
@@ -428,15 +428,15 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
         </button>
 
         <a
-          href="https://sebrae-ce.dscreator.com.br/"
+          href="https://cisec-ce.dscreator.com.br/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Ir para o site do Design System SEBRAE-CE"
+          aria-label="Ir para o site do Design System CISEC-CE"
           className="inline-flex items-center rounded focus:outline-none focus:ring-2 focus:ring-ring"
         >
           <img
-            src={theme === "dark" ? logoSebraeWhite : logoSebraeCompleta2}
-            alt="SEBRAE-CE"
+            src={theme === "dark" ? logoCisecWhite : logoCisecCompleta2}
+            alt="CISEC-CE"
             className="h-14"
           />
         </a>
@@ -444,7 +444,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
         <div className="h-6 w-px bg-header-foreground/20" />
 
         <div className="leading-tight">
-          <span className="font-semibold text-xs sm:text-sm block text-header-foreground">Design System SEBRAE-CE</span>
+          <span className="font-semibold text-xs sm:text-sm block text-header-foreground">Design System CISEC-CE</span>
         </div>
 
         <div className="ml-auto flex items-center gap-2">
@@ -488,7 +488,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           </div>
           <footer className="border-t border-border bg-muted/30 py-6 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center text-xs text-muted-foreground space-y-1">
-              <p className="font-medium">SEBRAE-CE — Todos os direitos reservados</p>
+              <p className="font-medium">CISEC-CE — Todos os direitos reservados</p>
             </div>
           </footer>
         </main>

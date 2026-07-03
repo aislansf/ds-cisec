@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 
 type Theme = "light" | "dark";
 
-const STORAGE_KEY = "sebrae-ds-theme";
+const STORAGE_KEY = "cisec-ds-theme";
 
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {

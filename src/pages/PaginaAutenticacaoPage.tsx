@@ -5,9 +5,9 @@ import {
   ChevronRight, Shield, Info, HelpCircle,
   ExternalLink
 } from "lucide-react";
-import { sebraeCor as sebraeLogoCompleta } from "@/assets/sebrae";
-import exemploImg from "@/assets/empreendedora-sebrae.jpg";
-import { SebraeLogo } from "@/components/SebraeLogo";
+import { cisecCor as cisecLogoCompleta } from "@/assets/cisec";
+import exemploImg from "@/assets/empreendedora-cisec.jpg";
+import { CisecLogo } from "@/components/CisecLogo";
 
 export default function PaginaAutenticacaoPage() {
   const [showPw, setShowPw] = useState(false);
@@ -36,13 +36,13 @@ export default function PaginaAutenticacaoPage() {
         <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-muted">
           <img
             src={exemploImg}
-            alt="Empreendedora atendida pelo SEBRAE"
+            alt="Empreendedora atendida pelo CISEC"
             className="absolute inset-0 w-full h-full object-cover"
           />
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-16 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-16 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h1 className="text-4xl font-bold text-white leading-tight text-balance">
                   <span className="block">Transformando vidas</span>
@@ -66,7 +66,7 @@ export default function PaginaAutenticacaoPage() {
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10 flex flex-col items-center text-center gap-4 max-w-md mx-auto">
-              <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-10 sm:h-12 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 sm:h-12 w-auto brightness-0 invert" />
               <h1 className="text-lg sm:text-xl font-bold text-white leading-snug text-balance">
                 <span className="inline sm:block">Transformando vidas </span>
                 <span className="inline sm:block">por meio da educação financeira.</span>
@@ -110,7 +110,7 @@ export default function PaginaAutenticacaoPage() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="usuario@ce.sebrae.com.br"
+                      placeholder="usuario@ce.cisec.com.br"
                       className="w-full border border-input rounded px-3 py-2 text-sm bg-background focus:outline-none focus:ring-2 focus:ring-ring focus:border-primary transition-colors"
                     />
                   </div>
@@ -185,7 +185,7 @@ export default function PaginaAutenticacaoPage() {
                     </button>
                   </div>
                   <div className="flex justify-center pt-4">
-                    <SebraeLogo variant="mono" width={100} height={80} opacity={0.4} />
+                    <CisecLogo variant="mono" width={100} height={80} opacity={0.4} />
                   </div>
                 </div>
               </div>
@@ -205,9 +205,9 @@ export default function PaginaAutenticacaoPage() {
 
               <div className="flex flex-col items-center gap-3">
                 <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-                  © 2026 SEBRAE Ceará — Serviço de Apoio às Micro e Pequenas Empresas do Ceará.<br />
+                  © 2026 CISEC Ceará — Serviço de Apoio às Micro e Pequenas Empresas do Ceará.<br />
                   Avenida Monsenhor Tabosa, 777, Praia de Iracema — Fortaleza/CE. CNPJ 07.121.244/0001-08.<br />
-                  Atendimento: 0800 570 0800 · ouvidoria@ce.sebrae.com.br
+                  Atendimento: 0800 570 0800 · ouvidoria@ce.cisec.com.br
                 </p>
               </div>
             </div>

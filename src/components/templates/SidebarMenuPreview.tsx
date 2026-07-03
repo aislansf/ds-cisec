@@ -6,7 +6,7 @@ import {
   PanelLeftClose, PanelLeftOpen
 } from "lucide-react";
 import { CodeBlock } from "@/components/DSComponents";
-import { sebraeWhite as iconeSebraeNegativo } from "@/assets/sebrae";
+import { cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
 
 /* ─── Menu item model ─── */
 interface MenuItem {
@@ -24,7 +24,7 @@ const menuItems: MenuItem[] = [
     children: [
       { label: "Empretec" },
       { label: "ALI" },
-      { label: "Sebraetec" },
+      { label: "Cisectec" },
       { label: "Negócio a Negócio" },
     ],
   },
@@ -109,8 +109,8 @@ function SidebarPreview() {
         <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
           <div className={`flex items-center gap-2 min-w-0 ${collapsed ? "justify-center w-full" : ""}`}>
             <img
-              src={iconeSebraeNegativo}
-              alt="SEBRAE-CE"
+              src={iconeCisecNegativo}
+              alt="CISEC-CE"
               className="h-[60px] w-[60px] sm:h-[60px] sm:w-[60px] shrink-0"
             />
             {!collapsed && (
@@ -247,18 +247,18 @@ function SidebarPreview() {
 
 /* ─── Code generator ─── */
 function generateSidebarCode(): string {
-  return `<!-- Menu Lateral SEBRAE-CE -->
-<aside class="sebrae-sidebar" id="sidebarMenu">
+  return `<!-- Menu Lateral CISEC-CE -->
+<aside class="cisec-sidebar" id="sidebarMenu">
   <!-- Cabeçalho do menu -->
-  <div class="sebrae-sidebar__header">
-    <div class="sebrae-sidebar__brand">
+  <div class="cisec-sidebar__header">
+    <div class="cisec-sidebar__brand">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D98217" stroke-width="2">
         <path d="M3 21V5a2 2 0 0 1 2-2h6l2 2h6a2 2 0 0 1 2 2v4"/>
         <path d="M21 15H3"/><path d="M21 19H3"/>
       </svg>
-      <span class="sebrae-sidebar__title">SIGLA</span>
+      <span class="cisec-sidebar__title">SIGLA</span>
     </div>
-    <button class="sebrae-sidebar__close" onclick="closeSidebar()" aria-label="Fechar menu">
+    <button class="cisec-sidebar__close" onclick="closeSidebar()" aria-label="Fechar menu">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
       </svg>
@@ -266,16 +266,16 @@ function generateSidebarCode(): string {
   </div>
 
   <!-- Buscador -->
-  <div class="sebrae-sidebar__search">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sebrae-sidebar__search-icon">
+  <div class="cisec-sidebar__search">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cisec-sidebar__search-icon">
       <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
     </svg>
-    <input type="text" placeholder="Buscar no menu..." class="sebrae-sidebar__search-input" oninput="filterMenu(this.value)" />
+    <input type="text" placeholder="Buscar no menu..." class="cisec-sidebar__search-input" oninput="filterMenu(this.value)" />
   </div>
 
   <!-- Itens de navegação -->
-  <nav class="sebrae-sidebar__nav">
-    <a href="#" class="sebrae-sidebar__item sebrae-sidebar__item--active">
+  <nav class="cisec-sidebar__nav">
+    <a href="#" class="cisec-sidebar__item cisec-sidebar__item--active">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
       </svg>
@@ -283,25 +283,25 @@ function generateSidebarCode(): string {
     </a>
 
     <!-- Item com subitens -->
-    <div class="sebrae-sidebar__group">
-      <button class="sebrae-sidebar__item" onclick="toggleGroup(this)">
+    <div class="cisec-sidebar__group">
+      <button class="cisec-sidebar__item" onclick="toggleGroup(this)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5"/>
         </svg>
         <span>Programas</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sebrae-sidebar__chevron">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cisec-sidebar__chevron">
           <polyline points="9 18 15 12 9 6"/>
         </svg>
       </button>
-      <div class="sebrae-sidebar__subitems">
-        <a href="#" class="sebrae-sidebar__subitem">Empretec</a>
-        <a href="#" class="sebrae-sidebar__subitem">ALI</a>
-        <a href="#" class="sebrae-sidebar__subitem">Sebraetec</a>
-        <a href="#" class="sebrae-sidebar__subitem">Negócio a Negócio</a>
+      <div class="cisec-sidebar__subitems">
+        <a href="#" class="cisec-sidebar__subitem">Empretec</a>
+        <a href="#" class="cisec-sidebar__subitem">ALI</a>
+        <a href="#" class="cisec-sidebar__subitem">Cisectec</a>
+        <a href="#" class="cisec-sidebar__subitem">Negócio a Negócio</a>
       </div>
     </div>
 
-    <a href="#" class="sebrae-sidebar__item">
+    <a href="#" class="cisec-sidebar__item">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
         <circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
@@ -312,15 +312,15 @@ function generateSidebarCode(): string {
   </nav>
 
   <!-- Rodapé -->
-  <div class="sebrae-sidebar__footer">SEBRAE-CE</div>
+  <div class="cisec-sidebar__footer">CISEC-CE</div>
 </aside>
 
 <!-- Overlay para mobile -->
-<div class="sebrae-sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+<div class="cisec-sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
 
 <style>
 :root {
-  /* Tokens alinhados ao design system SEBRAE-CE */
+  /* Tokens alinhados ao design system CISEC-CE */
   --ds-sidebar-bg: hsl(228 72% 42%);
   --ds-sidebar-fg: hsl(228 30% 95%);
   --ds-sidebar-accent: hsl(228 75% 35%);
@@ -329,7 +329,7 @@ function generateSidebarCode(): string {
   --ds-sidebar-ring: hsl(196 85% 50%);
   --ds-sidebar-muted: hsl(228 25% 75%);
 }
-.sebrae-sidebar {
+.cisec-sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -344,33 +344,33 @@ function generateSidebarCode(): string {
   transform: translateX(0);
   transition: transform 0.2s ease;
 }
-.sebrae-sidebar.is-closed { transform: translateX(-100%); }
-.sebrae-sidebar-overlay {
+.cisec-sidebar.is-closed { transform: translateX(-100%); }
+.cisec-sidebar-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.3);
   z-index: 99;
   display: none;
 }
-.sebrae-sidebar-overlay.is-visible { display: block; }
+.cisec-sidebar-overlay.is-visible { display: block; }
 
-.sebrae-sidebar__header {
+.cisec-sidebar__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--ds-sidebar-border);
 }
-.sebrae-sidebar__brand {
+.cisec-sidebar__brand {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.sebrae-sidebar__title {
+.cisec-sidebar__title {
   font-size: 0.875rem;
   font-weight: 600;
 }
-.sebrae-sidebar__close {
+.cisec-sidebar__close {
   background: none;
   border: none;
   color: var(--ds-sidebar-muted);
@@ -378,20 +378,20 @@ function generateSidebarCode(): string {
   border-radius: 4px;
   cursor: pointer;
 }
-.sebrae-sidebar__close:hover { background: var(--ds-sidebar-accent); color: var(--ds-sidebar-fg); }
+.cisec-sidebar__close:hover { background: var(--ds-sidebar-accent); color: var(--ds-sidebar-fg); }
 
-.sebrae-sidebar__search {
+.cisec-sidebar__search {
   position: relative;
   padding: 0.5rem 0.75rem;
 }
-.sebrae-sidebar__search-icon {
+.cisec-sidebar__search-icon {
   position: absolute;
   left: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.4;
 }
-.sebrae-sidebar__search-input {
+.cisec-sidebar__search-input {
   width: 100%;
   background: var(--ds-sidebar-accent);
   color: var(--ds-sidebar-fg);
@@ -401,18 +401,18 @@ function generateSidebarCode(): string {
   padding: 0.5rem 0.5rem 0.5rem 2rem;
   outline: none;
 }
-.sebrae-sidebar__search-input::placeholder { color: var(--ds-sidebar-muted); }
-.sebrae-sidebar__search-input:focus {
+.cisec-sidebar__search-input::placeholder { color: var(--ds-sidebar-muted); }
+.cisec-sidebar__search-input:focus {
   border-color: var(--ds-sidebar-ring);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--ds-sidebar-ring) 30%, transparent);
 }
 
-.sebrae-sidebar__nav {
+.cisec-sidebar__nav {
   flex: 1;
   overflow-y: auto;
   padding: 0.25rem 0.5rem;
 }
-.sebrae-sidebar__item {
+.cisec-sidebar__item {
   display: flex;
   align-items: center;
   gap: 0.625rem;
@@ -427,52 +427,52 @@ function generateSidebarCode(): string {
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
-.sebrae-sidebar__item:hover {
+.cisec-sidebar__item:hover {
   background: color-mix(in srgb, var(--ds-sidebar-accent) 60%, transparent);
   color: var(--ds-sidebar-fg);
 }
-.sebrae-sidebar__item--active {
+.cisec-sidebar__item--active {
   background: var(--ds-sidebar-accent);
   color: var(--ds-sidebar-accent-fg);
   font-weight: 500;
 }
-.sebrae-sidebar__item--disabled,
-.sebrae-sidebar__item[disabled],
-.sebrae-sidebar__item[aria-disabled="true"] {
+.cisec-sidebar__item--disabled,
+.cisec-sidebar__item[disabled],
+.cisec-sidebar__item[aria-disabled="true"] {
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
   color: var(--ds-sidebar-muted);
 }
-.sebrae-sidebar__item span { flex: 1; text-align: left; }
-.sebrae-sidebar__chevron {
+.cisec-sidebar__item span { flex: 1; text-align: left; }
+.cisec-sidebar__chevron {
   opacity: 0.4;
   transition: transform 0.2s;
 }
-.sebrae-sidebar__group.is-open .sebrae-sidebar__chevron {
+.cisec-sidebar__group.is-open .cisec-sidebar__chevron {
   transform: rotate(90deg);
 }
 
 /* Estado recolhido (mini) — mesma lógica do menu externo */
-.sebrae-sidebar.is-collapsed { width: 64px; }
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__title,
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__search,
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__close,
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__item span,
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__chevron,
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__subitems { display: none; }
-.sebrae-sidebar.is-collapsed .sebrae-sidebar__item {
+.cisec-sidebar.is-collapsed { width: 64px; }
+.cisec-sidebar.is-collapsed .cisec-sidebar__title,
+.cisec-sidebar.is-collapsed .cisec-sidebar__search,
+.cisec-sidebar.is-collapsed .cisec-sidebar__close,
+.cisec-sidebar.is-collapsed .cisec-sidebar__item span,
+.cisec-sidebar.is-collapsed .cisec-sidebar__chevron,
+.cisec-sidebar.is-collapsed .cisec-sidebar__subitems { display: none; }
+.cisec-sidebar.is-collapsed .cisec-sidebar__item {
   justify-content: center;
   padding: 0.625rem 0;
 }
 
-.sebrae-sidebar__subitems {
+.cisec-sidebar__subitems {
   display: none;
   margin-left: 1.75rem;
   padding: 0.125rem 0;
 }
-.sebrae-sidebar__group.is-open .sebrae-sidebar__subitems { display: block; }
-.sebrae-sidebar__subitem {
+.cisec-sidebar__group.is-open .cisec-sidebar__subitems { display: block; }
+.cisec-sidebar__subitem {
   display: block;
   font-size: 0.75rem;
   color: var(--ds-sidebar-muted);
@@ -481,12 +481,12 @@ function generateSidebarCode(): string {
   text-decoration: none;
   transition: background 0.15s, color 0.15s;
 }
-.sebrae-sidebar__subitem:hover {
+.cisec-sidebar__subitem:hover {
   background: color-mix(in srgb, var(--ds-sidebar-accent) 50%, transparent);
   color: var(--ds-sidebar-fg);
 }
 
-.sebrae-sidebar__footer {
+.cisec-sidebar__footer {
   border-top: 1px solid var(--ds-sidebar-border);
   padding: 0.5rem 1rem;
   font-size: 0.625rem;
@@ -506,19 +506,19 @@ function openSidebar() {
 }
 
 function toggleGroup(btn) {
-  btn.closest('.sebrae-sidebar__group').classList.toggle('is-open');
+  btn.closest('.cisec-sidebar__group').classList.toggle('is-open');
 }
 
 function filterMenu(query) {
-  const items = document.querySelectorAll('.sebrae-sidebar__item, .sebrae-sidebar__subitem');
+  const items = document.querySelectorAll('.cisec-sidebar__item, .cisec-sidebar__subitem');
   const q = query.toLowerCase();
   items.forEach(item => {
     const text = item.textContent.toLowerCase();
     item.style.display = !q || text.includes(q) ? '' : 'none';
   });
   // Show parent groups if children match
-  document.querySelectorAll('.sebrae-sidebar__group').forEach(group => {
-    const hasVisible = group.querySelector('.sebrae-sidebar__subitem:not([style*="display: none"])');
+  document.querySelectorAll('.cisec-sidebar__group').forEach(group => {
+    const hasVisible = group.querySelector('.cisec-sidebar__subitem:not([style*="display: none"])');
     if (hasVisible && q) group.classList.add('is-open');
   });
 }
@@ -534,11 +534,11 @@ export default function SidebarMenuSection() {
       {/* Description */}
       <p className="text-sm text-muted-foreground mb-6">
         Menu lateral com navegação hierárquica, ícones nas seções principais, subitens expansíveis com hover,
-        buscador integrado e botão de fechar. Ideal para complementar o Header SEBRAE-CE.
+        buscador integrado e botão de fechar. Ideal para complementar o Header CISEC-CE.
       </p>
 
       {/* Live preview */}
-      <div className="sebrae-card mb-4">
+      <div className="cisec-card mb-4">
         <h4 className="text-sm font-semibold text-foreground mb-3">Preview interativo</h4>
         <p className="text-xs text-muted-foreground mb-4">
           Clique nos itens para navegar, expanda grupos, utilize o buscador e feche o menu pelo botão ✕.
@@ -547,7 +547,7 @@ export default function SidebarMenuSection() {
       </div>
 
       {/* Code toggle */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <button
           onClick={() => setShowCode(!showCode)}
           className="text-xs font-medium text-primary hover:underline"
@@ -556,13 +556,13 @@ export default function SidebarMenuSection() {
         </button>
         {showCode && (
           <div className="mt-3">
-            <CodeBlock code={generateSidebarCode()} language="html" title="Menu Lateral SEBRAE-CE — Vanilla HTML/CSS/JS" />
+            <CodeBlock code={generateSidebarCode()} language="html" title="Menu Lateral CISEC-CE — Vanilla HTML/CSS/JS" />
           </div>
         )}
       </div>
 
       {/* Guidelines */}
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <h4 className="font-semibold text-foreground mb-3">Diretrizes de uso</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-muted-foreground">
           <div>

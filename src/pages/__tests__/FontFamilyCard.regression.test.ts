@@ -7,7 +7,7 @@ import { resolve } from "node:path";
  * tipográficas (FontFamilyCard) permaneçam com o MESMO wrapper visual
  * do card "Escala tipográfica dinâmica" em todos os breakpoints.
  *
- * Como ambos compartilham a classe `.sebrae-card w-full`, o padding, a
+ * Como ambos compartilham a classe `.cisec-card w-full`, o padding, a
  * largura (100% do container pai) e o alinhamento ficam idênticos em
  * desktop, tablet e mobile (verificado em Playwright: 960/905/905 px).
  */
@@ -22,16 +22,16 @@ const COMPONENT_SRC = readFileSync(
 );
 
 describe("FontFamilyCard ↔ Escala tipográfica dinâmica — paridade visual", () => {
-  it("FontFamilyCard usa wrapper `.sebrae-card w-full h-full` (componente reutilizável)", () => {
+  it("FontFamilyCard usa wrapper `.cisec-card w-full h-full` (componente reutilizável)", () => {
     // Root do componente FontFamilyCard
     expect(COMPONENT_SRC).toMatch(
-      /export function FontFamilyCard[\s\S]*?<div className="sebrae-card w-full h-full[^"]*">/,
+      /export function FontFamilyCard[\s\S]*?<div className="cisec-card w-full h-full[^"]*">/,
     );
   });
 
-  it("card 'Escala tipográfica dinâmica' também usa `.sebrae-card`", () => {
+  it("card 'Escala tipográfica dinâmica' também usa `.cisec-card`", () => {
     expect(PAGE_SRC).toMatch(
-      /className="sebrae-card[^"]*"[\s\S]{0,400}Escala tipográfica dinâmica/,
+      /className="cisec-card[^"]*"[\s\S]{0,400}Escala tipográfica dinâmica/,
     );
   });
 

@@ -4,8 +4,8 @@ import {
   Mail, Lock, User, ArrowLeft,
   ChevronRight, Shield, Building, Phone, ChevronDown
 } from "lucide-react";
-import { sebraeCor as sebraeLogoCompleta } from "@/assets/sebrae";
-import { sebraeCor as sebraeLogoReduzida } from "@/assets/sebrae";
+import { cisecCor as cisecLogoCompleta } from "@/assets/cisec";
+import { cisecCor as cisecLogoReduzida } from "@/assets/cisec";
 import marcaGov from "@/assets/marca-gov.png";
 import exemploImg from "@/assets/exemplo-imagem-login.jpg";
 
@@ -44,14 +44,14 @@ export default function CadastroPage() {
         <div className="hidden lg:flex lg:w-1/2 relative bg-[#2A4FDA] overflow-hidden">
           <img
             src={exemploImg}
-            alt="Edifício SEBRAE-CE"
+            alt="Edifício CISEC-CE"
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2A4FDA] via-[#2A4FDA]/40 to-transparent" />
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-16 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-16 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h1 className="text-4xl font-bold text-white leading-tight">
                   Sua porta de entrada para a gestão educacional.
@@ -74,7 +74,7 @@ export default function CadastroPage() {
         {/* Lado Direito: Formulário de Cadastro */}
         <div className="w-full lg:w-1/2 flex flex-col bg-card overflow-y-auto">
           <div className="lg:hidden flex justify-center p-8 bg-[#FDF1D0] border-b border-[#e0b86a]">
-            <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-10 w-auto" />
+            <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 w-auto" />
           </div>
 
           <div className="flex-1 flex items-center justify-center p-8 sm:p-12 md:p-16">
@@ -131,7 +131,7 @@ export default function CadastroPage() {
                   <div className="relative">
                     <select className="appearance-none w-full border border-input rounded px-3 py-2 pr-10 text-sm bg-background focus:outline-none focus:ring-2 focus:ring-ring transition-colors">
                       <option value="">Selecione seu órgão</option>
-                      <option value="sebrae">SEBRAE-CE</option>
+                      <option value="cisec">CISEC-CE</option>
                       <option value="mec">MEC</option>
                       <option value="prefeitura">Prefeitura Municipal</option>
                       <option value="estado">Secretaria Estadual</option>
@@ -182,7 +182,7 @@ export default function CadastroPage() {
           <footer className="p-8 border-t border-border bg-muted/20">
             <div className="max-w-lg mx-auto w-full space-y-4">
               <div className="flex flex-col items-center gap-3">
-                <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-6 opacity-40 grayscale" />
+                <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-6 opacity-40 grayscale" />
                 <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
                   © 2026 Fundo Nacional de Desenvolvimento da Educação.<br />
                   Sistema de Credenciamento Único.

@@ -5,7 +5,7 @@ import {
   TrendingUp, Search, X, Moon, Sun, Menu
 } from "lucide-react";
 import { ComponentPreview } from "@/components/DSComponents";
-import { sebraeCor as logoSebraeCompleta2, sebraeWhite as sebraeLogoWhite } from "@/assets/sebrae";
+import { cisecCor as logoCisecCompleta2, cisecWhite as cisecLogoWhite } from "@/assets/cisec";
 import hubThumb1 from "@/assets/hub-thumb-1.jpg";
 import hubThumb2 from "@/assets/hub-thumb-2.jpg";
 import hubThumb3 from "@/assets/hub-thumb-3.jpg";
@@ -25,7 +25,7 @@ const paineis: PainelCard[] = [
   {
     id: "gestao-atas",
     sigla: "GDDE",
-    siglaCor: "bg-sebrae-blue",
+    siglaCor: "bg-cisec-blue",
     titulo: "Painel de Gestão de ATAS",
     descricao: "Painel estratégico para monitorar a recuperação de créditos, aprimorando a gestão financeira.",
     icon: <ClipboardList size={32} />,
@@ -34,7 +34,7 @@ const paineis: PainelCard[] = [
   {
     id: "ouvidoria-sic",
     sigla: "SIGLA",
-    siglaCor: "bg-sebrae-orange",
+    siglaCor: "bg-cisec-orange",
     titulo: "Ouvidoria SIC",
     descricao: "Painel do Setor de Ouvidoria (SIC) para monitoramento das manifestações dos cidadãos.",
     icon: <Users size={32} />,
@@ -43,16 +43,16 @@ const paineis: PainelCard[] = [
   {
     id: "ouvidoria-gestao",
     sigla: "SIGLA",
-    siglaCor: "bg-sebrae-orange",
+    siglaCor: "bg-cisec-orange",
     titulo: "Ouvidoria e Gestão de Ouvidoria",
-    descricao: "Painel da Ouvidoria e Gestão de Ouvidoria do SEBRAE-CE para acompanhamento das manifestações.",
+    descricao: "Painel da Ouvidoria e Gestão de Ouvidoria do CISEC-CE para acompanhamento das manifestações.",
     icon: <FileText size={32} />,
     imagem: hubThumb3,
   },
   {
     id: "cadastro-base",
     sigla: "DIRT",
-    siglaCor: "bg-sebrae-blue",
+    siglaCor: "bg-cisec-blue",
     titulo: "Cadastro Base — Prefeitos e Secretários",
     descricao: "Acompanhamento da situação dos prefeitos e secretários municipais e estaduais da educação.",
     icon: <Building2 size={32} />,
@@ -61,7 +61,7 @@ const paineis: PainelCard[] = [
   {
     id: "painel-pdtic",
     sigla: "DIRTI",
-    siglaCor: "bg-sebrae-blue",
+    siglaCor: "bg-cisec-blue",
     titulo: "Painel PDTIC",
     descricao: "Painel do Plano Diretor de Tecnologia da Informação e Comunicação do órgão.",
     icon: <BarChart3 size={32} />,
@@ -70,7 +70,7 @@ const paineis: PainelCard[] = [
   {
     id: "pacto-retomada",
     sigla: "DIGAP",
-    siglaCor: "bg-sebrae-blue",
+    siglaCor: "bg-cisec-blue",
     titulo: "Pacto de Retomada",
     descricao: "Acompanhamento do Pacto Nacional pela Retomada de Obras da Educação Básica.",
     icon: <Landmark size={32} />,
@@ -90,7 +90,7 @@ const paineis: PainelCard[] = [
     sigla: "DIFIN",
     siglaCor: "bg-success",
     titulo: "Gestão Orçamentária e Financeira",
-    descricao: "Acompanhamento do orçamento e da execução orçamentária do SEBRAE-CE.",
+    descricao: "Acompanhamento do orçamento e da execução orçamentária do CISEC-CE.",
     icon: <PieChart size={32} />,
     imagem: hubThumb4,
   },
@@ -105,9 +105,9 @@ const paineis: PainelCard[] = [
   },
   {
     id: "pdde-basico",
-    sigla: "Sebraetec",
-    siglaCor: "bg-sebrae-orange",
-    titulo: "Sebraetec",
+    sigla: "Cisectec",
+    siglaCor: "bg-cisec-orange",
+    titulo: "Cisectec",
     descricao: "Programa que leva consultoria tecnológica e inovação para pequenos negócios em diversos setores.",
     icon: <GraduationCap size={32} />,
     imagem: hubThumb2,
@@ -115,16 +115,16 @@ const paineis: PainelCard[] = [
   {
     id: "atividade-coger",
     sigla: "SIGLA",
-    siglaCor: "bg-sebrae-orange",
+    siglaCor: "bg-cisec-orange",
     titulo: "Atividade COGER",
-    descricao: "A COGER do SEBRAE-CE atua na atividade correicional, apurando irregularidades.",
+    descricao: "A COGER do CISEC-CE atua na atividade correicional, apurando irregularidades.",
     icon: <Shield size={32} />,
     imagem: hubThumb3,
   },
   {
     id: "escola-integral",
     sigla: "SIGLA",
-    siglaCor: "bg-sebrae-orange",
+    siglaCor: "bg-cisec-orange",
     titulo: "Programa Escola em Tempo Integral",
     descricao: "Os recursos do Programa apoiam a ampliação da jornada escolar.",
     icon: <BookOpen size={32} />,
@@ -169,13 +169,13 @@ function FlipCard({ card }: { card: PainelCard }) {
 
         {/* Back */}
         <div
-          className="absolute inset-0 rounded-xl border border-sebrae-blue bg-sebrae-blue text-white overflow-hidden flex flex-col items-center justify-center p-6 text-center"
+          className="absolute inset-0 rounded-xl border border-cisec-blue bg-cisec-blue text-white overflow-hidden flex flex-col items-center justify-center p-6 text-center"
           style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
         >
           <div className="mb-3 opacity-80">{card.icon}</div>
           <h4 className="font-semibold text-sm mb-2">{card.titulo}</h4>
           <p className="text-xs opacity-80 mb-4 line-clamp-3">{card.descricao}</p>
-          <button className="bg-white text-sebrae-blue font-semibold text-xs px-5 py-2 rounded-lg hover:bg-white/90 transition-colors">
+          <button className="bg-white text-cisec-blue font-semibold text-xs px-5 py-2 rounded-lg hover:bg-white/90 transition-colors">
             Acessar Painel
           </button>
         </div>
@@ -226,13 +226,13 @@ function FlipCardImage({ card }: { card: PainelCard }) {
 
         {/* Back */}
         <div
-          className="absolute inset-0 rounded-xl border border-sebrae-blue bg-sebrae-blue text-white overflow-hidden flex flex-col items-center justify-center p-6 text-center"
+          className="absolute inset-0 rounded-xl border border-cisec-blue bg-cisec-blue text-white overflow-hidden flex flex-col items-center justify-center p-6 text-center"
           style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
         >
           <div className="mb-3 opacity-80">{card.icon}</div>
           <h4 className="font-semibold text-sm mb-2">{card.titulo}</h4>
           <p className="text-xs opacity-80 mb-4 line-clamp-3">{card.descricao}</p>
-          <button className="bg-white text-sebrae-blue font-semibold text-xs px-5 py-2 rounded-lg hover:bg-white/90 transition-colors">
+          <button className="bg-white text-cisec-blue font-semibold text-xs px-5 py-2 rounded-lg hover:bg-white/90 transition-colors">
             Acessar Painel
           </button>
         </div>
@@ -263,7 +263,7 @@ function HubPaineisPreview() {
             <button className="p-1 rounded text-white hover:bg-white/10 transition-colors" aria-label="Abrir menu">
               <Menu size={18} />
             </button>
-            <img src={sebraeLogoWhite} alt="SEBRAE-CE" className="h-6 w-auto" />
+            <img src={cisecLogoWhite} alt="CISEC-CE" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
             <span className="font-semibold text-sm">SIGLA</span>
             <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
@@ -290,7 +290,7 @@ function HubPaineisPreview() {
             placeholder="Buscar painel..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full bg-muted/50 text-foreground text-xs rounded-lg pl-9 pr-9 py-2.5 border border-border focus:outline-none focus:ring-1 focus:ring-sebrae-blue placeholder:text-muted-foreground"
+            className="w-full bg-muted/50 text-foreground text-xs rounded-lg pl-9 pr-9 py-2.5 border border-border focus:outline-none focus:ring-1 focus:ring-cisec-blue placeholder:text-muted-foreground"
           />
           {searchTerm && (
             <button
@@ -318,7 +318,7 @@ function HubPaineisPreview() {
       {/* Footer */}
       <div className="border-t border-border py-4 px-4 text-center">
         <div className="flex items-center justify-center gap-3">
-          <img src={logoSebraeCompleta2} alt="SEBRAE-CE" className="h-5 opacity-60" />
+          <img src={logoCisecCompleta2} alt="CISEC-CE" className="h-5 opacity-60" />
         </div>
         <p className="text-[10px] text-muted-foreground mt-1"></p>
       </div>
@@ -348,7 +348,7 @@ function HubPaineisImagePreview() {
             <button className="p-1 rounded text-white hover:bg-white/10 transition-colors" aria-label="Abrir menu">
               <Menu size={18} />
             </button>
-            <img src={sebraeLogoWhite} alt="SEBRAE-CE" className="h-6 w-auto" />
+            <img src={cisecLogoWhite} alt="CISEC-CE" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
             <span className="font-semibold text-sm">SIGLA</span>
             <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
@@ -375,7 +375,7 @@ function HubPaineisImagePreview() {
             placeholder="Buscar painel..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full bg-muted/50 text-foreground text-xs rounded-lg pl-9 pr-9 py-2.5 border border-border focus:outline-none focus:ring-1 focus:ring-sebrae-blue placeholder:text-muted-foreground"
+            className="w-full bg-muted/50 text-foreground text-xs rounded-lg pl-9 pr-9 py-2.5 border border-border focus:outline-none focus:ring-1 focus:ring-cisec-blue placeholder:text-muted-foreground"
           />
           {searchTerm && (
             <button
@@ -403,7 +403,7 @@ function HubPaineisImagePreview() {
       {/* Footer */}
       <div className="border-t border-border py-4 px-4 text-center">
         <div className="flex items-center justify-center gap-3">
-          <img src={logoSebraeCompleta2} alt="SEBRAE-CE" className="h-5 opacity-60" />
+          <img src={logoCisecCompleta2} alt="CISEC-CE" className="h-5 opacity-60" />
         </div>
         <p className="text-[10px] text-muted-foreground mt-1"></p>
       </div>

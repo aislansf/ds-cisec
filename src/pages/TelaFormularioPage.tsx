@@ -5,8 +5,8 @@ import {
   Search, X, Calendar as CalendarIcon, Check, AlertCircle, Save, Send,
   GraduationCap, Wallet, BarChart3, Users, FileText, Bell, Shield, Settings, HelpCircle, Folder,
 } from "lucide-react";
-import { sebraeCor as sebraeLogoReduzida } from "@/assets/sebrae";
-import { sebraeWhite as iconeSebraeNegativo } from "@/assets/sebrae";
+import { cisecCor as cisecLogoReduzida } from "@/assets/cisec";
+import { cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
 import { useTheme } from "@/hooks/useTheme";
 import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
 const headerBusinessBg = headerBusinessBgAsset.url;
@@ -19,7 +19,7 @@ interface MenuItem {
 }
 const menuItems: MenuItem[] = [
   { label: "Início", icon: <Home size={16} /> },
-  { label: "Programas", icon: <GraduationCap size={16} />, children: [{ label: "Empretec" }, { label: "ALI" }, { label: "Sebraetec" }, { label: "Negócio a Negócio" }] },
+  { label: "Programas", icon: <GraduationCap size={16} />, children: [{ label: "Empretec" }, { label: "ALI" }, { label: "Cisectec" }, { label: "Negócio a Negócio" }] },
   { label: "Financeiro", icon: <Wallet size={16} />, children: [{ label: "Prestação de Contas" }, { label: "Repasses" }, { label: "Convênios" }] },
   { label: "Relatórios", icon: <BarChart3 size={16} />, children: [{ label: "Indicadores" }, { label: "Dashboards" }, { label: "Exportações" }] },
   { label: "Usuários", icon: <Users size={16} /> },
@@ -54,7 +54,7 @@ interface FormState {
 
 const initialForm: FormState = {
   programa: "", responsavel: "", email: "", cpf: "",
-  unidade: "DIRAE/SEBRAE-CE", modalidade: "Repasse mensal",
+  unidade: "DIRAE/CISEC-CE", modalidade: "Repasse mensal",
   valor: "", observacoes: "",
   dataInicio: "", dataFim: "", parcelas: "12",
 };
@@ -365,7 +365,7 @@ export default function TelaFormularioPage() {
           <aside className="w-[260px] bg-sidebar text-sidebar-foreground flex flex-col shrink-0 border-r border-sidebar-border">
             <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
               <div className="flex items-center gap-2">
-                <img src={iconeSebraeNegativo} alt="SEBRAE-CE" className="h-5 w-5" />
+                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-5 w-5" />
                 <span className="text-sm font-semibold">SIGLA</span>
               </div>
               <button onClick={() => setSidebarOpen(false)} className="p-1 rounded hover:bg-white/10 transition-colors" aria-label="Fechar menu">
@@ -427,7 +427,7 @@ export default function TelaFormularioPage() {
             <div className="border-t border-white/10 px-3 py-2">
               <div className="flex items-center gap-2 px-2 py-1.5 text-white/50 text-[10px]">
                 <Folder size={12} />
-                <span>SEBRAE-CE</span>
+                <span>CISEC-CE</span>
               </div>
             </div>
           </aside>
@@ -504,7 +504,7 @@ export default function TelaFormularioPage() {
 
                     <Field label="E-mail institucional" id="email" required error={errors.email}>
                       <input id="email" type="email" value={form.email} onChange={(e) => update("email", e.target.value)}
-                        placeholder="responsavel@ce.sebrae.com.br"
+                        placeholder="responsavel@ce.cisec.com.br"
                         className={inputCls(errors.email)} aria-invalid={!!errors.email} />
                     </Field>
                   </div>
@@ -519,10 +519,10 @@ export default function TelaFormularioPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <Field label="Unidade gestora" id="unidade" required error={errors.unidade}>
                         <select id="unidade" value={form.unidade} onChange={(e) => update("unidade", e.target.value)} className={inputCls(errors.unidade)}>
-                          <option>DIRAE/SEBRAE-CE</option>
-                          <option>DIFIN/SEBRAE-CE</option>
-                          <option>DIPRO/SEBRAE-CE</option>
-                          <option>DIGAP/SEBRAE-CE</option>
+                          <option>DIRAE/CISEC-CE</option>
+                          <option>DIFIN/CISEC-CE</option>
+                          <option>DIPRO/CISEC-CE</option>
+                          <option>DIGAP/CISEC-CE</option>
                         </select>
                       </Field>
                       <Field label="Modalidade" id="modalidade" required error={errors.modalidade}>
@@ -635,7 +635,7 @@ export default function TelaFormularioPage() {
 
           {/* Footer institucional */}
           <footer className="border-t border-border bg-card px-5 py-3 text-[10px] text-muted-foreground text-center">
-            SEBRAE-CE · Transformando vidas por meio da educação
+            CISEC-CE · Transformando vidas por meio da educação
           </footer>
         </div>
       </div>

@@ -4,8 +4,8 @@ import {
   ShieldCheck, ArrowLeft, Smartphone,
   RefreshCw, CheckCircle2, Lock
 } from "lucide-react";
-import { sebraeCor as sebraeLogoCompleta } from "@/assets/sebrae";
-import { sebraeCor as sebraeLogoReduzida } from "@/assets/sebrae";
+import { cisecCor as cisecLogoCompleta } from "@/assets/cisec";
+import { cisecCor as cisecLogoReduzida } from "@/assets/cisec";
 import exemploImg from "@/assets/exemplo-imagem-login.jpg";
 
 export default function TwoFactorPage() {
@@ -57,14 +57,14 @@ export default function TwoFactorPage() {
         <div className="hidden lg:flex lg:w-1/2 relative bg-[#2A4FDA] overflow-hidden">
           <img
             src={exemploImg}
-            alt="Edifício SEBRAE-CE"
+            alt="Edifício CISEC-CE"
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2A4FDA] via-[#2A4FDA]/40 to-transparent" />
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-16 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-16 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h2 className="text-3xl font-bold text-white leading-tight">
                   Verificação de Segurança em Duas Etapas.
@@ -85,7 +85,7 @@ export default function TwoFactorPage() {
         {/* Lado Direito: Formulário de 2FA */}
         <div className="w-full lg:w-1/2 flex flex-col bg-card overflow-y-auto">
           <div className="lg:hidden flex justify-center p-8 bg-[#FDF1D0] border-b border-[#e0b86a]">
-            <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-10 w-auto" />
+            <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 w-auto" />
           </div>
 
           <div className="flex-1 flex items-center justify-center p-8 sm:p-12 md:p-16">
@@ -99,7 +99,7 @@ export default function TwoFactorPage() {
                   <div className="space-y-2">
                     <h2 className="text-2xl font-bold text-foreground">Verifique seu dispositivo</h2>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Enviamos um código de 6 dígitos para o e-mail cadastrado finalizado em <span className="font-bold text-foreground">****@ce.sebrae.com.br</span>.
+                      Enviamos um código de 6 dígitos para o e-mail cadastrado finalizado em <span className="font-bold text-foreground">****@ce.cisec.com.br</span>.
                     </p>
                   </div>
 
@@ -163,7 +163,7 @@ export default function TwoFactorPage() {
 
           <footer className="p-8 border-t border-border bg-muted/20 mt-auto">
             <div className="flex flex-col items-center gap-3">
-              <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-6 opacity-40 grayscale" />
+              <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-6 opacity-40 grayscale" />
               <p className="text-[10px] text-muted-foreground text-center">
                 Segurança Nível 3 - Padrão Federal de Interoperabilidade.
               </p>

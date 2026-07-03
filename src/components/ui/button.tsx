@@ -15,8 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        sebrae:
-          "rounded-lg border-2 border-primary bg-primary text-[hsl(var(--sebrae-btn-fg))] font-bold hover:bg-[hsl(var(--sebrae-btn-hover))] hover:border-[hsl(var(--sebrae-btn-hover))]",
+        cisec:
+          "rounded-lg border-2 border-primary bg-primary text-[hsl(var(--cisec-btn-fg))] font-bold hover:bg-[hsl(var(--cisec-btn-hover))] hover:border-[hsl(var(--cisec-btn-hover))]",
         diversificado:
           "bg-[#E7F79E] text-[#2A4FDA] font-bold hover:bg-[#D1E575] hover:text-[#1644DC] transition-colors",
       },
@@ -25,7 +25,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
-        sebrae: "h-12 px-4 py-3 text-base leading-6",
+        cisec: "h-12 px-4 py-3 text-base leading-6",
       },
     },
     defaultVariants: {

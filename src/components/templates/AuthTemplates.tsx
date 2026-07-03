@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { CodeBlock } from "@/components/DSComponents";
 import { Eye, EyeOff, ShieldCheck } from "lucide-react";
-import { sebraeCor as sebraeLogoCompleta } from "@/assets/sebrae";
+import { cisecCor as cisecLogoCompleta } from "@/assets/cisec";
 
 /* ─── Sign In Preview ─── */
 function SignInPreview() {
@@ -12,7 +12,7 @@ function SignInPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Bem-vindo</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
@@ -25,7 +25,7 @@ function SignInPreview() {
             <label className="text-xs font-medium text-foreground">E-mail <span className="text-[#D98217]">*</span></label>
             <input
               type="email"
-              placeholder="usuario@ce.sebrae.com.br"
+              placeholder="usuario@ce.cisec.com.br"
               className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
             />
           </div>
@@ -66,7 +66,7 @@ function SignInPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 SEBRAE-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
@@ -81,11 +81,11 @@ function SignUpPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Criar conta</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
-          Preencha os campos abaixo para criar sua conta no sistema SEBRAE-CE.
+          Preencha os campos abaixo para criar sua conta no sistema CISEC-CE.
         </p>
 
         {/* Card */}
@@ -102,7 +102,7 @@ function SignUpPreview() {
             <label className="text-xs font-medium text-foreground">E-mail <span className="text-[#D98217]">*</span></label>
             <input
               type="email"
-              placeholder="usuario@ce.sebrae.com.br"
+              placeholder="usuario@ce.cisec.com.br"
               className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
             />
           </div>
@@ -163,7 +163,7 @@ function SignUpPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 SEBRAE-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
@@ -171,11 +171,11 @@ function SignUpPreview() {
 }
 
 /* ─── Code snippets ─── */
-const signInCode = `<!-- Sign In — SEBRAE-CE Design System -->
+const signInCode = `<!-- Sign In — CISEC-CE Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
-      <img src="/assets/sebrae-logo.svg" alt="SEBRAE-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
     </div>
     <h3 style="text-align:center;font-size:1.125rem;font-weight:600;margin-bottom:4px">Bem-vindo</h3>
     <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-bottom:1.5rem">
@@ -184,7 +184,7 @@ const signInCode = `<!-- Sign In — SEBRAE-CE Design System -->
     <div style="background:#fff;border-radius:0.75rem;border:1px solid #e4e4e7;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06)">
       <div style="margin-bottom:1rem">
         <label style="font-size:0.75rem;font-weight:500">E-mail <span style="color:#D98217">*</span></label>
-        <input type="email" placeholder="usuario@ce.sebrae.com.br"
+        <input type="email" placeholder="usuario@ce.cisec.com.br"
           style="width:100%;height:40px;border-radius:8px;border:1px solid #e4e4e7;padding:0 12px;font-size:0.875rem;margin-top:6px">
       </div>
       <div style="margin-bottom:1rem">
@@ -203,19 +203,19 @@ const signInCode = `<!-- Sign In — SEBRAE-CE Design System -->
         Novo por aqui? <a href="#" style="color:#D98217;font-weight:500">Criar uma conta</a>
       </p>
     </div>
-    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 SEBRAE-CE</p>
+    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
   </div>
 </div>`;
 
-const signUpCode = `<!-- Sign Up — SEBRAE-CE Design System -->
+const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
-      <img src="/assets/sebrae-logo.svg" alt="SEBRAE-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
     </div>
     <h3 style="text-align:center;font-size:1.125rem;font-weight:600;margin-bottom:4px">Criar conta</h3>
     <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-bottom:1.5rem">
-      Preencha os campos abaixo para criar sua conta no sistema SEBRAE-CE.
+      Preencha os campos abaixo para criar sua conta no sistema CISEC-CE.
     </p>
     <div style="background:#fff;border-radius:0.75rem;border:1px solid #e4e4e7;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06)">
       <div style="margin-bottom:1rem">
@@ -225,7 +225,7 @@ const signUpCode = `<!-- Sign Up — SEBRAE-CE Design System -->
       </div>
       <div style="margin-bottom:1rem">
         <label style="font-size:0.75rem;font-weight:500">E-mail <span style="color:#D98217">*</span></label>
-        <input type="email" placeholder="usuario@ce.sebrae.com.br"
+        <input type="email" placeholder="usuario@ce.cisec.com.br"
           style="width:100%;height:40px;border-radius:8px;border:1px solid #e4e4e7;padding:0 12px;font-size:0.875rem;margin-top:6px">
       </div>
       <div style="margin-bottom:1rem">
@@ -256,7 +256,7 @@ const signUpCode = `<!-- Sign Up — SEBRAE-CE Design System -->
         Já tem uma conta? <a href="#" style="color:#D98217;font-weight:500">Entrar</a>
       </p>
     </div>
-    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 SEBRAE-CE</p>
+    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
   </div>
 </div>`;
 
@@ -284,7 +284,7 @@ function TwoFactorPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
         </div>
 
         {/* Icon */}
@@ -334,18 +334,18 @@ function TwoFactorPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 SEBRAE-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
   );
 }
 
-const twoFactorCode = `<!-- Two-Factor Auth — SEBRAE-CE Design System -->
+const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem;text-align:center">
     <div style="margin-bottom:1.5rem">
-      <img src="/assets/sebrae-logo.svg" alt="SEBRAE-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
     </div>
     <div style="width:56px;height:56px;border-radius:50%;background:rgba(13,56,87,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2A4FDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -373,7 +373,7 @@ const twoFactorCode = `<!-- Two-Factor Auth — SEBRAE-CE Design System -->
       </p>
       <a href="#" style="font-size:0.75rem;color:#2A4FDA;font-weight:500">Voltar para o login</a>
     </div>
-    <p style="font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 SEBRAE-CE</p>
+    <p style="font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
   </div>
 </div>`;
 
@@ -426,13 +426,13 @@ export default function AuthTemplatesSection() {
       </div>
 
       {/* Preview */}
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <div className="flex items-start justify-between mb-3">
           <div>
             <h4 className="text-sm font-semibold text-foreground">{titles[activeTab]}</h4>
             <p className="text-xs text-muted-foreground mt-0.5">{descriptions[activeTab]}</p>
           </div>
-          <span className="sebrae-badge-primary shrink-0 text-[10px]">Autenticação</span>
+          <span className="cisec-badge-primary shrink-0 text-[10px]">Autenticação</span>
         </div>
 
         {activeTab === "signin" && <SignInPreview />}
