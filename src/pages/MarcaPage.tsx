@@ -1,22 +1,22 @@
 import { PageHeader, SectionHeader } from "@/components/DSComponents";
 import { SEO } from "@/components/SEO";
 import { Download, FileText } from "lucide-react";
-import sebraeCorAsset from "@/assets/marca/sebrae-cor.svg.asset.json";
-import sebraeBlackAsset from "@/assets/marca/sebrae-black.svg.asset.json";
-import sebraeWhiteAsset from "@/assets/marca/sebrae-white.svg.asset.json";
+import cisecCorAsset from "@/assets/marca/cisec-cor.svg.asset.json";
+import cisecBlackAsset from "@/assets/marca/cisec-black.svg.asset.json";
+import cisecWhiteAsset from "@/assets/marca/cisec-white.svg.asset.json";
 
-const LOGO_COR = sebraeCorAsset.url;
-const LOGO_BLACK = sebraeBlackAsset.url;
-const LOGO_WHITE = sebraeWhiteAsset.url;
-const SEBRAE_BLUE = "#2A4FDA";
+const LOGO_COR = cisecCorAsset.url;
+const LOGO_BLACK = cisecBlackAsset.url;
+const LOGO_WHITE = cisecWhiteAsset.url;
+const CISEC_BLUE = "#2A4FDA";
 
 const MANUAL_PDF_URL =
-  "https://sebraemg.com.br/diversos/web/docs/casademarcas/manuais/Manual_de_Marca_Sebrae.pdf";
+  "https://cisecmg.com.br/diversos/web/docs/casademarcas/manuais/Manual_de_Marca_Cisec.pdf";
 
 const downloads = [
-  { label: "Logo Sebrae · Cor (SVG)", url: LOGO_COR, file: "sebrae-cor.svg" },
-  { label: "Logo Sebrae · Preto (SVG)", url: LOGO_BLACK, file: "sebrae-black.svg" },
-  { label: "Logo Sebrae · Branco (SVG)", url: LOGO_WHITE, file: "sebrae-white.svg" },
+  { label: "Logo Cisec · Cor (SVG)", url: LOGO_COR, file: "cisec-cor.svg" },
+  { label: "Logo Cisec · Preto (SVG)", url: LOGO_BLACK, file: "cisec-black.svg" },
+  { label: "Logo Cisec · Branco (SVG)", url: LOGO_WHITE, file: "cisec-white.svg" },
 ];
 
 function LogoFrame({
@@ -42,7 +42,7 @@ function LogoFrame({
 }
 
 const reducaoRows = [
-  { tipo: "Logotipo simples (apenas \"Sebrae\")", impressao: "10 mm", digital: "50 px" },
+  { tipo: "Logotipo simples (apenas \"Cisec\")", impressao: "10 mm", digital: "50 px" },
   { tipo: "Composta com descritivo", impressao: "12 mm", digital: "65 px" },
   { tipo: "Composta horizontal estendida", impressao: "18 mm", digital: "96 px" },
 ];
@@ -56,12 +56,12 @@ const tresJeitos = [
   {
     n: 2,
     title: "Logotipo protegido",
-    desc: "Sobre um bloco azul Sebrae quando o fundo original (cor chapada ou fotográfico) não oferece contraste.",
+    desc: "Sobre um bloco azul Cisec quando o fundo original (cor chapada ou fotográfico) não oferece contraste.",
   },
   {
     n: 3,
-    title: "Janela aberta Sebrae",
-    desc: "Exclusiva para iniciativas, ações e eventos promovidos pelo Sebrae. Representa o espaço aberto e a troca.",
+    title: "Janela aberta Cisec",
+    desc: "Exclusiva para iniciativas, ações e eventos promovidos pelo Cisec. Representa o espaço aberto e a troca.",
   },
 ];
 
@@ -74,7 +74,7 @@ const janelaRegras = [
 
 const compartilhadasRegras = [
   "Hierarquia marcada apenas pela posição, sem diferença de tamanho entre as marcas.",
-  "Governo Federal é sempre o primeiro na hierarquia, mesmo quando o Sebrae é o promotor.",
+  "Governo Federal é sempre o primeiro na hierarquia, mesmo quando o Cisec é o promotor.",
   "Em parcerias 50/50 com outras empresas, ocupa a primeira posição quem produzir o material.",
   "Materiais formais (editais, documentos, relatórios): usar versão composta de ambas as marcas.",
   "Materiais de comunicação (redes sociais, anúncios): usar versão simples de ambas as marcas.",
@@ -92,14 +92,14 @@ export default function MarcaPage() {
   return (
     <div>
       <SEO
-        title="Marca Sebrae — Design System SEBRAE"
-        description="Diretrizes oficiais da marca Sebrae: assinaturas, área de proteção, redução mínima, usos corretos e indevidos, conforme o Manual da Marca Sebrae."
+        title="Marca Cisec — Design System CISEC"
+        description="Diretrizes oficiais da marca Cisec: assinaturas, área de proteção, redução mínima, usos corretos e indevidos, conforme o Manual da Marca Cisec."
         path="/marca"
       />
       <PageHeader
-        badge="Manual da Marca Sebrae · Set/2024"
-        title="Marca Sebrae"
-        description="Diretrizes oficiais de uso do logotipo Sebrae — versões, área de proteção, redução máxima, jeitos de assinar, parcerias e usos indevidos. Baseado no Manual da Marca Sebrae (Setembro 2024)."
+        badge="Manual da Marca Cisec · Set/2024"
+        title="Marca Cisec"
+        description="Diretrizes oficiais de uso do logotipo Cisec — versões, área de proteção, redução máxima, jeitos de assinar, parcerias e usos indevidos. Baseado no Manual da Marca Cisec (Setembro 2024)."
       />
 
       {/* 1. Assinatura simples */}
@@ -107,11 +107,11 @@ export default function MarcaPage() {
         id="assinatura-simples"
         badge="Logo solto"
         title="Assinatura simples"
-        description="Pode me chamar de Sebrae! Versão usada na comunicação direta com o público — redes sociais, anúncios direcionados e publicações internas. Cria proximidade e cumplicidade."
+        description="Pode me chamar de Cisec! Versão usada na comunicação direta com o público — redes sociais, anúncios direcionados e publicações internas. Cria proximidade e cumplicidade."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-          <LogoFrame src={LOGO_COR} alt="Logotipo Sebrae em azul." imgClassName="h-32" />
+          <LogoFrame src={LOGO_COR} alt="Logotipo Cisec em azul." imgClassName="h-32" />
           <div className="space-y-3 text-sm">
             <div className="rounded-lg border border-border bg-muted/30 p-3">
               <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-1">Tipografia</p>
@@ -119,7 +119,7 @@ export default function MarcaPage() {
             </div>
             <div className="rounded-lg border border-border bg-muted/30 p-3">
               <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-1">Cor</p>
-              <p className="font-medium">Azul Sebrae · Pantone 2935 C · #2A4FDA</p>
+              <p className="font-medium">Azul Cisec · Pantone 2935 C · #2A4FDA</p>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
               A tipografia, as proporções e o posicionamento dos elementos nunca devem ser alterados. Use sempre os arquivos fechados com as fontes em curvas.
@@ -135,7 +135,7 @@ export default function MarcaPage() {
         title="Assinaturas compostas"
         description="Para palestras, artigos e publicações científicas, eventos corporativos e apresentações para investidores. Três diagramações disponíveis — escolha a que melhor se encaixa nas proporções do layout."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="space-y-3">
             {[
               { n: 1, label: "Versão 1", desc: "Ideal para formatos quadrados ou verticais." },
@@ -165,25 +165,25 @@ export default function MarcaPage() {
         title="Versões alternativas"
         description="Todas as assinaturas possuem versões em positivo (azul/preto) e negativo (branco) para diferentes contextos de aplicação."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="space-y-2">
-            <LogoFrame src={LOGO_COR} alt="Logo Sebrae em azul (positivo)." imgClassName="h-16" />
+            <LogoFrame src={LOGO_COR} alt="Logo Cisec em azul (positivo)." imgClassName="h-16" />
             <p className="text-xs font-semibold text-foreground">Positivo · Cor</p>
             <p className="text-xs text-muted-foreground">Versão padrão sobre fundos claros.</p>
           </div>
           <div className="space-y-2">
             <div
               className="border border-border rounded-lg overflow-hidden flex items-center justify-center p-6"
-              style={{ backgroundColor: SEBRAE_BLUE }}
+              style={{ backgroundColor: CISEC_BLUE }}
             >
-              <img src={LOGO_WHITE} alt="Logo Sebrae em branco (negativo)." className="h-16 w-auto object-contain" />
+              <img src={LOGO_WHITE} alt="Logo Cisec em branco (negativo)." className="h-16 w-auto object-contain" />
             </div>
             <p className="text-xs font-semibold text-foreground">Negativo · Branco</p>
             <p className="text-xs text-muted-foreground">Sobre o azul institucional ou fundos escuros.</p>
           </div>
           <div className="space-y-2">
-            <LogoFrame src={LOGO_BLACK} alt="Logo Sebrae em preto (uso restrito)." imgClassName="h-16" />
+            <LogoFrame src={LOGO_BLACK} alt="Logo Cisec em preto (uso restrito)." imgClassName="h-16" />
             <p className="text-xs font-semibold text-foreground">Restrita · Preto</p>
             <p className="text-xs text-muted-foreground">Apenas para impressões com limitação técnica.</p>
           </div>
@@ -192,7 +192,7 @@ export default function MarcaPage() {
             <div className="rounded-lg border border-border bg-muted/30 p-3">
               <p className="text-[11px] font-bold uppercase tracking-wider text-primary mb-1">Positivo</p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Versão padrão em azul Sebrae. A variação em preto é restrita a usos com limitação de impressão.
+                Versão padrão em azul Cisec. A variação em preto é restrita a usos com limitação de impressão.
               </p>
             </div>
             <div className="rounded-lg border border-border bg-muted/30 p-3">
@@ -211,11 +211,11 @@ export default function MarcaPage() {
         title="Área de Proteção"
         description="Área ao redor do logotipo que nenhum outro elemento pode invadir. Garante integridade e boa percepção em qualquer circunstância."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <div className="border border-border rounded-lg bg-white p-8 flex items-center justify-center">
             <div className="relative inline-block border-2 border-dashed border-primary/60 p-8">
-              <img src={LOGO_COR} alt="Logotipo Sebrae com marcação da área de proteção." className="h-24 w-auto" />
+              <img src={LOGO_COR} alt="Logotipo Cisec com marcação da área de proteção." className="h-24 w-auto" />
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-background px-2 text-[10px] font-bold uppercase tracking-wider text-primary">X</span>
               <span className="absolute -left-3 top-1/2 -translate-y-1/2 bg-background px-2 text-[10px] font-bold uppercase tracking-wider text-primary">X</span>
             </div>
@@ -242,7 +242,7 @@ export default function MarcaPage() {
         title="Redução Máxima"
         description="Tamanhos mínimos para garantir legibilidade em impressão e ambiente digital (referência: 72 dpi)."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start mb-6">
           <div className="border border-border rounded-lg bg-white p-6 flex items-end justify-around gap-4">
             <div className="flex flex-col items-center gap-2">
@@ -294,7 +294,7 @@ export default function MarcaPage() {
         title="Como Assinamos"
         description="Gostamos de estar juntos, influenciar, somar. A marca não tem regra pétrea para assinar materiais — a única regra é ter bom senso para garantir sua boa visibilidade."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div>
             <div className="border border-border rounded-lg bg-white p-6 flex items-center justify-center h-32">
@@ -303,14 +303,14 @@ export default function MarcaPage() {
             <p className="text-xs font-semibold mt-2">1 · Logotipo solto</p>
           </div>
           <div>
-            <div className="rounded-lg p-6 flex items-center justify-center h-32" style={{ backgroundColor: SEBRAE_BLUE }}>
+            <div className="rounded-lg p-6 flex items-center justify-center h-32" style={{ backgroundColor: CISEC_BLUE }}>
               <img src={LOGO_WHITE} alt="Logotipo protegido em bloco azul" className="h-12 w-auto" />
             </div>
             <p className="text-xs font-semibold mt-2">2 · Logotipo protegido</p>
           </div>
           <div>
-            <div className="border-2 rounded-lg bg-white p-6 flex items-center justify-center h-32" style={{ borderColor: SEBRAE_BLUE }}>
-              <img src={LOGO_COR} alt="Janela aberta Sebrae" className="h-12 w-auto" />
+            <div className="border-2 rounded-lg bg-white p-6 flex items-center justify-center h-32" style={{ borderColor: CISEC_BLUE }}>
+              <img src={LOGO_COR} alt="Janela aberta Cisec" className="h-12 w-auto" />
             </div>
             <p className="text-xs font-semibold mt-2">3 · Janela aberta</p>
           </div>
@@ -358,7 +358,7 @@ export default function MarcaPage() {
         <div className="rounded-lg border border-border bg-muted/30 p-4">
           <p className="text-[11px] font-bold uppercase tracking-wider text-primary mb-1">Vinheta</p>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Em vídeos, animações e aplicações digitais, as barras do logotipo se movimentam e formam grafismos. Na cena final, as barras devem <strong>sempre retornar</strong> à assinatura clássica do Sebrae.
+            Em vídeos, animações e aplicações digitais, as barras do logotipo se movimentam e formam grafismos. Na cena final, as barras devem <strong>sempre retornar</strong> à assinatura clássica do Cisec.
           </p>
         </div>
       </div>
@@ -370,10 +370,10 @@ export default function MarcaPage() {
         title="Assinaturas Compartilhadas"
         description="Caminhamos juntos, lado a lado, nos colocando sempre como parceiros e não como autoridade."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <div className="border border-border rounded-lg bg-white p-6 flex items-center justify-center gap-6">
-            <img src={LOGO_COR} alt="Logotipo Sebrae" className="h-12 w-auto" />
+            <img src={LOGO_COR} alt="Logotipo Cisec" className="h-12 w-auto" />
             <div className="w-px h-12 bg-border" />
             <div className="h-10 w-24 rounded bg-muted flex items-center justify-center text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">
               Parceiro
@@ -395,9 +395,9 @@ export default function MarcaPage() {
         id="usos-indevidos"
         badge="Não faça"
         title="Usos Indevidos"
-        description="Exemplos do que nunca fazer com a marca Sebrae."
+        description="Exemplos do que nunca fazer com a marca Cisec."
       />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4">
           {[
             { style: { filter: "hue-rotate(120deg) saturate(2)" }, label: "Não mudar a cor" },
@@ -435,7 +435,7 @@ export default function MarcaPage() {
         id="manual-oficial"
         badge="Documento de referência"
         title="Downloads"
-        description="Logotipos oficiais em SVG e o manual completo da marca Sebrae (Setembro/2024)."
+        description="Logotipos oficiais em SVG e o manual completo da marca Cisec (Setembro/2024)."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {downloads.map((d) => (
@@ -445,7 +445,7 @@ export default function MarcaPage() {
             download={d.file}
             target="_blank"
             rel="noreferrer"
-            className="sebrae-card flex items-center justify-between gap-3 hover:border-primary/40 transition-colors"
+            className="cisec-card flex items-center justify-between gap-3 hover:border-primary/40 transition-colors"
           >
             <div className="flex items-center gap-3 min-w-0">
               <div className="w-10 h-10 rounded-lg bg-card-icon text-card-icon-foreground flex items-center justify-center shrink-0">
@@ -463,15 +463,15 @@ export default function MarcaPage() {
           href={MANUAL_PDF_URL}
           target="_blank"
           rel="noreferrer"
-          className="sebrae-card flex items-center justify-between gap-3 hover:border-primary/40 transition-colors md:col-span-2"
+          className="cisec-card flex items-center justify-between gap-3 hover:border-primary/40 transition-colors md:col-span-2"
         >
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shrink-0">
               <FileText size={18} />
             </div>
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-foreground">Manual da Marca Sebrae · Setembro 2024</p>
-              <p className="text-xs text-muted-foreground">PDF oficial · Sebrae Nacional</p>
+              <p className="text-sm font-semibold text-foreground">Manual da Marca Cisec · Setembro 2024</p>
+              <p className="text-xs text-muted-foreground">PDF oficial · Cisec Nacional</p>
             </div>
           </div>
           <Download size={16} className="text-primary shrink-0" />

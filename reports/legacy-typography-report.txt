@@ -644,7 +644,7 @@ src/pages/FundamentosPage.tsx:612
   <p className="text-sm text-muted-foreground">
 
 src/pages/FundamentosPage.tsx:667
-  <p className={`text-base ${p.w}`}>Aa Sebrae</p>
+  <p className={`text-base ${p.w}`}>Aa Cisec</p>
 
 src/pages/FundamentosPage.tsx:692
   <p className={`text-sm ${s.cls}`}>
@@ -689,7 +689,7 @@ src/pages/FundamentosPage.tsx:995
   <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
 
 src/pages/FundamentosPage.tsx:1019
-  <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Sebrae" — navegação, autenticação, serviços e atendimento.</p>
+  <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
 
 src/pages/FundamentosPage.tsx:1126
   <p className="font-semibold text-sm">{s.label}</p>
@@ -836,10 +836,10 @@ src/pages/MarcaPage.tsx:456
   <p className="text-xs text-muted-foreground truncate">{d.file}</p>
 
 src/pages/MarcaPage.tsx:473
-  <p className="text-sm font-semibold text-foreground">Manual da Marca Sebrae · Setembro 2024</p>
+  <p className="text-sm font-semibold text-foreground">Manual da Marca Cisec · Setembro 2024</p>
 
 src/pages/MarcaPage.tsx:474
-  <p className="text-xs text-muted-foreground">PDF oficial · Sebrae Nacional</p>
+  <p className="text-xs text-muted-foreground">PDF oficial · Cisec Nacional</p>
 
 src/pages/ModalAcessoTemplatePage.tsx:63
   <p className="text-sm text-success/80 mt-1">Aqui entraria o conteúdo restrito da sua aplicação.</p>

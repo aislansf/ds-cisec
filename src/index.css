@@ -1,15 +1,15 @@
-/* === Tipografia oficial Sebrae ===
+/* === Tipografia oficial Cisec ===
  * Primária: Figtree (Google Fonts, open-source) – usada em corpo, UI e H1/H3.
- * Secundária: Campuni (fonte proprietária Sebrae) – usada em H2 e títulos de impacto.
+ * Secundária: Campuni (fonte proprietária Cisec) – usada em H2 e títulos de impacto.
  *   Quando o arquivo oficial estiver disponível, hospede em /public/fonts/campuni-bold.woff2
  *   e ative o @font-face abaixo. Até lá, o fallback usa Figtree.
- * Sistêmica: Lato (Google Fonts) – fonte de apoio alinhada ao portal sebrae.com.br,
+ * Sistêmica: Lato (Google Fonts) – fonte de apoio alinhada ao portal cisec.com.br,
  *   usada em legendas, microcopy institucional e contextos de leitura prolongada.
  */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-/* Campuni Bold — servida pelo CDN público do Sebrae (mesma origem usada em sebrae.com.br).
+/* Campuni Bold — servida pelo CDN público do Cisec (mesma origem usada em cisec.com.br).
  * font-display: swap garante que o fallback Figtree apareça imediatamente,
  * evitando FOIT enquanto o arquivo é baixado. */
 @font-face {
@@ -26,40 +26,40 @@
 
 @layer base {
   :root {
-    /* === SEBRAE Design Tokens === */
-    /* Marca oficial Sebrae — Pantone 2935 C / HEX #2A4FDA */
+    /* === CISEC Design Tokens === */
+    /* Marca oficial Cisec — Pantone 2935 C / HEX #2A4FDA */
 
     /* Primary palette (immutable brand) */
-    --sebrae-blue: 228 70% 51%;        /* SEBRAE Blue #2A4FDA */
-    --sebrae-orange: 228 70% 51%;       /* alias mantido — usa azul institucional */
+    --cisec-blue: 228 70% 51%;        /* CISEC Blue #2A4FDA */
+    --cisec-orange: 228 70% 51%;       /* alias mantido — usa azul institucional */
 
-    /* Extended SEBRAE blue scale */
-    --sebrae-blue-50: 228 90% 97%;
-    --sebrae-blue-100: 228 85% 92%;
-    --sebrae-blue-200: 228 80% 82%;
-    --sebrae-blue-300: 228 75% 70%;
-    --sebrae-blue-400: 228 72% 60%;
-    --sebrae-blue-500: 228 70% 51%;
-    --sebrae-blue-600: 228 72% 42%;
-    --sebrae-blue-700: 228 75% 32%;
+    /* Extended CISEC blue scale */
+    --cisec-blue-50: 228 90% 97%;
+    --cisec-blue-100: 228 85% 92%;
+    --cisec-blue-200: 228 80% 82%;
+    --cisec-blue-300: 228 75% 70%;
+    --cisec-blue-400: 228 72% 60%;
+    --cisec-blue-500: 228 70% 51%;
+    --cisec-blue-600: 228 72% 42%;
+    --cisec-blue-700: 228 75% 32%;
 
-    /* Secondary accent — ciano Sebrae (apoio) */
-    --sebrae-orange-50: 196 90% 96%;
-    --sebrae-orange-100: 196 88% 88%;
-    --sebrae-orange-200: 196 85% 75%;
-    --sebrae-orange-300: 196 82% 60%;
-    --sebrae-orange-400: 196 82% 48%;
-    --sebrae-orange-500: 196 85% 40%;
-    --sebrae-orange-600: 196 88% 30%;
+    /* Secondary accent — ciano Cisec (apoio) */
+    --cisec-orange-50: 196 90% 96%;
+    --cisec-orange-100: 196 88% 88%;
+    --cisec-orange-200: 196 85% 75%;
+    --cisec-orange-300: 196 82% 60%;
+    --cisec-orange-400: 196 82% 48%;
+    --cisec-orange-500: 196 85% 40%;
+    --cisec-orange-600: 196 88% 30%;
 
     /* Complementary colors */
-    --sebrae-comp-blue-light: 228 90% 88%;
-    --sebrae-comp-blue-mid: 228 70% 65%;
-    --sebrae-comp-yellow: 46 98% 60%;
-    --sebrae-comp-gold: 42 90% 55%;
-    --sebrae-comp-red: 0 78% 52%;
-    --sebrae-comp-indigo: 245 75% 55%;
-    --sebrae-comp-lime: 152 70% 45%;
+    --cisec-comp-blue-light: 228 90% 88%;
+    --cisec-comp-blue-mid: 228 70% 65%;
+    --cisec-comp-yellow: 46 98% 60%;
+    --cisec-comp-gold: 42 90% 55%;
+    --cisec-comp-red: 0 78% 52%;
+    --cisec-comp-indigo: 245 75% 55%;
+    --cisec-comp-lime: 152 70% 45%;
 
     /* ===== LIGHT MODE (default) ===== */
     --background: 210 25% 99%;
@@ -76,7 +76,7 @@
     --muted-foreground: 228 12% 42%;
     --accent: 228 90% 96%;
     --accent-foreground: 228 70% 25%;
-    /* Card icon surface — #84F4BC (verde menta SEBRAE) */
+    /* Card icon surface — #84F4BC (verde menta CISEC) */
     --card-icon: 196 83% 46%;
     --card-icon-foreground: 0 0% 100%;
     --destructive: 0 78% 52%;
@@ -100,9 +100,9 @@
     --info-foreground: 0 0% 100%;
     --info-bg: 228 90% 96%;
 
-    /* SEBRAE button accent — texto sobre azul institucional (rgb 231,247,158) */
-    --sebrae-btn-fg: 71 85% 79%;
-    --sebrae-btn-hover: 226 78% 40%; /* #183ab8 */
+    /* CISEC button accent — texto sobre azul institucional (rgb 231,247,158) */
+    --cisec-btn-fg: 71 85% 79%;
+    --cisec-btn-hover: 226 78% 40%; /* #183ab8 */
 
     /* Sidebar – light */
     --header-background: 228 70% 51%;
@@ -293,23 +293,23 @@
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -4px hsl(0 0% 0% / 0.15);
     --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.35), 0 8px 10px -6px hsl(0 0% 0% / 0.15);
 
-    /* SEBRAE scales – dark adjusted */
-    --sebrae-blue-50: 228 40% 14%;
-    --sebrae-blue-100: 228 45% 20%;
-    --sebrae-blue-200: 228 50% 30%;
-    --sebrae-blue-300: 228 60% 45%;
-    --sebrae-blue-400: 228 70% 55%;
-    --sebrae-blue-500: 228 75% 65%;
-    --sebrae-blue-600: 228 78% 75%;
-    --sebrae-blue-700: 228 80% 85%;
+    /* CISEC scales – dark adjusted */
+    --cisec-blue-50: 228 40% 14%;
+    --cisec-blue-100: 228 45% 20%;
+    --cisec-blue-200: 228 50% 30%;
+    --cisec-blue-300: 228 60% 45%;
+    --cisec-blue-400: 228 70% 55%;
+    --cisec-blue-500: 228 75% 65%;
+    --cisec-blue-600: 228 78% 75%;
+    --cisec-blue-700: 228 80% 85%;
 
-    --sebrae-orange-50: 196 40% 14%;
-    --sebrae-orange-100: 196 45% 20%;
-    --sebrae-orange-200: 196 55% 30%;
-    --sebrae-orange-300: 196 65% 45%;
-    --sebrae-orange-400: 196 75% 55%;
-    --sebrae-orange-500: 196 80% 65%;
-    --sebrae-orange-600: 196 85% 75%;
+    --cisec-orange-50: 196 40% 14%;
+    --cisec-orange-100: 196 45% 20%;
+    --cisec-orange-200: 196 55% 30%;
+    --cisec-orange-300: 196 65% 45%;
+    --cisec-orange-400: 196 75% 55%;
+    --cisec-orange-500: 196 80% 65%;
+    --cisec-orange-600: 196 85% 75%;
   }
 }
 
@@ -405,29 +405,29 @@
     line-height: 1.2rem;
   }
 
-  .sebrae-container {
+  .cisec-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  .sebrae-section {
+  .cisec-section {
     @apply py-8 md:py-12;
   }
 
-  .sebrae-card {
+  .cisec-card {
     @apply bg-card rounded-lg border border-border p-6 transition-all duration-200;
     box-shadow: var(--shadow-sm);
   }
 
-  .sebrae-card:hover {
+  .cisec-card:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-2px);
     @apply border-primary/20;
   }
 
   /* Foco por teclado consistente para cards e elementos interativos */
-  .sebrae-card:focus-visible,
-  .sebrae-card a:focus-visible,
-  .sebrae-card button:focus-visible,
+  .cisec-card:focus-visible,
+  .cisec-card a:focus-visible,
+  .cisec-card button:focus-visible,
   a:focus-visible,
   button:focus-visible,
   [role="button"]:focus-visible,
@@ -439,54 +439,54 @@
     border-radius: var(--radius, 0.5rem);
   }
 
-  /* Cards clicáveis (links/botões que envolvem .sebrae-card) */
-  a.sebrae-card:focus-visible,
-  button.sebrae-card:focus-visible {
+  /* Cards clicáveis (links/botões que envolvem .cisec-card) */
+  a.cisec-card:focus-visible,
+  button.cisec-card:focus-visible {
     transform: translateY(-2px);
     @apply border-primary/40;
   }
 
-  .sebrae-card-hover {
-    @apply sebrae-card transition-all duration-200;
+  .cisec-card-hover {
+    @apply cisec-card transition-all duration-200;
   }
 
-  .sebrae-card-hover:hover {
+  .cisec-card-hover:hover {
     box-shadow: var(--shadow-md);
     @apply border-primary/20;
   }
 
-  .sebrae-badge {
+  .cisec-badge {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
 
-  .sebrae-badge-primary {
-    @apply sebrae-badge bg-primary text-primary-foreground;
+  .cisec-badge-primary {
+    @apply cisec-badge bg-primary text-primary-foreground;
   }
 
-  .sebrae-badge-secondary {
-    @apply sebrae-badge bg-secondary text-secondary-foreground;
+  .cisec-badge-secondary {
+    @apply cisec-badge bg-secondary text-secondary-foreground;
   }
 
-  .sebrae-badge-success {
-    @apply sebrae-badge;
+  .cisec-badge-success {
+    @apply cisec-badge;
     background: hsl(var(--success-bg));
     color: hsl(var(--success));
   }
 
-  .sebrae-badge-warning {
-    @apply sebrae-badge;
+  .cisec-badge-warning {
+    @apply cisec-badge;
     background: hsl(var(--warning-bg));
     color: hsl(var(--warning));
   }
 
-  .sebrae-badge-error {
-    @apply sebrae-badge;
+  .cisec-badge-error {
+    @apply cisec-badge;
     background: hsl(var(--error-bg));
     color: hsl(var(--error));
   }
 
-  .sebrae-badge-info {
-    @apply sebrae-badge;
+  .cisec-badge-info {
+    @apply cisec-badge;
     background: hsl(var(--info-bg));
     color: hsl(var(--info));
   }

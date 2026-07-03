@@ -68,7 +68,7 @@ export function ComponentPreview({
   const [showCode, setShowCode] = useState(false);
 
   return (
-    <div className="sebrae-card mb-8 animate-fade-in">
+    <div className="cisec-card mb-8 animate-fade-in">
       <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
       {description && <p className="text-sm text-muted-foreground mb-4">{description}</p>}
 

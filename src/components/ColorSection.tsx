@@ -111,7 +111,7 @@ export default function ColorSection() {
   return (
     <>
       {/* ===== PALETA PRINCIPAL ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <Palette size={18} className="text-primary" />
           <h4 className="text-sm font-semibold">Paleta principal — Azul Céu Brasileiro</h4>
@@ -186,7 +186,7 @@ export default function ColorSection() {
       </div>
 
       {/* ===== CORES COMPLEMENTARES DO MANUAL ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <SwatchBook size={18} className="text-primary" />
           <h4 className="text-sm font-semibold">Cores Complementares — Acentos</h4>
@@ -214,7 +214,7 @@ export default function ColorSection() {
       </div>
 
       {/* ===== CORES SEMÂNTICAS ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <Layers size={18} className="text-primary" />
           <h4 className="text-sm font-semibold">Cores semânticas (feedback)</h4>
@@ -297,7 +297,7 @@ export default function ColorSection() {
       </div>
 
       {/* ===== SUPERFÍCIES ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-3">Superfícies e fundos</h4>
         <p className="text-xs text-muted-foreground mb-4">
           Superfícies neutras com leve tinta do azul primário, garantindo coerência cromática em todo o sistema.
@@ -328,7 +328,7 @@ export default function ColorSection() {
       </div>
 
       {/* ===== GRADIENTES ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <Droplets size={18} className="text-primary" />
           <h4 className="text-sm font-semibold">Gradientes do sistema</h4>
@@ -384,7 +384,7 @@ export default function ColorSection() {
       </div>
 
       {/* ===== UTILIZAÇÃO SISTÊMICA ===== */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-4">Utilização sistêmica das cores</h4>
         <p className="text-xs text-muted-foreground mb-3">
           Distribuição recomendada <strong>60-30-10</strong>:

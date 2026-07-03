@@ -81,7 +81,7 @@ export const kpiAtendimento = {
 /** Opções dos filtros — apenas exemplos institucionais. */
 export const filterOptions = {
   ppa: ["Todos", "PPA 2022-2026", "PPA 2026-2030"],
-  iniciativa: ["Todos", "Empretec", "ALI", "Sebraetec", "Negócio a Negócio"],
+  iniciativa: ["Todos", "Empretec", "ALI", "Cisectec", "Negócio a Negócio"],
   acao: ["Todos", "Capacitação", "Mentoria", "Consultoria", "Eventos"],
   natureza: [
     "Todos",
@@ -90,9 +90,9 @@ export const filterOptions = {
     "Serviços Contratados",
     "Benefícios Sociais",
   ],
-  unidade: ["Todos", "DIRAE/SEBRAE-CE", "DIFIN/SEBRAE-CE", "DIRSU/SEBRAE-CE"],
+  unidade: ["Todos", "DIRAE/CISEC-CE", "DIFIN/CISEC-CE", "DIRSU/CISEC-CE"],
   eixo: ["Todos", "Competitividade", "Educação Empreendedora", "Inovação", "Mercados"],
-  programa: ["Todos", "ALI 4.0", "Sebraetec", "Brasil Mais", "Empretec"],
+  programa: ["Todos", "ALI 4.0", "Cisectec", "Brasil Mais", "Empretec"],
   gestor: ["Todos", "Ana Pereira", "Bruno Lima", "Carla Rocha", "Diego Castro"],
 } as const;
 

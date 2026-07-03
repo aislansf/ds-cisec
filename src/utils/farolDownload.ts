@@ -10,14 +10,14 @@ import {
   kpiDespesas, kpiReceitas, kpiAtendimento,
 } from "@/data/farolEstrategico";
 
-const DS_URL = "https://sebrae-ce.dscreator.com.br";
+const DS_URL = "https://cisec-ce.dscreator.com.br";
 const TEMPLATE_PATH = "/templates/farol-estrategico";
 
 /* ─────────── READMEs ─────────── */
 function readmeReact() {
   return `# Farol Estratégico — Versão React
 
-Template do **Design System Sebrae-CE** inspirado em painéis Power BI para
+Template do **Design System Cisec-CE** inspirado em painéis Power BI para
 acompanhamento orçamentário e indicadores estratégicos.
 
 > 🔗 **Referência viva:** ${DS_URL}${TEMPLATE_PATH}
@@ -47,7 +47,7 @@ farol-estrategico/
     ├── pages/FarolEstrategicoPage.tsx
     ├── data/farolEstrategico.ts
     ├── components/bi/BISkeletons.tsx
-    └── hooks/  ·  assets/sebrae.ts
+    └── hooks/  ·  assets/cisec.ts
 \`\`\`
 
 ## Customização
@@ -175,7 +175,7 @@ const indexHtml = `<!doctype html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farol Estratégico — Sebrae-CE</title>
+    <title>Farol Estratégico — Cisec-CE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -230,12 +230,12 @@ export function useTheme() {
 }
 `;
 
-const sebraeAssetsStub = `// Substitua pelos arquivos oficiais de marca em assets/ se necessário.
+const cisecAssetsStub = `// Substitua pelos arquivos oficiais de marca em assets/ se necessário.
 const ph = "data:image/svg+xml;utf8," + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40"><text x="0" y="28" font-family="Poppins,sans-serif" font-size="22" font-weight="700" fill="#003366">Sebrae</text></svg>'
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40"><text x="0" y="28" font-family="Poppins,sans-serif" font-size="22" font-weight="700" fill="#003366">Cisec</text></svg>'
 );
-export const sebraeCor = ph;
-export const sebraeWhite = ph;
+export const cisecCor = ph;
+export const cisecWhite = ph;
 `;
 
 export async function downloadFarolReact() {
@@ -259,7 +259,7 @@ export async function downloadFarolReact() {
   src.file("components/bi/BISkeletons.tsx", biSkeletonsSource);
   src.file("hooks/use-mobile.tsx", useMobileHook);
   src.file("hooks/useTheme.ts", useThemeHook);
-  src.file("assets/sebrae.ts", sebraeAssetsStub);
+  src.file("assets/cisec.ts", cisecAssetsStub);
 
   const blob = await zip.generateAsync({ type: "blob", compression: "DEFLATE" });
   saveAs(blob, "farol-estrategico-react.zip");
@@ -278,7 +278,7 @@ const vanillaHtml = `<!doctype html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farol Estratégico — Sebrae-CE</title>
+  <title>Farol Estratégico — Cisec-CE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -290,7 +290,7 @@ const vanillaHtml = `<!doctype html>
   <header class="topbar">
     <div class="brand">
       <span class="brand-dot"></span>
-      <div><strong>Farol Estratégico</strong><small>Painel Institucional · Sebrae-CE</small></div>
+      <div><strong>Farol Estratégico</strong><small>Painel Institucional · Cisec-CE</small></div>
     </div>
     <nav class="breadcrumb" aria-label="Navegação">
       <a href="#">Início</a> › <a href="#">Painéis Estratégicos</a> › <span aria-current="page">Farol Estratégico</span>
@@ -330,7 +330,7 @@ const vanillaHtml = `<!doctype html>
 </html>
 `;
 
-const vanillaCss = `/* Tokens HSL do Design System Sebrae-CE */
+const vanillaCss = `/* Tokens HSL do Design System Cisec-CE */
 :root {
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;

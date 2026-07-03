@@ -17,9 +17,9 @@ describe("SidebarMenuPreview — 320px / logo 60×60", () => {
     Object.defineProperty(window, "innerHeight", { writable: true, value: 1600 });
   });
 
-  it("renderiza o logo SEBRAE-CE em 60×60 (h-[60px] w-[60px]) em todos os breakpoints", () => {
+  it("renderiza o logo CISEC-CE em 60×60 (h-[60px] w-[60px]) em todos os breakpoints", () => {
     render(<SidebarMenuPreview />);
-    const logo = screen.getByAltText("SEBRAE-CE");
+    const logo = screen.getByAltText("CISEC-CE");
     expect(logo.className).toMatch(/(^|\s)h-\[60px\](\s|$)/);
     expect(logo.className).toMatch(/(^|\s)w-\[60px\](\s|$)/);
     expect(logo.className).toMatch(/sm:h-\[60px\]/);

@@ -7,8 +7,8 @@ export default function TokensPage() {
   return (
     <div>
       <SEO
-        title="Design Tokens — Design System SEBRAE"
-        description="CSS Custom Properties oficiais do SEBRAE-CE: cores, tipografia, espaçamento, sombras e breakpoints documentados para light e dark mode."
+        title="Design Tokens — Design System CISEC"
+        description="CSS Custom Properties oficiais do CISEC-CE: cores, tipografia, espaçamento, sombras e breakpoints documentados para light e dark mode."
         path="/tokens"
       />
       <PageHeader
@@ -42,7 +42,7 @@ export default function TokensPage() {
       />
 
       {/* Dark mode explanation */}
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h3 className="font-semibold mb-2">Como funciona o Dark Mode</h3>
         <p className="text-sm text-muted-foreground mb-3">
           O sistema utiliza a estratégia <code className="bg-muted px-1.5 py-0.5 rounded text-xs">class</code> do Tailwind. 
@@ -59,7 +59,7 @@ export default function TokensPage() {
       {tokenGroups.map(group => (
         <div key={group.id}>
           <SectionHeader id={group.id} title={group.title} description={'description' in group ? (group as any).description : undefined} />
-          <div className="sebrae-card mb-8">
+          <div className="cisec-card mb-8">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -103,7 +103,7 @@ export default function TokensPage() {
             </div>
           </div>
           {group.id === "breakpoints" && (
-            <div className="sebrae-card mb-8 space-y-5">
+            <div className="cisec-card mb-8 space-y-5">
               <div>
                 <h4 className="font-semibold mb-1">Como usar na prática</h4>
                 <p className="text-sm text-muted-foreground">
@@ -175,7 +175,7 @@ export default function TokensPage() {
         </div>
       ))}
 
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <h4 className="font-semibold mb-2">Durations & Easings</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">

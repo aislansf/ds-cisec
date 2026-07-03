@@ -1,10 +1,10 @@
 import { useTheme } from "@/hooks/useTheme";
-import { sebraeCor as logoColor, sebraeWhite as logoWhite } from "@/assets/sebrae";
+import { cisecCor as logoColor, cisecWhite as logoWhite } from "@/assets/cisec";
 import { cn } from "@/lib/utils";
 
 type Variant = "auto" | "color" | "white" | "mono";
 
-interface SebraeLogoProps {
+interface CisecLogoProps {
   /**
    * "auto"  — alterna entre cor (light) e branco (dark) via tema
    * "color" — sempre colorido
@@ -25,19 +25,19 @@ interface SebraeLogoProps {
 }
 
 /**
- * Marca institucional do SEBRAE-CE.
+ * Marca institucional do CISEC-CE.
  * Sempre usa object-contain dentro de uma caixa width×height para preservar
  * proporção em qualquer breakpoint, sem distorção.
  */
-export function SebraeLogo({
+export function CisecLogo({
   variant = "auto",
   width = 100,
   height = 80,
   opacity,
   centered = true,
   className,
-  alt = "SEBRAE-CE",
-}: SebraeLogoProps) {
+  alt = "CISEC-CE",
+}: CisecLogoProps) {
   const { theme } = useTheme();
   const src =
     variant === "white"
@@ -72,4 +72,4 @@ export function SebraeLogo({
   );
 }
 
-export default SebraeLogo;
+export default CisecLogo;

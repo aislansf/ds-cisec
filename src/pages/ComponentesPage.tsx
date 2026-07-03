@@ -15,8 +15,8 @@ export default function ComponentesPage() {
   return (
     <div>
       <SEO
-        title="Componentes — Design System SEBRAE"
-        description="Biblioteca de componentes do Design System SEBRAE-CE: botões, inputs, cards, modais, tabelas e mais — com preview, código e diretrizes de uso e acessibilidade."
+        title="Componentes — Design System CISEC"
+        description="Biblioteca de componentes do Design System CISEC-CE: botões, inputs, cards, modais, tabelas e mais — com preview, código e diretrizes de uso e acessibilidade."
         path="/componentes"
       />
       <PageHeader
@@ -635,7 +635,7 @@ function InputSection() {
   {/* E-mail com texto auxiliar */}
   <div>
     <label className="block text-sm font-medium mb-1.5">E-mail</label>
-    <input type="email" placeholder="exemplo@ce.sebrae.com.br"
+    <input type="email" placeholder="exemplo@ce.cisec.com.br"
       className="w-full border border-input rounded px-3 py-2 text-sm bg-background
              focus:outline-none focus:ring-2 focus:ring-ring transition-colors" />
     <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
@@ -686,7 +686,7 @@ function InputSection() {
           <label className="block text-sm font-medium mb-1.5">E-mail</label>
           <input
             type="email"
-            placeholder="exemplo@ce.sebrae.com.br"
+            placeholder="exemplo@ce.cisec.com.br"
             className="w-full border border-input rounded px-3 py-2 text-sm bg-background focus:outline-none focus:ring-2 focus:ring-ring transition-colors"
           />
           <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
@@ -960,27 +960,27 @@ function BadgeSection() {
       whenToUse={["Status de itens", "Categorias", "Contadores"]}
       whenNotToUse={["Texto longo", "Ações clicáveis (use botão)"]}
       code={`<div className="flex flex-wrap gap-2">
-  <span className="sebrae-badge-primary">Ativo</span>
-  <span className="sebrae-badge-secondary">Destaque</span>
-  <span className="sebrae-badge-success">Concluído</span>
-  <span className="sebrae-badge-warning">Pendente</span>
-  <span className="sebrae-badge-error">Erro</span>
-  <span className="sebrae-badge-info">Informação</span>
+  <span className="cisec-badge-primary">Ativo</span>
+  <span className="cisec-badge-secondary">Destaque</span>
+  <span className="cisec-badge-success">Concluído</span>
+  <span className="cisec-badge-warning">Pendente</span>
+  <span className="cisec-badge-error">Erro</span>
+  <span className="cisec-badge-info">Informação</span>
   {/* "Fundo claro" reutiliza o estilo da pílula Informação */}
-  <span className="sebrae-badge-info">Fundo claro</span>
+  <span className="cisec-badge-info">Fundo claro</span>
   <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border border-border text-foreground">
     Neutro
   </span>
 </div>`}
     >
       <div className="flex flex-wrap gap-2">
-        <span className="sebrae-badge-primary">Ativo</span>
-        <span className="sebrae-badge-secondary">Destaque</span>
-        <span className="sebrae-badge-success">Concluído</span>
-        <span className="sebrae-badge-warning">Pendente</span>
-        <span className="sebrae-badge-error">Erro</span>
-        <span className="sebrae-badge-info">Informação</span>
-        <span className="sebrae-badge-info">Fundo claro</span>
+        <span className="cisec-badge-primary">Ativo</span>
+        <span className="cisec-badge-secondary">Destaque</span>
+        <span className="cisec-badge-success">Concluído</span>
+        <span className="cisec-badge-warning">Pendente</span>
+        <span className="cisec-badge-error">Erro</span>
+        <span className="cisec-badge-info">Informação</span>
+        <span className="cisec-badge-info">Fundo claro</span>
         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border border-border text-foreground">Neutro</span>
       </div>
     </ComponentPreview>
@@ -1106,7 +1106,7 @@ function CardSection() {
 const tableProducts = [
   { name: "ALI", category: "Inovação", price: "R$ 99.000", stock: 120, rating: 4.5, status: "Ativo" },
   { name: "Empretec", category: "Empreendedorismo", price: "R$ 59.990", stock: 80, rating: 4.2, status: "Ativo" },
-  { name: "Sebraetec", category: "Tecnologia", price: "R$ 129.000", stock: 0, rating: 4.0, status: "Suspenso" },
+  { name: "Cisectec", category: "Tecnologia", price: "R$ 129.000", stock: 0, rating: 4.0, status: "Suspenso" },
   { name: "SEI - Seu Negócio", category: "Capacitação", price: "R$ 39.500", stock: 250, rating: 4.7, status: "Ativo" },
   { name: "Negócio a Negócio", category: "Atendimento", price: "R$ 149.000", stock: 35, rating: 4.3, status: "Ativo" },
 ];
@@ -1115,18 +1115,18 @@ const tableProducts2 = [
   { name: "MEI - Microempreendedor", category: "Formalização", price: "R$ 49.000", stock: 200, rating: 4.6, status: "Ativo" },
   { name: "Brasil Mais", category: "Produtividade", price: "R$ 29.990", stock: 150, rating: 4.3, status: "Ativo" },
   { name: "Na Medida", category: "Capacitação", price: "R$ 89.000", stock: 60, rating: 4.1, status: "Estoque Limitado" },
-  { name: "Sebrae Delas", category: "Mulheres", price: "R$ 349.000", stock: 30, rating: 4.8, status: "Ativo" },
+  { name: "Cisec Delas", category: "Mulheres", price: "R$ 349.000", stock: 30, rating: 4.8, status: "Ativo" },
   { name: "Compras Públicas", category: "Mercado", price: "R$ 499.000", stock: 10, rating: 4.4, status: "Novo" },
 ];
 
 function StatusBadge({ status }: { status: string }) {
   const map: Record<string, string> = {
-    "Ativo": "sebrae-badge-success",
-    "Suspenso": "sebrae-badge-error",
-    "Estoque Limitado": "sebrae-badge-warning",
-    "Novo": "sebrae-badge-info",
+    "Ativo": "cisec-badge-success",
+    "Suspenso": "cisec-badge-error",
+    "Estoque Limitado": "cisec-badge-warning",
+    "Novo": "cisec-badge-info",
   };
-  return <span className={map[status] || "sebrae-badge-secondary"}>{status}</span>;
+  return <span className={map[status] || "cisec-badge-secondary"}>{status}</span>;
 }
 
 function KebabMenu({ onEdit, onDelete, onView }: { onEdit?: () => void; onDelete?: () => void; onView?: () => void }) {
@@ -1187,7 +1187,7 @@ const tdClass = "py-3 px-4 text-sm";
 
 <div className="overflow-x-auto">
   <table className="w-full text-sm">
-    <caption className="sr-only">Programas do SEBRAE-CE</caption>
+    <caption className="sr-only">Programas do CISEC-CE</caption>
     <thead>
       <tr className="border-b-2 border-border">
         <th scope="col" className={thClass}>Programa</th>
@@ -1219,7 +1219,7 @@ const tdClass = "py-3 px-4 text-sm";
       >
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <caption className="sr-only">Programas do SEBRAE-CE</caption>
+            <caption className="sr-only">Programas do CISEC-CE</caption>
             <thead>
               <tr className="border-b-2 border-border">
                 <th scope="col" className={thClass}>Programa</th>
@@ -1703,7 +1703,7 @@ const [expandedRow, setExpandedRow] = useState<number | null>(null);
   <thead>{/* ... */}</thead>
   <tbody>{/* ... */}</tbody>
   <caption className="caption-bottom mt-3 text-xs text-muted-foreground text-left">
-    Lista de programas educacionais do SEBRAE-CE
+    Lista de programas educacionais do CISEC-CE
   </caption>
 </table>`}
       >
@@ -1728,7 +1728,7 @@ const [expandedRow, setExpandedRow] = useState<number | null>(null);
               ))}
             </tbody>
             <caption className="caption-bottom mt-3 text-xs text-muted-foreground text-left">
-              Lista de programas educacionais do SEBRAE-CE
+              Lista de programas educacionais do CISEC-CE
             </caption>
           </table>
         </div>
@@ -1843,9 +1843,9 @@ function TableWithCheckbox() {
 function AccordionSection() {
   const [open, setOpen] = useState<number | null>(0);
   const items = [
-    { title: "O que é o Sebrae?", content: "O Sebrae é uma entidade privada sem fins lucrativos que promove a competitividade e o desenvolvimento sustentável dos pequenos negócios brasileiros, oferecendo capacitação, consultoria e acesso a mercados." },
-    { title: "Como o Sebrae apoia o meu negócio?", content: "Por meio de cursos, consultorias, eventos, programas de inovação como ALI e Sebraetec, além de orientação para formalização do MEI e acesso a crédito e novos mercados." },
-    { title: "Quais programas e soluções estão disponíveis?", content: "Empretec, ALI (Agentes Locais de Inovação), Sebraetec, Brasil Mais, Sebrae Delas, Compras Públicas, Negócio a Negócio e SEI - Seu Negócio, entre outras soluções para pequenos negócios." },
+    { title: "O que é o Cisec?", content: "O Cisec é uma entidade privada sem fins lucrativos que promove a competitividade e o desenvolvimento sustentável dos pequenos negócios brasileiros, oferecendo capacitação, consultoria e acesso a mercados." },
+    { title: "Como o Cisec apoia o meu negócio?", content: "Por meio de cursos, consultorias, eventos, programas de inovação como ALI e Cisectec, além de orientação para formalização do MEI e acesso a crédito e novos mercados." },
+    { title: "Quais programas e soluções estão disponíveis?", content: "Empretec, ALI (Agentes Locais de Inovação), Cisectec, Brasil Mais, Cisec Delas, Compras Públicas, Negócio a Negócio e SEI - Seu Negócio, entre outras soluções para pequenos negócios." },
   ];
 
   return (
@@ -1858,9 +1858,9 @@ function AccordionSection() {
 import { ChevronDown } from "lucide-react";
 
 const items = [
-  { title: "O que é o Sebrae?", content: "O Sebrae é uma entidade privada sem fins lucrativos..." },
-  { title: "Como o Sebrae apoia o meu negócio?", content: "Por meio de cursos, consultorias, eventos..." },
-  { title: "Quais programas e soluções estão disponíveis?", content: "Empretec, ALI, Sebraetec, Brasil Mais..." },
+  { title: "O que é o Cisec?", content: "O Cisec é uma entidade privada sem fins lucrativos..." },
+  { title: "Como o Cisec apoia o meu negócio?", content: "Por meio de cursos, consultorias, eventos..." },
+  { title: "Quais programas e soluções estão disponíveis?", content: "Empretec, ALI, Cisectec, Brasil Mais..." },
 ];
 const [open, setOpen] = useState<number | null>(0);
 
@@ -2802,7 +2802,7 @@ function KebabMenu() {
         <div className="flex flex-col items-center gap-2">
           <span className="text-xs text-muted-foreground">Em linha de tabela</span>
           <div className="flex items-center gap-3 border border-border rounded-md px-3 py-2 bg-card">
-            <span className="text-sm text-foreground">Programa Sebrae Delas</span>
+            <span className="text-sm text-foreground">Programa Cisec Delas</span>
             <KebabDemo onAction={setLastAction} />
           </div>
         </div>
@@ -3178,7 +3178,7 @@ const [searchVal, setSearchVal] = useState("");
             >
               <option value="todos">Todos</option>
               <option value="Empretec">Empretec</option>
-              <option value="Sebraetec">Sebraetec</option>
+              <option value="Cisectec">Cisectec</option>
               <option value="SEI - Seu Negócio">SEI</option>
               <option value="Negócio a Negócio">Negócio a Negócio</option>
             </select>
@@ -3698,7 +3698,7 @@ function DescriptionListSection() {
     { term: "Programa", value: "ALI – Agentes Locais de Inovação" },
     { term: "Empresa atendida", value: "Padaria Pão Quente ME" },
     { term: "CNPJ", value: "12.345.678/0001-90" },
-    { term: "Porte", value: <span className="sebrae-badge-success">Microempresa</span> },
+    { term: "Porte", value: <span className="cisec-badge-success">Microempresa</span> },
     { term: "Setor", value: "Alimentos e Bebidas" },
   ].map((item, i) => (
     <div key={i} className="flex flex-col sm:flex-row sm:items-center px-4 py-3 gap-1 sm:gap-0">
@@ -3711,7 +3711,7 @@ function DescriptionListSection() {
 {/* Variante em grid (2 colunas) */}
 <dl className="grid grid-cols-1 md:grid-cols-2 gap-4">
   {[
-    { term: "Código do atendimento", value: "SEBRAE-CE-2026-00312" },
+    { term: "Código do atendimento", value: "CISEC-CE-2026-00312" },
     { term: "Município", value: "Fortaleza – CE" },
   ].map((item, i) => (
     <div key={i} className="bg-muted/30 rounded-lg px-4 py-3">
@@ -3728,7 +3728,7 @@ function DescriptionListSection() {
             { term: "Programa", value: "ALI – Agentes Locais de Inovação" },
             { term: "Empresa atendida", value: "Padaria Pão Quente ME" },
             { term: "CNPJ", value: "12.345.678/0001-90" },
-            { term: "Porte", value: <span className="sebrae-badge-success">Microempresa</span> },
+            { term: "Porte", value: <span className="cisec-badge-success">Microempresa</span> },
             { term: "Setor", value: "Alimentos e Bebidas" },
             { term: "Ciclo de atendimento", value: "01/03/2026 a 30/11/2026" },
             { term: "Agente responsável", value: "Carla Mendes Rocha" },
@@ -3745,8 +3745,8 @@ function DescriptionListSection() {
           <p className="text-sm font-medium mb-3">Variante em grid (2 colunas)</p>
           <dl className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { term: "Código do atendimento", value: "SEBRAE-CE-2026-00312" },
-              { term: "Solução", value: "Sebraetec - Consultoria Tecnológica" },
+              { term: "Código do atendimento", value: "CISEC-CE-2026-00312" },
+              { term: "Solução", value: "Cisectec - Consultoria Tecnológica" },
               { term: "Município", value: "Fortaleza – CE" },
               { term: "UF", value: "Ceará" },
               { term: "Modalidade", value: "Presencial + EAD" },
@@ -3872,7 +3872,7 @@ function StatsCardsSection() {
             {[
               { name: "Empretec", value: "R$ 3,1B", pct: 100 },
               { name: "SEI - Seu Negócio", value: "R$ 2,4B", pct: 77 },
-              { name: "Sebraetec", value: "R$ 1,8B", pct: 58 },
+              { name: "Cisectec", value: "R$ 1,8B", pct: 58 },
               { name: "Negócio a Negócio", value: "R$ 890M", pct: 29 },
               { name: "Brasil Mais", value: "R$ 420M", pct: 14 },
             ].map((item, i) => (
@@ -3924,7 +3924,7 @@ function StatsCardsSection() {
           <div>
             <span className="text-sm text-muted-foreground block mb-2">Ações pendentes</span>
             <div className="space-y-2">
-              {["Aprovar atendimento Empretec #3421", "Revisar parecer Sebraetec #1872", "Assinar termo Brasil Mais #099"].map((item, i) => (
+              {["Aprovar atendimento Empretec #3421", "Revisar parecer Cisectec #1872", "Assinar termo Brasil Mais #099"].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-sm">
                   <div className="w-1.5 h-1.5 rounded-full bg-warning shrink-0" />
                   <span className="truncate">{item}</span>

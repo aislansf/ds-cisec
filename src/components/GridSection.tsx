@@ -128,7 +128,7 @@ export default function GridSection() {
   return (
     <div>
       {/* Spacing scale */}
-      <div className="sebrae-card mb-6">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-4">Escala de espaçamento</h4>
         <div className="space-y-2">
           {[
@@ -172,7 +172,7 @@ export default function GridSection() {
       {activeTab === "structural" && (
         <div className="space-y-8">
           {/* Desktop */}
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Monitor size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Desktop (≥ 1280px)</h4>
@@ -186,7 +186,7 @@ export default function GridSection() {
           </div>
 
           {/* Tablet */}
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Tablet size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Tablet (768px – 1279px)</h4>
@@ -201,7 +201,7 @@ export default function GridSection() {
           </div>
 
           {/* Mobile */}
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Smartphone size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Mobile (≤ 767px)</h4>
@@ -216,7 +216,7 @@ export default function GridSection() {
           </div>
 
           {/* Summary table */}
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-3">Resumo de grids por breakpoint</h4>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -260,7 +260,7 @@ export default function GridSection() {
             Exemplos de layout de dashboard institucional para cada breakpoint. A grid define a distribuição de KPIs, gráficos, tabelas e sidebar.
           </p>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Monitor size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Desktop — 12 colunas com sidebar</h4>
@@ -268,7 +268,7 @@ export default function GridSection() {
             <DashboardSkeleton device="Desktop ≥ 1280px — sidebar fixa + conteúdo em 12 cols" cols={12} sidebar />
           </div>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Tablet size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Tablet — 8 colunas sem sidebar</h4>
@@ -278,7 +278,7 @@ export default function GridSection() {
             </div>
           </div>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <div className="flex items-center gap-2 mb-4">
               <Smartphone size={18} className="text-primary" />
               <h4 className="text-sm font-semibold">Mobile — 4 colunas empilhadas</h4>
@@ -289,7 +289,7 @@ export default function GridSection() {
           </div>
 
           {/* Best practices */}
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-3">Boas práticas para dashboards</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex gap-2"><span className="text-success font-bold">✓</span> KPIs em linha no topo, ocupando largura total em 3–4 colunas iguais</li>
@@ -310,7 +310,7 @@ export default function GridSection() {
             Exemplos de como os elementos ocupam múltiplas colunas da grid para compor layouts de dashboard e páginas internas.
           </p>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-4">Composição em 12 colunas (Desktop)</h4>
             <SpanExample
               cols={12}
@@ -338,7 +338,7 @@ export default function GridSection() {
             />
           </div>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-4">Composição em 16 colunas (Desktop grande)</h4>
             <SpanExample
               cols={16}
@@ -355,7 +355,7 @@ export default function GridSection() {
             />
           </div>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-4">Composição em 8 colunas (Tablet)</h4>
             <div className="max-w-lg">
               <SpanExample
@@ -373,7 +373,7 @@ export default function GridSection() {
             </div>
           </div>
 
-          <div className="sebrae-card">
+          <div className="cisec-card">
             <h4 className="text-sm font-semibold mb-4">Composição em 4 colunas (Mobile)</h4>
             <div className="max-w-xs">
               <SpanExample

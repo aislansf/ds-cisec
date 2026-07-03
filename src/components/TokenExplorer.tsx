@@ -79,7 +79,7 @@ export default function TokenExplorer() {
   const [activeRadius, setActiveRadius] = useState("rounded-lg");
 
   return (
-    <div className="sebrae-card mb-10">
+    <div className="cisec-card mb-10">
       <div className="flex items-center justify-between gap-4 mb-5 pb-4 border-b border-border">
         <div>
           <h3 className="text-sm font-bold uppercase tracking-wider text-primary">Explorador de Tokens</h3>

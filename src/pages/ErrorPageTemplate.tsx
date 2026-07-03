@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, RefreshCw, Home, AlertTriangle, AlertCircle, Search } from "lucide-react";
-import { sebraeCor as sebraeLogoReduzida } from "@/assets/sebrae";
+import { cisecCor as cisecLogoReduzida } from "@/assets/cisec";
 
 type ErrorType = "404" | "500" | "generic";
 
@@ -39,7 +39,7 @@ export default function ErrorPageTemplate() {
   const content = errorContent[errorType];
 
   return (
-    <div className="min-h-screen bg-sebrae-blue-50 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-cisec-blue-50 flex flex-col items-center justify-center p-4">
       {/* Selector for demonstration purposes */}
       <div className="fixed top-6 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm p-1 rounded-full border border-border shadow-lg flex gap-1 z-50">
         {(["404", "500", "generic"] as ErrorType[]).map((type) => (
@@ -60,7 +60,7 @@ export default function ErrorPageTemplate() {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl border border-border overflow-hidden animate-in fade-in zoom-in duration-300">
         <div className="p-8 flex flex-col items-center text-center">
           {/* Logo */}
-          <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-12 w-auto mb-8" />
+          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-12 w-auto mb-8" />
           
           {/* Icon */}
           <div className="mb-6 p-4 bg-muted/30 rounded-full">
@@ -100,7 +100,7 @@ export default function ErrorPageTemplate() {
         {/* Footer info */}
         <div className="bg-muted/30 px-8 py-4 border-t border-border flex justify-between items-center text-[10px] text-muted-foreground">
           <span>ID da Sessão: 48f2-9bc1-55ea</span>
-          <span>© 2024 SEBRAE-CE</span>
+          <span>© 2024 CISEC-CE</span>
         </div>
       </div>
 

@@ -1,15 +1,15 @@
-# Design System SEBRAE
+# Design System CISEC
 
-> Guia visual, técnico e operacional do Design System SEBRAE-CE: padrões de UI, tokens, componentes, templates e modelos de BI para os produtos digitais do SEBRAE.
+> Guia visual, técnico e operacional do Design System CISEC-CE: padrões de UI, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC.
 
 O portal documenta fundamentos visuais, sistema de cores e tipografia, biblioteca de componentes, templates de telas e dashboards inspirados em Power BI.
 
 ## Fundamentos
 
-- [Início](/): Visão geral do Design System SEBRAE e índice de seções.
+- [Início](/): Visão geral do Design System CISEC e índice de seções.
 - [Fundamentos](/fundamentos): Tipografia, cores, ícones e princípios visuais.
 - [Tokens](/tokens): Design tokens (cores, espaçamento, tipografia, sombras, breakpoints).
-- [Marca](/marca): Identidade SEBRAE — uso da marca, reduções, áreas de segurança.
+- [Marca](/marca): Identidade CISEC — uso da marca, reduções, áreas de segurança.
 - [Conteúdo](/conteudo): Tom de voz e diretrizes editoriais.
 - [Acessibilidade](/acessibilidade): Boas práticas WCAG, ARIA e contraste.
 
@@ -26,6 +26,6 @@ O portal documenta fundamentos visuais, sistema de cores e tipografia, bibliotec
 
 ## Modelos de BI
 
-- [Modelos de BI](/modelos-bi): Hub de painéis analíticos do SEBRAE-CE.
+- [Modelos de BI](/modelos-bi): Hub de painéis analíticos do CISEC-CE.
 - [Farol Estratégico — BI](/modelos-bi/farol-estrategico/bi): Painel BI do Farol Estratégico.
 - [Farol Estratégico — Docs](/modelos-bi/farol-estrategico/docs): Documentação técnica e integração com Power BI.

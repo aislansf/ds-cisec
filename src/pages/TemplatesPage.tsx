@@ -28,16 +28,16 @@ import AuthTemplatesSection from "@/components/templates/AuthTemplates";
 import CardSignInSection from "@/components/templates/CardSignIn";
 import DashboardTemplatesSection from "@/components/templates/DashboardTemplates";
 import HubPaineisSection, { HubPaineisImageSection } from "@/components/templates/HubPaineisTemplate";
-import SebraeFooterSection from "@/components/templates/SebraeFooter";
-import sebraeLogoAsset from "@/assets/sebrae-logo-cor.png.asset.json";
-import sebraeLogoWhite from "@/assets/sebrae-logo-white.svg";
+import CisecFooterSection from "@/components/templates/CisecFooter";
+import cisecLogoAsset from "@/assets/cisec-logo-cor.png.asset.json";
+import cisecLogoWhite from "@/assets/cisec-logo-white.svg";
 import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
-const sebraeLogo = sebraeLogoAsset.url;
+const cisecLogo = cisecLogoAsset.url;
 const headerBusinessBg = headerBusinessBgAsset.url;
-const sebraeLogoCompleta = sebraeLogo;
-const sebraeLogoReduzida = sebraeLogo;
-const sebraeLogoCompleta2 = sebraeLogoWhite;
-const sebraeLogoReduzida2 = sebraeLogoWhite;
+const cisecLogoCompleta = cisecLogo;
+const cisecLogoReduzida = cisecLogo;
+const cisecLogoCompleta2 = cisecLogoWhite;
+const cisecLogoReduzida2 = cisecLogoWhite;
 import marcaGov from "@/assets/marca-gov.png";
 
 /* ─── Header variant type ─── */
@@ -67,10 +67,10 @@ export const headerVariants: HeaderVariant[] = [
   { id: "ext-full-right", title: "Público externo · Background descolado", description: "Versão externa com menu à direita e background Carnaval.", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
   { id: "ext-red-left", title: "Público externo · Background Tropical", description: "Versão externa com menu à direita e background Tropical", audience: "externo", brandStyle: "reduzida", menuPosition: "direita" },
   // Fundo claro — Programa e Gestão
-  { id: "claro-full", title: "Fundo claro · Marca completa com título e subtítulo", description: "Header com fundo dourado, marca completa SEBRAE-CE, título do programa e assinatura Gov.br.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: true },
-  { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa SEBRAE-CE e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
+  { id: "claro-full", title: "Fundo claro · Marca completa com título e subtítulo", description: "Header com fundo dourado, marca completa CISEC-CE, título do programa e assinatura Gov.br.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: true },
+  { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa CISEC-CE e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
   // Testeira para aplicação de arte
-  { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #16329C, marca SEBRAE branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#16329C" } },
+  { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #16329C, marca CISEC branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#16329C" } },
   { id: "int-testeira-art-blue", title: "Testeira · Aplicação de arte (Azul)", description: "Faixa fina (36-52px) com fundo #2A4FDA, menu à esquerda e ícone de modo escuro — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#2A4FDA" } },
   { id: "int-testeira-art-light", title: "Testeira · Aplicação de arte (Claro)", description: "Faixa fina (36-52px) com fundo branco, menu à esquerda e ícone de modo escuro na cor #16329C — ideal para aplicação de arte na testeira em fundo claro.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#FFFFFF", fg: "#16329C", border: true } },
   // Composição visual (negócios)
@@ -165,16 +165,16 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
     return (
       <div className="rounded-lg overflow-hidden border border-border">
         <div className={`${bg} flex items-center px-5 py-3 gap-4 min-h-[56px]`}>
-          {/* Logo SEBRAE-CE */}
+          {/* Logo CISEC-CE */}
           <div className="flex items-center gap-3 shrink-0">
             {variant.audience === "claro-completa" ? (
-              <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-[40px] w-auto" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[40px] w-auto" />
             ) : variant.audience === "claro-sem-gov" && variant.brandStyle === "completa" ? (
-              <img src={sebraeLogoCompleta2} alt="SEBRAE-CE" className="h-[38px] w-auto" />
+              <img src={cisecLogoCompleta2} alt="CISEC-CE" className="h-[38px] w-auto" />
             ) : variant.audience === "claro-sem-gov" && variant.brandStyle === "reduzida" ? (
-              <img src={sebraeLogoReduzida2} alt="SEBRAE-CE" className="h-[38px] w-auto" />
+              <img src={cisecLogoReduzida2} alt="CISEC-CE" className="h-[38px] w-auto" />
             ) : (
-              <img src={sebraeLogoReduzida} alt="SEBRAE-CE" className="h-[40px] w-auto" />
+              <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-[40px] w-auto" />
             )}
           </div>
 
@@ -259,9 +259,9 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
           ) : (
             <>
               {variant.brandStyle === "completa" ? (
-                <img src={variant.id === "ext-red-left" ? sebraeLogo : sebraeLogoWhite} alt="SEBRAE-CE" className="h-[26px] w-auto" />
+                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC-CE" className="h-[26px] w-auto" />
               ) : (
-                <img src={variant.id === "ext-red-left" ? sebraeLogo : sebraeLogoWhite} alt="SEBRAE-CE" className="h-[22px] w-auto" />
+                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC-CE" className="h-[22px] w-auto" />
               )}
               <span className={variant.id === "ext-red-left" ? "text-sm" : "text-white/60 text-sm"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.6 } : undefined}>|</span>
               <span className="font-semibold text-sm" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>{sigla}</span>
@@ -302,64 +302,64 @@ function generateHeaderCode(variant: HeaderVariant): string {
   // Light header code
   if (light) {
     const logoSrc = variant.audience === "claro-completa"
-      ? sebraeLogo
-      : sebraeLogo;
+      ? cisecLogo
+      : cisecLogo;
     const titleHtml = variant.showTitle !== false
       ? `
-    <div class="sebrae-header-light__separator"></div>
-    <div class="sebrae-header-light__title">
+    <div class="cisec-header-light__separator"></div>
+    <div class="cisec-header-light__title">
       <strong>Título do Programa - Exemplo</strong>
       <span>Apenas um exemplo de subtítulo do programa</span>
     </div>`
       : `
     <div style="flex:1"></div>`;
-    return `<!-- Header SEBRAE-CE: ${variant.title} -->
-<header class="sebrae-header-light" style="background-color: ${bgHex};">
-  <div class="sebrae-header-light__inner">
-    <img src="${logoSrc}" alt="SEBRAE-CE" class="sebrae-header-light__logo" />${titleHtml}
-    <img src="/assets/marca-gov.png" alt="Governo do Brasil" class="sebrae-header-light__gov" />
+    return `<!-- Header CISEC-CE: ${variant.title} -->
+<header class="cisec-header-light" style="background-color: ${bgHex};">
+  <div class="cisec-header-light__inner">
+    <img src="${logoSrc}" alt="CISEC-CE" class="cisec-header-light__logo" />${titleHtml}
+    <img src="/assets/marca-gov.png" alt="Governo do Brasil" class="cisec-header-light__gov" />
   </div>
 </header>
 
 <style>
-.sebrae-header-light {
+.cisec-header-light {
   font-family: 'Poppins', sans-serif;
 }
-.sebrae-header-light__inner {
+.cisec-header-light__inner {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1.25rem;
   min-height: 56px;
 }
-.sebrae-header-light__logo {
+.cisec-header-light__logo {
   height: 36px;
   width: auto;
   flex-shrink: 0;
 }
-.sebrae-header-light__separator {
+.cisec-header-light__separator {
   width: 1px;
   height: 32px;
   background: rgba(13, 56, 87, 0.3);
   flex-shrink: 0;
 }
-.sebrae-header-light__title {
+.cisec-header-light__title {
   flex: 1;
   min-width: 0;
 }
-.sebrae-header-light__title strong {
+.cisec-header-light__title strong {
   display: block;
   font-size: 0.875rem;
   color: #2A4FDA;
   line-height: 1.3;
 }
-.sebrae-header-light__title span {
+.cisec-header-light__title span {
   display: block;
   font-size: 0.75rem;
   color: rgba(13, 56, 87, 0.7);
   line-height: 1.3;
 }
-.sebrae-header-light__gov {
+.cisec-header-light__gov {
   height: 40px;
   width: auto;
   flex-shrink: 0;
@@ -373,22 +373,22 @@ function generateHeaderCode(variant: HeaderVariant): string {
   const logoHtml = variant.visualBanner
     ? ""
     : variant.brandStyle === "completa"
-    ? `<img src="/assets/sebrae-logo.svg" alt="SEBRAE-CE" class="header__logo" />`
+    ? `<img src="/assets/cisec-logo.svg" alt="CISEC-CE" class="header__logo" />`
     : `<div class="header__logo-icon">F</div>`;
 
-  let html = `<!-- Header SEBRAE-CE: ${variant.title} -->
-${variant.visualBanner ? `<div class="sebrae-header__visual-banner" role="img" aria-label="${variant.visualBanner.alt}"></div>
+  let html = `<!-- Header CISEC-CE: ${variant.title} -->
+${variant.visualBanner ? `<div class="cisec-header__visual-banner" role="img" aria-label="${variant.visualBanner.alt}"></div>
 ` : ""}\
-<header class="sebrae-header" style="background-color: ${effectiveBgHex};">
-  <div class="sebrae-header__inner">
-${menuLeft ? `    <button class="sebrae-header__menu" aria-label="Abrir menu">
+<header class="cisec-header" style="background-color: ${effectiveBgHex};">
+  <div class="cisec-header__inner">
+${menuLeft ? `    <button class="cisec-header__menu" aria-label="Abrir menu">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
 ` : ""}${logoHtml ? `    ${logoHtml}
-    <span class="sebrae-header__separator">|</span>
-` : ""}    <span class="sebrae-header__sigla">SIGLA</span>
-    <span class="sebrae-header__name">Nome do sistema</span>
-${menuRight ? `    <button class="sebrae-header__menu sebrae-header__menu--right" aria-label="Abrir menu">
+    <span class="cisec-header__separator">|</span>
+` : ""}    <span class="cisec-header__sigla">SIGLA</span>
+    <span class="cisec-header__name">Nome do sistema</span>
+${menuRight ? `    <button class="cisec-header__menu cisec-header__menu--right" aria-label="Abrir menu">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       <span>Menu</span>
     </button>
@@ -397,7 +397,7 @@ ${menuRight ? `    <button class="sebrae-header__menu sebrae-header__menu--right
 
   if (variant.showClassification) {
     html += `
-<div class="sebrae-header__classification">
+<div class="cisec-header__classification">
   Conteúdo <strong>INTERNO/TODOS</strong>
 </div>`;
   }
@@ -405,18 +405,18 @@ ${menuRight ? `    <button class="sebrae-header__menu sebrae-header__menu--right
   html += `
 
 <style>
-.sebrae-header {
+.cisec-header {
   color: #fff;
   font-family: 'Poppins', sans-serif;
 }
-.sebrae-header__inner {
+.cisec-header__inner {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   padding: 0 1rem;
   ${variant.visualBanner ? "height: 70px;" : "min-height: 44px; padding: 0.625rem 1rem;"}
 }
-.sebrae-header__menu {
+.cisec-header__menu {
   background: none;
   border: none;
   color: #fff;
@@ -427,25 +427,25 @@ ${menuRight ? `    <button class="sebrae-header__menu sebrae-header__menu--right
   align-items: center;
   gap: 4px;
 }
-.sebrae-header__menu:hover { background: rgba(255,255,255,0.1); }
-.sebrae-header__menu--right { margin-left: auto; }
-${variant.visualBanner ? `.sebrae-header__visual-banner {
+.cisec-header__menu:hover { background: rgba(255,255,255,0.1); }
+.cisec-header__menu--right { margin-left: auto; }
+${variant.visualBanner ? `.cisec-header__visual-banner {
   height: ${variant.visualBanner.height}px;
   background: url('${variant.visualBanner.src}') center/cover no-repeat;
 }
 ` : ""}\
-.sebrae-header__logo { height: 24px; width: auto; filter: brightness(0) invert(1); }
-.sebrae-header__logo-icon {
+.cisec-header__logo { height: 24px; width: auto; filter: brightness(0) invert(1); }
+.cisec-header__logo-icon {
   width: 24px; height: 24px;
   background: rgba(255,255,255,0.2);
   border-radius: 4px;
   display: flex; align-items: center; justify-content: center;
   font-size: 10px; font-weight: 700;
 }
-.sebrae-header__separator { opacity: 0.4; font-size: 0.875rem; }
-.sebrae-header__sigla { font-weight: 600; font-size: 0.875rem; }
-.sebrae-header__name { font-size: 0.875rem; opacity: 0.8; }
-.sebrae-header__classification {
+.cisec-header__separator { opacity: 0.4; font-size: 0.875rem; }
+.cisec-header__sigla { font-weight: 600; font-size: 0.875rem; }
+.cisec-header__name { font-size: 0.875rem; opacity: 0.8; }
+.cisec-header__classification {
   background: ${variant.audience === "externo" ? "#E5A54D" : "#F0C06D"};
   color: ${variant.audience === "externo" ? "rgba(255,255,255,0.9)" : "#082841"};
   padding: 0.25rem 1rem;
@@ -523,14 +523,14 @@ export default function TemplatesPage() {
   ];
 
   const templates = [
-    { title: "Dashboard Institucional", desc: "Painel com indicadores, gráficos e resumos executivos.", preview: "bg-sebrae-blue-50" },
-    { title: "Dashboard BI", desc: "Painel executivo com análise profunda de dados, indicadores de performance (KPIs) e gráficos avançados.", preview: "bg-sebrae-orange-50" },
-    { title: "Tela de Listagem", desc: "Tabela com filtros dinâmicos, busca, cards estatísticos avançados, tabela aninhada (nesting) e paginação.", preview: "bg-sebrae-orange-50" },
-    { title: "Tela de Formulário", desc: "Formulário com validação, steps e feedback.", preview: "bg-sebrae-blue-50" },
-    { title: "Fluxo de Autenticação Completo", desc: "Login, Cadastro e 2FA com branding SEBRAE-CE e Gov.br.", preview: "bg-sebrae-blue-50" },
-    { title: "Página de Erro", desc: "404, 500 e erros genéricos com ação de retorno.", preview: "bg-sebrae-orange-50" },
-    { title: "Modal de Acesso", desc: "Modal de senha para proteger conteúdos restritos. Modelo visual reutilizável (use autenticação real em produção).", preview: "bg-sebrae-blue-50" },
-    { title: "Página com Filtros e Tabela", desc: "Combinação de sidebar de filtros com tabela de resultados.", preview: "bg-sebrae-blue-50" },
+    { title: "Dashboard Institucional", desc: "Painel com indicadores, gráficos e resumos executivos.", preview: "bg-cisec-blue-50" },
+    { title: "Dashboard BI", desc: "Painel executivo com análise profunda de dados, indicadores de performance (KPIs) e gráficos avançados.", preview: "bg-cisec-orange-50" },
+    { title: "Tela de Listagem", desc: "Tabela com filtros dinâmicos, busca, cards estatísticos avançados, tabela aninhada (nesting) e paginação.", preview: "bg-cisec-orange-50" },
+    { title: "Tela de Formulário", desc: "Formulário com validação, steps e feedback.", preview: "bg-cisec-blue-50" },
+    { title: "Fluxo de Autenticação Completo", desc: "Login, Cadastro e 2FA com branding CISEC-CE e Gov.br.", preview: "bg-cisec-blue-50" },
+    { title: "Página de Erro", desc: "404, 500 e erros genéricos com ação de retorno.", preview: "bg-cisec-orange-50" },
+    { title: "Modal de Acesso", desc: "Modal de senha para proteger conteúdos restritos. Modelo visual reutilizável (use autenticação real em produção).", preview: "bg-cisec-blue-50" },
+    { title: "Página com Filtros e Tabela", desc: "Combinação de sidebar de filtros com tabela de resultados.", preview: "bg-cisec-blue-50" },
   ];
 
   const audiences = [
@@ -550,11 +550,11 @@ export default function TemplatesPage() {
   return (
     <div>
       <SEO
-        title="Templates — Design System SEBRAE"
-        description="Catálogo de templates do SEBRAE-CE: dashboards, listagens, formulários, autenticação e modelos de cabeçalho prontos para implementação."
+        title="Templates — Design System CISEC"
+        description="Catálogo de templates do CISEC-CE: dashboards, listagens, formulários, autenticação e modelos de cabeçalho prontos para implementação."
         path="/templates"
       />
-      <PageHeader badge="Templates" title="Padrões de página" description="Padrões de página pré-definidos para os principais fluxos de uso dos produtos digitais do SEBRAE-CE." />
+      <PageHeader badge="Templates" title="Padrões de página" description="Padrões de página pré-definidos para os principais fluxos de uso dos produtos digitais do CISEC-CE." />
 
       {/* ═══ CATÁLOGO DE COMPONENTES ═══ */}
       <SectionHeader
@@ -563,7 +563,7 @@ export default function TemplatesPage() {
         description="Biblioteca navegável de elementos essenciais com variações de estados e exemplos de uso."
       />
 
-      <div className="sebrae-card mb-12">
+      <div className="cisec-card mb-12">
         <div className="flex flex-wrap gap-1 bg-muted/30 p-1 rounded-xl mb-8 border border-border">
           {componentTabs.map((tab) => (
             <button
@@ -830,14 +830,14 @@ export default function TemplatesPage() {
       {/* Header variants grid */}
       <div className="grid grid-cols-1 gap-6 mb-12">
         {filteredVariants.map(variant => (
-          <div key={variant.id} className="sebrae-card">
+          <div key={variant.id} className="cisec-card">
             {/* Label */}
             <div className="flex items-start justify-between gap-2 mb-3">
               <div>
                 <h4 className="text-sm font-semibold text-foreground">{variant.title}</h4>
                 <p className="text-xs text-muted-foreground mt-0.5">{variant.description}</p>
               </div>
-              <span className={`sebrae-badge-${variant.audience === "externo" ? "success" : isLightHeader(variant.audience) ? "info" : "primary"} shrink-0 text-[10px]`}>
+              <span className={`cisec-badge-${variant.audience === "externo" ? "success" : isLightHeader(variant.audience) ? "info" : "primary"} shrink-0 text-[10px]`}>
                 {variant.audience === "externo" ? "Externo" : isLightHeader(variant.audience) ? "Fundo claro" : variant.audience === "interno-classificado" ? "Classificado" : "Interno"}
               </span>
             </div>
@@ -860,7 +860,7 @@ export default function TemplatesPage() {
       </div>
 
       {/* Usage guidelines */}
-      <div className="sebrae-card mb-12">
+      <div className="cisec-card mb-12">
         <h4 className="font-semibold text-foreground mb-1">Testeira · Aplicação de arte (Azul) — Especificação</h4>
         <p className="text-xs text-muted-foreground mb-4">
           Faixa fina destinada a aplicações de arte na testeira de sistemas internos, com forte presença
@@ -884,7 +884,7 @@ export default function TemplatesPage() {
               <li>Rótulo "Menu" oculto em <code className="text-[11px]">&lt; sm</code> (mobile).</li>
               <li>Ícone <code className="text-[11px]">Moon</code> (modo escuro) alinhado à direita.</li>
               <li>Estado hover: fundo <code className="text-[11px]">white/10</code>.</li>
-              <li>Sem marca SEBRAE-CE na faixa.</li>
+              <li>Sem marca CISEC-CE na faixa.</li>
             </ul>
           </div>
           <div className="rounded-md border border-border p-3">
@@ -904,13 +904,13 @@ export default function TemplatesPage() {
         </div>
       </div>
 
-      <div className="sebrae-card mb-12">
+      <div className="cisec-card mb-12">
         <h4 className="font-semibold text-foreground mb-3">Diretrizes de uso</h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-muted-foreground">
           <div>
             <p className="font-semibold text-success mb-1">✓ Quando usar</p>
             <ul className="space-y-1">
-              <li>• Sempre no topo de todas as aplicações SEBRAE-CE</li>
+              <li>• Sempre no topo de todas as aplicações CISEC-CE</li>
               <li>• Use marca completa quando há espaço horizontal suficiente</li>
               <li>• Use marca reduzida em telas estreitas ou aplicativos mobile</li>
               <li>• Aplique classificação de conteúdo quando exigido pela política institucional</li>
@@ -942,7 +942,7 @@ export default function TemplatesPage() {
       <SectionHeader
         id="modelos-login"
         title="Modelos de Login"
-        description="Templates de autenticação prontos para uso nos sistemas SEBRAE-CE. Sign In e Sign Up com a identidade visual do órgão."
+        description="Templates de autenticação prontos para uso nos sistemas CISEC-CE. Sign In e Sign Up com a identidade visual do órgão."
       />
       <div className="mb-12">
         <AuthTemplatesSection />
@@ -986,10 +986,10 @@ export default function TemplatesPage() {
       <SectionHeader
         id="footer"
         title="Footer Institucional"
-        description="Rodapé padrão com marca SEBRAE, nome do projeto e versão alinhada à direita."
+        description="Rodapé padrão com marca CISEC, nome do projeto e versão alinhada à direita."
       />
       <div className="mb-12">
-        <SebraeFooterSection />
+        <CisecFooterSection />
       </div>
 
       {/* ═══ TEMPLATE CARDS (existing) ═══ */}
@@ -1126,7 +1126,7 @@ export default function TemplatesPage() {
                   )}
                 </div>
               ) : isErro || isModalAcesso ? (
-                <div className="h-32 bg-sebrae-blue-50 rounded-lg mb-4 flex flex-col items-center justify-center p-4 border border-sebrae-blue-100 relative overflow-hidden group">
+                <div className="h-32 bg-cisec-blue-50 rounded-lg mb-4 flex flex-col items-center justify-center p-4 border border-cisec-blue-100 relative overflow-hidden group">
                   {/* Decorative background elements */}
                   <div className="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-full -mr-8 -mt-8" />
                   <div className="absolute bottom-0 left-0 w-12 h-12 bg-primary/5 rounded-full -ml-6 -mb-6" />
@@ -1185,7 +1185,7 @@ export default function TemplatesPage() {
                 to={route}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="sebrae-card overflow-hidden block hover:shadow-lg hover:border-primary/40 transition-all"
+                className="cisec-card overflow-hidden block hover:shadow-lg hover:border-primary/40 transition-all"
               >
                 {cardInner}
               </Link>
@@ -1193,7 +1193,7 @@ export default function TemplatesPage() {
           }
 
           return (
-            <div key={t.title} className="sebrae-card overflow-hidden">
+            <div key={t.title} className="cisec-card overflow-hidden">
               {cardInner}
             </div>
           );

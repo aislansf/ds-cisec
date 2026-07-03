@@ -5,14 +5,14 @@ export default function AcessibilidadePage() {
   return (
     <div>
       <SEO
-        title="Acessibilidade — Design System SEBRAE"
-        description="Diretrizes WCAG 2.1 AA do SEBRAE-CE: contraste, navegação por teclado, ARIA, foco visível e semântica em ambos os modos claro e escuro."
+        title="Acessibilidade — Design System CISEC"
+        description="Diretrizes WCAG 2.1 AA do CISEC-CE: contraste, navegação por teclado, ARIA, foco visível e semântica em ambos os modos claro e escuro."
         path="/acessibilidade"
       />
-      <PageHeader badge="WCAG 2.1 · AA" title="Acessibilidade" description="Todo produto digital do SEBRAE-CE deve nascer acessível. Seguimos as diretrizes WCAG 2.1 nível AA como padrão mínimo, em ambos os modos claro e escuro." />
+      <PageHeader badge="WCAG 2.1 · AA" title="Acessibilidade" description="Todo produto digital do CISEC-CE deve nascer acessível. Seguimos as diretrizes WCAG 2.1 nível AA como padrão mínimo, em ambos os modos claro e escuro." />
 
       <SectionHeader id="contraste" title="Contraste" description="Textos devem atender ao contraste mínimo AA do WCAG 2.1 em ambos os temas." />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="space-y-3">
           <div className="flex items-center gap-3">
             <div className="w-20 h-10 rounded flex items-center justify-center text-xs font-bold bg-primary text-primary-foreground">AA ✓</div>
@@ -33,7 +33,7 @@ export default function AcessibilidadePage() {
       </div>
 
       <SectionHeader id="foco" title="Foco Visível" description="Todo elemento interativo deve ter um indicador de foco visível para navegação por teclado." />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="flex flex-wrap gap-4 mb-4">
           <button className="px-4 py-2 bg-primary text-primary-foreground rounded text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background">
             Clique ou use Tab
@@ -52,7 +52,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
       </div>
 
       <SectionHeader id="teclado" title="Navegação por Teclado" />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead><tr className="border-b border-border">
@@ -80,7 +80,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
       </div>
 
       <SectionHeader id="dark-mode" title="Dark Mode e Acessibilidade" />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="text-sm font-semibold mb-3">Diretrizes para implementação com temas</h4>
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li>• Nunca use cores fixas (ex: <code className="bg-muted px-1 rounded text-xs">#000000</code>) em componentes — sempre use tokens semânticos</li>
@@ -92,7 +92,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
       </div>
 
       <SectionHeader id="semantica" title="Semântica HTML" />
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li>• Use heading hierarchy correta (h1 → h2 → h3, sem pular níveis)</li>
           <li>• Use <code className="bg-muted px-1 rounded text-xs">&lt;nav&gt;</code>, <code className="bg-muted px-1 rounded text-xs">&lt;main&gt;</code>, <code className="bg-muted px-1 rounded text-xs">&lt;aside&gt;</code>, <code className="bg-muted px-1 rounded text-xs">&lt;footer&gt;</code> para landmarks</li>
@@ -104,7 +104,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
       </div>
 
       <SectionHeader id="aria" title="ARIA" />
-      <div className="sebrae-card mb-4">
+      <div className="cisec-card mb-4">
         <h4 className="text-sm font-semibold mb-2">O que significa ARIA?</h4>
         <p className="ds-body text-muted-foreground mb-2">
           <strong>ARIA</strong> é a sigla para <strong>Accessible Rich Internet Applications</strong>{"\u00a0"}(Aplicações de Internet Ricas e Acessíveis), uma especificação do W3C/WAI que define atributos HTML extras — como <code className="bg-muted px-1 rounded text-xs">role</code>,
@@ -121,7 +121,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
           para complementar — nunca para substituir — a semântica nativa.
         </p>
       </div>
-      <div className="sebrae-card mb-8">
+      <div className="cisec-card mb-8">
         <h4 className="text-sm font-semibold mb-3">Padrões ARIA obrigatórios por componente</h4>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
@@ -152,7 +152,7 @@ className="focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-ba
       </div>
 
       <SectionHeader id="alvos" title="Alvos Clicáveis" />
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <p className="text-sm text-muted-foreground mb-3">
           Todo alvo clicável deve ter no mínimo <strong>44×44 pixels</strong> de área tocável, conforme WCAG 2.5.8. Isso inclui botões, links, checkboxes, o toggle de tema e áreas de ação em dispositivos touch.
         </p>

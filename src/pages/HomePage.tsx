@@ -6,14 +6,14 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/DSComponents";
 import { SEO } from "@/components/SEO";
-import { sebraeWhite as sebraeLogo } from "@/assets/sebrae";
+import { cisecWhite as cisecLogo } from "@/assets/cisec";
 
 const sections = [
   { icon: <Palette size={24} />, title: "Fundamentos", desc: "Tipografia, cores, iconografia, grid, espaçamento e princípios visuais", path: "/fundamentos" },
   { icon: <Code2 size={24} />, title: "Tokens", desc: "CSS Custom Properties documentados e prontos para uso em light e dark mode", path: "/tokens" },
   { icon: <Component size={24} />, title: "Componentes", desc: "Botões, inputs, cards, tabelas, modais e mais de 20 componentes", path: "/componentes" },
   { icon: <LayoutTemplate size={24} />, title: "Templates", desc: "Padrões de página: dashboard, listagem, formulário e autenticação", path: "/templates" },
-  { icon: <Stamp size={24} />, title: "Marca SEBRAE-CE", desc: "Logo, identidade visual, zona de segurança e aplicações da marca", path: "/marca" },
+  { icon: <Stamp size={24} />, title: "Marca CISEC-CE", desc: "Logo, identidade visual, zona de segurança e aplicações da marca", path: "/marca" },
   { icon: <FileText size={24} />, title: "Conteúdo", desc: "Voz da marca, tom de voz, boas práticas de escrita e microcopy", path: "/conteudo" },
   { icon: <Accessibility size={24} />, title: "Acessibilidade", desc: "Contraste, navegação por teclado, ARIA, foco visível e semântica", path: "/acessibilidade" },
 ];
@@ -25,10 +25,10 @@ const principles = [
   { icon: <BookOpen size={20} />, title: "Claro", desc: "Comunicação plural, acessível e de fácil entendimento." },
 ];
 
-/* === Brandbook Sebrae · Guia de marca · Março 2026 ===
+/* === Brandbook Cisec · Guia de marca · Março 2026 ===
  * Passo 2 — Apresente-se: Expressões Verbais (pgs. 31–58).
  * Textos extraídos literalmente do PDF oficial:
- * https://sebraemg.com.br/diversos/web/docs/casademarcas/manuais/Brandbook_Sebrae.pdf
+ * https://cisecmg.com.br/diversos/web/docs/casademarcas/manuais/Brandbook_Cisec.pdf
  */
 const tomDeVozPilares = [
   {
@@ -85,28 +85,28 @@ export default function HomePage() {
   return (
     <div>
       <SEO
-        title="Design System SEBRAE — Guia visual e operacional"
-        description="Portal oficial do Design System SEBRAE-CE com fundamentos visuais, tokens, componentes, templates e modelos de BI para os produtos digitais do SEBRAE."
+        title="Design System CISEC — Guia visual e operacional"
+        description="Portal oficial do Design System CISEC-CE com fundamentos visuais, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC."
         path="/"
       />
       <PageHeader
-        title="Design System SEBRAE-CE — Guia visual e operacional"
-        description="Guia visual, técnico e operacional para o time de desenvolvimento da SEBRAE-CE. Transformando vidas por meio da educação."
+        title="Design System CISEC-CE — Guia visual e operacional"
+        description="Guia visual, técnico e operacional para o time de desenvolvimento da CISEC-CE. Transformando vidas por meio da educação."
         badge="v1.0.0"
       />
 
       {/* Hero */}
       <div className="rounded-xl bg-primary text-primary-foreground p-8 md:p-10 mb-10">
         <img
-          src={sebraeLogo}
-          alt="Marca SEBRAE-CE"
+          src={cisecLogo}
+          alt="Marca CISEC-CE"
           className="h-auto w-auto max-w-full max-h-[6.6125rem] md:max-h-[7.935rem] mb-6 object-contain"
         />
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
-          Sistema de padrões para as aplicações do SEBRAE-CE
+          Sistema de padrões para as aplicações do CISEC-CE
         </h2>
         <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
-          Este Design System estabelece padrões de UI e implementação para os produtos digitais do SEBRAE-CE. Desenvolvido em vanilla (sem frameworks ou bibliotecas externas), assegura compatibilidade, flexibilidade e reutilização em qualquer stack ou aplicações geradas por IA.
+          Este Design System estabelece padrões de UI e implementação para os produtos digitais do CISEC-CE. Desenvolvido em vanilla (sem frameworks ou bibliotecas externas), assegura compatibilidade, flexibilidade e reutilização em qualquer stack ou aplicações geradas por IA.
         </p>
         <div className="flex flex-wrap gap-3">
           <button onClick={() => navigate("/fundamentos")}
@@ -121,7 +121,7 @@ export default function HomePage() {
       </div>
 
       {/* Dark/Light highlight */}
-      <div className="sebrae-card mb-10 flex items-center gap-4">
+      <div className="cisec-card mb-10 flex items-center gap-4">
         <div className="flex items-center gap-2 text-primary">
           <Sun size={20} />
           <span className="text-sm font-medium">/</span>
@@ -133,17 +133,17 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* === Brandbook Sebrae · Março 2026 — Expressões Verbais === */}
+      {/* === Brandbook Cisec · Março 2026 — Expressões Verbais === */}
       <section className="mb-12">
         <div className="flex items-baseline justify-between flex-wrap gap-2 mb-1">
-          <h2 className="text-xl font-bold" style={{ color: "#005EB8" }}>Brandbook Sebrae · Março 2026</h2>
+          <h2 className="text-xl font-bold" style={{ color: "#005EB8" }}>Brandbook Cisec · Março 2026</h2>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
-          Conteúdo extraído literalmente do Guia de marca oficial do Sebrae (pgs. 31–58).
+          Conteúdo extraído literalmente do Guia de marca oficial do Cisec (pgs. 31–58).
         </p>
 
         {/* Manifesto destacado */}
-        <div className="sebrae-card mb-6 relative overflow-hidden">
+        <div className="cisec-card mb-6 relative overflow-hidden">
           <div className="absolute -top-4 -left-2 text-primary/10">
             <Quote size={120} strokeWidth={1} />
           </div>
@@ -156,13 +156,13 @@ export default function HomePage() {
               estrangeirismos.
             </p>
             <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
-              Passo 2 · Manifesto — Brandbook Sebrae · Guia de marca · Março 2026.
+              Passo 2 · Manifesto — Brandbook Cisec · Guia de marca · Março 2026.
             </p>
           </div>
         </div>
 
         {/* Facilitadores — intro do Tom de Voz */}
-        <div className="sebrae-card mb-6">
+        <div className="cisec-card mb-6">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-9 h-9 rounded-lg bg-card-icon text-card-icon-foreground flex items-center justify-center">
               <Users2 size={18} />
@@ -192,7 +192,7 @@ export default function HomePage() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
           {tomDeVozPilares.map((p) => (
-            <div key={p.title} className="sebrae-card flex flex-col">
+            <div key={p.title} className="cisec-card flex flex-col">
               <h4 className="font-heading text-base font-semibold text-foreground leading-snug mb-2">
                 {p.title}
               </h4>
@@ -232,7 +232,7 @@ export default function HomePage() {
         </div>
 
         {/* Diretrizes Gerais */}
-        <div className="sebrae-card">
+        <div className="cisec-card">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-9 h-9 rounded-lg bg-card-icon text-card-icon-foreground flex items-center justify-center">
               <BookOpen size={18} />
@@ -240,7 +240,7 @@ export default function HomePage() {
             <div>
               <h3 className="font-semibold text-sm">Diretrizes gerais</h3>
               <p className="text-[11px] text-muted-foreground">
-                Regras que valem para toda comunicação Sebrae.
+                Regras que valem para toda comunicação Cisec.
               </p>
             </div>
           </div>
@@ -264,12 +264,12 @@ export default function HomePage() {
         <p className="text-[11px] font-mono text-muted-foreground mt-3">
           Fonte:{" "}
           <a
-            href="https://sebraemg.com.br/diversos/web/docs/casademarcas/manuais/Brandbook_Sebrae.pdf"
+            href="https://cisecmg.com.br/diversos/web/docs/casademarcas/manuais/Brandbook_Cisec.pdf"
             target="_blank"
             rel="noreferrer"
             className="underline hover:text-primary"
           >
-            Brandbook Sebrae · Guia de marca · Março 2026 (PDF)
+            Brandbook Cisec · Guia de marca · Março 2026 (PDF)
           </a>
         </p>
       </section>
@@ -278,7 +278,7 @@ export default function HomePage() {
       <h2 className="text-xl font-bold mb-4" style={{ color: "#005EB8" }}>Princípios</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
         {principles.map((p) => (
-          <div key={p.title} className="sebrae-card">
+          <div key={p.title} className="cisec-card">
             <div className="w-10 h-10 rounded-lg bg-card-icon text-card-icon-foreground flex items-center justify-center mb-3">
               {p.icon}
             </div>
@@ -292,7 +292,7 @@ export default function HomePage() {
       <h2 className="text-xl font-bold mb-4" style={{ color: "#005EB8" }}>Navegue pelo sistema</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {sections.map((s) => (
-          <button key={s.path} onClick={() => navigate(s.path)} className="sebrae-card-hover text-left group">
+          <button key={s.path} onClick={() => navigate(s.path)} className="cisec-card-hover text-left group">
             <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-3 bg-card-icon text-card-icon-foreground">
               {s.icon}
             </div>
@@ -303,7 +303,7 @@ export default function HomePage() {
       </div>
 
       {/* Status */}
-      <div className="sebrae-card">
+      <div className="cisec-card">
         <h2 className="text-lg font-bold mb-3">Status do sistema</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div>

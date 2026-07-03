@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, Home, Search } from "lucide-react";
-import { SebraeLogo } from "@/components/SebraeLogo";
+import { CisecLogo } from "@/components/CisecLogo";
 import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
@@ -18,14 +18,14 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-muted/30 flex flex-col items-center justify-center p-4 font-poppins animate-fade-in">
       <Helmet>
-        <title>Página não encontrada — Design System SEBRAE</title>
-        <meta name="description" content="A página solicitada não existe ou foi movida. Volte para o portal do Design System SEBRAE-CE." />
+        <title>Página não encontrada — Design System CISEC</title>
+        <meta name="description" content="A página solicitada não existe ou foi movida. Volte para o portal do Design System CISEC-CE." />
         <meta name="robots" content="noindex,follow" />
       </Helmet>
       <div className="max-w-md w-full bg-card rounded-lg shadow-xl border border-border overflow-hidden">
         <div className="p-8 flex flex-col items-center text-center">
-          {/* Marca Sebrae colorida */}
-          <SebraeLogo variant="color" width={120} height={64} className="mb-8" />
+          {/* Marca Cisec colorida */}
+          <CisecLogo variant="color" width={120} height={64} className="mb-8" />
 
           {/* Ícone */}
           <div className="mb-6 p-4 bg-muted rounded-full">
@@ -64,7 +64,7 @@ const NotFound = () => {
 
         <div className="bg-muted/40 px-8 py-4 border-t border-border flex justify-between items-center text-[10px] text-muted-foreground">
           <span className="truncate">Rota: {location.pathname}</span>
-          <span>© {new Date().getFullYear()} SEBRAE-CE</span>
+          <span>© {new Date().getFullYear()} CISEC-CE</span>
         </div>
       </div>
 

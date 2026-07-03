@@ -4,7 +4,7 @@ import {
   Users, FileCheck, FileX, Clock, ShieldCheck, RefreshCw,
   Filter, Eye, BarChart3, TrendingUp
 } from "lucide-react";
-import { sebraeCor as sebraeLogoCompleta } from "@/assets/sebrae";
+import { cisecCor as cisecLogoCompleta } from "@/assets/cisec";
 import marcaGov from "@/assets/marca-gov.png";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -76,7 +76,7 @@ function DashboardHeader({ withTabs = false }: { withTabs?: boolean }) {
   return (
     <header className="rounded-t-lg font-sans bg-[#F0F3FF]">
       <div className="flex items-center gap-4 px-5 py-3 min-h-[56px]">
-        <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-9 w-auto flex-shrink-0" />
+        <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-9 w-auto flex-shrink-0" />
         <div className="flex-1" />
       </div>
     </header>
@@ -87,7 +87,7 @@ function DashboardHeader({ withTabs = false }: { withTabs?: boolean }) {
 function DashboardFooter() {
   return (
     <div className="flex items-center justify-end gap-3 px-5 py-2 border-t border-border bg-muted/30 rounded-b-lg">
-      <img src={sebraeLogoCompleta} alt="SEBRAE-CE" className="h-5 w-auto opacity-60" />
+      <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
       <span className="text-[10px] text-muted-foreground">Programa - v.1.0</span>
     </div>
   );
