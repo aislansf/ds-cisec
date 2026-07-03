@@ -10,6 +10,7 @@ import { useTheme } from "@/hooks/useTheme";
 import { cisecCor as logoCisecCompleta2 } from "@/assets/cisec";
 import logoCisecWhite from "@/assets/cisec-logo-white-header.svg";
 import { prefetchRoute, cancelPendingPrefetch } from "@/utils/prefetchRoutes";
+import { CisecFooter } from "@/components/templates/CisecFooter";
 
 interface NavItem {
   label: string;
@@ -486,11 +487,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 flex-1">
             {children}
           </div>
-          <footer className="border-t border-border bg-muted/30 py-6 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto text-center text-xs text-muted-foreground space-y-1">
-              <p className="font-medium">CISEC-CE — Todos os direitos reservados</p>
-            </div>
-          </footer>
+          <CisecFooter projectName="Design System CISEC-CE" version="v1.0.0" />
         </main>
       </div>
     </div>
