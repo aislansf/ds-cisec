@@ -7,6 +7,8 @@ import horizontalCor from "./marca/cisec-horizontal-cor.png.asset.json";
 import horizontalWhite from "./marca/cisec-horizontal-white.png.asset.json";
 import completaCor from "./marca/cisec-completa-cor.png.asset.json";
 import completaLinhaCor from "./marca/cisec-completa-linha-cor.png.asset.json";
+import completaWhite from "./marca/cisec-completa-white.png.asset.json";
+import completaLinhaWhite from "./marca/cisec-completa-linha-white.png.asset.json";
 import simboloLaranja from "./marca/cisec-simbolo-laranja.png.asset.json";
 import simboloPreto from "./marca/cisec-simbolo-preto.png.asset.json";
 import simboloBranco from "./marca/cisec-simbolo-branco.png.asset.json";
@@ -23,6 +25,8 @@ export const cisecHorizontalWhite: string = horizontalWhite.url;
 // Versões compostas com nome institucional
 export const cisecCompletaCor: string = completaCor.url;
 export const cisecCompletaLinhaCor: string = completaLinhaCor.url;
+export const cisecCompletaWhite: string = completaWhite.url;
+export const cisecCompletaLinhaWhite: string = completaLinhaWhite.url;
 
 // Símbolos isolados
 export const cisecSimboloLaranja: string = simboloLaranja.url;
