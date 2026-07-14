@@ -7,8 +7,7 @@ import {
   SearchX, Users, BarChart3
 } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
-import { cisecCor as logoCisecCompleta2 } from "@/assets/cisec";
-import logoCisecWhite from "@/assets/cisec-logo-white-header.svg";
+import { cisecCor as logoCisecCompleta2, cisecWhite as logoCisecWhite } from "@/assets/cisec";
 import { prefetchRoute, cancelPendingPrefetch } from "@/utils/prefetchRoutes";
 import { CisecFooter } from "@/components/templates/CisecFooter";
 
