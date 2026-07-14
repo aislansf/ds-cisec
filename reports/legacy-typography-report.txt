@@ -1,4 +1,4 @@
-Relatório de tipografia legada — 2026-07-14T17:59:52.890Z
+Relatório de tipografia legada — 2026-07-14T18:00:01.027Z
 Total: 324 ocorrências
 ========================================================================
 src/components/ColorSection.tsx:48
