@@ -12,39 +12,38 @@
 @layer base {
   :root {
     /* === CISEC Design Tokens === */
-    /* Marca oficial Cisec — Pantone 2935 C / HEX #2A4FDA */
+    /* Marca oficial CISEC — Manual de Marca v4/2026
+     * Azul Institucional #1F3051  ·  Laranja #FF9E20  ·  Cinza #606060 */
 
     /* Primary palette (immutable brand) */
-    --cisec-blue: 228 70% 51%;        /* CISEC Blue #2A4FDA */
-    --cisec-orange: 228 70% 51%;       /* alias mantido — usa azul institucional */
+    --cisec-blue: 222 45% 22%;        /* Azul Institucional #1F3051 */
+    --cisec-orange: 34 100% 56%;      /* Laranja #FF9E20 */
+    --cisec-gray: 0 0% 38%;           /* Cinza #606060 */
 
-    /* Extended CISEC blue scale */
-    --cisec-blue-50: 228 90% 97%;
-    --cisec-blue-100: 228 85% 92%;
-    --cisec-blue-200: 228 80% 82%;
-    --cisec-blue-300: 228 75% 70%;
-    --cisec-blue-400: 228 72% 60%;
-    --cisec-blue-500: 228 70% 51%;
-    --cisec-blue-600: 228 72% 42%;
-    --cisec-blue-700: 228 75% 32%;
+    /* Escala cromática do Azul Institucional (100% → 20%) */
+    --cisec-blue-50: 222 45% 96%;
+    --cisec-blue-100: 222 45% 88%;
+    --cisec-blue-200: 222 45% 76%;
+    --cisec-blue-300: 222 45% 60%;
+    --cisec-blue-400: 222 45% 44%;
+    --cisec-blue-500: 222 45% 22%;    /* base #1F3051 */
+    --cisec-blue-600: 222 45% 18%;
+    --cisec-blue-700: 222 45% 14%;
 
-    /* Secondary accent — ciano Cisec (apoio) */
-    --cisec-orange-50: 196 90% 96%;
-    --cisec-orange-100: 196 88% 88%;
-    --cisec-orange-200: 196 85% 75%;
-    --cisec-orange-300: 196 82% 60%;
-    --cisec-orange-400: 196 82% 48%;
-    --cisec-orange-500: 196 85% 40%;
-    --cisec-orange-600: 196 88% 30%;
+    /* Escala cromática do Laranja (100% → 20%) */
+    --cisec-orange-50: 34 100% 96%;
+    --cisec-orange-100: 34 100% 88%;
+    --cisec-orange-200: 34 100% 78%;
+    --cisec-orange-300: 34 100% 68%;
+    --cisec-orange-400: 34 100% 62%;
+    --cisec-orange-500: 34 100% 56%;  /* base #FF9E20 */
+    --cisec-orange-600: 34 90% 46%;
 
-    /* Complementary colors */
-    --cisec-comp-blue-light: 228 90% 88%;
-    --cisec-comp-blue-mid: 228 70% 65%;
-    --cisec-comp-yellow: 46 98% 60%;
-    --cisec-comp-gold: 42 90% 55%;
-    --cisec-comp-red: 0 78% 52%;
-    --cisec-comp-indigo: 245 75% 55%;
-    --cisec-comp-lime: 152 70% 45%;
+    /* Complementares (uso pontual em ilustrações — nunca na marca) */
+    --cisec-comp-blue-light: 213 100% 88%;
+    --cisec-comp-blue-mid: 213 100% 65%;
+    --cisec-comp-blue: 213 100% 56%;  /* #2081FF */
+    --cisec-comp-brown: 36 45% 22%;   /* #51401F */
 
     /* ===== LIGHT MODE (default) ===== */
     --background: 210 25% 99%;
