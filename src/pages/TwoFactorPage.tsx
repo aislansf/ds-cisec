@@ -54,13 +54,13 @@ export default function TwoFactorPage() {
     <div className="min-h-screen bg-background flex flex-col font-poppins animate-fade-in">
       <div className="flex-1 flex overflow-hidden">
         {/* Lado Esquerdo: Marca e Imagem (Desktop) */}
-        <div className="hidden lg:flex lg:w-1/2 relative bg-[#2A4FDA] overflow-hidden">
+        <div className="hidden lg:flex lg:w-1/2 relative bg-[#1F3051] overflow-hidden">
           <img
             src={exemploImg}
             alt="Edifício CISEC-CE"
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2A4FDA] via-[#2A4FDA]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1F3051] via-[#1F3051]/40 to-transparent" />
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>

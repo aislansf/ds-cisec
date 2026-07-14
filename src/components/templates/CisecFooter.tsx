@@ -15,7 +15,7 @@ export function CisecFooter({ projectName = "Nome do Projeto", version = "v1.0.0
     <footer
       className="flex items-center justify-between px-4 sm:px-6 gap-3"
       style={{
-        backgroundColor: "#2A4FDA",
+        backgroundColor: "#1F3051",
         height: "48px",
         minHeight: "48px",
       }}
@@ -60,7 +60,7 @@ const footerCode = `<!-- Footer CISEC — Modelo Institucional -->
   gap: 0.75rem;
   padding: 0 1.5rem;
   height: 48px;
-  background-color: #2A4FDA;
+  background-color: #1F3051;
   font-family: 'Montserrat', system-ui, sans-serif;
 }
 .cisec-footer__brand {
@@ -152,7 +152,7 @@ export default function CisecFooterSection() {
           <div>
             <p className="font-semibold text-foreground mb-1">Cores</p>
             <ul className="space-y-1">
-              <li>• Fundo: #2A4FDA (Azul CISEC)</li>
+              <li>• Fundo: #1F3051 (Azul CISEC)</li>
               <li>• Texto: #FFFFFF</li>
               <li>• Separador: rgba(255,255,255,0.6)</li>
               <li>• Versão: rgba(255,255,255,0.8)</li>

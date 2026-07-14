@@ -504,12 +504,12 @@ export default function ColorSection() {
 </div>
 
 {/* Gradientes no Tailwind */}
-<div className="bg-gradient-to-r from-[#2A4FDA] via-[#1E5F8C] to-[#4A8DC2]">
+<div className="bg-gradient-to-r from-[#1F3051] via-[#1E5F8C] to-[#4A8DC2]">
   Banner institucional
 </div>
 
 {/* Nunca faça isso ❌ */}
-<div className="bg-[#2A4FDA] text-white">Evite hex direto</div>
+<div className="bg-[#1F3051] text-white">Evite hex direto</div>
 
 {/* Faça isso ✅ */}
 <div className="bg-primary text-primary-foreground">Use tokens</div>`}

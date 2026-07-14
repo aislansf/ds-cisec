@@ -165,7 +165,7 @@ function ButtonSection() {
     <button className="inline-flex items-center gap-2 border border-border bg-background text-foreground px-4 py-2 rounded text-sm font-medium hover:bg-muted transition-colors">Outline</button>
     <button className="inline-flex items-center gap-2 text-foreground px-4 py-2 rounded text-sm font-medium hover:bg-muted transition-colors">Ghost</button>
     <button className="inline-flex items-center gap-2 bg-destructive text-destructive-foreground px-4 py-2 rounded text-sm font-medium hover:opacity-90 transition-opacity">Excluir</button>
-    <button className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] hover:bg-[#D1E575] hover:text-[#1644DC]">Diversificado</button>
+    <button className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] hover:bg-[#E88A10] hover:text-[#16233E]">Diversificado</button>
   </div>
 
   <hr className="border-border/60" />
@@ -202,7 +202,7 @@ function ButtonSection() {
             <button className="inline-flex items-center gap-2 bg-destructive text-destructive-foreground px-4 py-2 rounded text-sm font-medium hover:opacity-90 transition-opacity">
               Excluir
             </button>
-            <button className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] hover:bg-[#D1E575] hover:text-[#1644DC]">
+            <button className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] hover:bg-[#E88A10] hover:text-[#16233E]">
               Diversificado
             </button>
           </div>
@@ -370,7 +370,7 @@ function ButtonSection() {
 {/* Neutro */}
 <button className="px-4 py-2 rounded text-sm font-medium transition-colors bg-secondary text-secondary-foreground">Secundário</button>
 {/* Azul */}
-<button className="px-4 py-2 rounded text-sm font-medium transition-colors bg-[#2A4FDA] text-white">Secundário</button>
+<button className="px-4 py-2 rounded text-sm font-medium transition-colors bg-[#1F3051] text-white">Secundário</button>
 {/* Laranja */}
 <button className="px-4 py-2 rounded text-sm font-medium transition-colors bg-[#D98217] text-white">Secundário</button>
 {/* Verde */}
@@ -389,7 +389,7 @@ function ButtonSection() {
           <div className="space-y-6">
             {[
               { name: "Neutro", base: "bg-secondary text-secondary-foreground", hover: "bg-secondary/80 text-secondary-foreground", focusRing: "ring-primary" },
-              { name: "Azul", base: "bg-[#2A4FDA] text-white", hover: "bg-[#1644DC] text-white", focusRing: "ring-[#2A4FDA]" },
+              { name: "Azul", base: "bg-[#1F3051] text-white", hover: "bg-[#16233E] text-white", focusRing: "ring-[#1F3051]" },
               { name: "Laranja", base: "bg-[#D98217] text-white", hover: "bg-[#B86A0F] text-white", focusRing: "ring-[#D98217]" },
               { name: "Verde", base: "bg-[#1F8A4C] text-white", hover: "bg-[#176B3B] text-white", focusRing: "ring-[#1F8A4C]" },
               { name: "Contorno", base: "border border-primary bg-transparent text-primary", hover: "bg-primary/10 text-primary border border-primary", focusRing: "ring-primary" },
@@ -430,46 +430,46 @@ function ButtonSection() {
           accessibility={["Contraste mínimo AA entre texto e fundo", "Foco visível com ring de 2px", "Estado disabled com opacity reduzida e pointer-events-none"]}
           code={`{/* Estados renderizados (Tailwind utilities) */}
 {/* Normal */}
-<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] hover:bg-[#D1E575] hover:text-[#1644DC]">
+<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] hover:bg-[#E88A10] hover:text-[#16233E]">
   Diversificado
 </button>
 
 {/* Hover */}
-<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#D1E575] text-[#1644DC]">
+<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E88A10] text-[#16233E]">
   Diversificado
 </button>
 
 {/* Focus */}
-<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] outline-none ring-2 ring-[#1644DC] ring-offset-2">
+<button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] outline-none ring-2 ring-[#16233E] ring-offset-2">
   Diversificado
 </button>
 
 {/* Disabled */}
-<button className="px-4 py-2 rounded text-sm font-bold bg-[#E7F79E] text-[#2A4FDA] opacity-50 cursor-not-allowed" disabled>
+<button className="px-4 py-2 rounded text-sm font-bold bg-[#FF9E20] text-[#1F3051] opacity-50 cursor-not-allowed" disabled>
   Diversificado
 </button>`}
         >
           <div className="flex flex-wrap items-end gap-6">
             <div className="flex flex-col items-center gap-2">
-              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] hover:bg-[#D1E575] hover:text-[#1644DC]">
+              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] hover:bg-[#E88A10] hover:text-[#16233E]">
                 Diversificado
               </button>
               <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Normal</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#D1E575] text-[#1644DC]">
+              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E88A10] text-[#16233E]">
                 Diversificado
               </button>
               <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Hover</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] outline-none ring-2 ring-[#1644DC] ring-offset-2">
+              <button className="px-4 py-2 rounded text-sm font-bold transition-colors bg-[#FF9E20] text-[#1F3051] outline-none ring-2 ring-[#16233E] ring-offset-2">
                 Diversificado
               </button>
               <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Focus</span>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <button className="px-4 py-2 rounded text-sm font-bold bg-[#E7F79E] text-[#2A4FDA] opacity-50 cursor-not-allowed" disabled>
+              <button className="px-4 py-2 rounded text-sm font-bold bg-[#FF9E20] text-[#1F3051] opacity-50 cursor-not-allowed" disabled>
                 Diversificado
               </button>
               <span className="text-[10px] text-muted-foreground uppercase tracking-wide">Disabled</span>
@@ -576,7 +576,7 @@ function ButtonSection() {
   </button>
   {/* Diversificado */}
   <button aria-label="Diversificado"
-    className="p-2 bg-[#E7F79E] text-[#2A4FDA] rounded hover:bg-[#D1E575] hover:text-[#1644DC] transition-colors">
+    className="p-2 bg-[#FF9E20] text-[#1F3051] rounded hover:bg-[#E88A10] hover:text-[#16233E] transition-colors">
     <Download size={18} />
   </button>
 </div>`}
@@ -603,7 +603,7 @@ function ButtonSection() {
             <button className="p-2 bg-warning text-white rounded hover:opacity-90 transition-opacity" aria-label="Atenção">
               <Edit size={18} />
             </button>
-            <button className="p-2 bg-[#E7F79E] text-[#2A4FDA] rounded hover:bg-[#D1E575] hover:text-[#1644DC] transition-colors" aria-label="Diversificado">
+            <button className="p-2 bg-[#FF9E20] text-[#1F3051] rounded hover:bg-[#E88A10] hover:text-[#16233E] transition-colors" aria-label="Diversificado">
               <Download size={18} />
             </button>
           </div>
@@ -671,7 +671,7 @@ function InputSection() {
 </div>
 
 {/* Tokens globais aplicados pelo DS:
-     border-color padrão: #95ADFF · hover: #2A4FDA · placeholder: #96A1C0 */}`}
+     border-color padrão: #C7CCD6 · hover: #1F3051 · placeholder: #9A9A9A */}`}
     >
       <div className="space-y-4 max-w-md">
         <div>
@@ -876,7 +876,7 @@ function CheckboxSection() {
 </div>
 
 {/* Tokens globais aplicados pelo DS:
-     border-color padrão: #95ADFF · hover: #2A4FDA · accent-color: #2A4FDA */}`}
+     border-color padrão: #C7CCD6 · hover: #1F3051 · accent-color: #1F3051 */}`}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <fieldset>

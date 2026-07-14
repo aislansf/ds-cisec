@@ -832,7 +832,7 @@ h1, h2, h3, h4, h5, h6 {
         </button>
         <figcaption className="text-xs text-muted-foreground mt-3">
           Referência cromática institucional: a paleta do Design System parte da cor primária{" "}
-          <strong>#2A4FDA</strong> e expande para as cores que representam a diversidade brasileira.
+          <strong>#1F3051</strong> e expande para as cores que representam a diversidade brasileira.
         </figcaption>
       </figure>
       <ImageLightbox
