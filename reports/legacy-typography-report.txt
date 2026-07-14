@@ -1,5 +1,5 @@
-Relatório de tipografia legada — 2026-07-02T21:23:53.058Z
-Total: 322 ocorrências
+Relatório de tipografia legada — 2026-07-14T18:00:01.027Z
+Total: 324 ocorrências
 ========================================================================
 src/components/ColorSection.tsx:48
   <p className="text-sm font-semibold text-foreground">{name}</p>
@@ -146,7 +146,7 @@ src/components/templates/CardSignIn.tsx:90
   <p className="text-center text-xs text-muted-foreground pt-4">
 
 src/components/templates/CardSignIn.tsx:105
-  <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Campuni', 'Poppins', sans-serif" }}>
+  <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Lora', 'Montserrat', sans-serif" }}>
 
 src/components/templates/DashboardTemplates.tsx:64
   <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
@@ -640,64 +640,70 @@ src/pages/FundamentosPage.tsx:454
 src/pages/FundamentosPage.tsx:473
   <p className="text-sm font-medium">12 de março de 2025</p>
 
-src/pages/FundamentosPage.tsx:612
+src/pages/FundamentosPage.tsx:611
+  <p className="text-xs text-muted-foreground mt-1">
+
+src/pages/FundamentosPage.tsx:671
+  <p className="text-base leading-relaxed mb-3">
+
+src/pages/FundamentosPage.tsx:718
   <p className="text-sm text-muted-foreground">
 
-src/pages/FundamentosPage.tsx:667
+src/pages/FundamentosPage.tsx:773
   <p className={`text-base ${p.w}`}>Aa Cisec</p>
 
-src/pages/FundamentosPage.tsx:692
+src/pages/FundamentosPage.tsx:798
   <p className={`text-sm ${s.cls}`}>
 
-src/pages/FundamentosPage.tsx:706
-  <p className="font-heading text-3xl font-bold leading-tight">Aa — Campuni</p>
+src/pages/FundamentosPage.tsx:812
+  <p className="font-heading text-3xl font-bold leading-tight">Aa — Lora</p>
 
-src/pages/FundamentosPage.tsx:707
+src/pages/FundamentosPage.tsx:813
   <p className="font-heading text-sm text-muted-foreground mt-2">Títulos e display · pesos 600/700/900</p>
 
-src/pages/FundamentosPage.tsx:711
-  <p className="font-sans text-3xl font-bold leading-tight">Aa — Figtree</p>
+src/pages/FundamentosPage.tsx:817
+  <p className="font-sans text-3xl font-bold leading-tight">Aa — Montserrat</p>
 
-src/pages/FundamentosPage.tsx:712
+src/pages/FundamentosPage.tsx:818
   <p className="font-sans text-sm text-muted-foreground mt-2">Corpo, UI e legendas · pesos 300–800</p>
 
-src/pages/FundamentosPage.tsx:726
+src/pages/FundamentosPage.tsx:832
   <p className="text-lg font-medium text-muted-foreground">Este é um exemplo de lead text ou subtítulo que acompanha o título principal para dar mais contexto.</p>
 
-src/pages/FundamentosPage.tsx:731
+src/pages/FundamentosPage.tsx:837
   <p className="leading-relaxed">
 
-src/pages/FundamentosPage.tsx:738
+src/pages/FundamentosPage.tsx:844
   <p className="text-sm leading-relaxed text-muted-foreground">
 
-src/pages/FundamentosPage.tsx:768
+src/pages/FundamentosPage.tsx:874
   <p className="text-xs text-muted-foreground italic">
 
-src/pages/FundamentosPage.tsx:887
+src/pages/FundamentosPage.tsx:993
   <p className="text-xs text-muted-foreground italic py-6 text-center">Nenhum ícone encontrado. Tente outro termo ou troque a coleção.</p>
 
-src/pages/FundamentosPage.tsx:903
+src/pages/FundamentosPage.tsx:1009
   <p className="text-xs text-muted-foreground mb-4">Open-source, traço consistente e boa legibilidade em ambos os temas. Já instalada no projeto.</p>
 
-src/pages/FundamentosPage.tsx:959
+src/pages/FundamentosPage.tsx:1065
   <p className="text-xs text-muted-foreground max-w-4xl mb-4">
 
-src/pages/FundamentosPage.tsx:965
+src/pages/FundamentosPage.tsx:1071
   <p className="text-xs text-muted-foreground mb-4">Links oficiais para baixar a biblioteca, navegar o catálogo completo e incorporar em projetos React, sites e dashboards.</p>
 
-src/pages/FundamentosPage.tsx:995
+src/pages/FundamentosPage.tsx:1101
   <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
 
-src/pages/FundamentosPage.tsx:1019
+src/pages/FundamentosPage.tsx:1125
   <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
 
-src/pages/FundamentosPage.tsx:1126
+src/pages/FundamentosPage.tsx:1232
   <p className="font-semibold text-sm">{s.label}</p>
 
-src/pages/FundamentosPage.tsx:1146
+src/pages/FundamentosPage.tsx:1252
   <p className="text-xs font-medium">{r.label}</p>
 
-src/pages/FundamentosPage.tsx:1278
+src/pages/FundamentosPage.tsx:1384
   <p className="text-xs text-muted-foreground">
 
 src/pages/HomePage.tsx:108
