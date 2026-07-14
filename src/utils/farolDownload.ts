@@ -149,7 +149,7 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: { sans: ["Poppins", "system-ui", "sans-serif"] },
+      fontFamily: { sans: ["Montserrat", "system-ui", "sans-serif"] },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -178,7 +178,7 @@ const indexHtml = `<!doctype html>
     <title>Farol Estratégico — Cisec-CE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
@@ -232,7 +232,7 @@ export function useTheme() {
 
 const cisecAssetsStub = `// Substitua pelos arquivos oficiais de marca em assets/ se necessário.
 const ph = "data:image/svg+xml;utf8," + encodeURIComponent(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40"><text x="0" y="28" font-family="Poppins,sans-serif" font-size="22" font-weight="700" fill="#003366">Cisec</text></svg>'
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40"><text x="0" y="28" font-family="Montserrat,sans-serif" font-size="22" font-weight="700" fill="#003366">Cisec</text></svg>'
 );
 export const cisecCor = ph;
 export const cisecWhite = ph;
@@ -281,7 +281,7 @@ const vanillaHtml = `<!doctype html>
   <title>Farol Estratégico — Cisec-CE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
   <script src="app.js" defer></script>
@@ -348,7 +348,7 @@ const vanillaCss = `/* Tokens HSL do Design System Cisec-CE */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: "Poppins", system-ui, sans-serif;
+  font-family: "Montserrat", system-ui, sans-serif;
   background: hsl(var(--background)); color: hsl(var(--foreground));
   font-size: 14px; line-height: 1.5;
 }

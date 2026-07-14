@@ -172,7 +172,7 @@ function SignUpPreview() {
 
 /* ─── Code snippets ─── */
 const signInCode = `<!-- Sign In — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
@@ -208,7 +208,7 @@ const signInCode = `<!-- Sign In — CISEC-CE Design System -->
 </div>`;
 
 const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
@@ -342,7 +342,7 @@ function TwoFactorPreview() {
 }
 
 const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem;text-align:center">
     <div style="margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">

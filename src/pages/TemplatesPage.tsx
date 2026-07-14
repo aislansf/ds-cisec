@@ -323,7 +323,7 @@ function generateHeaderCode(variant: HeaderVariant): string {
 
 <style>
 .cisec-header-light {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .cisec-header-light__inner {
   display: flex;
@@ -407,7 +407,7 @@ ${menuRight ? `    <button class="cisec-header__menu cisec-header__menu--right" 
 <style>
 .cisec-header {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .cisec-header__inner {
   display: flex;
@@ -1082,7 +1082,7 @@ export default function TemplatesPage() {
                               <stop offset='0' stop-color='#EFF3F8'/><stop offset='1' stop-color='#D6E0EE'/>
                             </linearGradient></defs>
                             <rect width='1280' height='800' fill='url(#g)'/>
-                            <g fill='#0D3857' font-family='Poppins, Arial, sans-serif' text-anchor='middle'>
+                            <g fill='#0D3857' font-family='Montserrat, Arial, sans-serif' text-anchor='middle'>
                               <text x='640' y='390' font-size='54' font-weight='700'>Pré-visualização indisponível</text>
                               <text x='640' y='450' font-size='28' opacity='0.7'>Thumbnail será gerado em breve</text>
                             </g>

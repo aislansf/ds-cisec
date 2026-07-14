@@ -61,7 +61,7 @@ const footerCode = `<!-- Footer CISEC — Modelo Institucional -->
   padding: 0 1.5rem;
   height: 48px;
   background-color: #2A4FDA;
-  font-family: 'Figtree', system-ui, sans-serif;
+  font-family: 'Montserrat', system-ui, sans-serif;
 }
 .cisec-footer__brand {
   display: flex;
@@ -161,7 +161,7 @@ export default function CisecFooterSection() {
           <div>
             <p className="font-semibold text-foreground mb-1">Tipografia</p>
             <ul className="space-y-1">
-              <li>• Projeto: Figtree 14px / 500</li>
+              <li>• Projeto: Montserrat 14px / 500</li>
               <li>• Versão: monospace 12px</li>
               <li>• Separador: 14px regular</li>
             </ul>

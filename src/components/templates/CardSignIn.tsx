@@ -102,7 +102,7 @@ function CardSignInPreview() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#163F5F] to-white/0" />
         <div className="absolute bottom-6 left-6 right-6">
-          <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Campuni', 'Poppins', sans-serif" }}>
+          <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Lora', 'Montserrat', sans-serif" }}>
             Estimulamos o empreendedorismo
           </p>
         </div>
@@ -155,7 +155,7 @@ const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC-CE -->
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .card-signin__form {
   display: flex; flex-direction: column;
