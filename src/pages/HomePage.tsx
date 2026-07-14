@@ -6,7 +6,8 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/DSComponents";
 import { SEO } from "@/components/SEO";
-import { cisecWhite as cisecLogo } from "@/assets/cisec";
+import { cisecWhite as cisecLogo, cisecCompletaWhite } from "@/assets/cisec";
+import { useTheme } from "@/hooks/useTheme";
 
 const sections = [
   { icon: <Palette size={24} />, title: "Fundamentos", desc: "Tipografia, cores, iconografia, grid, espaçamento e princípios visuais", path: "/fundamentos" },
