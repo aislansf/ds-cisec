@@ -15,7 +15,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const ROOT = process.cwd();
-const TARGET_COLOR = "#005EB8";
+const TARGET_COLOR = "#1F3051";
 const FILES = [
   "src/index.css",
   "src/pages/HomePage.tsx",
