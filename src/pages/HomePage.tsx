@@ -100,7 +100,7 @@ export default function HomePage() {
         <img
           src={cisecLogo}
           alt="Marca CISEC-CE"
-          className="h-auto w-auto max-w-full max-h-[6.6125rem] md:max-h-[7.935rem] mb-6 object-contain"
+          className="h-auto w-auto max-w-full max-h-16 md:max-h-20 mb-6 object-contain"
         />
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
           Sistema de padrões para as aplicações do CISEC-CE
