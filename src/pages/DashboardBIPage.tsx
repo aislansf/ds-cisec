@@ -179,7 +179,7 @@ export default function DashboardBIPage() {
         </button>
 
         <div className="flex items-center gap-3 shrink-0">
-          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-[40px] w-auto" />
+          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-7 w-auto" />
         </div>
 
         <div className="w-px h-8 bg-primary/30 shrink-0" />
@@ -225,7 +225,7 @@ export default function DashboardBIPage() {
           >
             <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
               <div className={`flex items-center gap-2 min-w-0 ${collapsed && !isMobile ? "justify-center w-full" : ""}`}>
-                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-[60px] w-[60px] shrink-0" />
+                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-9 w-9 shrink-0" />
                 {(!collapsed || isMobile) && <span className="text-sm font-semibold whitespace-nowrap">SIGLA</span>}
               </div>
               {(!collapsed || isMobile) && (
