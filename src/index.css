@@ -46,63 +46,61 @@
     --cisec-comp-brown: 36 45% 22%;   /* #51401F */
 
     /* ===== LIGHT MODE (default) ===== */
-    --background: 210 25% 99%;
-    --foreground: 228 60% 12%;
+    --background: 0 0% 100%;
+    --foreground: 222 45% 12%;
     --card: 0 0% 100%;
-    --card-foreground: 228 60% 12%;
+    --card-foreground: 222 45% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 228 60% 12%;
-    --primary: 228 70% 51%;
+    --popover-foreground: 222 45% 12%;
+    --primary: 222 45% 22%;              /* Azul Institucional #1F3051 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 196 85% 45%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 220 15% 94%;
-    --muted-foreground: 228 12% 42%;
-    --accent: 228 90% 96%;
-    --accent-foreground: 228 70% 25%;
-    /* Card icon surface — #84F4BC (verde menta CISEC) */
-    --card-icon: 196 83% 46%;
-    --card-icon-foreground: 0 0% 100%;
-    --destructive: 0 78% 52%;
+    --secondary: 34 100% 56%;            /* Laranja #FF9E20 */
+    --secondary-foreground: 222 45% 12%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 38%;        /* Cinza #606060 */
+    --accent: 34 100% 96%;
+    --accent-foreground: 34 100% 30%;
+    --card-icon: 34 100% 56%;            /* símbolo em laranja */
+    --card-icon-foreground: 222 45% 22%;
+    --destructive: 3 74% 56%;            /* Erro #E1483F */
     --destructive-foreground: 0 0% 100%;
-    --border: 220 18% 88%;
-    --input: 220 18% 88%;
-    --ring: 228 70% 51%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 34 100% 56%;
     --radius: 0.375rem;
 
     /* Semantic feedback – light */
-    --success: 145 63% 32%;
+    --success: 143 55% 40%;              /* #2E9E5B */
     --success-foreground: 0 0% 100%;
-    --success-bg: 145 50% 95%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 38 90% 18%;
-    --warning-bg: 38 90% 95%;
-    --error: 0 78% 52%;
+    --success-bg: 143 55% 95%;
+    --warning: 44 100% 48%;              /* #F4B400 */
+    --warning-foreground: 44 90% 14%;
+    --warning-bg: 44 100% 95%;
+    --error: 3 74% 56%;                  /* #E1483F */
     --error-foreground: 0 0% 100%;
-    --error-bg: 0 70% 96%;
-    --info: 228 70% 60%;
+    --error-bg: 3 74% 96%;
+    --info: 213 100% 56%;                /* #2081FF */
     --info-foreground: 0 0% 100%;
-    --info-bg: 228 90% 96%;
+    --info-bg: 213 100% 96%;
 
-    /* CISEC button accent — texto sobre azul institucional (rgb 231,247,158) */
-    --cisec-btn-fg: 71 85% 79%;
-    --cisec-btn-hover: 226 78% 40%; /* #183ab8 */
+    /* CISEC button accent — texto sobre azul institucional */
+    --cisec-btn-fg: 0 0% 100%;
+    --cisec-btn-hover: 222 45% 16%;
 
     /* Sidebar – light */
-    --header-background: 228 70% 51%;
-    /* Header shell (top bar) — superfície clara com tinta institucional */
-    --header-surface: 227 100% 97%; /* #F1F4FF */
-    --header-surface-foreground: 228 70% 42%;
-    --header-surface-border: 220 18% 88%;
-    --sidebar-background: 228 72% 42%;
-    --sidebar-foreground: 228 30% 95%;
-    --sidebar-primary: 0 0% 100%;
-    --sidebar-primary-foreground: 228 70% 35%;
-    --sidebar-accent: 228 75% 35%;
+    --header-background: 222 45% 22%;
+    --header-surface: 0 0% 100%;
+    --header-surface-foreground: 222 45% 22%;
+    --header-surface-border: 0 0% 90%;
+    --sidebar-background: 222 45% 22%;   /* Azul Institucional */
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 34 100% 56%;      /* destaques em laranja */
+    --sidebar-primary-foreground: 222 45% 12%;
+    --sidebar-accent: 222 45% 16%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 228 60% 30%;
-    --sidebar-ring: 196 85% 50%;
-    --sidebar-muted: 228 25% 75%;
+    --sidebar-border: 222 45% 16%;
+    --sidebar-ring: 34 100% 56%;
+    --sidebar-muted: 222 20% 70%;
 
     /* === Spacing tokens (escala base 4px) === */
     --space-0: 0;
