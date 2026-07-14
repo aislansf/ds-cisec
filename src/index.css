@@ -472,10 +472,14 @@
   }
 }
 
-/* Cor institucional aplicada a todos os títulos H1 do Design System. */
+/* Cor institucional aplicada a todos os títulos H1 do Design System.
+ * Azul Institucional CISEC #1F3051 (Manual de Marca v4/2026). */
 @layer base {
   h1 {
-    color: #005EB8;
+    color: #1F3051;
+  }
+  .dark h1 {
+    color: #FF9E20;
   }
 }
 
