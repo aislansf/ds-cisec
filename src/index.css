@@ -1,24 +1,9 @@
-/* === Tipografia oficial Cisec ===
- * Primária: Figtree (Google Fonts, open-source) – usada em corpo, UI e H1/H3.
- * Secundária: Campuni (fonte proprietária Cisec) – usada em H2 e títulos de impacto.
- *   Quando o arquivo oficial estiver disponível, hospede em /public/fonts/campuni-bold.woff2
- *   e ative o @font-face abaixo. Até lá, o fallback usa Figtree.
- * Sistêmica: Lato (Google Fonts) – fonte de apoio alinhada ao portal cisec.com.br,
- *   usada em legendas, microcopy institucional e contextos de leitura prolongada.
+/* === Tipografia oficial CISEC (Manual de Marca v4/2026) ===
+ * Primária: Montserrat — usada em todos os textos oficiais, títulos e UI.
+ * Secundária: Lora — sugerida para citações, destaques editoriais e materiais
+ *   institucionais mais formais. Sempre em conjunto com a Montserrat.
  */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-
-/* Campuni Bold — servida pelo CDN público do Cisec (mesma origem usada em cisec.com.br).
- * font-display: swap garante que o fallback Figtree apareça imediatamente,
- * evitando FOIT enquanto o arquivo é baixado. */
-@font-face {
-  font-family: 'Campuni';
-  src: url('https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
