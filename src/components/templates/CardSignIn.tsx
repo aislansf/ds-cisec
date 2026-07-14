@@ -14,7 +14,7 @@ function CardSignInPreview() {
         <div className="max-w-sm mx-auto w-full space-y-6">
           {/* Logo */}
           <div className="flex justify-center">
-            <img src={cisecLogo} alt="CISEC-CE" className="h-[86px] w-auto" />
+            <img src={cisecLogo} alt="CISEC-CE" className="h-14 w-auto" />
           </div>
 
           {/* Title */}

@@ -4,26 +4,24 @@ import SidebarMenuPreview from "../SidebarMenuPreview";
 
 /**
  * Regressão visual: garante que o Menu Lateral — Componente Final
- * permanece consistente em viewport de 320px, com logo 60×60 e sem
- * cortar o texto "SIGLA" nem os rótulos dos itens.
+ * permanece consistente em viewport de 320px, com logo proporcional
+ * (h-9 w-9 = 36×36) e sem cortar o texto "SIGLA" nem os rótulos.
  *
  * O jsdom não calcula layout, então validamos os contratos de classes
  * Tailwind que evitam o corte (whitespace-nowrap, truncate, min-w-0)
- * e as dimensões fixas exigidas do logo (60×60).
+ * e as dimensões proporcionais exigidas do logo (36×36).
  */
-describe("SidebarMenuPreview — 320px / logo 60×60", () => {
+describe("SidebarMenuPreview — 320px / logo 36×36", () => {
   beforeAll(() => {
     Object.defineProperty(window, "innerWidth", { writable: true, value: 320 });
     Object.defineProperty(window, "innerHeight", { writable: true, value: 1600 });
   });
 
-  it("renderiza o logo CISEC-CE em 60×60 (h-[60px] w-[60px]) em todos os breakpoints", () => {
+  it("renderiza o logo CISEC-CE em 36×36 (h-9 w-9) proporcional ao header", () => {
     render(<SidebarMenuPreview />);
     const logo = screen.getByAltText("CISEC-CE");
-    expect(logo.className).toMatch(/(^|\s)h-\[60px\](\s|$)/);
-    expect(logo.className).toMatch(/(^|\s)w-\[60px\](\s|$)/);
-    expect(logo.className).toMatch(/sm:h-\[60px\]/);
-    expect(logo.className).toMatch(/sm:w-\[60px\]/);
+    expect(logo.className).toMatch(/(^|\s)h-9(\s|$)/);
+    expect(logo.className).toMatch(/(^|\s)w-9(\s|$)/);
     expect(logo.className).toMatch(/shrink-0/);
   });
 

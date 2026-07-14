@@ -156,7 +156,7 @@ export default function PaginaFiltrosTabelaPage() {
           <Menu size={18} className="text-[#0024A9]" />
           <span className="text-[10px] text-[#0024A9]/70 hidden sm:inline">Menu</span>
         </button>
-        <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-[40px] w-auto shrink-0" />
+        <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-7 w-auto shrink-0" />
         <div className="w-px h-8 bg-[#0024A9]/30 shrink-0" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-[#0024A9] leading-tight truncate">

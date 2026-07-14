@@ -25,7 +25,7 @@ const NotFound = () => {
       <div className="max-w-md w-full bg-card rounded-lg shadow-xl border border-border overflow-hidden">
         <div className="p-8 flex flex-col items-center text-center">
           {/* Marca Cisec colorida */}
-          <CisecLogo variant="color" width={120} height={64} className="mb-8" />
+          <CisecLogo variant="color" width={88} height={44} className="mb-8" />
 
           {/* Ícone */}
           <div className="mb-6 p-4 bg-muted rounded-full">

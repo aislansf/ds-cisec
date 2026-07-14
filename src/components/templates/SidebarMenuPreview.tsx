@@ -111,7 +111,7 @@ function SidebarPreview() {
             <img
               src={iconeCisecNegativo}
               alt="CISEC-CE"
-              className="h-[60px] w-[60px] sm:h-[60px] sm:w-[60px] shrink-0"
+              className="h-9 w-9 shrink-0"
             />
             {!collapsed && (
               <span className="text-sm font-semibold whitespace-nowrap">SIGLA</span>

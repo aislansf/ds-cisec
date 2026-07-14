@@ -437,7 +437,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           <img
             src={theme === "dark" ? logoCisecWhite : logoCisecCompleta2}
             alt="CISEC-CE"
-            className="h-14"
+            className="h-9"
           />
         </a>
 

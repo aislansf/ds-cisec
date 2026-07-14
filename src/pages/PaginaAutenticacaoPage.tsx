@@ -185,7 +185,7 @@ export default function PaginaAutenticacaoPage() {
                     </button>
                   </div>
                   <div className="flex justify-center pt-4">
-                    <CisecLogo variant="mono" width={100} height={80} opacity={0.4} />
+                    <CisecLogo variant="mono" width={72} height={56} opacity={0.4} />
                   </div>
                 </div>
               </div>
