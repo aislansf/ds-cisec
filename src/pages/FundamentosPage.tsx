@@ -601,6 +601,112 @@ export default function FundamentosPage() {
         </div>
       </div>
 
+      {/* Amostras H1 em modo claro e escuro */}
+      <div className="cisec-card mb-6">
+        <div className="flex items-center justify-between mb-6 pb-4 border-b border-border">
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+              H1 e variações — Light &amp; Dark
+            </h4>
+            <p className="text-xs text-muted-foreground mt-1">
+              Mesmo par tipográfico (Montserrat + Lora) e mesmos tokens semânticos, renderizados nos dois temas para validar contraste e hierarquia.
+            </p>
+          </div>
+          <div className="hidden sm:flex items-center gap-3 text-[10px] font-mono">
+            <span className="flex items-center gap-1.5">
+              <span className="inline-block w-2 h-2 rounded-full" style={{ background: "#1F3051" }} /> Azul Institucional
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="inline-block w-2 h-2 rounded-full" style={{ background: "#FF9E20" }} /> Laranja
+            </span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {(["light", "dark"] as const).map(mode => {
+            const isDark = mode === "dark";
+            return (
+              <div
+                key={mode}
+                className={`${isDark ? "dark" : ""} rounded-xl border border-border overflow-hidden`}
+              >
+                <div className="bg-background text-foreground p-6">
+                  <div className="flex items-center justify-between mb-5">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider bg-muted text-muted-foreground px-2 py-1 rounded">
+                      {isDark ? "Modo escuro" : "Modo claro"}
+                    </span>
+                    <span className="text-[10px] font-mono text-muted-foreground">
+                      {isDark ? "background #0B1224" : "background #FFFFFF"}
+                    </span>
+                  </div>
+
+                  <h1 className="text-4xl md:text-5xl font-black font-heading leading-tight mb-3">
+                    Inteligência em Saúde para o Ceará
+                  </h1>
+                  <p className="text-[10px] font-mono text-muted-foreground mb-6">
+                    H1 · Montserrat Black · {isDark ? "#FF9E20 (laranja)" : "#1F3051 (azul institucional)"}
+                  </p>
+
+                  <h2 className="text-3xl font-bold font-heading mb-2">
+                    Painéis e monitoramento epidemiológico
+                  </h2>
+                  <p className="text-[10px] font-mono text-muted-foreground mb-5">
+                    H2 · Montserrat Bold · text-foreground
+                  </p>
+
+                  <h3 className="text-2xl font-bold font-heading mb-2">
+                    Decisões estratégicas orientadas por dados
+                  </h3>
+                  <p className="text-[10px] font-mono text-muted-foreground mb-5">
+                    H3 · Montserrat Bold · text-foreground
+                  </p>
+
+                  <h4 className="text-xl font-semibold font-heading mb-2">
+                    Prevenção, alertas e gestão de pessoas
+                  </h4>
+                  <p className="text-[10px] font-mono text-muted-foreground mb-5">
+                    H4 · Montserrat SemiBold · text-foreground
+                  </p>
+
+                  <p className="text-base leading-relaxed mb-3">
+                    Corpo em <strong>Montserrat Regular</strong>. O CISEC-CE captura, processa e analisa dados de saúde,
+                    transformando-os em informação estratégica para gestores públicos, profissionais e sociedade.
+                  </p>
+
+                  <blockquote
+                    className="font-editorial italic text-lg leading-snug border-l-4 pl-4 my-4"
+                    style={{ borderColor: isDark ? "#FF9E20" : "#1F3051" }}
+                  >
+                    “A saúde pública é feita de dados transformados em decisão.”
+                  </blockquote>
+                  <p className="text-[10px] font-mono text-muted-foreground mb-4">
+                    Citação · Lora Italic (tipografia secundária)
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-border">
+                    <button className="px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition">
+                      Botão primário
+                    </button>
+                    <button className="px-4 py-2 rounded-md bg-secondary text-secondary-foreground text-sm font-semibold hover:opacity-90 transition">
+                      Botão secundário
+                    </button>
+                    <a href="#" className="text-primary underline underline-offset-2 text-sm font-medium">
+                      Link em destaque
+                    </a>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="text-[11px] text-muted-foreground italic mt-4">
+          No modo claro, o H1 usa o Azul Institucional <code className="font-mono">#1F3051</code>; no modo escuro, o Laranja
+          <code className="font-mono"> #FF9E20</code> assume o papel de destaque — ambos definidos como tokens
+          em <code className="font-mono">src/index.css</code>.
+        </p>
+      </div>
+
       {/* Atlas de Tipografia */}
       <div id="atlas-tipografia" className="cisec-card mb-6">
         <div className="flex items-end justify-between mb-6 pb-4 border-b border-border">
