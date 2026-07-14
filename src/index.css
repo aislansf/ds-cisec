@@ -215,49 +215,47 @@
 
   /* ===== DARK MODE ===== */
   .dark {
-    --background: 210 25% 8%;
-    --foreground: 210 20% 90%;
-    --card: 210 22% 12%;
-    --card-foreground: 210 20% 90%;
-    --popover: 210 22% 12%;
-    --popover-foreground: 210 20% 90%;
-    --primary: 228 75% 62%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 196 80% 55%;
+    --background: 222 45% 8%;
+    --foreground: 0 0% 96%;
+    --card: 222 45% 12%;
+    --card-foreground: 0 0% 96%;
+    --popover: 222 45% 12%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 34 100% 56%;              /* Laranja como CTA no dark */
+    --primary-foreground: 222 45% 12%;
+    --secondary: 222 45% 32%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 210 18% 18%;
-    --muted-foreground: 210 15% 60%;
-    --accent: 228 50% 22%;
-    --accent-foreground: 228 60% 85%;
-    /* Card icon surface — #84F4BC mantém-se no dark para reforçar identidade */
-    --card-icon: 196 83% 46%;
-    --card-icon-foreground: 0 0% 100%;
-    --destructive: 0 72% 58%;
+    --muted: 222 20% 18%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 222 45% 20%;
+    --accent-foreground: 34 100% 68%;
+    --card-icon: 34 100% 56%;
+    --card-icon-foreground: 222 45% 12%;
+    --destructive: 3 74% 58%;
     --destructive-foreground: 0 0% 100%;
-    --border: 210 18% 22%;
-    --input: 210 18% 22%;
-    --ring: 228 75% 62%;
+    --border: 222 20% 22%;
+    --input: 222 20% 22%;
+    --ring: 34 100% 56%;
 
     /* Semantic feedback – dark */
-    --success: 145 55% 42%;
+    --success: 143 55% 45%;
     --success-foreground: 0 0% 100%;
-    --success-bg: 145 30% 14%;
-    --warning: 38 88% 58%;
-    --warning-foreground: 38 90% 88%;
-    --warning-bg: 38 50% 14%;
-    --error: 0 72% 58%;
+    --success-bg: 143 40% 14%;
+    --warning: 44 100% 55%;
+    --warning-foreground: 44 90% 12%;
+    --warning-bg: 44 60% 14%;
+    --error: 3 74% 58%;
     --error-foreground: 0 0% 100%;
-    --error-bg: 0 40% 14%;
-    --info: 228 70% 65%;
+    --error-bg: 3 50% 14%;
+    --info: 213 100% 62%;
     --info-foreground: 0 0% 100%;
-    --info-bg: 228 45% 16%;
+    --info-bg: 213 50% 16%;
 
     /* Sidebar – dark */
-    --header-background: 228 75% 18%;
-    /* Header shell (top bar) — dark */
-    --header-surface: 210 22% 10%;
-    --header-surface-foreground: 228 75% 75%;
-    --header-surface-border: 210 18% 20%;
+    --header-background: 222 45% 14%;
+    --header-surface: 222 45% 10%;
+    --header-surface-foreground: 0 0% 96%;
+    --header-surface-border: 222 20% 20%;
     --sidebar-background: 210 25% 6%;
     --sidebar-foreground: 210 20% 80%;
     --sidebar-primary: 228 75% 62%;
