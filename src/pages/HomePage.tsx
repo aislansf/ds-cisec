@@ -82,6 +82,7 @@ const diretrizesGerais = [
 
 export default function HomePage() {
   const navigate = useNavigate();
+  const { theme } = useTheme();
 
   return (
     <div>
@@ -99,9 +100,13 @@ export default function HomePage() {
       {/* Hero */}
       <div className="rounded-xl bg-primary text-primary-foreground p-8 md:p-10 mb-10">
         <img
-          src={cisecLogo}
+          src={theme === "dark" ? cisecCompletaWhite : cisecLogo}
           alt="Marca CISEC-CE"
-          className="h-auto w-auto max-w-full max-h-16 md:max-h-20 mb-6 object-contain"
+          className={
+            theme === "dark"
+              ? "h-auto w-auto max-w-full max-h-28 md:max-h-36 mb-6 object-contain"
+              : "h-auto w-auto max-w-full max-h-16 md:max-h-20 mb-6 object-contain"
+          }
         />
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
           Sistema de padrões para as aplicações do CISEC-CE
