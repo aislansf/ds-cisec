@@ -14,12 +14,18 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Figtree", "system-ui", "Helvetica Neue", "Arial", "sans-serif"],
-        heading: ["Campuni", "Figtree", "system-ui", "sans-serif"],
-        display: ["Campuni", "Figtree", "system-ui", "sans-serif"],
-        poppins: ["Figtree", "system-ui", "sans-serif"],
-        system: ["Lato", "Figtree", "system-ui", "Helvetica Neue", "Arial", "sans-serif"],
-        lato: ["Lato", "system-ui", "sans-serif"],
+        // Tipografia oficial CISEC — Manual de Marca v4/2026
+        // Primária: Montserrat · Secundária (editorial): Lora
+        sans: ["Montserrat", "system-ui", "Helvetica Neue", "Arial", "sans-serif"],
+        heading: ["Montserrat", "system-ui", "sans-serif"],
+        display: ["Montserrat", "system-ui", "sans-serif"],
+        montserrat: ["Montserrat", "system-ui", "sans-serif"],
+        editorial: ["Lora", "Georgia", "serif"],
+        lora: ["Lora", "Georgia", "serif"],
+        // Aliases legados mantidos para compatibilidade
+        poppins: ["Montserrat", "system-ui", "sans-serif"],
+        system: ["Montserrat", "system-ui", "sans-serif"],
+        lato: ["Montserrat", "system-ui", "sans-serif"],
       },
       fontSize: {
         // Consome tokens CSS definidos em :root (src/index.css)

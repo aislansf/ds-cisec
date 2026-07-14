@@ -32,7 +32,7 @@ const donutData = [
 const performanceData = [
   { label: "Excepcional", pct: 45, color: "#D98217" },
   { label: "Alto Desempenho", pct: 35, color: "#16A34A" },
-  { label: "Adequados", pct: 25, color: "#2A4FDA" },
+  { label: "Adequados", pct: 25, color: "#1F3051" },
   { label: "Inadequados", pct: 55, color: "#DC2626" },
 ];
 
@@ -45,7 +45,7 @@ const tableRows = [
 ];
 
 function StatusDot({ status }: { status: string }) {
-  const color = status === "Regular" ? "#16A34A" : status === "Atenção" ? "#DC2626" : "#2A4FDA";
+  const color = status === "Regular" ? "#16A34A" : status === "Atenção" ? "#DC2626" : "#1F3051";
   return (
     <span className="flex items-center gap-1.5 text-xs">
       <span className="w-2 h-2 rounded-full inline-block" style={{ background: color }} />
@@ -99,7 +99,7 @@ function AuditTable({ rows = tableRows }: { rows?: typeof tableRows }) {
     <div className="overflow-x-auto">
       <table className="w-full text-xs">
         <thead>
-          <tr className="bg-[#2A4FDA] text-white">
+          <tr className="bg-[#1F3051] text-white">
             <th className="px-3 py-2 text-left font-medium">ID</th>
             <th className="px-3 py-2 text-left font-medium">Servidor</th>
             <th className="px-3 py-2 text-left font-medium">Diretoria</th>
@@ -201,7 +201,7 @@ function BarChartSection() {
             <XAxis dataKey="name" tick={{ fontSize: 10 }} />
             <YAxis tick={{ fontSize: 10 }} />
             <Tooltip contentStyle={{ fontSize: 11, borderRadius: 8 }} />
-            <Bar dataKey="valor" fill="#2A4FDA" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="valor" fill="#1F3051" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -219,7 +219,7 @@ function DashboardCompleta() {
 
       {/* Filter bar */}
       <div className="flex items-center gap-2 px-5 py-2 bg-card border-b border-border">
-        <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2A4FDA] text-white text-xs rounded">
+        <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#1F3051] text-white text-xs rounded">
           <Filter size={12} /> Filtros
         </button>
         <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#D98217] text-white text-xs rounded">
@@ -236,7 +236,7 @@ function DashboardCompleta() {
 
           {/* KPI row — 3 colunas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <KPICard icon={Users} title="Total de Servidores" subtitle="Servidores em análise (filtrados)" value="1.019" borderColor="#2A4FDA" />
+            <KPICard icon={Users} title="Total de Servidores" subtitle="Servidores em análise (filtrados)" value="1.019" borderColor="#1F3051" />
             <KPICard icon={FileCheck} title="Servidores Regulares" subtitle="Filtro (listar todos)" value="80.00%" borderColor="#16A34A" />
             <KPICard icon={FileX} title="Servidores Irregulares" subtitle="Filtro (listar todos)" value="20.00%" borderColor="#DC2626" />
             <KPICard icon={Clock} title="Em Análise" subtitle="Aguardando conformidade" value="20.00%" borderColor="#D98217" />
@@ -292,7 +292,7 @@ function DashboardReduzida() {
             { title: "Servidores Irregulares", sub: "Filtro (listar todos)", value: "20.00%", color: "#DC2626" },
             { title: "Em Análise", sub: "Aguardando conformidade", value: "20.00%", color: "#D98217" },
             { title: "Auditoria em Andamento", sub: "Aguardando conformidade", value: "2.00%", color: "#16A34A" },
-            { title: "Total de Servidores", sub: "Servidores em análise (filtrados)", value: "1.019", color: "#2A4FDA" },
+            { title: "Total de Servidores", sub: "Servidores em análise (filtrados)", value: "1.019", color: "#1F3051" },
           ].map((kpi, i) => (
             <div key={i} className="border-b border-border pb-3 last:border-0">
               <p className="text-xs font-semibold" style={{ color: kpi.color }}>{kpi.title}</p>
@@ -325,7 +325,7 @@ function DashboardReduzida() {
             <div className="overflow-x-auto max-w-full">
               <table className="w-full text-xs" style={{ minWidth: 900 }}>
                 <thead>
-                  <tr className="bg-[#2A4FDA] text-white">
+                  <tr className="bg-[#1F3051] text-white">
                     <th className="px-3 py-2 text-left font-medium">ID</th>
                     <th className="px-3 py-2 text-left font-medium">Servidor</th>
                     <th className="px-3 py-2 text-left font-medium">Diretoria</th>

@@ -340,7 +340,7 @@ function generateSidebarCode(): string {
   display: flex;
   flex-direction: column;
   z-index: 100;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transform: translateX(0);
   transition: transform 0.2s ease;
 }

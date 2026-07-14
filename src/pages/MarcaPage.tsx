@@ -8,7 +8,7 @@ import cisecWhiteAsset from "@/assets/marca/cisec-white.svg.asset.json";
 const LOGO_COR = cisecCorAsset.url;
 const LOGO_BLACK = cisecBlackAsset.url;
 const LOGO_WHITE = cisecWhiteAsset.url;
-const CISEC_BLUE = "#2A4FDA";
+const CISEC_BLUE = "#1F3051";
 
 const MANUAL_PDF_URL =
   "https://cisecmg.com.br/diversos/web/docs/casademarcas/manuais/Manual_de_Marca_Cisec.pdf";
@@ -119,7 +119,7 @@ export default function MarcaPage() {
             </div>
             <div className="rounded-lg border border-border bg-muted/30 p-3">
               <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-1">Cor</p>
-              <p className="font-medium">Azul Cisec · Pantone 2935 C · #2A4FDA</p>
+              <p className="font-medium">Azul Cisec · Manual de Marca CISEC · #1F3051</p>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">
               A tipografia, as proporções e o posicionamento dos elementos nunca devem ser alterados. Use sempre os arquivos fechados com as fontes em curvas.

@@ -26,7 +26,7 @@ const tokens: { token: string; valor: string; uso: string }[] = [
   { token: "--muted / --muted-foreground", valor: "Ruído suave", uso: "Labels de filtro, textos auxiliares, hover de linhas." },
   { token: "--border", valor: "Divisores", uso: "Separadores de seções, contornos de cards e selects." },
   { token: "--ring", valor: "Foco acessível", uso: "Outline de inputs e selects (focus-visible)." },
-  { token: "Tipografia Poppins", valor: "font-sans global", uso: "Toda a hierarquia textual (12px a 24px)." },
+  { token: "Tipografia Montserrat", valor: "font-sans global", uso: "Toda a hierarquia textual (12px a 24px)." },
   { token: "Radius", valor: "rounded-md (0.375rem)", uso: "Bordas de cards, botões e selects." },
 ];
 
@@ -82,7 +82,7 @@ export default function FarolEstrategicoDocsPage() {
         {[
           { icon: <Workflow size={18} className="text-primary" />, title: "Arquitetura", desc: "Header fixo · Sidebar colapsável · Breadcrumb · Toolbar · Filtros · Tabs · Gráficos · Tabela · Footer." },
           { icon: <Boxes size={18} className="text-primary" />, title: "Stack", desc: "React 18 + TypeScript + Tailwind CSS + Recharts + lucide-react." },
-          { icon: <Palette size={18} className="text-primary" />, title: "Identidade", desc: "100% tokens semânticos (HSL) · Poppins · Light/Dark mode automáticos." },
+          { icon: <Palette size={18} className="text-primary" />, title: "Identidade", desc: "100% tokens semânticos (HSL) · Montserrat · Light/Dark mode automáticos." },
         ].map((c) => (
           <div key={c.title} className="cisec-card">
             <div className="flex items-center gap-2 mb-2">{c.icon}<h4 className="font-semibold text-sm">{c.title}</h4></div>
@@ -356,8 +356,8 @@ VAR Template =
     &     "<div style='background:#fff;border:1px solid #E2E8F0;border-radius:8px;padding:14px;border-top:3px solid #005EB8'>"
     &       "<div style='font-size:22px;font-weight:700;color:#005EB8'>{{KPI_1_VALOR}}</div>"
     &       "<div style='font-size:11px;color:#64748B'>{{KPI_1_LABEL}}</div></div>"
-    &     "<div style='background:#fff;border:1px solid #E2E8F0;border-radius:8px;padding:14px;border-top:3px solid #2A4FDA'>"
-    &       "<div style='font-size:22px;font-weight:700;color:#2A4FDA'>{{KPI_2_VALOR}}</div>"
+    &     "<div style='background:#fff;border:1px solid #E2E8F0;border-radius:8px;padding:14px;border-top:3px solid #1F3051'>"
+    &       "<div style='font-size:22px;font-weight:700;color:#1F3051'>{{KPI_2_VALOR}}</div>"
     &       "<div style='font-size:11px;color:#64748B'>{{KPI_2_LABEL}}</div></div>"
     &     "<div style='background:#fff;border:1px solid #E2E8F0;border-radius:8px;padding:14px;border-top:3px solid #16A34A'>"
     &       "<div style='font-size:22px;font-weight:700;color:#16A34A'>{{KPI_3_VALOR}}</div>"

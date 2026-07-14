@@ -71,7 +71,7 @@ export const headerVariants: HeaderVariant[] = [
   { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa CISEC-CE e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
   // Testeira para aplicação de arte
   { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #16329C, marca CISEC branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#16329C" } },
-  { id: "int-testeira-art-blue", title: "Testeira · Aplicação de arte (Azul)", description: "Faixa fina (36-52px) com fundo #2A4FDA, menu à esquerda e ícone de modo escuro — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#2A4FDA" } },
+  { id: "int-testeira-art-blue", title: "Testeira · Aplicação de arte (Azul)", description: "Faixa fina (36-52px) com fundo #1F3051, menu à esquerda e ícone de modo escuro — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#1F3051" } },
   { id: "int-testeira-art-light", title: "Testeira · Aplicação de arte (Claro)", description: "Faixa fina (36-52px) com fundo branco, menu à esquerda e ícone de modo escuro na cor #16329C — ideal para aplicação de arte na testeira em fundo claro.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#FFFFFF", fg: "#16329C", border: true } },
   // Composição visual (negócios)
   { id: "int-visual-business", title: "Composição visual (negócios)", description: "Header institucional com faixa visual de 112px acima — composição para campanhas e portais de negócios.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", visualBanner: { src: headerBusinessBg, alt: "Clareza que o mercado exige para o futuro dos negócios", height: 112 } },
@@ -81,13 +81,13 @@ export const headerVariants: HeaderVariant[] = [
 function getHeaderBg(audience: string) {
   if (audience === "externo") return "bg-[#3B4AFF]";
   if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "bg-[#F0F3FF]";
-  return "bg-[#2A4FDA]";
+  return "bg-[#1F3051]";
 }
 
 function getHeaderBgHex(audience: string) {
   if (audience === "externo") return "#3B4AFF";
   if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "#F0F3FF";
-  return "#2A4FDA";
+  return "#1F3051";
 }
 
 function getClassificationBg(audience: string) {
@@ -323,7 +323,7 @@ function generateHeaderCode(variant: HeaderVariant): string {
 
 <style>
 .cisec-header-light {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .cisec-header-light__inner {
   display: flex;
@@ -350,7 +350,7 @@ function generateHeaderCode(variant: HeaderVariant): string {
 .cisec-header-light__title strong {
   display: block;
   font-size: 0.875rem;
-  color: #2A4FDA;
+  color: #1F3051;
   line-height: 1.3;
 }
 .cisec-header-light__title span {
@@ -407,7 +407,7 @@ ${menuRight ? `    <button class="cisec-header__menu cisec-header__menu--right" 
 <style>
 .cisec-header {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .cisec-header__inner {
   display: flex;
@@ -596,7 +596,7 @@ export default function TemplatesPage() {
                     <button className="border border-input bg-background hover:bg-muted px-4 py-2 rounded text-xs font-bold transition-all">Outline</button>
                     <button className="hover:bg-muted text-foreground px-4 py-2 rounded text-xs font-bold transition-all">Ghost</button>
                     <button className="bg-error text-white px-4 py-2 rounded text-xs font-bold hover:brightness-110 transition-all">Destrutivo</button>
-                    <button className="px-4 py-2 rounded text-xs font-bold transition-colors bg-[#E7F79E] text-[#2A4FDA] hover:bg-[#D1E575] hover:text-[#1644DC]">Diversificado</button>
+                    <button className="px-4 py-2 rounded text-xs font-bold transition-colors bg-[#FF9E20] text-[#1F3051] hover:bg-[#E88A10] hover:text-[#16233E]">Diversificado</button>
                   </div>
                 </div>
                 <div>
@@ -891,8 +891,8 @@ export default function TemplatesPage() {
             <p className="font-semibold text-foreground mb-1">Esquema de cores</p>
             <ul className="space-y-1 text-muted-foreground">
               <li className="flex items-center gap-2">
-                <span className="inline-block w-4 h-4 rounded border border-border" style={{ background: "#2A4FDA" }} />
-                <span>Fundo: <code className="text-[11px]">#2A4FDA</code></span>
+                <span className="inline-block w-4 h-4 rounded border border-border" style={{ background: "#1F3051" }} />
+                <span>Fundo: <code className="text-[11px]">#1F3051</code></span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="inline-block w-4 h-4 rounded border border-border" style={{ background: "#FFFFFF" }} />
@@ -1082,7 +1082,7 @@ export default function TemplatesPage() {
                               <stop offset='0' stop-color='#EFF3F8'/><stop offset='1' stop-color='#D6E0EE'/>
                             </linearGradient></defs>
                             <rect width='1280' height='800' fill='url(#g)'/>
-                            <g fill='#0D3857' font-family='Poppins, Arial, sans-serif' text-anchor='middle'>
+                            <g fill='#0D3857' font-family='Montserrat, Arial, sans-serif' text-anchor='middle'>
                               <text x='640' y='390' font-size='54' font-weight='700'>Pré-visualização indisponível</text>
                               <text x='640' y='450' font-size='28' opacity='0.7'>Thumbnail será gerado em breve</text>
                             </g>

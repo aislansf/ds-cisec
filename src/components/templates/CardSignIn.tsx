@@ -31,7 +31,7 @@ function CardSignInPreview() {
               <label className="block text-sm font-medium text-foreground mb-1.5">
                 E-mail <span className="text-[#D98217]">*</span>
               </label>
-              <div className="flex items-center border border-border rounded-md bg-background overflow-hidden focus-within:ring-2 focus-within:ring-[#2A4FDA]/30">
+              <div className="flex items-center border border-border rounded-md bg-background overflow-hidden focus-within:ring-2 focus-within:ring-[#1F3051]/30">
                 <span className="flex items-center justify-center w-10 h-10 bg-muted/50 border-r border-border text-muted-foreground">
                   <Mail size={16} />
                 </span>
@@ -46,7 +46,7 @@ function CardSignInPreview() {
               <label className="block text-sm font-medium text-foreground mb-1.5">
                 Senha <span className="text-[#D98217]">*</span>
               </label>
-              <div className="flex items-center border border-border rounded-md bg-background overflow-hidden focus-within:ring-2 focus-within:ring-[#2A4FDA]/30">
+              <div className="flex items-center border border-border rounded-md bg-background overflow-hidden focus-within:ring-2 focus-within:ring-[#1F3051]/30">
                 <span className="flex items-center justify-center w-10 h-10 bg-muted/50 border-r border-border text-muted-foreground">
                   <Lock size={16} />
                 </span>
@@ -76,7 +76,7 @@ function CardSignInPreview() {
           </div>
 
           {/* Button */}
-          <button className="w-full py-2.5 rounded-md bg-[#2A4FDA] text-white font-medium text-sm hover:bg-[#0a2d47] transition-colors">
+          <button className="w-full py-2.5 rounded-md bg-[#1F3051] text-white font-medium text-sm hover:bg-[#0a2d47] transition-colors">
             Entrar
           </button>
 
@@ -102,7 +102,7 @@ function CardSignInPreview() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#163F5F] to-white/0" />
         <div className="absolute bottom-6 left-6 right-6">
-          <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Campuni', 'Poppins', sans-serif" }}>
+          <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Lora', 'Montserrat', sans-serif" }}>
             Estimulamos o empreendedorismo
           </p>
         </div>
@@ -155,7 +155,7 @@ const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC-CE -->
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .card-signin__form {
   display: flex; flex-direction: column;
@@ -205,7 +205,7 @@ const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC-CE -->
 }
 .card-signin__form button[type="submit"] {
   width: 100%; padding: 0.625rem;
-  background: #2A4FDA; color: #fff;
+  background: #1F3051; color: #fff;
   border: none; border-radius: 6px;
   font-weight: 500; font-size: 0.875rem;
   margin-top: 1.5rem; cursor: pointer;

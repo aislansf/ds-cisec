@@ -26,7 +26,7 @@ function SignInPreview() {
             <input
               type="email"
               placeholder="usuario@ce.cisec.com.br"
-              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
           <div className="space-y-1.5">
@@ -35,7 +35,7 @@ function SignInPreview() {
               <input
                 type={showPw ? "text" : "password"}
                 defaultValue="••••••••"
-                className="w-full h-10 rounded-lg border border-input bg-background px-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+                className="w-full h-10 rounded-lg border border-input bg-background px-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
               />
               <button
                 type="button"
@@ -49,13 +49,13 @@ function SignInPreview() {
 
           <div className="flex items-center justify-between">
             <label className="flex items-center gap-2 text-xs text-muted-foreground cursor-pointer">
-              <input type="checkbox" className="rounded border-input accent-[#2A4FDA] w-4 h-4" />
+              <input type="checkbox" className="rounded border-input accent-[#1F3051] w-4 h-4" />
               Manter conectado
             </label>
-            <a href="#" className="text-xs font-medium text-[#2A4FDA] hover:underline">Esqueceu a senha?</a>
+            <a href="#" className="text-xs font-medium text-[#1F3051] hover:underline">Esqueceu a senha?</a>
           </div>
 
-          <button className="w-full h-10 rounded-lg bg-[#2A4FDA] text-white text-sm font-medium hover:bg-[#2A4FDA]/90 transition-colors">
+          <button className="w-full h-10 rounded-lg bg-[#1F3051] text-white text-sm font-medium hover:bg-[#1F3051]/90 transition-colors">
             Entrar
           </button>
 
@@ -95,7 +95,7 @@ function SignUpPreview() {
             <input
               type="text"
               placeholder="João da Silva"
-              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
           <div className="space-y-1.5">
@@ -103,7 +103,7 @@ function SignUpPreview() {
             <input
               type="email"
               placeholder="usuario@ce.cisec.com.br"
-              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
           <div className="space-y-1.5">
@@ -111,7 +111,7 @@ function SignUpPreview() {
             <input
               type="text"
               placeholder="000.000.000-00"
-              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+              className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
           <div className="grid grid-cols-2 gap-3">
@@ -121,7 +121,7 @@ function SignUpPreview() {
                 <input
                   type={showPw ? "text" : "password"}
                   placeholder="Mín. 8 caracteres"
-                  className="w-full h-10 rounded-lg border border-input bg-background px-3 pr-10 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+                  className="w-full h-10 rounded-lg border border-input bg-background px-3 pr-10 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
                 />
                 <button
                   type="button"
@@ -137,22 +137,22 @@ function SignUpPreview() {
               <input
                 type="password"
                 placeholder="Repita a senha"
-                className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30"
+                className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
               />
             </div>
           </div>
 
           <label className="flex items-start gap-2 text-xs text-muted-foreground cursor-pointer">
-            <input type="checkbox" className="rounded border-input accent-[#2A4FDA] w-4 h-4 mt-0.5" />
+            <input type="checkbox" className="rounded border-input accent-[#1F3051] w-4 h-4 mt-0.5" />
             <span>
               Eu concordo com os{" "}
-              <a href="#" className="font-medium text-[#2A4FDA] hover:underline">Termos de Uso</a>
+              <a href="#" className="font-medium text-[#1F3051] hover:underline">Termos de Uso</a>
               {" "}e{" "}
-              <a href="#" className="font-medium text-[#2A4FDA] hover:underline">Política de Privacidade</a>
+              <a href="#" className="font-medium text-[#1F3051] hover:underline">Política de Privacidade</a>
             </span>
           </label>
 
-          <button className="w-full h-10 rounded-lg bg-[#2A4FDA] text-white text-sm font-medium hover:bg-[#2A4FDA]/90 transition-colors">
+          <button className="w-full h-10 rounded-lg bg-[#1F3051] text-white text-sm font-medium hover:bg-[#1F3051]/90 transition-colors">
             Criar conta
           </button>
 
@@ -172,7 +172,7 @@ function SignUpPreview() {
 
 /* ─── Code snippets ─── */
 const signInCode = `<!-- Sign In — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
@@ -194,9 +194,9 @@ const signInCode = `<!-- Sign In — CISEC-CE Design System -->
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;font-size:0.75rem">
         <label><input type="checkbox" style="margin-right:6px">Manter conectado</label>
-        <a href="#" style="color:#2A4FDA;font-weight:500">Esqueceu a senha?</a>
+        <a href="#" style="color:#1F3051;font-weight:500">Esqueceu a senha?</a>
       </div>
-      <button style="width:100%;height:40px;border-radius:8px;background:#2A4FDA;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
+      <button style="width:100%;height:40px;border-radius:8px;background:#1F3051;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
         Entrar
       </button>
       <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-top:1rem">
@@ -208,7 +208,7 @@ const signInCode = `<!-- Sign In — CISEC-CE Design System -->
 </div>`;
 
 const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
@@ -247,9 +247,9 @@ const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
       </div>
       <label style="display:flex;align-items:flex-start;gap:8px;font-size:0.75rem;color:#71717a;margin-bottom:1rem">
         <input type="checkbox" style="margin-top:2px">
-        <span>Eu concordo com os <a href="#" style="color:#2A4FDA;font-weight:500">Termos de Uso</a> e <a href="#" style="color:#2A4FDA;font-weight:500">Política de Privacidade</a></span>
+        <span>Eu concordo com os <a href="#" style="color:#1F3051;font-weight:500">Termos de Uso</a> e <a href="#" style="color:#1F3051;font-weight:500">Política de Privacidade</a></span>
       </label>
-      <button style="width:100%;height:40px;border-radius:8px;background:#2A4FDA;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
+      <button style="width:100%;height:40px;border-radius:8px;background:#1F3051;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
         Criar conta
       </button>
       <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-top:1rem">
@@ -289,8 +289,8 @@ function TwoFactorPreview() {
 
         {/* Icon */}
         <div className="flex justify-center mb-4">
-          <div className="w-14 h-14 rounded-full bg-[#2A4FDA]/10 flex items-center justify-center">
-            <ShieldCheck size={28} className="text-[#2A4FDA]" />
+          <div className="w-14 h-14 rounded-full bg-[#1F3051]/10 flex items-center justify-center">
+            <ShieldCheck size={28} className="text-[#1F3051]" />
           </div>
         </div>
 
@@ -313,12 +313,12 @@ function TwoFactorPreview() {
                 value={digit}
                 onChange={e => handleChange(idx, e.target.value)}
                 onKeyDown={e => handleKeyDown(idx, e)}
-                className="w-11 h-12 text-center text-lg font-semibold rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-[#2A4FDA]/30 transition-all"
+                className="w-11 h-12 text-center text-lg font-semibold rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30 transition-all"
               />
             ))}
           </div>
 
-          <button className="w-full h-10 rounded-lg bg-[#2A4FDA] text-white text-sm font-medium hover:bg-[#2A4FDA]/90 transition-colors">
+          <button className="w-full h-10 rounded-lg bg-[#1F3051] text-white text-sm font-medium hover:bg-[#1F3051]/90 transition-colors">
             Verificar código
           </button>
 
@@ -327,7 +327,7 @@ function TwoFactorPreview() {
               Não recebeu o código?{" "}
               <a href="#" className="font-medium text-[#D98217] hover:underline">Reenviar código</a>
             </p>
-            <Link to="/templates/pagina-autenticacao" className="text-xs font-medium text-[#2A4FDA] hover:underline">
+            <Link to="/templates/pagina-autenticacao" className="text-xs font-medium text-[#1F3051] hover:underline">
               Voltar para o login
             </Link>
           </div>
@@ -342,13 +342,13 @@ function TwoFactorPreview() {
 }
 
 const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Poppins',sans-serif">
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem;text-align:center">
     <div style="margin-bottom:1.5rem">
       <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
     </div>
     <div style="width:56px;height:56px;border-radius:50%;background:rgba(13,56,87,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2A4FDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F3051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>
       </svg>
     </div>
@@ -365,13 +365,13 @@ const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
         <input type="text" maxlength="1" inputmode="numeric" style="width:44px;height:48px;text-align:center;font-size:1.125rem;font-weight:600;border-radius:8px;border:1px solid #e4e4e7">
         <input type="text" maxlength="1" inputmode="numeric" style="width:44px;height:48px;text-align:center;font-size:1.125rem;font-weight:600;border-radius:8px;border:1px solid #e4e4e7">
       </div>
-      <button style="width:100%;height:40px;border-radius:8px;background:#2A4FDA;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
+      <button style="width:100%;height:40px;border-radius:8px;background:#1F3051;color:#fff;font-size:0.875rem;font-weight:500;border:none;cursor:pointer">
         Verificar código
       </button>
       <p style="font-size:0.75rem;color:#71717a;margin-top:1rem">
         Não recebeu o código? <a href="#" style="color:#D98217;font-weight:500">Reenviar código</a>
       </p>
-      <a href="#" style="font-size:0.75rem;color:#2A4FDA;font-weight:500">Voltar para o login</a>
+      <a href="#" style="font-size:0.75rem;color:#1F3051;font-weight:500">Voltar para o login</a>
     </div>
     <p style="font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
   </div>
@@ -416,7 +416,7 @@ export default function AuthTemplatesSection() {
             onClick={() => { setActiveTab(t.key); setShowCode(false); }}
             className={`px-4 py-2 rounded-lg text-xs font-medium transition-colors ${
               activeTab === t.key
-                ? "bg-[#2A4FDA] text-white"
+                ? "bg-[#1F3051] text-white"
                 : "bg-muted text-muted-foreground hover:bg-muted/80"
             }`}
           >

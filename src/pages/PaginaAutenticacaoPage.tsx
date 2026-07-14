@@ -26,7 +26,7 @@ export default function PaginaAutenticacaoPage() {
       {/* Botão flutuante para voltar ao DS (padrão dos templates) */}
       <Link
         to="/templates"
-        className="fixed top-4 right-4 z-50 flex items-center gap-1.5 px-3 py-1.5 bg-[#2A4FDA] text-white text-xs rounded-full shadow-lg hover:bg-[#2A4FDA]/90 transition-all hover:scale-105"
+        className="fixed top-4 right-4 z-50 flex items-center gap-1.5 px-3 py-1.5 bg-[#1F3051] text-white text-xs rounded-full shadow-lg hover:bg-[#1F3051]/90 transition-all hover:scale-105"
       >
         <ArrowLeft size={12} /> Voltar ao DS
       </Link>

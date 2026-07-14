@@ -18,7 +18,7 @@ const buttonVariants = cva(
         cisec:
           "rounded-lg border-2 border-primary bg-primary text-[hsl(var(--cisec-btn-fg))] font-bold hover:bg-[hsl(var(--cisec-btn-hover))] hover:border-[hsl(var(--cisec-btn-hover))]",
         diversificado:
-          "bg-[#E7F79E] text-[#2A4FDA] font-bold hover:bg-[#D1E575] hover:text-[#1644DC] transition-colors",
+          "bg-[#FF9E20] text-[#1F3051] font-bold hover:bg-[#E88A10] hover:text-[#16233E] transition-colors",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -226,7 +226,7 @@ export default function FundamentosPage() {
       <SectionHeader
         id="tipografia"
         title="Tipografia"
-        description="O Design System CISEC-CE adota o trio tipográfico alinhado ao portal cisec.com.br: Figtree (primária, corpo/UI), Campuni (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
+        description="O Design System CISEC-CE adota o trio tipográfico alinhado ao portal cisec.com.br: Montserrat (primária, corpo/UI), Lora (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
       />
 
       {/* Famílias oficiais — grid responsivo com alturas equalizadas */}
@@ -250,15 +250,15 @@ export default function FundamentosPage() {
             "Documentos PDF e materiais impressos institucionais",
           ]}
           avoidFor={[
-            "Botões e CTAs (use Figtree para coerência da UI)",
-            "Títulos de impacto (use Campuni)",
+            "Botões e CTAs (use Montserrat para coerência da UI)",
+            "Títulos de impacto (use Lora)",
           ]}
           powerBi="Excelente para rótulos de eixos, legendas de gráficos, fontes de dados e notas de rodapé em dashboards. Disponível nativamente no Power BI sem importação."
           cssVar="--font-system"
           tailwindClass="font-system · font-lato"
           cssSnippet={`/* CSS puro */\n.legenda,\n.caption,\n.nota-rodape {\n  font-family: 'Lato', system-ui, sans-serif;\n  font-weight: 400;\n  font-size: 0.75rem;\n  line-height: 1.4;\n}`}
           htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC-CE · Dados de 2024\n</small>`}
-          tokenSnippet={`/* tokens.css */\n:root {\n  --font-system: 'Lato', 'Figtree', system-ui, sans-serif;\n  --font-lato: 'Lato', system-ui, sans-serif;\n}`}
+          tokenSnippet={`/* tokens.css */\n:root {\n  --font-system: 'Lato', 'Montserrat', system-ui, sans-serif;\n  --font-lato: 'Lato', system-ui, sans-serif;\n}`}
           downloads={[
             { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Lato", note: "Inclui pesos 100–900 + itálicos. Licença SIL Open Font 1.1." },
             { label: "CSS hospedado (CDN Google Fonts)", url: "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap", note: "Pronto para <link rel=\"stylesheet\">." },
@@ -266,13 +266,13 @@ export default function FundamentosPage() {
           ]}
         />
 
-        {/* Primária — Figtree */}
+        {/* Primária — Montserrat */}
         <FontFamilyCard
           badge="Fonte Primária"
           badgeClass="bg-primary text-primary-foreground"
           source="Google Fonts · Open Source"
-          name="Figtree"
-          fontStack="'Figtree', system-ui, sans-serif"
+          name="Montserrat"
+          fontStack="'Montserrat', system-ui, sans-serif"
           summary="Sans-serif geométrica e neutra. Base de toda a interface: corpo de texto, botões, links, formulários e títulos H1/H3."
           weights={[
             { v: 300, name: "Light" }, { v: 400, name: "Regular" }, { v: 500, name: "Medium" },
@@ -282,32 +282,32 @@ export default function FundamentosPage() {
             "Sistemas web (desktop, tablet, mobile) — UI, formulários, tabelas",
             "Corpo de texto longo, parágrafos institucionais e e-mails",
             "Botões, navegação, labels e microcopy funcional",
-            "Títulos H1 e H3 quando Campuni não estiver disponível",
+            "Títulos H1 e H3 quando Lora não estiver disponível",
           ]}
           avoidFor={[
-            "Hero/banners de impacto (use Campuni)",
+            "Hero/banners de impacto (use Lora)",
             "Manchetes editoriais ou números de destaque em dashboards",
           ]}
-          powerBi="Usar como fonte padrão dos visuais (Texto, Eixos, Rótulos). No Power BI Desktop: Arquivo → Opções → Atual → Fontes globais → Figtree."
+          powerBi="Usar como fonte padrão dos visuais (Texto, Eixos, Rótulos). No Power BI Desktop: Arquivo → Opções → Atual → Fontes globais → Montserrat."
           cssVar="--font-sans"
           tailwindClass="font-sans"
-          cssSnippet={`/* CSS puro */\n.elemento {\n  font-family: 'Figtree', system-ui, 'Helvetica Neue', Arial, sans-serif;\n  font-weight: 400;\n  line-height: 1.5;\n}`}
-          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">\n\n<p style="font-family: 'Figtree', sans-serif; font-weight: 500;">\n  Texto institucional Cisec\n</p>`}
-          tokenSnippet={`/* tokens.css */\n:root {\n  --font-sans: 'Figtree', system-ui, sans-serif;\n  --font-weight-regular: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n}`}
+          cssSnippet={`/* CSS puro */\n.elemento {\n  font-family: 'Montserrat', system-ui, 'Helvetica Neue', Arial, sans-serif;\n  font-weight: 400;\n  line-height: 1.5;\n}`}
+          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">\n\n<p style="font-family: 'Montserrat', sans-serif; font-weight: 500;">\n  Texto institucional Cisec\n</p>`}
+          tokenSnippet={`/* tokens.css */\n:root {\n  --font-sans: 'Montserrat', system-ui, sans-serif;\n  --font-weight-regular: 400;\n  --font-weight-medium: 500;\n  --font-weight-bold: 700;\n}`}
           downloads={[
-            { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Figtree", note: "Inclui todos os pesos (300–900) e licença SIL Open Font 1.1." },
-            { label: "CSS hospedado (CDN Google Fonts)", url: "https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap", note: "Pronto para <link rel=\"stylesheet\">." },
-            { label: "Repositório oficial no GitHub (fontes-fonte TTF/OTF)", url: "https://github.com/erinmclaughlin/Figtree", note: "Arquivos brutos para Power BI Desktop, Word e PowerPoint." },
+            { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Montserrat", note: "Inclui todos os pesos (300–900) e licença SIL Open Font 1.1." },
+            { label: "CSS hospedado (CDN Google Fonts)", url: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap", note: "Pronto para <link rel=\"stylesheet\">." },
+            { label: "Repositório oficial no GitHub (fontes-fonte TTF/OTF)", url: "https://github.com/JulietaUla/Montserrat", note: "Arquivos brutos para Power BI Desktop, Word e PowerPoint." },
           ]}
         />
 
-        {/* Secundária — Campuni */}
+        {/* Secundária — Lora */}
         <FontFamilyCard
           badge="Fonte Secundária"
           badgeClass="bg-secondary text-secondary-foreground"
           source="Proprietária Cisec · CDN AEM"
-          name="Campuni"
-          fontStack="'Campuni', 'Figtree', sans-serif"
+          name="Lora"
+          fontStack="'Lora', 'Montserrat', sans-serif"
           summary="Sans-serif de display com personalidade institucional. Reservada para títulos de impacto, hero e números em destaque."
           weights={[{ v: 700, name: "Bold" }]}
           bestFor={[
@@ -317,20 +317,20 @@ export default function FundamentosPage() {
             "Apresentações e materiais editoriais Cisec",
           ]}
           avoidFor={[
-            "Corpo de texto e parágrafos longos (use Figtree)",
+            "Corpo de texto e parágrafos longos (use Montserrat)",
             "UI funcional, formulários, labels e tooltips",
             "Textos pequenos < 18px (perde legibilidade)",
           ]}
-          powerBi="Aplicar apenas em títulos de cartões KPI e cabeçalhos de páginas. Para o restante mantenha Figtree. Caso o ambiente Power BI não carregue Campuni, o fallback automático é Figtree."
+          powerBi="Aplicar apenas em títulos de cartões KPI e cabeçalhos de páginas. Para o restante mantenha Montserrat. Caso o ambiente Power BI não carregue Lora, o fallback automático é Montserrat."
           cssVar="--font-display"
           tailwindClass="font-heading · font-display"
-          cssSnippet={`/* CSS puro */\n@font-face {\n  font-family: 'Campuni';\n  src: url('/fonts/campuni-bold.woff2') format('woff2');\n  font-weight: 700;\n  font-display: swap;\n}\n\n.titulo-hero {\n  font-family: 'Campuni', 'Figtree', sans-serif;\n  font-weight: 700;\n  line-height: 1.1;\n}`}
-          htmlSnippet={`<!-- HTML standalone com fallback -->\n<style>\n  @font-face {\n    font-family: 'Campuni';\n    src: url('https://static-p134603-e1404735.adobeaemcloud.com/.../fonts/campuni-bold.woff2') format('woff2');\n    font-weight: 700;\n    font-display: swap;\n  }\n</style>\n\n<h1 style="font-family: 'Campuni', 'Figtree', sans-serif; font-weight: 700;">\n  Transformando vidas\n</h1>`}
-          tokenSnippet={`/* tokens.css */\n:root {\n  --font-display: 'Campuni', 'Figtree', sans-serif;\n  --font-heading: 'Campuni', 'Figtree', sans-serif;\n}`}
-          footnote="Campuni é proprietária da Cisec. Enquanto o arquivo oficial não estiver em /public/fonts/campuni-bold.woff2, o sistema usa Figtree como fallback automático."
+          cssSnippet={`/* CSS puro */\n@font-face {\n  font-family: 'Lora';\n  src: url('/fonts/campuni-bold.woff2') format('woff2');\n  font-weight: 700;\n  font-display: swap;\n}\n\n.titulo-hero {\n  font-family: 'Lora', 'Montserrat', sans-serif;\n  font-weight: 700;\n  line-height: 1.1;\n}`}
+          htmlSnippet={`<!-- HTML standalone com fallback -->\n<style>\n  @font-face {\n    font-family: 'Lora';\n    src: url('https://static-p134603-e1404735.adobeaemcloud.com/.../fonts/campuni-bold.woff2') format('woff2');\n    font-weight: 700;\n    font-display: swap;\n  }\n</style>\n\n<h1 style="font-family: 'Lora', 'Montserrat', sans-serif; font-weight: 700;">\n  Transformando vidas\n</h1>`}
+          tokenSnippet={`/* tokens.css */\n:root {\n  --font-display: 'Lora', 'Montserrat', sans-serif;\n  --font-heading: 'Lora', 'Montserrat', sans-serif;\n}`}
+          footnote="Lora é proprietária da Cisec. Enquanto o arquivo oficial não estiver em /public/fonts/campuni-bold.woff2, o sistema usa Montserrat como fallback automático."
           downloads={[
-            { label: "Campuni Bold (WOFF2) — CDN oficial Cisec AEM", url: "https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2", note: "Arquivo usado em cisec.com.br. Hospedar localmente em /public/fonts/campuni-bold.woff2 para produção." },
-            { label: "Solicitação interna — Marca Cisec", url: "mailto:marca@cisec.com.br?subject=Solicitação%20da%20fonte%20Campuni%20(TTF/OTF)", note: "Para receber o pacote completo (TTF/OTF) com todos os pesos — uso em Power BI, PowerPoint e impressos." },
+            { label: "Lora Bold (WOFF2) — CDN oficial Cisec AEM", url: "https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2", note: "Arquivo usado em cisec.com.br. Hospedar localmente em /public/fonts/campuni-bold.woff2 para produção." },
+            { label: "Solicitação interna — Marca Cisec", url: "mailto:marca@cisec.com.br?subject=Solicitação%20da%20fonte%20Lora%20(TTF/OTF)", note: "Para receber o pacote completo (TTF/OTF) com todos os pesos — uso em Power BI, PowerPoint e impressos." },
           ]}
         />
       </div>
@@ -404,10 +404,10 @@ export default function FundamentosPage() {
           </h4>
           <div className="hidden sm:flex items-center gap-3 text-[10px] font-mono">
             <span className="flex items-center gap-1.5">
-              <span className="inline-block w-2 h-2 rounded-full bg-secondary" /> Campuni
+              <span className="inline-block w-2 h-2 rounded-full bg-secondary" /> Lora
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="inline-block w-2 h-2 rounded-full bg-primary" /> Figtree
+              <span className="inline-block w-2 h-2 rounded-full bg-primary" /> Montserrat
             </span>
           </div>
         </div>
@@ -415,14 +415,14 @@ export default function FundamentosPage() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-8">
           {/* Coluna principal — amostras */}
           <div className="space-y-6">
-            {/* Headings H1-H6 (Campuni) */}
+            {/* Headings H1-H6 (Lora) */}
             {[
-              { tag: "h1", cls: "text-5xl font-black", sample: "Transformando vidas por meio da educação financeira", spec: "Campuni Bold · 48px / 1.1" },
-              { tag: "h2", cls: "text-4xl font-bold",  sample: "Conheça o Design System CISEC",          spec: "Campuni Bold · 36px / 1.15" },
-              { tag: "h3", cls: "text-3xl font-bold",  sample: "Componentes, tokens e padrões",           spec: "Campuni Bold · 30px / 1.2" },
-              { tag: "h4", cls: "text-2xl font-semibold", sample: "Diretrizes de uso da marca",           spec: "Campuni SemiBold · 24px / 1.25" },
-              { tag: "h5", cls: "text-xl font-semibold",  sample: "Aplicações em produtos digitais",      spec: "Campuni SemiBold · 20px / 1.3" },
-              { tag: "h6", cls: "text-lg font-semibold",  sample: "Sessão de apoio e detalhes",           spec: "Campuni SemiBold · 18px / 1.35" },
+              { tag: "h1", cls: "text-5xl font-black", sample: "Transformando vidas por meio da educação financeira", spec: "Lora Bold · 48px / 1.1" },
+              { tag: "h2", cls: "text-4xl font-bold",  sample: "Conheça o Design System CISEC",          spec: "Lora Bold · 36px / 1.15" },
+              { tag: "h3", cls: "text-3xl font-bold",  sample: "Componentes, tokens e padrões",           spec: "Lora Bold · 30px / 1.2" },
+              { tag: "h4", cls: "text-2xl font-semibold", sample: "Diretrizes de uso da marca",           spec: "Lora SemiBold · 24px / 1.25" },
+              { tag: "h5", cls: "text-xl font-semibold",  sample: "Aplicações em produtos digitais",      spec: "Lora SemiBold · 20px / 1.3" },
+              { tag: "h6", cls: "text-lg font-semibold",  sample: "Sessão de apoio e detalhes",           spec: "Lora SemiBold · 18px / 1.35" },
             ].map(h => (
               <div key={h.tag} className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-6 pb-4 border-b border-border last:border-0">
                 <div className="w-16 shrink-0">
@@ -440,16 +440,16 @@ export default function FundamentosPage() {
               </div>
             ))}
 
-            {/* Corpo (Figtree) */}
+            {/* Corpo (Montserrat) */}
             <div className="pt-2">
               <span className="text-[10px] font-mono font-bold uppercase bg-primary/10 text-primary px-2 py-0.5 rounded mb-3 inline-block">
-                Corpo de texto · Figtree
+                Corpo de texto · Montserrat
               </span>
               <p className="text-lg font-sans leading-relaxed mb-3">
                 <strong>Lead (text-lg).</strong> O CISEC-CE apoia o desenvolvimento de pequenos negócios com conteúdos, capacitações e ferramentas digitais acessíveis a todo empreendedor brasileiro.
               </p>
               <p className="text-base font-sans leading-relaxed mb-3">
-                <strong>Body padrão (text-base).</strong> Use Figtree em todo o texto corrido. A família suporta os pesos 300 a 900 e é otimizada para leitura em telas. Combine <em>itálico</em>, <strong>negrito</strong> e <span className="underline">sublinhado</span> com moderação.
+                <strong>Body padrão (text-base).</strong> Use Montserrat em todo o texto corrido. A família suporta os pesos 300 a 900 e é otimizada para leitura em telas. Combine <em>itálico</em>, <strong>negrito</strong> e <span className="underline">sublinhado</span> com moderação.
               </p>
               <p className="text-sm font-sans leading-relaxed text-muted-foreground">
                 <strong>Texto auxiliar (text-sm).</strong> Ideal para descrições de campos, ajudas e textos secundários que não devem competir com o conteúdo principal.
@@ -567,18 +567,18 @@ export default function FundamentosPage() {
               </thead>
               <tbody className="font-mono">
                 {[
-                  { el: "H1", fam: "Campuni",  size: "--text-5xl (3rem)",     lh: "--leading-5xl (3.375rem)", w: "--font-bold (700)",   ls: "-0.025em",                sp: "--space-6 (1.5rem)", cls: "text-5xl font-bold font-heading mb-6" },
-                  { el: "H2", fam: "Campuni",  size: "--text-4xl (2.25rem)",  lh: "--leading-4xl (2.625rem)", w: "--font-bold (700)",   ls: "-0.022em",                sp: "--space-5 (1.25rem)",cls: "text-4xl font-bold font-heading mb-5" },
-                  { el: "H3", fam: "Campuni",  size: "--text-3xl (1.875rem)", lh: "--leading-3xl (2.25rem)",  w: "--font-bold (700)",   ls: "-0.02em",                 sp: "--space-4 (1rem)",   cls: "text-3xl font-bold font-heading mb-4" },
-                  { el: "H4", fam: "Campuni",  size: "--text-2xl (1.5rem)",   lh: "--leading-2xl (2rem)",     w: "--font-semibold (600)",ls: "--tracking-tight",        sp: "--space-3 (0.75rem)",cls: "text-2xl font-semibold font-heading mb-3" },
-                  { el: "H5", fam: "Campuni",  size: "--text-xl (1.25rem)",   lh: "--leading-xl (1.875rem)",  w: "--font-semibold (600)",ls: "-0.01em",                 sp: "--space-3 (0.75rem)",cls: "text-xl font-semibold font-heading mb-3" },
-                  { el: "H6", fam: "Campuni",  size: "--text-lg (1.125rem)",  lh: "--leading-lg (1.75rem)",   w: "--font-semibold (600)",ls: "-0.005em",                sp: "--space-2 (0.5rem)", cls: "text-lg font-semibold font-heading mb-2" },
-                  { el: "Lead",     fam: "Figtree", size: "--text-lg (1.125rem)",  lh: "--leading-relaxed (1.65)",w: "--font-medium (500)",  ls: "--tracking-normal",       sp: "--space-4 (1rem)",   cls: "text-lg font-medium leading-relaxed mb-4" },
-                  { el: "Body",     fam: "Figtree", size: "--text-base (1rem)",    lh: "--leading-relaxed (1.65)",w: "--font-regular (400)", ls: "--tracking-normal",       sp: "--space-4 (1rem)",   cls: "text-base leading-relaxed mb-4" },
-                  { el: "Small",    fam: "Figtree", size: "--text-sm (0.875rem)",  lh: "--leading-sm (1.25rem)",  w: "--font-regular (400)", ls: "0.01em",                  sp: "--space-2 (0.5rem)", cls: "text-sm mb-2" },
-                  { el: "Legenda",  fam: "Figtree", size: "--text-xs (0.75rem)",   lh: "--leading-xs (1rem)",     w: "--font-regular (400)", ls: "--tracking-wide",         sp: "--space-1 (0.25rem)",cls: "text-xs text-muted-foreground mb-1" },
-                  { el: "Overline", fam: "Figtree", size: "--text-xs (0.75rem)",   lh: "--leading-xs (1rem)",     w: "--font-bold (700)",    ls: "--tracking-widest",       sp: "--space-2 (0.5rem)", cls: "text-xs font-bold uppercase tracking-widest mb-2" },
-                  { el: "Link",     fam: "Figtree", size: "herda do contexto",     lh: "herda",                   w: "--font-medium (500)",  ls: "herda",                   sp: "—",                  cls: "text-primary underline underline-offset-2" },
+                  { el: "H1", fam: "Lora",  size: "--text-5xl (3rem)",     lh: "--leading-5xl (3.375rem)", w: "--font-bold (700)",   ls: "-0.025em",                sp: "--space-6 (1.5rem)", cls: "text-5xl font-bold font-heading mb-6" },
+                  { el: "H2", fam: "Lora",  size: "--text-4xl (2.25rem)",  lh: "--leading-4xl (2.625rem)", w: "--font-bold (700)",   ls: "-0.022em",                sp: "--space-5 (1.25rem)",cls: "text-4xl font-bold font-heading mb-5" },
+                  { el: "H3", fam: "Lora",  size: "--text-3xl (1.875rem)", lh: "--leading-3xl (2.25rem)",  w: "--font-bold (700)",   ls: "-0.02em",                 sp: "--space-4 (1rem)",   cls: "text-3xl font-bold font-heading mb-4" },
+                  { el: "H4", fam: "Lora",  size: "--text-2xl (1.5rem)",   lh: "--leading-2xl (2rem)",     w: "--font-semibold (600)",ls: "--tracking-tight",        sp: "--space-3 (0.75rem)",cls: "text-2xl font-semibold font-heading mb-3" },
+                  { el: "H5", fam: "Lora",  size: "--text-xl (1.25rem)",   lh: "--leading-xl (1.875rem)",  w: "--font-semibold (600)",ls: "-0.01em",                 sp: "--space-3 (0.75rem)",cls: "text-xl font-semibold font-heading mb-3" },
+                  { el: "H6", fam: "Lora",  size: "--text-lg (1.125rem)",  lh: "--leading-lg (1.75rem)",   w: "--font-semibold (600)",ls: "-0.005em",                sp: "--space-2 (0.5rem)", cls: "text-lg font-semibold font-heading mb-2" },
+                  { el: "Lead",     fam: "Montserrat", size: "--text-lg (1.125rem)",  lh: "--leading-relaxed (1.65)",w: "--font-medium (500)",  ls: "--tracking-normal",       sp: "--space-4 (1rem)",   cls: "text-lg font-medium leading-relaxed mb-4" },
+                  { el: "Body",     fam: "Montserrat", size: "--text-base (1rem)",    lh: "--leading-relaxed (1.65)",w: "--font-regular (400)", ls: "--tracking-normal",       sp: "--space-4 (1rem)",   cls: "text-base leading-relaxed mb-4" },
+                  { el: "Small",    fam: "Montserrat", size: "--text-sm (0.875rem)",  lh: "--leading-sm (1.25rem)",  w: "--font-regular (400)", ls: "0.01em",                  sp: "--space-2 (0.5rem)", cls: "text-sm mb-2" },
+                  { el: "Legenda",  fam: "Montserrat", size: "--text-xs (0.75rem)",   lh: "--leading-xs (1rem)",     w: "--font-regular (400)", ls: "--tracking-wide",         sp: "--space-1 (0.25rem)",cls: "text-xs text-muted-foreground mb-1" },
+                  { el: "Overline", fam: "Montserrat", size: "--text-xs (0.75rem)",   lh: "--leading-xs (1rem)",     w: "--font-bold (700)",    ls: "--tracking-widest",       sp: "--space-2 (0.5rem)", cls: "text-xs font-bold uppercase tracking-widest mb-2" },
+                  { el: "Link",     fam: "Montserrat", size: "herda do contexto",     lh: "herda",                   w: "--font-medium (500)",  ls: "herda",                   sp: "—",                  cls: "text-primary underline underline-offset-2" },
                 ].map((row, i) => (
                   <tr key={row.el} className={i % 2 === 0 ? "bg-background" : "bg-muted/20"}>
                     <td className="p-3 border border-border font-sans font-bold text-foreground">{row.el}</td>
@@ -703,12 +703,12 @@ export default function FundamentosPage() {
           <h5 className="text-xs font-bold uppercase tracking-wider mb-3 text-foreground">Famílias</h5>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border border-border rounded-lg p-4">
-              <p className="font-heading text-3xl font-bold leading-tight">Aa — Campuni</p>
+              <p className="font-heading text-3xl font-bold leading-tight">Aa — Lora</p>
               <p className="font-heading text-sm text-muted-foreground mt-2">Títulos e display · pesos 600/700/900</p>
               <code className="text-[10px] font-mono text-muted-foreground block mt-2">font-heading</code>
             </div>
             <div className="border border-border rounded-lg p-4">
-              <p className="font-sans text-3xl font-bold leading-tight">Aa — Figtree</p>
+              <p className="font-sans text-3xl font-bold leading-tight">Aa — Montserrat</p>
               <p className="font-sans text-sm text-muted-foreground mt-2">Corpo, UI e legendas · pesos 300–800</p>
               <code className="text-[10px] font-mono text-muted-foreground block mt-2">font-sans</code>
             </div>
@@ -777,28 +777,28 @@ export default function FundamentosPage() {
 
       <CodeBlock
         title="Uso da tipografia"
-        code={`/* Figtree (primária) — Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+        code={`/* Montserrat (primária) — Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Campuni (secundária) — fonte proprietária Cisec */
+/* Lora (secundária) — fonte proprietária Cisec */
 @font-face {
-  font-family: 'Campuni';
+  font-family: 'Lora';
   src: url('/fonts/campuni-bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
 }
 
 body {
-  font-family: 'Figtree', system-ui, sans-serif;
+  font-family: 'Montserrat', system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Campuni', 'Figtree', sans-serif;
+  font-family: 'Lora', 'Montserrat', sans-serif;
 }
 
 /* Utilitários Tailwind disponíveis */
-/* font-sans     → Figtree (primária)        */
-/* font-heading  → Campuni → Figtree (display) */
+/* font-sans     → Montserrat (primária)        */
+/* font-heading  → Lora → Montserrat (display) */
 /* font-display  → alias de heading           */
 
 /* Tokens de tipografia (funcionam em ambos os temas) */
@@ -832,7 +832,7 @@ h1, h2, h3, h4, h5, h6 {
         </button>
         <figcaption className="text-xs text-muted-foreground mt-3">
           Referência cromática institucional: a paleta do Design System parte da cor primária{" "}
-          <strong>#2A4FDA</strong> e expande para as cores que representam a diversidade brasileira.
+          <strong>#1F3051</strong> e expande para as cores que representam a diversidade brasileira.
         </figcaption>
       </figure>
       <ImageLightbox
