@@ -12,7 +12,7 @@ function SignInPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Bem-vindo</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
@@ -81,7 +81,7 @@ function SignUpPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Criar conta</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
@@ -284,7 +284,7 @@ function TwoFactorPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[86px]" />
+          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
         </div>
 
         {/* Icon */}
