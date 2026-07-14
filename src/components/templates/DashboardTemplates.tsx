@@ -76,7 +76,7 @@ function DashboardHeader({ withTabs = false }: { withTabs?: boolean }) {
   return (
     <header className="rounded-t-lg font-sans bg-[#F0F3FF]">
       <div className="flex items-center gap-4 px-5 py-3 min-h-[56px]">
-        <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-9 w-auto flex-shrink-0" />
+        <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-7 w-auto flex-shrink-0" />
         <div className="flex-1" />
       </div>
     </header>

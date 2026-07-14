@@ -51,7 +51,7 @@ export default function CadastroPage() {
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-16 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h1 className="text-4xl font-bold text-white leading-tight">
                   Sua porta de entrada para a gestão educacional.
@@ -74,7 +74,7 @@ export default function CadastroPage() {
         {/* Lado Direito: Formulário de Cadastro */}
         <div className="w-full lg:w-1/2 flex flex-col bg-card overflow-y-auto">
           <div className="lg:hidden flex justify-center p-8 bg-[#FDF1D0] border-b border-[#e0b86a]">
-            <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 w-auto" />
+            <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-8 w-auto" />
           </div>
 
           <div className="flex-1 flex items-center justify-center p-8 sm:p-12 md:p-16">

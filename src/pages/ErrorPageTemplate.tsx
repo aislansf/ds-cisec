@@ -60,7 +60,7 @@ export default function ErrorPageTemplate() {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl border border-border overflow-hidden animate-in fade-in zoom-in duration-300">
         <div className="p-8 flex flex-col items-center text-center">
           {/* Logo */}
-          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-12 w-auto mb-8" />
+          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-8 w-auto mb-8" />
           
           {/* Icon */}
           <div className="mb-6 p-4 bg-muted/30 rounded-full">
