@@ -110,7 +110,7 @@ export default function HomePage() {
           }
         />
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
-          Sistema de padrões para as aplicações do CISEC-CE
+          Sistema de padrões para as aplicações do CISEC
         </h2>
         <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
           Este Design System estabelece padrões de UI e implementação para os produtos digitais do CISEC-CE. Desenvolvido em vanilla (sem frameworks ou bibliotecas externas), assegura compatibilidade, flexibilidade e reutilização em qualquer stack ou aplicações geradas por IA.
