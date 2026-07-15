@@ -99,7 +99,6 @@ export default function FundamentosPage() {
   const [iconQuery, setIconQuery] = useState("");
   const [iconCollection, setIconCollection] = useState<"all" | "lucide" | "remix">("all");
   const [iconSize, setIconSize] = useState<14 | 16 | 20 | 24 | 32>(20);
-  const [paletaOpen, setPaletaOpen] = useState(false);
 
   type IconComponent = React.ComponentType<
     React.SVGProps<SVGSVGElement> & { size?: number | string }
