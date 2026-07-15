@@ -105,8 +105,8 @@ export default function HomePage() {
           alt="Marca CISEC-CE"
           className={
             theme === "dark"
-              ? "h-auto w-auto max-w-full max-h-28 md:max-h-36 mb-6 object-contain"
-              : "h-auto w-auto max-w-full max-h-16 md:max-h-20 mb-6 object-contain"
+              ? "h-auto w-auto max-w-full max-h-[68px] md:max-h-[86px] mb-6 object-contain"
+              : "h-auto w-auto max-w-full max-h-[38px] md:max-h-12 mb-6 object-contain"
           }
         />
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
