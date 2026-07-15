@@ -29,10 +29,10 @@ import CardSignInSection from "@/components/templates/CardSignIn";
 import DashboardTemplatesSection from "@/components/templates/DashboardTemplates";
 import HubPaineisSection, { HubPaineisImageSection } from "@/components/templates/HubPaineisTemplate";
 import CisecFooterSection from "@/components/templates/CisecFooter";
-import cisecLogoAsset from "@/assets/cisec-logo-cor.png.asset.json";
+import cisecLogoColor from "@/assets/cisec-logo-cor.svg";
 import cisecLogoWhite from "@/assets/cisec-logo-white.svg";
 import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
-const cisecLogo = cisecLogoAsset.url;
+const cisecLogo = cisecLogoColor;
 const headerBusinessBg = headerBusinessBgAsset.url;
 const cisecLogoCompleta = cisecLogo;
 const cisecLogoReduzida = cisecLogo;
@@ -248,7 +248,7 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
         )}
 
         {/* Logo area */}
-        <div className="flex items-center gap-2 flex-1 min-w-0">
+        <div className="flex items-center gap-3 flex-1 min-w-0">
           {variant.visualBanner ? (
             variant.showTitle === false ? null : (
               <>
@@ -263,9 +263,9 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
               ) : (
                 <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC" className="h-[22px] w-auto" />
               )}
-              <span className={variant.id === "ext-red-left" ? "text-sm" : "text-white/60 text-sm"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.6 } : undefined}>|</span>
-              <span className="font-semibold text-sm" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>{sigla}</span>
-              <span className={variant.id === "ext-red-left" ? "text-sm truncate" : "text-sm text-white/80 truncate"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.85 } : undefined}>{systemName}</span>
+              <span className={variant.id === "ext-red-left" ? "text-sm self-center" : "text-white/60 text-sm self-center"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.6 } : undefined}>|</span>
+              <span className="font-semibold text-sm leading-none self-center" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>{sigla}</span>
+              <span className={variant.id === "ext-red-left" ? "text-sm truncate self-center leading-none" : "text-sm text-white/80 truncate self-center leading-none"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.85 } : undefined}>{systemName}</span>
             </>
           )}
         </div>
@@ -373,8 +373,8 @@ function generateHeaderCode(variant: HeaderVariant): string {
   const logoHtml = variant.visualBanner
     ? ""
     : variant.brandStyle === "completa"
-    ? `<img src="/assets/cisec-logo.svg" alt="CISEC" class="header__logo" />`
-    : `<div class="header__logo-icon">F</div>`;
+    ? `<img src="/assets/cisec-logo-white.svg" alt="CISEC" class="cisec-header__logo" />`
+    : `<img src="/assets/cisec-logo-white.svg" alt="CISEC" class="cisec-header__logo cisec-header__logo--sm" />`;
 
   let html = `<!-- Header CISEC: ${variant.title} -->
 ${variant.visualBanner ? `<div class="cisec-header__visual-banner" role="img" aria-label="${variant.visualBanner.alt}"></div>
