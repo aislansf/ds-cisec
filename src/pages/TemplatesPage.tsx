@@ -373,8 +373,8 @@ function generateHeaderCode(variant: HeaderVariant): string {
   const logoHtml = variant.visualBanner
     ? ""
     : variant.brandStyle === "completa"
-    ? `<img src="/assets/cisec-logo.svg" alt="CISEC" class="header__logo" />`
-    : `<div class="header__logo-icon">F</div>`;
+    ? `<img src="/assets/cisec-logo-white.svg" alt="CISEC" class="cisec-header__logo" />`
+    : `<img src="/assets/cisec-logo-white.svg" alt="CISEC" class="cisec-header__logo cisec-header__logo--sm" />`;
 
   let html = `<!-- Header CISEC: ${variant.title} -->
 ${variant.visualBanner ? `<div class="cisec-header__visual-banner" role="img" aria-label="${variant.visualBanner.alt}"></div>
