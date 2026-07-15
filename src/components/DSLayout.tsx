@@ -100,34 +100,6 @@ const navItems: NavItem[] = [
       { label: "Modelos de Página", path: "/templates#templates-modelos" },
     ],
   },
-  {
-    label: "Modelos de BI", path: "/modelos-bi", icon: <BarChart3 size={18} />,
-    children: [
-      {
-        label: "Farol Estratégico - BI",
-        path: "/modelos-bi/farol-estrategico",
-        children: [
-          {
-            label: "BI",
-            path: "/modelos-bi/farol-estrategico/bi",
-            children: [
-              { label: "v1.0", path: "/modelos-bi/farol-estrategico/bi" },
-            ],
-          },
-          {
-            label: "Docs",
-            path: "/modelos-bi/farol-estrategico/docs",
-            children: [
-              { label: "v1.0", path: "/modelos-bi/farol-estrategico/docs" },
-            ],
-          },
-        ],
-      },
-      { label: "Planeja - BI", path: "/modelos-bi/planeja" },
-      { label: "MPI - BI", path: "/modelos-bi/mpi", title: "Monitoramento da Performance das Iniciativas" },
-      { label: "Gestão de Pessoas - BI", path: "/modelos-bi/gestao-pessoas" },
-    ],
-  },
   { label: "Marca CISEC", path: "/marca", icon: <Stamp size={18} /> },
   { label: "Webwriting", path: "/conteudo", icon: <FileText size={18} /> },
   { label: "Acessibilidade", path: "/acessibilidade", icon: <Accessibility size={18} /> },

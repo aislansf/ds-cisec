@@ -46,12 +46,6 @@ const ModalAcessoTemplatePage = lazyWithRetry(() => import("@/pages/ModalAcessoT
 const PaginaFiltrosTabelaPage = lazyWithRetry(() => import("@/pages/PaginaFiltrosTabelaPage"));
 const NotFound = lazyWithRetry(() => import("@/pages/NotFound"));
 const FarolEstrategicoPage = lazyWithRetry(() => import("@/pages/FarolEstrategicoPage"));
-const FarolEstrategicoDocsPage = lazyWithRetry(() => import("@/pages/FarolEstrategicoDocsPage"));
-const ModelosBIPage = lazyWithRetry(() => import("@/pages/ModelosBIPage"));
-const PlanejaBIPage = lazyWithRetry(() => import("@/pages/modelos-bi/PlanejaPage"));
-const MPIBIPage = lazyWithRetry(() => import("@/pages/modelos-bi/MPIPage"));
-const GestaoPessoasBIPage = lazyWithRetry(() => import("@/pages/modelos-bi/GestaoPessoasPage"));
-const FarolEstrategicoHubPage = lazyWithRetry(() => import("@/pages/modelos-bi/FarolEstrategicoHubPage"));
 
 const queryClient = new QueryClient();
 
@@ -74,12 +68,6 @@ const App = () => (
             <Route path="/templates/pagina-filtros-tabela" element={<PaginaFiltrosTabelaPage />} />
             <Route path="/templates/farol-estrategico" element={<FarolEstrategicoPage />} />
 
-            {/* Modelos de BI - rotas standalone */}
-            <Route path="/modelos-bi/farol-estrategico/bi" element={<FarolEstrategicoPage />} />
-            <Route path="/modelos-bi/planeja" element={<PlanejaBIPage />} />
-            <Route path="/modelos-bi/mpi" element={<MPIBIPage />} />
-            <Route path="/modelos-bi/gestao-pessoas" element={<GestaoPessoasBIPage />} />
-
             {/* Demais rotas dentro do DSLayout */}
             <Route
               path="*"
@@ -92,10 +80,6 @@ const App = () => (
                     <Route path="/tokens" element={<TokensPage />} />
                     <Route path="/componentes" element={<ComponentesPage />} />
                     <Route path="/templates" element={<TemplatesPage />} />
-                    <Route path="/templates/farol-estrategico/docs" element={<Navigate to="/modelos-bi/farol-estrategico/docs" replace />} />
-                    <Route path="/modelos-bi" element={<ModelosBIPage />} />
-                    <Route path="/modelos-bi/farol-estrategico" element={<FarolEstrategicoHubPage />} />
-                    <Route path="/modelos-bi/farol-estrategico/docs" element={<FarolEstrategicoDocsPage />} />
                     <Route path="/marca" element={<MarcaPage />} />
                     <Route path="/conteudo" element={<ConteudoPage />} />
                     <Route path="/acessibilidade" element={<AcessibilidadePage />} />
