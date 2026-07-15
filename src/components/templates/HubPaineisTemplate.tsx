@@ -23,110 +23,110 @@ interface PainelCard {
 
 const paineis: PainelCard[] = [
   {
-    id: "gestao-atas",
-    sigla: "GDDE",
+    id: "vigilancia-epidemiologica",
+    sigla: "NUVEP",
     siglaCor: "bg-cisec-blue",
-    titulo: "Painel de Gestão de ATAS",
-    descricao: "Painel estratégico para monitorar a recuperação de créditos, aprimorando a gestão financeira.",
+    titulo: "Vigilância Epidemiológica",
+    descricao: "Painel de monitoramento de agravos, surtos e doenças de notificação compulsória no Ceará.",
     icon: <ClipboardList size={32} />,
     imagem: hubThumb1,
   },
   {
-    id: "ouvidoria-sic",
-    sigla: "SIGLA",
+    id: "ouvidoria-sus",
+    sigla: "OUVSUS",
     siglaCor: "bg-cisec-orange",
-    titulo: "Ouvidoria SIC",
-    descricao: "Painel do Setor de Ouvidoria (SIC) para monitoramento das manifestações dos cidadãos.",
+    titulo: "Ouvidoria do SUS",
+    descricao: "Manifestações dos usuários do SUS no Ceará: reclamações, sugestões e elogios sobre o cuidado em saúde.",
     icon: <Users size={32} />,
     imagem: hubThumb2,
   },
   {
-    id: "ouvidoria-gestao",
-    sigla: "SIGLA",
+    id: "boletins-epidemiologicos",
+    sigla: "BOLET",
     siglaCor: "bg-cisec-orange",
-    titulo: "Ouvidoria e Gestão de Ouvidoria",
-    descricao: "Painel da Ouvidoria e Gestão de Ouvidoria do CISEC para acompanhamento das manifestações.",
+    titulo: "Boletins Epidemiológicos",
+    descricao: "Publicação e acompanhamento de boletins epidemiológicos periódicos produzidos pelo CISEC.",
     icon: <FileText size={32} />,
     imagem: hubThumb3,
   },
   {
-    id: "cadastro-base",
-    sigla: "DIRT",
+    id: "gestores-municipais",
+    sigla: "COSEMS",
     siglaCor: "bg-cisec-blue",
-    titulo: "Cadastro Base — Prefeitos e Secretários",
-    descricao: "Acompanhamento da situação dos prefeitos e secretários municipais e estaduais da educação.",
+    titulo: "Cadastro — Gestores Municipais de Saúde",
+    descricao: "Acompanhamento dos secretários municipais de saúde e interlocutores dos 184 municípios cearenses.",
     icon: <Building2 size={32} />,
     imagem: hubThumb4,
   },
   {
-    id: "painel-pdtic",
-    sigla: "DIRTI",
+    id: "saude-digital",
+    sigla: "NUTIC",
     siglaCor: "bg-cisec-blue",
-    titulo: "Painel PDTIC",
-    descricao: "Painel do Plano Diretor de Tecnologia da Informação e Comunicação do órgão.",
+    titulo: "Saúde Digital — PDTIC",
+    descricao: "Plano Diretor de Tecnologia da Informação e Comunicação aplicado aos sistemas de saúde do Ceará.",
     icon: <BarChart3 size={32} />,
     imagem: hubThumb1,
   },
   {
-    id: "pacto-retomada",
-    sigla: "DIGAP",
+    id: "rede-atencao",
+    sigla: "RAS",
     siglaCor: "bg-cisec-blue",
-    titulo: "Pacto de Retomada",
-    descricao: "Acompanhamento do Pacto Nacional pela Retomada de Obras da Educação Básica.",
+    titulo: "Rede de Atenção à Saúde",
+    descricao: "Acompanhamento da Rede de Atenção à Saúde do SUS-CE: unidades, regionais e fluxos assistenciais.",
     icon: <Landmark size={32} />,
     imagem: hubThumb2,
   },
   {
-    id: "reprogramacao-saldos",
-    sigla: "DIFIN",
+    id: "cobertura-vacinal",
+    sigla: "IMUNI",
     siglaCor: "bg-success",
-    titulo: "Reprogramação de Saldos",
-    descricao: "Acompanhamento de Saldos a serem passíveis de reprogramação financeira.",
+    titulo: "Cobertura Vacinal",
+    descricao: "Cobertura das vacinas do calendário do PNI por município e regional de saúde do Ceará.",
     icon: <TrendingUp size={32} />,
     imagem: hubThumb3,
   },
   {
-    id: "gestao-orcamentaria",
-    sigla: "DIFIN",
+    id: "financiamento-sus",
+    sigla: "FES",
     siglaCor: "bg-success",
-    titulo: "Gestão Orçamentária e Financeira",
-    descricao: "Acompanhamento do orçamento e da execução orçamentária do CISEC.",
+    titulo: "Financiamento do SUS",
+    descricao: "Execução orçamentária e financeira do Fundo Estadual de Saúde e transferências fundo a fundo.",
     icon: <PieChart size={32} />,
     imagem: hubThumb4,
   },
   {
-    id: "prestacao-contas",
-    sigla: "DIFIN",
+    id: "prestacao-contas-sus",
+    sigla: "SARGSUS",
     siglaCor: "bg-success",
-    titulo: "Gestão de Prestação de Contas",
-    descricao: "Painel de monitoramento transparente dos processos de prestação de contas.",
+    titulo: "Prestação de Contas — SUS",
+    descricao: "Monitoramento transparente dos relatórios de gestão e prestação de contas do SUS estadual.",
     icon: <Scale size={32} />,
     imagem: hubThumb1,
   },
   {
-    id: "pdde-basico",
-    sigla: "Cisectec",
+    id: "educacao-saude",
+    sigla: "ESP-CE",
     siglaCor: "bg-cisec-orange",
-    titulo: "Cisectec",
-    descricao: "Programa que leva consultoria tecnológica e inovação para pequenos negócios em diversos setores.",
+    titulo: "Educação Permanente em Saúde",
+    descricao: "Formação e qualificação de profissionais do SUS pela Escola de Saúde Pública do Ceará (ESP-CE).",
     icon: <GraduationCap size={32} />,
     imagem: hubThumb2,
   },
   {
-    id: "atividade-coger",
-    sigla: "SIGLA",
+    id: "auditoria-sus",
+    sigla: "DENASUS",
     siglaCor: "bg-cisec-orange",
-    titulo: "Atividade COGER",
-    descricao: "A COGER do CISEC atua na atividade correicional, apurando irregularidades.",
+    titulo: "Auditoria do SUS",
+    descricao: "Componente estadual de auditoria do SUS: apuração de irregularidades e recomendações à gestão.",
     icon: <Shield size={32} />,
     imagem: hubThumb3,
   },
   {
-    id: "escola-integral",
-    sigla: "SIGLA",
+    id: "atencao-primaria",
+    sigla: "APS",
     siglaCor: "bg-cisec-orange",
-    titulo: "Programa Escola em Tempo Integral",
-    descricao: "Os recursos do Programa apoiam a ampliação da jornada escolar.",
+    titulo: "Atenção Primária à Saúde",
+    descricao: "Cobertura e desempenho da APS/Estratégia Saúde da Família nos municípios cearenses.",
     icon: <BookOpen size={32} />,
     imagem: hubThumb4,
   },
@@ -265,8 +265,8 @@ function HubPaineisPreview() {
             </button>
             <img src={cisecLogoWhite} alt="CISEC" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
-            <span className="font-semibold text-sm">SIGLA</span>
-            <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
+            <span className="font-semibold text-sm">CISEC</span>
+            <span className="text-sm opacity-80">Hub de Painéis · Inteligência em Saúde</span>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="ml-auto p-1.5 rounded text-white hover:bg-white/10 transition-colors"
@@ -350,8 +350,8 @@ function HubPaineisImagePreview() {
             </button>
             <img src={cisecLogoWhite} alt="CISEC" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
-            <span className="font-semibold text-sm">SIGLA</span>
-            <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
+            <span className="font-semibold text-sm">CISEC</span>
+            <span className="text-sm opacity-80">Hub de Painéis · Inteligência em Saúde</span>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="ml-auto p-1.5 rounded text-white hover:bg-white/10 transition-colors"
