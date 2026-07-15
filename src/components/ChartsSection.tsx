@@ -104,27 +104,27 @@ const dataLabelsData = [
 ];
 
 const stackedColumnData = [
-  { name: "2023 Q1", produto_a: 65, produto_b: 28, produto_c: 35 },
-  { name: "2023 Q2", produto_a: 59, produto_b: 48, produto_c: 29 },
-  { name: "2023 Q3", produto_a: 80, produto_b: 40, produto_c: 50 },
-  { name: "2023 Q4", produto_a: 81, produto_b: 19, produto_c: 45 },
-  { name: "2024 Q1", produto_a: 56, produto_b: 86, produto_c: 60 },
-  { name: "2024 Q2", produto_a: 55, produto_b: 27, produto_c: 33 },
-  { name: "2024 Q3", produto_a: 40, produto_b: 90, produto_c: 38 },
-  { name: "2024 Q4", produto_a: 72, produto_b: 50, produto_c: 47 },
+  { name: "Q1", produto_a: 65, produto_b: 28, produto_c: 35 },
+  { name: "Q2", produto_a: 59, produto_b: 48, produto_c: 29 },
+  { name: "Q3", produto_a: 80, produto_b: 40, produto_c: 50 },
+  { name: "Q4", produto_a: 81, produto_b: 19, produto_c: 45 },
+  { name: "Q1", produto_a: 56, produto_b: 86, produto_c: 60 },
+  { name: "Q2", produto_a: 55, produto_b: 27, produto_c: 33 },
+  { name: "Q3", produto_a: 40, produto_b: 90, produto_c: 38 },
+  { name: "Q4", produto_a: 72, produto_b: 50, produto_c: 47 },
 ];
 
 const stacked100Data = [
-  { name: "2023 Q1", produto_a: 65, produto_b: 19, produto_c: 16 },
-  { name: "2023 Q2", produto_a: 58, produto_b: 24, produto_c: 18 },
-  { name: "2023 Q3", produto_a: 54, produto_b: 26, produto_c: 20 },
-  { name: "2023 Q4", produto_a: 74, produto_b: 17, produto_c: 9 },
+  { name: "Q1", produto_a: 65, produto_b: 19, produto_c: 16 },
+  { name: "Q2", produto_a: 58, produto_b: 24, produto_c: 18 },
+  { name: "Q3", produto_a: 54, produto_b: 26, produto_c: 20 },
+  { name: "Q4", produto_a: 74, produto_b: 17, produto_c: 9 },
 ];
 
 const groupedStackedData = [
-  { name: "2022", q1: 40, q2: 30, q3: 35, q4: 25 },
-  { name: "2023", q1: 50, q2: 40, q3: 45, q4: 35 },
-  { name: "2024", q1: 60, q2: 50, q3: 55, q4: 45 },
+  { name: "Ano 1", q1: 40, q2: 30, q3: 35, q4: 25 },
+  { name: "Ano 2", q1: 50, q2: 40, q3: 45, q4: 35 },
+  { name: "Ano 3", q1: 60, q2: 50, q3: 55, q4: 45 },
 ];
 
 const horizontalData = [
