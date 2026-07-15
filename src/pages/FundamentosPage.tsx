@@ -1149,13 +1149,15 @@ h1, h2, h3, h4, h5, h6 {
 <!-- Modificadores de tamanho prontos: ri-xs, ri-sm, ri-1x, ri-lg, ri-xl, ri-2x ... ri-5x -->`}
         language="html"
       />
+      </section>
 
-      {/* Grid */}
+      <section aria-labelledby="grid" className="mb-12 sm:mb-16">
       <SectionHeader id="grid" title="Grid e Espaçamento" description="Sistema de grid responsivo com suporte a 16, 12, 8 e 4 colunas para desktop, tablet e mobile, com exemplos práticos para dashboards." />
 
       <GridSection />
+      </section>
 
-      {/* Elevation */}
+      <section aria-labelledby="elevacao" className="mb-12 sm:mb-16">
       <SectionHeader id="elevacao" title="Elevação e Sombras" description="Níveis de elevação para criar hierarquia visual e profundidade. As sombras se adaptam ao tema." />
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
