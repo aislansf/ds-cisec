@@ -80,13 +80,13 @@ export const headerVariants: HeaderVariant[] = [
 
 function getHeaderBg(audience: string) {
   if (audience === "externo") return "bg-[#3B4AFF]";
-  if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "bg-[#F0F3FF]";
+  if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "bg-[#EEF2F8]";
   return "bg-[#1F3051]";
 }
 
 function getHeaderBgHex(audience: string) {
   if (audience === "externo") return "#3B4AFF";
-  if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "#F0F3FF";
+  if (audience === "claro-completa" || audience === "claro-reduzida" || audience === "claro-sem-gov") return "#EEF2F8";
   return "#1F3051";
 }
 
