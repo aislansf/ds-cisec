@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run typecheck && npm run check:legacy-brand && npm run check:legacy-typography && npm run check:homepage-h1 && vite build",
-    "build:dev": "npm run typecheck && npm run check:legacy-brand && npm run check:legacy-typography && npm run check:homepage-h1 && vite build --mode development",
+    "build": "npm run typecheck && npm run check:legacy-brand && npm run check:legacy-cisec-ce && npm run check:legacy-typography && npm run check:homepage-h1 && vite build",
+    "build:dev": "npm run typecheck && npm run check:legacy-brand && npm run check:legacy-cisec-ce && npm run check:legacy-typography && npm run check:homepage-h1 && vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
@@ -16,6 +16,7 @@
     "test:smoke": "node scripts/smoke-public-url.mjs",
     "test:smoke:render": "node scripts/smoke-public-url.mjs --render",
     "check:legacy-brand": "node scripts/check-legacy-brand.mjs",
+    "check:legacy-cisec-ce": "node scripts/check-legacy-cisec-ce.mjs",
     "check:legacy-typography": "node scripts/check-legacy-typography.mjs",
     "check:homepage-h1": "node scripts/check-homepage-h1-color.mjs",
     "check:homepage-h1:computed": "node scripts/check-homepage-h1-computed.mjs",
