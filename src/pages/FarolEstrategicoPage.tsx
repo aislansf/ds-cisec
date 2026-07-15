@@ -345,12 +345,6 @@ export default function FarolEstrategicoPage() {
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Painéis Estratégicos</a>
             <ChevronRight size={12} className="text-muted-foreground/50" />
             <span className="font-semibold text-foreground" aria-current="page">Farol Estratégico</span>
-            <Link
-              to="/modelos-bi/farol-estrategico/docs"
-              className="ml-auto inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
-            >
-              <BookOpen size={12} /> Ver documentação
-            </Link>
           </nav>
 
           {/* Toolbar superior — feedback + atualizações */}

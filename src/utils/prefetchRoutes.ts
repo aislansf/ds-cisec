@@ -6,7 +6,6 @@ const loaders: Record<string, () => Promise<unknown>> = {
   "/tokens": () => import("@/pages/TokensPage"),
   "/componentes": () => import("@/pages/ComponentesPage"),
   "/templates": () => import("@/pages/TemplatesPage"),
-  "/modelos-bi/farol-estrategico/docs": () => import("@/pages/FarolEstrategicoDocsPage"),
   "/marca": () => import("@/pages/MarcaPage"),
   "/conteudo": () => import("@/pages/ConteudoPage"),
   "/acessibilidade": () => import("@/pages/AcessibilidadePage"),
@@ -19,12 +18,6 @@ const loaders: Record<string, () => Promise<unknown>> = {
   "/templates/autenticacao-2fa": () => import("@/pages/TwoFactorPage"),
   "/templates/pagina-erro": () => import("@/pages/ErrorPageTemplate"),
   "/templates/farol-estrategico": () => import("@/pages/FarolEstrategicoPage"),
-  "/modelos-bi": () => import("@/pages/ModelosBIPage"),
-  "/modelos-bi/farol-estrategico": () => import("@/pages/modelos-bi/FarolEstrategicoHubPage"),
-  "/modelos-bi/farol-estrategico/bi": () => import("@/pages/FarolEstrategicoPage"),
-  "/modelos-bi/planeja": () => import("@/pages/modelos-bi/PlanejaPage"),
-  "/modelos-bi/mpi": () => import("@/pages/modelos-bi/MPIPage"),
-  "/modelos-bi/gestao-pessoas": () => import("@/pages/modelos-bi/GestaoPessoasPage"),
 };
 
 const prefetched = new Set<string>();
