@@ -184,7 +184,7 @@ export default function FundamentosPage() {
         description="Os alicerces visuais e técnicos do Design System CISEC. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
       />
 
-      {/* Tipografia */}
+      <section aria-labelledby="tipografia" className="mb-12 sm:mb-16">
       <SectionHeader
         id="tipografia"
         title="Tipografia"
