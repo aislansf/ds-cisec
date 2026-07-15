@@ -1327,8 +1327,9 @@ h1, h2, h3, h4, h5, h6 {
           </p>
         </div>
       </div>
+      </section>
 
-      {/* Responsiveness */}
+      <section aria-labelledby="responsividade">
       <SectionHeader id="responsividade" title="Responsividade" description="Breakpoints do sistema para design responsivo." />
 
       <div className="cisec-card">
@@ -1359,6 +1360,7 @@ h1, h2, h3, h4, h5, h6 {
           </table>
         </div>
       </div>
+      </section>
     </div>
   );
 }
