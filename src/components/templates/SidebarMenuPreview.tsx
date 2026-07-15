@@ -6,7 +6,7 @@ import {
   PanelLeftClose, PanelLeftOpen
 } from "lucide-react";
 import { CodeBlock } from "@/components/DSComponents";
-import { cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
+import { cisecSimboloBranco as iconeCisecNegativo } from "@/assets/cisec";
 
 /* ─── Menu item model ─── */
 interface MenuItem {
