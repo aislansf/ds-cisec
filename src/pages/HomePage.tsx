@@ -6,7 +6,8 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/DSComponents";
 import { SEO } from "@/components/SEO";
-import { cisecWhite as cisecLogo, cisecCompletaWhite } from "@/assets/cisec";
+import { cisecWhite as cisecLogo } from "@/assets/cisec";
+import cisecHeroDark from "@/assets/marca/cisec-hero-dark.png.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 
 const sections = [
@@ -100,7 +101,7 @@ export default function HomePage() {
       {/* Hero */}
       <div className="rounded-xl bg-primary text-primary-foreground p-8 md:p-10 mb-10">
         <img
-          src={theme === "dark" ? cisecCompletaWhite : cisecLogo}
+          src={theme === "dark" ? cisecHeroDark.url : cisecLogo}
           alt="Marca CISEC-CE"
           className={
             theme === "dark"
