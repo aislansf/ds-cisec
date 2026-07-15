@@ -113,7 +113,7 @@ export default function HomePage() {
           Sistema de padrões para as aplicações do CISEC
         </h2>
         <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
-          Este Design System estabelece padrões de UI e implementação para os produtos digitais do CISEC-CE. Desenvolvido em vanilla (sem frameworks ou bibliotecas externas), assegura compatibilidade, flexibilidade e reutilização em qualquer stack ou aplicações geradas por IA.
+          Este Design System estabelece padrões de UI e implementação para os produtos digitais do CISEC. Desenvolvido em vanilla (sem frameworks ou bibliotecas externas), assegura compatibilidade, flexibilidade e reutilização em qualquer stack ou aplicações geradas por IA.
         </p>
         <div className="flex flex-wrap gap-3">
           <button onClick={() => navigate("/fundamentos")}
