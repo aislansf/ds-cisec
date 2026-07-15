@@ -4,7 +4,6 @@ import { PageHeader, SectionHeader, CodeBlock } from "@/components/DSComponents"
 import { SEO } from "@/components/SEO";
 import ColorSection from "@/components/ColorSection";
 import { FontFamilyCard } from "@/components/FontFamilyCard";
-import paletaReferenciaBrasil from "@/assets/paleta-referencia-brasil.png.asset.json";
 import GridSection from "@/components/GridSection";
 import {
   ArrowRight, Bell, Check, ChevronRight, Download, Eye,
@@ -19,42 +18,6 @@ import {
   RiQuestionLine, RiLogoutBoxRLine, RiLockPasswordLine, RiShieldUserLine, RiFileList3Line,
   RiWalletLine, RiBuilding2Line, RiCustomerService2Line, RiCalendarEventLine, RiBookOpenLine,
 } from "@remixicon/react";
-
-function ImageLightbox({ src, alt, open, onClose }: { src: string; alt: string; open: boolean; onClose: () => void }) {
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
-    document.addEventListener("keydown", onKey);
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
-  }, [open, onClose]);
-  if (!open) return null;
-  return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-label={alt}
-      onClick={onClose}
-      className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in"
-    >
-      <button
-        type="button"
-        onClick={(e) => { e.stopPropagation(); onClose(); }}
-        aria-label="Fechar (ESC)"
-        className="absolute top-4 right-4 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white"
-      >
-        <XIcon size={20} />
-      </button>
-      <img
-        src={src}
-        alt={alt}
-        onClick={(e) => e.stopPropagation()}
-        className="max-w-[95vw] max-h-[95vh] object-contain rounded-md shadow-2xl"
-      />
-    </div>
-  );
-}
 
 type CopyStatus = "idle" | "ok" | "err";
 function IconCard({
@@ -136,7 +99,6 @@ export default function FundamentosPage() {
   const [iconQuery, setIconQuery] = useState("");
   const [iconCollection, setIconCollection] = useState<"all" | "lucide" | "remix">("all");
   const [iconSize, setIconSize] = useState<14 | 16 | 20 | 24 | 32>(20);
-  const [paletaOpen, setPaletaOpen] = useState(false);
 
   type IconComponent = React.ComponentType<
     React.SVGProps<SVGSVGElement> & { size?: number | string }
@@ -921,7 +883,6 @@ h1, h2, h3, h4, h5, h6 {
 
       {/* Cores */}
       <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
-
 
       <ColorSection />
 
