@@ -880,13 +880,15 @@ h1, h2, h3, h4, h5, h6 {
 --text-4xl: 2.25rem;   /* 36px - Título principal */`}
         language="css"
       />
+      </section>
 
-      {/* Cores */}
+      <section aria-labelledby="cores" className="mb-12 sm:mb-16">
       <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
       <ColorSection />
+      </section>
 
-      {/* Iconografia */}
+      <section aria-labelledby="iconografia" className="mb-12 sm:mb-16">
       <SectionHeader id="iconografia" title="Iconografia" description="A biblioteca oficial do Design System é Lucide (lucide-react). Remix Icon é apresentada apenas como referência complementar, por ser a família utilizada no cisec.com.br/conta." />
 
       {/* Busca e filtros */}
