@@ -114,44 +114,48 @@ export default function ColorSection() {
       <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <Palette size={18} className="text-primary" />
-          <h4 className="text-sm font-semibold">Paleta principal — Azul Céu Brasileiro</h4>
+          <h4 className="text-sm font-semibold">Paleta principal — Identidade CISEC</h4>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
-          Cor primária <strong>#5BA3D9</strong> — inspirada no azul do céu brasileiro presente na
-          identidade visual “Nós representamos todo o Brasil”. A partir dela é construída toda a escala
-          cromática, secundárias, complementares, semânticas e gradientes do sistema.
+          Três cores oficiais formam o núcleo cromático do CISEC:
+          <strong> Laranja CISEC #FF9E20</strong> (primária, energia e ação),
+          <strong> Azul Noite CISEC #1F3051</strong> (secundária, confiança institucional) e
+          <strong> Grafite CISEC #606060</strong> (neutra, tipografia e estrutura).
+          A partir delas são construídas todas as escalas, cores de apoio,
+          complementares, semânticas, superfícies e gradientes do sistema.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
           {[
-            { name: "Azul Profundo",  hex: "#005EB8", token: "blue-profundo" },
-            { name: "Azul Marinho",   hex: "#0024A9", token: "blue-marinho"  },
-            { name: "Azul Cobalto",   hex: "#0041D9", token: "blue-cobalto"  },
-            { name: "Azul Royal",     hex: "#3B4AFF", token: "blue-royal"    },
-            { name: "Azul Céu",       hex: "#40BBFF", token: "blue-ceu"      },
+            { name: "Laranja CISEC",      hex: "#FF9E20", token: "cisec-orange", description: "Primária · CTAs, links, foco" },
+            { name: "Azul Noite CISEC",   hex: "#1F3051", token: "cisec-navy",   description: "Secundária · headers, títulos" },
+            { name: "Grafite CISEC",      hex: "#606060", token: "cisec-graphite", description: "Neutra · corpo de texto" },
+            { name: "Âmbar Suave",        hex: "#FFC94D", token: "cisec-amber",  description: "Apoio · highlights quentes" },
+            { name: "Azul Aço",           hex: "#354F80", token: "cisec-steel",  description: "Apoio · superfícies frias" },
           ].map((c) => (
-            <ColorSwatch key={c.hex} name={c.name} hex={c.hex} token={c.token} />
+            <ColorSwatch key={c.hex} name={c.name} hex={c.hex} token={c.token} description={c.description} large />
           ))}
         </div>
 
-        {/* Escala do azul */}
-        <h4 className="text-sm font-semibold mb-1">Escala cromática do Azul Primário</h4>
+        {/* Escala do laranja (primário) */}
+        <h4 className="text-sm font-semibold mb-1">Escala cromática · Laranja CISEC (Primário)</h4>
         <p className="text-xs text-muted-foreground mb-3">
-          Escala 50–950 derivada do matiz de <strong>#5BA3D9</strong> (~204°). Use 50–200 para superfícies,
-          300–500 para componentes e brand, 600–800 para texto/contraste e 900–950 para dark mode.
+          Escala 50–950 derivada de <strong>#FF9E20</strong> (~32°). Use 50–200 para superfícies e
+          badges, 300–500 para componentes e brand, 500 como cor primária padrão, 600–800 para hover,
+          pressed e texto sobre fundo claro, e 900–950 para dark mode.
         </p>
         <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-11 gap-2 mb-6">
           {[
-            { name: "50",  hex: "#F0F7FC", token: "blue-50"  },
-            { name: "100", hex: "#DCEBF6", token: "blue-100" },
-            { name: "200", hex: "#B8D7ED", token: "blue-200" },
-            { name: "300", hex: "#8FC0E2", token: "blue-300" },
-            { name: "400", hex: "#5BA3D9", token: "blue-400" },
-            { name: "500", hex: "#3D8DC8", token: "blue-500" },
-            { name: "600", hex: "#2A75AE", token: "blue-600" },
-            { name: "700", hex: "#1F5C8A", token: "blue-700" },
-            { name: "800", hex: "#163F5F", token: "blue-800" },
-            { name: "900", hex: "#0E2638", token: "blue-900" },
-            { name: "950", hex: "#06141F", token: "blue-950" },
+            { name: "50",  hex: "#FFF7EC", token: "orange-50"  },
+            { name: "100", hex: "#FFEDD1", token: "orange-100" },
+            { name: "200", hex: "#FFD9A3", token: "orange-200" },
+            { name: "300", hex: "#FFC170", token: "orange-300" },
+            { name: "400", hex: "#FFB040", token: "orange-400" },
+            { name: "500", hex: "#FF9E20", token: "orange-500" },
+            { name: "600", hex: "#E5851A", token: "orange-600" },
+            { name: "700", hex: "#B86612", token: "orange-700" },
+            { name: "800", hex: "#85480B", token: "orange-800" },
+            { name: "900", hex: "#4D2905", token: "orange-900" },
+            { name: "950", hex: "#2A1602", token: "orange-950" },
           ].map(c => (
             <div key={c.token} className="text-center">
               <div className="h-12 rounded-lg border border-border mb-1" style={{ backgroundColor: c.hex }} />
@@ -161,52 +165,86 @@ export default function ColorSection() {
           ))}
         </div>
 
-        {/* Secundárias — Família Brasil */}
-        <h4 className="text-sm font-semibold mb-1">Cores Secundárias — Família Brasil</h4>
+        {/* Escala do azul noite (secundário) */}
+        <h4 className="text-sm font-semibold mb-1">Escala cromática · Azul Noite CISEC (Secundário)</h4>
         <p className="text-xs text-muted-foreground mb-3">
-          Extraídas da paleta de referência (Pantone). Uso em destaques institucionais, categorias e
-          ilustrações que dialogam com o azul primário.
+          Escala 50–950 derivada de <strong>#1F3051</strong> (~217°). Sustenta headers, títulos,
+          ações secundárias e superfícies profundas no dark mode.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-11 gap-2 mb-6">
           {[
-            { name: "Azul Profundo", hex: "#0041D9", token: "brand-deep",    pantone: "Pantone 2728C" },
-            { name: "Azul Royal",    hex: "#3B4AFF", token: "brand-royal",   pantone: "Pantone 2726C" },
-            { name: "Ciano Vibrante",hex: "#40BBFF", token: "cyan",          pantone: "Pantone 298C"  },
-            { name: "Verde Tropical",hex: "#84F4BC", token: "green-tropical",pantone: "Pantone 3375C" },
-            { name: "Amarelo Sol",   hex: "#FFED69", token: "yellow-sun",    pantone: "Pantone 100C"  },
+            { name: "50",  hex: "#EEF2F8", token: "navy-50"  },
+            { name: "100", hex: "#D6DFEC", token: "navy-100" },
+            { name: "200", hex: "#ADBED9", token: "navy-200" },
+            { name: "300", hex: "#7F97BF", token: "navy-300" },
+            { name: "400", hex: "#526FA0", token: "navy-400" },
+            { name: "500", hex: "#354F80", token: "navy-500" },
+            { name: "600", hex: "#263E68", token: "navy-600" },
+            { name: "700", hex: "#1F3051", token: "navy-700" },
+            { name: "800", hex: "#17233C", token: "navy-800" },
+            { name: "900", hex: "#0F1727", token: "navy-900" },
+            { name: "950", hex: "#070B14", token: "navy-950" },
           ].map(c => (
             <div key={c.token} className="text-center">
-              <div className="h-14 rounded-lg border border-border mb-1" style={{ backgroundColor: c.hex }} />
-              <p className="text-xs font-semibold">{c.name}</p>
-              <p className="text-[10px] text-muted-foreground">{c.pantone}</p>
+              <div className="h-12 rounded-lg border border-border mb-1" style={{ backgroundColor: c.hex }} />
+              <p className="text-[10px] font-semibold">{c.name}</p>
+              <CopyHex value={c.hex} />
+            </div>
+          ))}
+        </div>
+
+        {/* Escala do grafite (neutra) */}
+        <h4 className="text-sm font-semibold mb-1">Escala cromática · Grafite CISEC (Neutra)</h4>
+        <p className="text-xs text-muted-foreground mb-3">
+          Escala 50–950 derivada de <strong>#606060</strong>. Base tipográfica e estrutural do sistema:
+          bordas, textos secundários, divisores, superfícies neutras e overlays.
+        </p>
+        <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-11 gap-2">
+          {[
+            { name: "50",  hex: "#FAFAFA", token: "gray-50"  },
+            { name: "100", hex: "#F0F0F0", token: "gray-100" },
+            { name: "200", hex: "#E0E0E0", token: "gray-200" },
+            { name: "300", hex: "#C7C7C7", token: "gray-300" },
+            { name: "400", hex: "#A3A3A3", token: "gray-400" },
+            { name: "500", hex: "#808080", token: "gray-500" },
+            { name: "600", hex: "#606060", token: "gray-600" },
+            { name: "700", hex: "#4D4D4D", token: "gray-700" },
+            { name: "800", hex: "#333333", token: "gray-800" },
+            { name: "900", hex: "#1A1A1A", token: "gray-900" },
+            { name: "950", hex: "#0D0D0D", token: "gray-950" },
+          ].map(c => (
+            <div key={c.token} className="text-center">
+              <div className="h-12 rounded-lg border border-border mb-1" style={{ backgroundColor: c.hex }} />
+              <p className="text-[10px] font-semibold">{c.name}</p>
               <CopyHex value={c.hex} />
             </div>
           ))}
         </div>
       </div>
 
-      {/* ===== CORES COMPLEMENTARES DO MANUAL ===== */}
+      {/* ===== CORES COMPLEMENTARES ===== */}
       <div className="cisec-card mb-6">
         <div className="flex items-center gap-2 mb-4">
           <SwatchBook size={18} className="text-primary" />
-          <h4 className="text-sm font-semibold">Cores Complementares — Acentos</h4>
+          <h4 className="text-sm font-semibold">Cores Complementares — Acentos institucionais</h4>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
-          Acentos quentes e análogos complementares ao azul primário. Uso em CTAs secundários,
-          ilustrações, categorias de dataviz e destaques editoriais.
+          Análogos ao Laranja CISEC e contrapontos ao Azul Noite. Uso em CTAs alternativos,
+          categorias de dataviz, ilustrações e destaques editoriais.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
           {[
-            { name: "Coral Carnaval", hex: "#F4455A", token: "coral",           pantone: "Pantone 1785C" },
-            { name: "Rosa Suave",     hex: "#FFABAB", token: "pink-soft",       pantone: "Pantone 169C"  },
-            { name: "Laranja Manga",  hex: "#FFB380", token: "orange-mango",    pantone: "Pantone 7410C" },
-            { name: "Roxo Festival",  hex: "#9285F9", token: "purple-festival", pantone: "Pantone 2715C" },
-            { name: "Magenta",        hex: "#CD5BE8", token: "magenta",         pantone: "Pantone 252C"  },
+            { name: "Âmbar Solar",       hex: "#FFC94D", token: "amber",     usage: "Highlights, badges" },
+            { name: "Terracota",         hex: "#D9432A", token: "terracota", usage: "Alertas quentes, contraste" },
+            { name: "Verde Sertão",      hex: "#4E8C6A", token: "green",     usage: "Sucessos, indicadores positivos" },
+            { name: "Turquesa Litoral",  hex: "#2E9BAB", token: "teal",      usage: "Dataviz frio, links de apoio" },
+            { name: "Púrpura Crepúsculo",hex: "#6B4C93", token: "purple",    usage: "Categorias editoriais" },
+            { name: "Areia Deserto",     hex: "#E8D3B0", token: "sand",      usage: "Fundos quentes, cards suaves" },
           ].map(c => (
             <div key={c.token} className="text-center">
               <div className="h-14 rounded-lg border border-border mb-1" style={{ backgroundColor: c.hex }} />
               <p className="text-xs font-semibold">{c.name}</p>
-              <p className="text-[10px] text-muted-foreground">{c.pantone}</p>
+              <p className="text-[10px] text-muted-foreground">{c.usage}</p>
               <CopyHex value={c.hex} />
             </div>
           ))}
@@ -220,50 +258,50 @@ export default function ColorSection() {
           <h4 className="text-sm font-semibold">Cores semânticas (feedback)</h4>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
-          Derivadas da paleta Brasil, ajustadas para contraste AA. Cada cor possui par “base + soft”
+          Derivadas da paleta CISEC e ajustadas para contraste AA. Cada cor possui par “base + fundo”
           para garantir legibilidade entre texto e fundo em modo claro e escuro.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             {
               name: "Success",
-              hex: "#2BA86B",
-              darkHex: "#34D399",
-              bgHex: "#DFF5E8",
-              darkBgHex: "#052E16",
+              hex: "#3E8F5F",
+              darkHex: "#5EBF83",
+              bgHex: "#E4F3EA",
+              darkBgHex: "#0F2A1A",
               fgHex: "#FFFFFF",
               token: "success",
-              desc: "Confirmações, ações concluídas, validações positivas. Deriva do Verde Tropical.",
+              desc: "Confirmações, ações concluídas, validações positivas. Deriva do Verde Sertão.",
             },
             {
               name: "Warning",
-              hex: "#F2A93B",
-              darkHex: "#FBBF24",
+              hex: "#E5851A",
+              darkHex: "#FFB040",
               bgHex: "#FFF1D6",
-              darkBgHex: "#422006",
-              fgHex: "#4A2F06",
+              darkBgHex: "#4D2905",
+              fgHex: "#4D2905",
               token: "warning",
-              desc: "Alertas, atenção necessária. Deriva do Amarelo Sol e Laranja Manga.",
+              desc: "Alertas e atenção necessária. Deriva do Laranja CISEC (orange-600).",
             },
             {
               name: "Danger",
-              hex: "#E23D4F",
-              darkHex: "#F87171",
-              bgHex: "#FBE0E3",
-              darkBgHex: "#450A0A",
+              hex: "#C93A2C",
+              darkHex: "#F26A5C",
+              bgHex: "#FBE3E0",
+              darkBgHex: "#3B0F0A",
               fgHex: "#FFFFFF",
               token: "danger",
-              desc: "Erros, falhas, ações destrutivas. Deriva do Coral Carnaval.",
+              desc: "Erros, falhas, ações destrutivas. Deriva da Terracota.",
             },
             {
               name: "Info",
-              hex: "#3D8DC8",
-              darkHex: "#5BA3D9",
-              bgHex: "#DCEBF6",
-              darkBgHex: "#1E3A5F",
+              hex: "#354F80",
+              darkHex: "#7F97BF",
+              bgHex: "#EEF2F8",
+              darkBgHex: "#17233C",
               fgHex: "#FFFFFF",
               token: "info",
-              desc: "Informações contextuais, dicas. Deriva do Azul Primário.",
+              desc: "Informações contextuais e dicas. Deriva do Azul Noite CISEC (navy-500).",
             },
           ].map(c => (
             <div key={c.token} className="border border-border rounded-lg overflow-hidden">
@@ -300,14 +338,15 @@ export default function ColorSection() {
       <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-3">Superfícies e fundos</h4>
         <p className="text-xs text-muted-foreground mb-4">
-          Superfícies neutras com leve tinta do azul primário, garantindo coerência cromática em todo o sistema.
+          Superfícies neutras com leve tinta do Azul Noite CISEC, garantindo coerência cromática
+          entre modo claro e escuro.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
-            { label: "Background", hex: "#F5F7FA", darkHex: "#06141F", token: "background", cls: "bg-background border" },
-            { label: "Card",       hex: "#FFFFFF", darkHex: "#0E2638", token: "card",       cls: "bg-card border" },
-            { label: "Muted",      hex: "#F0F7FC", darkHex: "#163F5F", token: "muted",      cls: "bg-muted" },
-            { label: "Accent",     hex: "#DCEBF6", darkHex: "#1F5C8A", token: "accent",     cls: "bg-accent" },
+            { label: "Background", hex: "#FAFAFA", darkHex: "#0F1727", token: "background", cls: "bg-background border" },
+            { label: "Card",       hex: "#FFFFFF", darkHex: "#17233C", token: "card",       cls: "bg-card border" },
+            { label: "Muted",      hex: "#F0F0F0", darkHex: "#1F3051", token: "muted",      cls: "bg-muted" },
+            { label: "Accent",     hex: "#FFF7EC", darkHex: "#263E68", token: "accent",     cls: "bg-accent" },
           ].map(s => (
             <div key={s.label} className="text-center">
               <div className={`h-14 rounded-lg mb-1 ${s.cls} border-border`} />
@@ -334,51 +373,51 @@ export default function ColorSection() {
           <h4 className="text-sm font-semibold">Gradientes do sistema</h4>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
-          Combinações construídas a partir do azul primário e da paleta Brasil. Use em headers, hero
-          sections, cards de destaque, campanhas e dataviz. Clique para copiar o CSS.
+          Combinações construídas a partir do Laranja CISEC, Azul Noite e Grafite. Use em headers,
+          hero sections, cards de destaque, campanhas e dataviz. Clique para copiar o CSS.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <GradientCard
-            name="Primary"
-            css="linear-gradient(135deg, #5BA3D9 0%, #2A75AE 100%)"
-            colors={["#5BA3D9", "#2A75AE"]}
+            name="Primary — Laranja CISEC"
+            css="linear-gradient(135deg, #FF9E20 0%, #B86612 100%)"
+            colors={["#FF9E20", "#B86612"]}
             description="Botões premium, hover de cards, hero institucional."
           />
           <GradientCard
-            name="Brand Deep"
-            css="linear-gradient(135deg, #3B4AFF 0%, #0041D9 100%)"
-            colors={["#3B4AFF", "#0041D9"]}
+            name="Secondary — Azul Noite"
+            css="linear-gradient(135deg, #354F80 0%, #0F1727 100%)"
+            colors={["#354F80", "#0F1727"]}
             description="Headers institucionais, splash, telas de autenticação."
           />
           <GradientCard
-            name="Sky to Ocean"
-            css="linear-gradient(90deg, #005EB8 0%, #40BBFF 100%)"
-            colors={["#40BBFF", "#5BA3D9", "#1F5C8A"]}
-            description="Dashboards, covers de seção, painéis de indicadores."
+            name="Institucional CISEC"
+            css="linear-gradient(135deg, #1F3051 0%, #FF9E20 100%)"
+            colors={["#1F3051", "#FF9E20"]}
+            description="Assinatura da marca — combinação primária × secundária."
           />
           <GradientCard
-            name="Brasil Sunset"
-            css="linear-gradient(120deg, #FFED69 0%, #FFB380 50%, #F4455A 100%)"
-            colors={["#FFED69", "#FFB380", "#F4455A"]}
+            name="Pôr do Sol CISEC"
+            css="linear-gradient(120deg, #FFC94D 0%, #FF9E20 50%, #D9432A 100%)"
+            colors={["#FFC94D", "#FF9E20", "#D9432A"]}
             description="Campanhas, banners de evento, comunicação calorosa."
           />
           <GradientCard
-            name="Tropical"
-            css="linear-gradient(120deg, #84F4BC 0%, #40BBFF 100%)"
-            colors={["#84F4BC", "#40BBFF"]}
-            description="Ilustrações, ambientes leves, ações de sustentabilidade."
+            name="Aço & Turquesa"
+            css="linear-gradient(120deg, #354F80 0%, #2E9BAB 100%)"
+            colors={["#354F80", "#2E9BAB"]}
+            description="Dashboards frios, indicadores de dados e monitoramento."
           />
           <GradientCard
-            name="Carnaval"
-            css="linear-gradient(120deg, #9285F9 0%, #CD5BE8 50%, #F4455A 100%)"
-            colors={["#9285F9", "#CD5BE8", "#F4455A"]}
-            description="Destaques editoriais, capas de conteúdo, comunicação cultural."
+            name="Grafite Fade"
+            css="linear-gradient(180deg, #FAFAFA 0%, #FFFFFF 100%)"
+            colors={["#FAFAFA", "#FFFFFF"]}
+            description="Fundos de seção e separação suave de áreas. Modo claro."
           />
           <GradientCard
-            name="Surface Soft"
-            css="linear-gradient(180deg, #F0F7FC 0%, #FFFFFF 100%)"
-            colors={["#F0F7FC", "#FFFFFF"]}
-            description="Fundos de seção, separação suave de áreas. Modo claro."
+            name="Noite Profunda"
+            css="linear-gradient(180deg, #17233C 0%, #070B14 100%)"
+            colors={["#17233C", "#070B14"]}
+            description="Superfícies e hero sections em dark mode."
           />
         </div>
       </div>
@@ -388,19 +427,20 @@ export default function ColorSection() {
         <h4 className="text-sm font-semibold mb-4">Utilização sistêmica das cores</h4>
         <p className="text-xs text-muted-foreground mb-3">
           Distribuição recomendada <strong>60-30-10</strong>:
-          <span className="text-foreground"> 60% neutros</span> (background, blue-50/100) para superfícies,
-          <span className="text-foreground"> 30% primário</span> (#5BA3D9 + escala 400–800) para navegação e
-          interação, <span className="text-foreground">10% acentos</span> (complementares + gradientes)
+          <span className="text-foreground"> 60% neutros</span> (Grafite 50–200 + Background/Card) para superfícies,
+          <span className="text-foreground"> 30% institucional</span> (Azul Noite 500–800) para navegação,
+          headers e texto de contraste, <span className="text-foreground">10% primário/acentos</span>
+          (Laranja CISEC + complementares + gradientes)
           para destaques pontuais.
         </p>
         <ul className="text-xs text-muted-foreground list-disc pl-5 mb-4 space-y-1">
-          <li><strong>Botão primário:</strong> <code className="bg-muted px-1 rounded">blue-400</code> fundo, texto branco · hover <code className="bg-muted px-1 rounded">blue-500</code> · pressed <code className="bg-muted px-1 rounded">blue-600</code>.</li>
-          <li><strong>Botão secundário:</strong> outline <code className="bg-muted px-1 rounded">blue-600</code>, texto <code className="bg-muted px-1 rounded">blue-700</code>, hover preenche <code className="bg-muted px-1 rounded">blue-50</code>.</li>
-          <li><strong>CTA promocional:</strong> gradiente <em>Primary</em> ou <em>Brasil Sunset</em>.</li>
-          <li><strong>Links:</strong> <code className="bg-muted px-1 rounded">blue-600</code> · hover <code className="bg-muted px-1 rounded">blue-700</code> · visited <code className="bg-muted px-1 rounded">blue-800</code>.</li>
-          <li><strong>Dark mode:</strong> background <code className="bg-muted px-1 rounded">blue-950</code>, surface <code className="bg-muted px-1 rounded">blue-900</code>, primary mantém <code className="bg-muted px-1 rounded">blue-400</code>.</li>
-          <li><strong>Dataviz (sequência fixa):</strong> #5BA3D9 → #F4455A → #84F4BC → #FFED69 → #9285F9 → #FFB380 → #40BBFF → #CD5BE8.</li>
-          <li><strong>Acessibilidade:</strong> texto sobre <code className="bg-muted px-1 rounded">blue-400</code> sempre branco (AA ≥ 4.5:1). Evite texto branco sobre <code className="bg-muted px-1 rounded">blue-50/100/200</code>.</li>
+          <li><strong>Botão primário:</strong> <code className="bg-muted px-1 rounded">orange-500</code> fundo, texto <code className="bg-muted px-1 rounded">navy-900</code> · hover <code className="bg-muted px-1 rounded">orange-600</code> · pressed <code className="bg-muted px-1 rounded">orange-700</code>.</li>
+          <li><strong>Botão secundário:</strong> fundo <code className="bg-muted px-1 rounded">navy-700</code>, texto branco · hover <code className="bg-muted px-1 rounded">navy-600</code> · outline <code className="bg-muted px-1 rounded">navy-700</code> com hover <code className="bg-muted px-1 rounded">navy-50</code>.</li>
+          <li><strong>CTA promocional:</strong> gradiente <em>Primary — Laranja CISEC</em> ou <em>Institucional CISEC</em>.</li>
+          <li><strong>Links:</strong> <code className="bg-muted px-1 rounded">orange-700</code> · hover <code className="bg-muted px-1 rounded">orange-800</code> · visited <code className="bg-muted px-1 rounded">navy-700</code>.</li>
+          <li><strong>Dark mode:</strong> background <code className="bg-muted px-1 rounded">navy-950</code>, surface <code className="bg-muted px-1 rounded">navy-800</code>, primary mantém <code className="bg-muted px-1 rounded">orange-500</code>.</li>
+          <li><strong>Dataviz (sequência fixa):</strong> #FF9E20 → #1F3051 → #2E9BAB → #4E8C6A → #6B4C93 → #D9432A → #FFC94D → #606060.</li>
+          <li><strong>Acessibilidade:</strong> texto sobre <code className="bg-muted px-1 rounded">orange-500</code> use <code className="bg-muted px-1 rounded">navy-900</code> (AA ≥ 4.5:1). Texto branco somente sobre <code className="bg-muted px-1 rounded">orange-700</code>+ ou <code className="bg-muted px-1 rounded">navy-500</code>+.</li>
         </ul>
         <div className="overflow-x-auto">
           <table className="w-full text-xs">
@@ -415,19 +455,19 @@ export default function ColorSection() {
             </thead>
             <tbody>
               {[
-                { ctx: "Fundo da página",   token: "--background",         light: "#F5F7FA", dark: "#06141F", use: "Body, fundo geral" },
-                { ctx: "Cards e painéis",   token: "--card",               light: "#FFFFFF", dark: "#0E2638", use: "Cards, modais, drawers" },
-                { ctx: "Texto principal",   token: "--foreground",         light: "#0E2638", dark: "#F0F7FC", use: "Títulos e corpo" },
-                { ctx: "Texto secundário",  token: "--muted-foreground",   light: "#1F5C8A", dark: "#8FC0E2", use: "Labels, descrições" },
-                { ctx: "Ação primária",     token: "--primary",            light: "#5BA3D9", dark: "#5BA3D9", use: "Botões, links, foco" },
-                { ctx: "Ação secundária",   token: "--secondary",          light: "#0041D9", dark: "#3B4AFF", use: "Headers, ações de apoio" },
-                { ctx: "Acento quente",     token: "--coral",              light: "#F4455A", dark: "#F4455A", use: "CTAs secundários, destaques" },
-                { ctx: "Bordas",            token: "--border",             light: "#DCEBF6", dark: "#163F5F", use: "Divisores, inputs" },
-                { ctx: "Fundo muted",       token: "--muted",              light: "#F0F7FC", dark: "#163F5F", use: "Áreas de destaque sutil" },
-                { ctx: "Sucesso",           token: "--success",            light: "#2BA86B", dark: "#34D399", use: "Confirmações, validações" },
-                { ctx: "Alerta",            token: "--warning",            light: "#F2A93B", dark: "#FBBF24", use: "Avisos, atenção" },
-                { ctx: "Erro",              token: "--danger",             light: "#E23D4F", dark: "#F87171", use: "Erros, exclusões" },
-                { ctx: "Informação",        token: "--info",               light: "#3D8DC8", dark: "#5BA3D9", use: "Dicas, informações" },
+                { ctx: "Fundo da página",   token: "--background",         light: "#FAFAFA", dark: "#0F1727", use: "Body, fundo geral" },
+                { ctx: "Cards e painéis",   token: "--card",               light: "#FFFFFF", dark: "#17233C", use: "Cards, modais, drawers" },
+                { ctx: "Texto principal",   token: "--foreground",         light: "#1A1A1A", dark: "#F0F0F0", use: "Títulos e corpo" },
+                { ctx: "Texto secundário",  token: "--muted-foreground",   light: "#606060", dark: "#A3A3A3", use: "Labels, descrições" },
+                { ctx: "Ação primária",     token: "--primary",            light: "#FF9E20", dark: "#FF9E20", use: "CTAs, links, foco" },
+                { ctx: "Ação secundária",   token: "--secondary",          light: "#1F3051", dark: "#354F80", use: "Headers, ações de apoio" },
+                { ctx: "Acento quente",     token: "--accent-terracota",   light: "#D9432A", dark: "#F26A5C", use: "CTAs alternativos, alertas" },
+                { ctx: "Bordas",            token: "--border",             light: "#E0E0E0", dark: "#263E68", use: "Divisores, inputs" },
+                { ctx: "Fundo muted",       token: "--muted",              light: "#F0F0F0", dark: "#1F3051", use: "Áreas de destaque sutil" },
+                { ctx: "Sucesso",           token: "--success",            light: "#3E8F5F", dark: "#5EBF83", use: "Confirmações, validações" },
+                { ctx: "Alerta",            token: "--warning",            light: "#E5851A", dark: "#FFB040", use: "Avisos, atenção" },
+                { ctx: "Erro",              token: "--danger",             light: "#C93A2C", dark: "#F26A5C", use: "Erros, exclusões" },
+                { ctx: "Informação",        token: "--info",               light: "#354F80", dark: "#7F97BF", use: "Dicas, informações" },
               ].map(row => (
                 <tr key={row.token} className="border-b border-border last:border-0">
                   <td className="py-2 pr-3 font-medium">{row.ctx}</td>
@@ -466,22 +506,23 @@ export default function ColorSection() {
 }
 
 .btn-primary {
-  background-color: hsl(var(--primary));       /* #5BA3D9 — Azul Céu */
-  color: hsl(var(--primary-foreground));        /* #FFFFFF */
+  background-color: hsl(var(--primary));       /* #FF9E20 — Laranja CISEC */
+  color: hsl(var(--primary-foreground));        /* #1F3051 — Azul Noite */
 }
 
-.btn-primary:hover  { background-color: #3D8DC8; }  /* blue-500 */
-.btn-primary:active { background-color: #2A75AE; }  /* blue-600 */
+.btn-primary:hover  { background-color: #E5851A; }  /* orange-600 */
+.btn-primary:active { background-color: #B86612; }  /* orange-700 */
 
 .btn-secondary {
-  background-color: hsl(var(--secondary));      /* #0041D9 — Azul Profundo */
+  background-color: hsl(var(--secondary));      /* #1F3051 — Azul Noite */
   color: hsl(var(--secondary-foreground));      /* #FFFFFF */
 }
 
 /* Gradientes do sistema */
-.hero-banner    { background: linear-gradient(135deg, #5BA3D9 0%, #2A75AE 100%); }
-.brand-deep     { background: linear-gradient(135deg, #3B4AFF 0%, #0041D9 100%); }
-.brasil-sunset  { background: linear-gradient(120deg, #FFED69 0%, #FFB380 50%, #F4455A 100%); }
+.hero-banner   { background: linear-gradient(135deg, #FF9E20 0%, #B86612 100%); }
+.brand-deep    { background: linear-gradient(135deg, #354F80 0%, #0F1727 100%); }
+.cisec-sunset  { background: linear-gradient(120deg, #FFC94D 0%, #FF9E20 50%, #D9432A 100%); }
+.institucional { background: linear-gradient(135deg, #1F3051 0%, #FF9E20 100%); }
 
 /* Feedback semântico */
 .alert-success {
@@ -504,12 +545,12 @@ export default function ColorSection() {
 </div>
 
 {/* Gradientes no Tailwind */}
-<div className="bg-gradient-to-r from-[#1F3051] via-[#1E5F8C] to-[#4A8DC2]">
+<div className="bg-gradient-to-r from-[#1F3051] via-[#354F80] to-[#FF9E20]">
   Banner institucional
 </div>
 
 {/* Nunca faça isso ❌ */}
-<div className="bg-[#1F3051] text-white">Evite hex direto</div>
+<div className="bg-[#FF9E20] text-white">Evite hex direto</div>
 
 {/* Faça isso ✅ */}
 <div className="bg-primary text-primary-foreground">Use tokens</div>`}
