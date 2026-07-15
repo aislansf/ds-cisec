@@ -15,7 +15,7 @@ const sections = [
   { icon: <Code2 size={24} />, title: "Tokens", desc: "CSS Custom Properties documentados e prontos para uso em light e dark mode", path: "/tokens" },
   { icon: <Component size={24} />, title: "Componentes", desc: "Botões, inputs, cards, tabelas, modais e mais de 20 componentes", path: "/componentes" },
   { icon: <LayoutTemplate size={24} />, title: "Templates", desc: "Padrões de página: dashboard, listagem, formulário e autenticação", path: "/templates" },
-  { icon: <Stamp size={24} />, title: "Marca CISEC-CE", desc: "Logo, identidade visual, zona de segurança e aplicações da marca", path: "/marca" },
+  { icon: <Stamp size={24} />, title: "Marca CISEC", desc: "Logo, identidade visual, zona de segurança e aplicações da marca", path: "/marca" },
   { icon: <FileText size={24} />, title: "Conteúdo", desc: "Voz da marca, tom de voz, boas práticas de escrita e microcopy", path: "/conteudo" },
   { icon: <Accessibility size={24} />, title: "Acessibilidade", desc: "Contraste, navegação por teclado, ARIA, foco visível e semântica", path: "/acessibilidade" },
 ];
@@ -89,12 +89,12 @@ export default function HomePage() {
     <div>
       <SEO
         title="Design System CISEC — Guia visual e operacional"
-        description="Portal oficial do Design System CISEC-CE com fundamentos visuais, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC."
+        description="Portal oficial do Design System CISEC com fundamentos visuais, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC."
         path="/"
       />
       <PageHeader
-        title="Design System CISEC-CE — Guia visual e operacional"
-        description="Guia visual, técnico e operacional para o time de desenvolvimento da CISEC-CE. Transformando vidas por meio da educação."
+        title="Design System CISEC — Guia visual e operacional"
+        description="Guia visual, técnico e operacional para o time de desenvolvimento da CISEC. Transformando vidas por meio da educação."
         badge="v1.0.0"
       />
 
@@ -102,7 +102,7 @@ export default function HomePage() {
       <div className="rounded-xl bg-primary text-primary-foreground p-8 md:p-10 mb-10">
         <img
           src={theme === "dark" ? cisecHeroDark.url : cisecLogo}
-          alt="Marca CISEC-CE"
+          alt="Marca CISEC"
           className={
             theme === "dark"
               ? "h-auto w-auto max-w-full max-h-[68px] md:max-h-[86px] mb-6 object-contain"

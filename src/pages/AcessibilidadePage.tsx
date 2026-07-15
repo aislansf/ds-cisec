@@ -6,10 +6,10 @@ export default function AcessibilidadePage() {
     <div>
       <SEO
         title="Acessibilidade — Design System CISEC"
-        description="Diretrizes WCAG 2.1 AA do CISEC-CE: contraste, navegação por teclado, ARIA, foco visível e semântica em ambos os modos claro e escuro."
+        description="Diretrizes WCAG 2.1 AA do CISEC: contraste, navegação por teclado, ARIA, foco visível e semântica em ambos os modos claro e escuro."
         path="/acessibilidade"
       />
-      <PageHeader badge="WCAG 2.1 · AA" title="Acessibilidade" description="Todo produto digital do CISEC-CE deve nascer acessível. Seguimos as diretrizes WCAG 2.1 nível AA como padrão mínimo, em ambos os modos claro e escuro." />
+      <PageHeader badge="WCAG 2.1 · AA" title="Acessibilidade" description="Todo produto digital do CISEC deve nascer acessível. Seguimos as diretrizes WCAG 2.1 nível AA como padrão mínimo, em ambos os modos claro e escuro." />
 
       <SectionHeader id="contraste" title="Contraste" description="Textos devem atender ao contraste mínimo AA do WCAG 2.1 em ambos os temas." />
       <div className="cisec-card mb-8">

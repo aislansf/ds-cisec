@@ -90,7 +90,7 @@ export const filterOptions = {
     "Serviços Contratados",
     "Benefícios Sociais",
   ],
-  unidade: ["Todos", "DIRAE/CISEC-CE", "DIFIN/CISEC-CE", "DIRSU/CISEC-CE"],
+  unidade: ["Todos", "DIRAE/CISEC", "DIFIN/CISEC", "DIRSU/CISEC"],
   eixo: ["Todos", "Competitividade", "Educação Empreendedora", "Inovação", "Mercados"],
   programa: ["Todos", "ALI 4.0", "Cisectec", "Brasil Mais", "Empretec"],
   gestor: ["Todos", "Ana Pereira", "Bruno Lima", "Carla Rocha", "Diego Castro"],

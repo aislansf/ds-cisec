@@ -8,7 +8,7 @@ export default function TokensPage() {
     <div>
       <SEO
         title="Design Tokens — Design System CISEC"
-        description="CSS Custom Properties oficiais do CISEC-CE: cores, tipografia, espaçamento, sombras e breakpoints documentados para light e dark mode."
+        description="CSS Custom Properties oficiais do CISEC: cores, tipografia, espaçamento, sombras e breakpoints documentados para light e dark mode."
         path="/tokens"
       />
       <PageHeader

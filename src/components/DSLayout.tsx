@@ -91,7 +91,7 @@ const navItems: NavItem[] = [
   {
     label: "Templates", path: "/templates", icon: <LayoutTemplate size={18} />,
     children: [
-      { label: "Header CISEC-CE", path: "/templates#header" },
+      { label: "Header CISEC", path: "/templates#header" },
       { label: "Menu Lateral", path: "/templates#menu-lateral" },
       { label: "Modelos de Login", path: "/templates#modelos-login" },
       { label: "Modelo de login (Card Sign In)", path: "/templates#modelo-card" },
@@ -431,12 +431,12 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           href="https://cisec-ce.dscreator.com.br/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Ir para o site do Design System CISEC-CE"
+          aria-label="Ir para o site do Design System CISEC"
           className="inline-flex items-center rounded focus:outline-none focus:ring-2 focus:ring-ring"
         >
           <img
             src={theme === "dark" ? logoCisecWhite : logoCisecCompleta2}
-            alt="CISEC-CE"
+            alt="CISEC"
             className="h-9"
           />
         </a>
@@ -444,7 +444,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
         <div className="h-6 w-px bg-header-foreground/20" />
 
         <div className="leading-tight">
-          <span className="font-semibold text-xs sm:text-sm block text-header-foreground">Design System CISEC-CE</span>
+          <span className="font-semibold text-xs sm:text-sm block text-header-foreground">Design System CISEC</span>
         </div>
 
         <div className="ml-auto flex items-center gap-2">
@@ -486,7 +486,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 flex-1">
             {children}
           </div>
-          <CisecFooter projectName="Design System CISEC-CE" version="v1.0.0" />
+          <CisecFooter projectName="Design System CISEC" version="v1.0.0" />
         </main>
       </div>
     </div>

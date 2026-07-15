@@ -584,7 +584,7 @@ export default function FarolEstrategicoPage() {
 
           {/* Footer */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
+            <img src={cisecLogoReduzida} alt="CISEC" className="h-5 w-auto opacity-60" />
             <span className="text-[10px] text-muted-foreground">Farol Estratégico · Painel Institucional v.1.0</span>
           </div>
         </main>

@@ -47,7 +47,7 @@ export default function ConteudoPage() {
     <div>
       <SEO
         title="Conteúdo e Webwriting — Design System CISEC"
-        description="Princípios de webwriting e tom de voz do CISEC-CE: escaneabilidade, clareza, voz ativa e foco no usuário para conteúdos digitais."
+        description="Princípios de webwriting e tom de voz do CISEC: escaneabilidade, clareza, voz ativa e foco no usuário para conteúdos digitais."
         path="/conteudo"
       />
       <PageHeader
@@ -56,7 +56,7 @@ export default function ConteudoPage() {
         description="O webwriting é o conjunto de técnicas de escrita e formatação voltado para a internet. Ele adapta a redação tradicional ao comportamento de leitura online, que é mais dinâmico e disperso. O objetivo é garantir que o conteúdo seja facilmente encontrado pelos buscadores, compreendido rapidamente e prenda a atenção do usuário."
       />
 
-      <SectionHeader id="principios" title="Princípios do Webwriting" description="Boas práticas sistêmicas que orientam toda escrita digital do CISEC-CE." />
+      <SectionHeader id="principios" title="Princípios do Webwriting" description="Boas práticas sistêmicas que orientam toda escrita digital do CISEC." />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         {principios.map(p => (
           <div key={p.title} className="cisec-card">

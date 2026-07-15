@@ -17,7 +17,7 @@ const TEMPLATE_PATH = "/templates/farol-estrategico";
 function readmeReact() {
   return `# Farol Estratégico — Versão React
 
-Template do **Design System Cisec-CE** inspirado em painéis Power BI para
+Template do **Design System Cisec** inspirado em painéis Power BI para
 acompanhamento orçamentário e indicadores estratégicos.
 
 > 🔗 **Referência viva:** ${DS_URL}${TEMPLATE_PATH}
@@ -175,7 +175,7 @@ const indexHtml = `<!doctype html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farol Estratégico — Cisec-CE</title>
+    <title>Farol Estratégico — Cisec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -278,7 +278,7 @@ const vanillaHtml = `<!doctype html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farol Estratégico — Cisec-CE</title>
+  <title>Farol Estratégico — Cisec</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -290,7 +290,7 @@ const vanillaHtml = `<!doctype html>
   <header class="topbar">
     <div class="brand">
       <span class="brand-dot"></span>
-      <div><strong>Farol Estratégico</strong><small>Painel Institucional · Cisec-CE</small></div>
+      <div><strong>Farol Estratégico</strong><small>Painel Institucional · Cisec</small></div>
     </div>
     <nav class="breadcrumb" aria-label="Navegação">
       <a href="#">Início</a> › <a href="#">Painéis Estratégicos</a> › <span aria-current="page">Farol Estratégico</span>
@@ -330,7 +330,7 @@ const vanillaHtml = `<!doctype html>
 </html>
 `;
 
-const vanillaCss = `/* Tokens HSL do Design System Cisec-CE */
+const vanillaCss = `/* Tokens HSL do Design System Cisec */
 :root {
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;

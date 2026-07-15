@@ -699,12 +699,12 @@ export default function ChartsSection() {
       {/* 11. Basic Column */}
       <ComponentPreview
         title="Colunas Básicas (Múltiplas séries)"
-        description="Barras agrupadas para comparar investimentos por programa CISEC-CE em cada período."
+        description="Barras agrupadas para comparar investimentos por programa CISEC em cada período."
         code={codeBasicColumn}
         whenToUse={["Comparar 2-3 programas por período", "Análise de repasses por programa"]}
         whenNotToUse={["Mais de 4 séries (fica poluído)", "Dados contínuos (use linha/área)"]}
       >
-        <ChartCard title="Colunas Básicas — Programas CISEC-CE">
+        <ChartCard title="Colunas Básicas — Programas CISEC">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={basicColumnData}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
@@ -749,7 +749,7 @@ export default function ChartsSection() {
         whenToUse={["Exibir composição de um total por período", "Vendas por produto/trimestre"]}
         whenNotToUse={["Comparar valores individuais entre categorias", "Quando a contribuição de cada parte é pequena"]}
       >
-        <ChartCard title="Colunas Empilhadas — Programas CISEC-CE">
+        <ChartCard title="Colunas Empilhadas — Programas CISEC">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={stackedColumnData}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
@@ -773,7 +773,7 @@ export default function ChartsSection() {
         whenToUse={["Comparar proporções relativas", "Market share por período"]}
         whenNotToUse={["Valores absolutos são mais importantes", "Poucas categorias sem variação significativa"]}
       >
-        <ChartCard title="100% Empilhadas — Programas CISEC-CE">
+        <ChartCard title="100% Empilhadas — Programas CISEC">
           <ResponsiveContainer width="100%" height={320}>
             <BarChart data={stacked100Data}>
               <CartesianGrid strokeDasharray="3 3" className="stroke-border" />

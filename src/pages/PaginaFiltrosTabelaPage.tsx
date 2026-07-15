@@ -156,7 +156,7 @@ export default function PaginaFiltrosTabelaPage() {
           <Menu size={18} className="text-[#0024A9]" />
           <span className="text-[10px] text-[#0024A9]/70 hidden sm:inline">Menu</span>
         </button>
-        <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-7 w-auto shrink-0" />
+        <img src={cisecLogoReduzida} alt="CISEC" className="h-7 w-auto shrink-0" />
         <div className="w-px h-8 bg-[#0024A9]/30 shrink-0" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-[#0024A9] leading-tight truncate">
@@ -512,7 +512,7 @@ export default function PaginaFiltrosTabelaPage() {
 
           {/* Footer institucional */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
+            <img src={cisecLogoReduzida} alt="CISEC" className="h-5 w-auto opacity-60" />
             <span className="text-[10px] text-muted-foreground">Soluções Cisec · v.1.0</span>
           </div>
         </main>

@@ -12,7 +12,7 @@ function SignInPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
+          <img src={cisecLogoCompleta} alt="CISEC" className="h-14" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Bem-vindo</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
@@ -66,7 +66,7 @@ function SignInPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
@@ -81,11 +81,11 @@ function SignUpPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
+          <img src={cisecLogoCompleta} alt="CISEC" className="h-14" />
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Criar conta</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
-          Preencha os campos abaixo para criar sua conta no sistema CISEC-CE.
+          Preencha os campos abaixo para criar sua conta no sistema CISEC.
         </p>
 
         {/* Card */}
@@ -163,7 +163,7 @@ function SignUpPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
@@ -171,11 +171,11 @@ function SignUpPreview() {
 }
 
 /* ─── Code snippets ─── */
-const signInCode = `<!-- Sign In — CISEC-CE Design System -->
+const signInCode = `<!-- Sign In — CISEC Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
-      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC" style="height:86px">
     </div>
     <h3 style="text-align:center;font-size:1.125rem;font-weight:600;margin-bottom:4px">Bem-vindo</h3>
     <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-bottom:1.5rem">
@@ -203,19 +203,19 @@ const signInCode = `<!-- Sign In — CISEC-CE Design System -->
         Novo por aqui? <a href="#" style="color:#D98217;font-weight:500">Criar uma conta</a>
       </p>
     </div>
-    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
+    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC</p>
   </div>
 </div>`;
 
-const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
+const signUpCode = `<!-- Sign Up — CISEC Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem">
     <div style="text-align:center;margin-bottom:1.5rem">
-      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC" style="height:86px">
     </div>
     <h3 style="text-align:center;font-size:1.125rem;font-weight:600;margin-bottom:4px">Criar conta</h3>
     <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-bottom:1.5rem">
-      Preencha os campos abaixo para criar sua conta no sistema CISEC-CE.
+      Preencha os campos abaixo para criar sua conta no sistema CISEC.
     </p>
     <div style="background:#fff;border-radius:0.75rem;border:1px solid #e4e4e7;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06)">
       <div style="margin-bottom:1rem">
@@ -256,7 +256,7 @@ const signUpCode = `<!-- Sign Up — CISEC-CE Design System -->
         Já tem uma conta? <a href="#" style="color:#D98217;font-weight:500">Entrar</a>
       </p>
     </div>
-    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
+    <p style="text-align:center;font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC</p>
   </div>
 </div>`;
 
@@ -284,7 +284,7 @@ function TwoFactorPreview() {
       <div className="w-full max-w-[420px]">
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-14" />
+          <img src={cisecLogoCompleta} alt="CISEC" className="h-14" />
         </div>
 
         {/* Icon */}
@@ -334,18 +334,18 @@ function TwoFactorPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC-CE — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
         </p>
       </div>
     </div>
   );
 }
 
-const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
+const twoFactorCode = `<!-- Two-Factor Auth — CISEC Design System -->
 <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f4f5;font-family:'Montserrat',sans-serif">
   <div style="width:100%;max-width:420px;padding:2rem;text-align:center">
     <div style="margin-bottom:1.5rem">
-      <img src="/assets/cisec-logo.svg" alt="CISEC-CE" style="height:86px">
+      <img src="/assets/cisec-logo.svg" alt="CISEC" style="height:86px">
     </div>
     <div style="width:56px;height:56px;border-radius:50%;background:rgba(13,56,87,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1F3051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -373,7 +373,7 @@ const twoFactorCode = `<!-- Two-Factor Auth — CISEC-CE Design System -->
       </p>
       <a href="#" style="font-size:0.75rem;color:#1F3051;font-weight:500">Voltar para o login</a>
     </div>
-    <p style="font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC-CE</p>
+    <p style="font-size:10px;color:#a1a1aa;margin-top:1.5rem">© 2026 CISEC</p>
   </div>
 </div>`;
 

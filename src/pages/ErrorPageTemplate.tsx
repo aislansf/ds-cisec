@@ -60,7 +60,7 @@ export default function ErrorPageTemplate() {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl border border-border overflow-hidden animate-in fade-in zoom-in duration-300">
         <div className="p-8 flex flex-col items-center text-center">
           {/* Logo */}
-          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-8 w-auto mb-8" />
+          <img src={cisecLogoReduzida} alt="CISEC" className="h-8 w-auto mb-8" />
           
           {/* Icon */}
           <div className="mb-6 p-4 bg-muted/30 rounded-full">
@@ -100,7 +100,7 @@ export default function ErrorPageTemplate() {
         {/* Footer info */}
         <div className="bg-muted/30 px-8 py-4 border-t border-border flex justify-between items-center text-[10px] text-muted-foreground">
           <span>ID da Sessão: 48f2-9bc1-55ea</span>
-          <span>© 2024 CISEC-CE</span>
+          <span>© 2024 CISEC</span>
         </div>
       </div>
 

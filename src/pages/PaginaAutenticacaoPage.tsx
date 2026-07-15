@@ -42,7 +42,7 @@ export default function PaginaAutenticacaoPage() {
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-16 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC" className="h-16 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h1 className="text-4xl font-bold text-white leading-tight text-balance">
                   <span className="block">Transformando vidas</span>
@@ -66,7 +66,7 @@ export default function PaginaAutenticacaoPage() {
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10 flex flex-col items-center text-center gap-4 max-w-md mx-auto">
-              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 sm:h-12 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC" className="h-10 sm:h-12 w-auto brightness-0 invert" />
               <h1 className="text-lg sm:text-xl font-bold text-white leading-snug text-balance">
                 <span className="inline sm:block">Transformando vidas </span>
                 <span className="inline sm:block">por meio da educação financeira.</span>
