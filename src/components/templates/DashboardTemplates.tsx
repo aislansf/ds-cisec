@@ -288,11 +288,11 @@ function DashboardReduzida() {
           <p className="text-xs font-bold text-foreground mb-2">Resumo:</p>
 
           {[
-            { title: "Servidores Regulares", sub: "Filtro (listar todos)", value: "80.00%", color: "#16A34A" },
-            { title: "Servidores Irregulares", sub: "Filtro (listar todos)", value: "20.00%", color: "#DC2626" },
-            { title: "Em Análise", sub: "Aguardando conformidade", value: "20.00%", color: "#D98217" },
-            { title: "Auditoria em Andamento", sub: "Aguardando conformidade", value: "2.00%", color: "#16A34A" },
-            { title: "Total de Servidores", sub: "Servidores em análise (filtrados)", value: "1.019", color: "#1F3051" },
+            { title: "Casos Encerrados", sub: "Filtro (listar todos)", value: "80.00%", color: "#16A34A" },
+            { title: "Descartados", sub: "Filtro (listar todos)", value: "20.00%", color: "#DC2626" },
+            { title: "Em Análise", sub: "Em monitoramento", value: "20.00%", color: "#D98217" },
+            { title: "Surtos Ativos", sub: "Em monitoramento", value: "2.00%", color: "#16A34A" },
+            { title: "Total de Notificações", sub: "Notificações no período (filtrado)", value: "1.019", color: "#1F3051" },
           ].map((kpi, i) => (
             <div key={i} className="border-b border-border pb-3 last:border-0">
               <p className="text-xs font-semibold" style={{ color: kpi.color }}>{kpi.title}</p>
@@ -309,13 +309,13 @@ function DashboardReduzida() {
         <div className="p-4 space-y-4 min-w-0">
           {/* Search bar */}
           <p className="text-xs text-muted-foreground">
-            <span className="font-bold italic">Pesquisa:</span> Categoria - prioridade - setor
+            <span className="font-bold italic">Consulta:</span> Agravo · prioridade · regional
           </p>
 
           {/* Table */}
           <div className="bg-card rounded-lg border border-border p-4 min-w-0">
             <div className="flex items-center justify-between mb-3">
-              <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+              <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
               <div className="flex items-center gap-3 text-[10px]">
                 <StatusDot status="Atenção" />
                 <StatusDot status="Regular" />
@@ -327,12 +327,12 @@ function DashboardReduzida() {
                 <thead>
                   <tr className="bg-[#1F3051] text-white">
                     <th className="px-3 py-2 text-left font-medium">ID</th>
-                    <th className="px-3 py-2 text-left font-medium">Servidor</th>
-                    <th className="px-3 py-2 text-left font-medium">Diretoria</th>
+                    <th className="px-3 py-2 text-left font-medium">Município</th>
+                    <th className="px-3 py-2 text-left font-medium">Regional</th>
                     <th className="px-3 py-2 text-left font-medium">Status</th>
                     <th className="px-3 py-2 text-left font-medium">Prazo</th>
-                    <th className="px-3 py-2 text-left font-medium">Descontos</th>
-                    <th className="px-3 py-2 text-left font-medium">Modalidade</th>
+                    <th className="px-3 py-2 text-left font-medium">Casos</th>
+                    <th className="px-3 py-2 text-left font-medium">Agravo</th>
                     <th className="px-3 py-2 text-left font-medium">Unidade</th>
                     <th className="px-3 py-2 text-left font-medium">Status</th>
                   </tr>
@@ -363,7 +363,7 @@ function DashboardReduzida() {
           </div>
 
           {/* Bottom chart — full width */}
-          <DonutSection title="Distribuição por Modalidade" subtitle="20 programas listados" />
+          <DonutSection title="Distribuição por Agravo" subtitle="20 agravos monitorados" />
         </div>
       </div>
 
