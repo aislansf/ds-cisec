@@ -1,5 +1,5 @@
-Relatório de tipografia legada — 2026-07-14T18:00:01.027Z
-Total: 324 ocorrências
+Relatório de tipografia legada — 2026-07-15T16:29:09.777Z
+Total: 335 ocorrências
 ========================================================================
 src/components/ColorSection.tsx:48
   <p className="text-sm font-semibold text-foreground">{name}</p>
@@ -10,37 +10,37 @@ src/components/ColorSection.tsx:88
 src/components/ColorSection.tsx:119
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ColorSection.tsx:138
+src/components/ColorSection.tsx:141
   <p className="text-xs text-muted-foreground mb-3">
 
-src/components/ColorSection.tsx:166
+src/components/ColorSection.tsx:170
   <p className="text-xs text-muted-foreground mb-3">
 
-src/components/ColorSection.tsx:180
-  <p className="text-xs font-semibold">{c.name}</p>
+src/components/ColorSection.tsx:198
+  <p className="text-xs text-muted-foreground mb-3">
 
-src/components/ColorSection.tsx:194
+src/components/ColorSection.tsx:231
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ColorSection.tsx:208
+src/components/ColorSection.tsx:246
   <p className="text-xs font-semibold">{c.name}</p>
 
-src/components/ColorSection.tsx:222
+src/components/ColorSection.tsx:260
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ColorSection.tsx:273
+src/components/ColorSection.tsx:311
   <p className="text-sm font-semibold mb-1">{c.name}</p>
 
-src/components/ColorSection.tsx:302
+src/components/ColorSection.tsx:340
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ColorSection.tsx:314
+src/components/ColorSection.tsx:353
   <p className="text-xs font-semibold">{s.label}</p>
 
-src/components/ColorSection.tsx:336
+src/components/ColorSection.tsx:375
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ColorSection.tsx:389
+src/components/ColorSection.tsx:428
   <p className="text-xs text-muted-foreground mb-3">
 
 src/components/DSComponents.tsx:73
@@ -155,16 +155,16 @@ src/components/templates/DashboardTemplates.tsx:144
   <p className="text-sm font-bold text-[#D98217] mb-1">{title}</p>
 
 src/components/templates/DashboardTemplates.tsx:174
-  <p className="text-sm font-bold text-[#D98217] mb-1">Desempenho Geral dos Programas</p>
+  <p className="text-sm font-bold text-[#D98217] mb-1">Cobertura Geral dos Indicadores de Saúde</p>
 
 src/components/templates/DashboardTemplates.tsx:196
-  <p className="text-sm font-bold text-[#D98217] mb-3">Servidores por Diretoria</p>
+  <p className="text-sm font-bold text-[#D98217] mb-3">Notificações por Regional de Saúde</p>
 
 src/components/templates/DashboardTemplates.tsx:233
   <p className="text-xs font-semibold text-foreground mb-3">
 
 src/components/templates/DashboardTemplates.tsx:251
-  <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+  <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
 
 src/components/templates/DashboardTemplates.tsx:288
   <p className="text-xs font-bold text-foreground mb-2">Resumo:</p>
@@ -176,7 +176,7 @@ src/components/templates/DashboardTemplates.tsx:311
   <p className="text-xs text-muted-foreground">
 
 src/components/templates/DashboardTemplates.tsx:318
-  <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+  <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
 
 src/components/templates/HubPaineisTemplate.tsx:166
   <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{card.descricao}</p>
@@ -574,278 +574,320 @@ src/pages/ErrorPageTemplate.tsx:81
 src/pages/ErrorPageTemplate.tsx:95
   <p className="mt-8 text-xs text-muted-foreground">
 
-src/pages/FarolEstrategicoDocsPage.tsx:89
-  <p className="text-xs text-muted-foreground">{c.desc}</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:131
-  <p className="text-sm font-semibold mt-1">{t.valor}</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:132
-  <p className="text-xs text-muted-foreground mt-1">{t.uso}</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:166
-  <p className="text-xs text-muted-foreground">{p.desc}</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:195
-  <p className="text-xs text-muted-foreground">No Power BI Desktop &gt; <strong>Obter mais visuais</strong> &gt; busque <strong>“HTML Content”</strong> (by Daniel Marsh-Patrick) e adicione ao relatório.</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:199
-  <p className="text-xs text-muted-foreground">Em uma tabela qualquer (ex.: <code>Medidas</code>), crie a medida abaixo. O visual HTML Content renderiza o texto retornado pela medida arrastada para o campo <strong>Values</strong>.</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:203
-  <p className="text-xs text-muted-foreground">Adicione o visual <strong>HTML Content</strong> ao canvas e arraste a medida <code>HTML Farol</code> para o campo <strong>Values</strong>. O dashboard será renderizado.</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:207
-  <p className="text-xs text-muted-foreground">Para refletir dados do modelo, substitua os números fixos por <code>FORMAT([SuaMedida], "C0")</code> dentro da string DAX antes de concatenar.</p>
-
-src/pages/FarolEstrategicoDocsPage.tsx:248
-  <p className="text-xs text-muted-foreground mb-2">
-
-src/pages/FarolEstrategicoDocsPage.tsx:258
-  <p className="text-xs text-muted-foreground mt-2">
-
-src/pages/FarolEstrategicoDocsPage.tsx:274
-  <p className="text-xs text-muted-foreground mb-2">
-
 src/pages/FarolEstrategicoPage.tsx:54
   <p className="text-2xl md:text-3xl font-bold mt-1" style={{ color }}>{value}</p>
 
 src/pages/FarolEstrategicoPage.tsx:55
   <p className="text-xs text-muted-foreground mt-1">{label}</p>
 
-src/pages/FarolEstrategicoPage.tsx:411
+src/pages/FarolEstrategicoPage.tsx:405
   <p className="text-sm font-bold text-primary">Filtros Estratégicos</p>
 
-src/pages/FarolEstrategicoPage.tsx:479
+src/pages/FarolEstrategicoPage.tsx:473
   <p className="text-sm font-bold text-primary mb-1">Despesa Planejada vs Executada</p>
 
-src/pages/FarolEstrategicoPage.tsx:515
+src/pages/FarolEstrategicoPage.tsx:509
   <p className="text-sm font-bold text-foreground mt-0.5">{formatBRL(Math.round(t.total * factor))}</p>
 
-src/pages/FarolEstrategicoPage.tsx:530
+src/pages/FarolEstrategicoPage.tsx:524
   <p className="text-sm font-bold text-primary">Detalhamento por Natureza</p>
 
-src/pages/FundamentosPage.tsx:375
+src/pages/FundamentosPage.tsx:337
   <p className="text-xs font-bold text-primary">{t.name}</p>
 
-src/pages/FundamentosPage.tsx:448
+src/pages/FundamentosPage.tsx:410
   <p className="text-lg font-sans leading-relaxed mb-3">
 
-src/pages/FundamentosPage.tsx:451
+src/pages/FundamentosPage.tsx:413
   <p className="text-base font-sans leading-relaxed mb-3">
 
-src/pages/FundamentosPage.tsx:454
+src/pages/FundamentosPage.tsx:416
   <p className="text-sm font-sans leading-relaxed text-muted-foreground">
 
-src/pages/FundamentosPage.tsx:473
+src/pages/FundamentosPage.tsx:435
   <p className="text-sm font-medium">12 de março de 2025</p>
 
-src/pages/FundamentosPage.tsx:611
+src/pages/FundamentosPage.tsx:573
   <p className="text-xs text-muted-foreground mt-1">
 
-src/pages/FundamentosPage.tsx:671
+src/pages/FundamentosPage.tsx:633
   <p className="text-base leading-relaxed mb-3">
 
-src/pages/FundamentosPage.tsx:718
+src/pages/FundamentosPage.tsx:680
   <p className="text-sm text-muted-foreground">
 
-src/pages/FundamentosPage.tsx:773
+src/pages/FundamentosPage.tsx:735
   <p className={`text-base ${p.w}`}>Aa Cisec</p>
 
-src/pages/FundamentosPage.tsx:798
+src/pages/FundamentosPage.tsx:760
   <p className={`text-sm ${s.cls}`}>
 
-src/pages/FundamentosPage.tsx:812
+src/pages/FundamentosPage.tsx:774
   <p className="font-heading text-3xl font-bold leading-tight">Aa — Lora</p>
 
-src/pages/FundamentosPage.tsx:813
+src/pages/FundamentosPage.tsx:775
   <p className="font-heading text-sm text-muted-foreground mt-2">Títulos e display · pesos 600/700/900</p>
 
-src/pages/FundamentosPage.tsx:817
+src/pages/FundamentosPage.tsx:779
   <p className="font-sans text-3xl font-bold leading-tight">Aa — Montserrat</p>
 
-src/pages/FundamentosPage.tsx:818
+src/pages/FundamentosPage.tsx:780
   <p className="font-sans text-sm text-muted-foreground mt-2">Corpo, UI e legendas · pesos 300–800</p>
 
-src/pages/FundamentosPage.tsx:832
+src/pages/FundamentosPage.tsx:794
   <p className="text-lg font-medium text-muted-foreground">Este é um exemplo de lead text ou subtítulo que acompanha o título principal para dar mais contexto.</p>
 
-src/pages/FundamentosPage.tsx:837
+src/pages/FundamentosPage.tsx:799
   <p className="leading-relaxed">
 
-src/pages/FundamentosPage.tsx:844
+src/pages/FundamentosPage.tsx:806
   <p className="text-sm leading-relaxed text-muted-foreground">
 
-src/pages/FundamentosPage.tsx:874
+src/pages/FundamentosPage.tsx:836
   <p className="text-xs text-muted-foreground italic">
 
-src/pages/FundamentosPage.tsx:993
+src/pages/FundamentosPage.tsx:931
   <p className="text-xs text-muted-foreground italic py-6 text-center">Nenhum ícone encontrado. Tente outro termo ou troque a coleção.</p>
 
-src/pages/FundamentosPage.tsx:1009
+src/pages/FundamentosPage.tsx:947
   <p className="text-xs text-muted-foreground mb-4">Open-source, traço consistente e boa legibilidade em ambos os temas. Já instalada no projeto.</p>
 
-src/pages/FundamentosPage.tsx:1065
+src/pages/FundamentosPage.tsx:1003
   <p className="text-xs text-muted-foreground max-w-4xl mb-4">
 
-src/pages/FundamentosPage.tsx:1071
+src/pages/FundamentosPage.tsx:1009
   <p className="text-xs text-muted-foreground mb-4">Links oficiais para baixar a biblioteca, navegar o catálogo completo e incorporar em projetos React, sites e dashboards.</p>
 
-src/pages/FundamentosPage.tsx:1101
+src/pages/FundamentosPage.tsx:1039
   <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
 
-src/pages/FundamentosPage.tsx:1125
+src/pages/FundamentosPage.tsx:1063
   <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
 
-src/pages/FundamentosPage.tsx:1232
+src/pages/FundamentosPage.tsx:1172
   <p className="font-semibold text-sm">{s.label}</p>
 
-src/pages/FundamentosPage.tsx:1252
+src/pages/FundamentosPage.tsx:1192
   <p className="text-xs font-medium">{r.label}</p>
 
-src/pages/FundamentosPage.tsx:1384
+src/pages/FundamentosPage.tsx:1325
   <p className="text-xs text-muted-foreground">
 
-src/pages/HomePage.tsx:108
+src/pages/HomePage.tsx:115
   <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
 
-src/pages/HomePage.tsx:132
+src/pages/HomePage.tsx:139
   <p className="text-xs text-muted-foreground">Todos os tokens, componentes e templates são compatíveis com modo claro e escuro. Use o toggle no header para alternar.</p>
 
-src/pages/HomePage.tsx:141
+src/pages/HomePage.tsx:148
   <p className="text-xs text-muted-foreground mb-4">
 
-src/pages/HomePage.tsx:154
+src/pages/HomePage.tsx:161
   <p className="font-heading text-2xl md:text-3xl leading-tight mt-4 mb-3 text-foreground">
 
-src/pages/HomePage.tsx:158
+src/pages/HomePage.tsx:165
   <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
 
-src/pages/HomePage.tsx:177
+src/pages/HomePage.tsx:184
   <p className="text-sm text-muted-foreground leading-relaxed">
 
-src/pages/HomePage.tsx:199
+src/pages/HomePage.tsx:206
   <p className="text-xs text-muted-foreground leading-relaxed mb-4">
 
-src/pages/HomePage.tsx:256
+src/pages/HomePage.tsx:263
   <p className="text-xs text-muted-foreground leading-relaxed">
 
-src/pages/HomePage.tsx:286
+src/pages/HomePage.tsx:293
   <p className="text-xs text-muted-foreground">{p.desc}</p>
 
-src/pages/HomePage.tsx:300
+src/pages/HomePage.tsx:307
   <p className="text-xs text-muted-foreground">{s.desc}</p>
 
-src/pages/HomePage.tsx:310
+src/pages/HomePage.tsx:317
   <p className="text-2xl font-bold text-primary">20+</p>
 
-src/pages/HomePage.tsx:311
+src/pages/HomePage.tsx:318
   <p className="text-xs text-muted-foreground">Componentes</p>
 
-src/pages/HomePage.tsx:314
+src/pages/HomePage.tsx:321
   <p className="text-2xl font-bold text-secondary">50+</p>
 
-src/pages/HomePage.tsx:315
+src/pages/HomePage.tsx:322
   <p className="text-xs text-muted-foreground">Tokens</p>
 
-src/pages/HomePage.tsx:318
+src/pages/HomePage.tsx:325
   <p className="text-2xl font-bold text-primary">7</p>
 
-src/pages/HomePage.tsx:319
+src/pages/HomePage.tsx:326
   <p className="text-xs text-muted-foreground">Templates</p>
 
-src/pages/HomePage.tsx:322
+src/pages/HomePage.tsx:329
   <p className="text-2xl font-bold text-secondary">2</p>
 
-src/pages/HomePage.tsx:323
+src/pages/HomePage.tsx:330
   <p className="text-xs text-muted-foreground">Temas (Light/Dark)</p>
 
-src/pages/MarcaPage.tsx:124
-  <p className="text-xs text-muted-foreground leading-relaxed">
+src/pages/MarcaPage.tsx:180
+  <p className="text-sm font-semibold text-foreground mb-1">{f.title}</p>
 
-src/pages/MarcaPage.tsx:150
-  <p className="text-sm font-semibold text-foreground">{v.label}</p>
+src/pages/MarcaPage.tsx:181
+  <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
 
-src/pages/MarcaPage.tsx:151
-  <p className="text-xs text-muted-foreground leading-relaxed">{v.desc}</p>
-
-src/pages/MarcaPage.tsx:155
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:172
-  <p className="text-xs font-semibold text-foreground">Positivo · Cor</p>
-
-src/pages/MarcaPage.tsx:173
-  <p className="text-xs text-muted-foreground">Versão padrão sobre fundos claros.</p>
-
-src/pages/MarcaPage.tsx:182
-  <p className="text-xs font-semibold text-foreground">Negativo · Branco</p>
-
-src/pages/MarcaPage.tsx:183
-  <p className="text-xs text-muted-foreground">Sobre o azul institucional ou fundos escuros.</p>
-
-src/pages/MarcaPage.tsx:187
-  <p className="text-xs font-semibold text-foreground">Restrita · Preto</p>
-
-src/pages/MarcaPage.tsx:188
-  <p className="text-xs text-muted-foreground">Apenas para impressões com limitação técnica.</p>
-
-src/pages/MarcaPage.tsx:194
-  <p className="text-xs text-muted-foreground leading-relaxed">
+src/pages/MarcaPage.tsx:199
+  <p className="text-xs font-semibold text-foreground">Positivo</p>
 
 src/pages/MarcaPage.tsx:200
+  <p className="text-xs text-muted-foreground">Uso padrão sobre fundos claros.</p>
+
+src/pages/MarcaPage.tsx:210
+  <p className="text-xs font-semibold text-foreground">Negativo</p>
+
+src/pages/MarcaPage.tsx:211
+  <p className="text-xs text-muted-foreground">Badge azul institucional — avatares e favicons.</p>
+
+src/pages/MarcaPage.tsx:221
+  <p className="text-xs font-semibold text-foreground">Cromático · Azul + Laranja</p>
+
+src/pages/MarcaPage.tsx:222
+  <p className="text-xs text-muted-foreground">Badge azul com símbolo em laranja.</p>
+
+src/pages/MarcaPage.tsx:232
+  <p className="text-xs font-semibold text-foreground">Cromático · Laranja + Branco</p>
+
+src/pages/MarcaPage.tsx:233
+  <p className="text-xs text-muted-foreground">Badge de cantos arredondados em laranja.</p>
+
+src/pages/MarcaPage.tsx:247
+  <p className="text-xs text-muted-foreground leading-relaxed mt-3">
+
+src/pages/MarcaPage.tsx:269
+  <p className="text-xs font-semibold text-foreground">Negativo · sobre preto</p>
+
+src/pages/MarcaPage.tsx:270
+  <p className="text-xs text-muted-foreground">Fundos escuros ou fotográficos.</p>
+
+src/pages/MarcaPage.tsx:280
+  <p className="text-xs font-semibold text-foreground">Negativo cromático · sobre azul</p>
+
+src/pages/MarcaPage.tsx:281
+  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em branco.</p>
+
+src/pages/MarcaPage.tsx:291
+  <p className="text-xs font-semibold text-foreground">Negativo · sobre laranja</p>
+
+src/pages/MarcaPage.tsx:292
+  <p className="text-xs text-muted-foreground">Aplicação sobre o laranja institucional.</p>
+
+src/pages/MarcaPage.tsx:296
+  <p className="text-xs font-semibold text-foreground">Cromática · sobre claro</p>
+
+src/pages/MarcaPage.tsx:297
+  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em azul institucional.</p>
+
+src/pages/MarcaPage.tsx:313
+  <p className="text-xs font-semibold text-foreground">Cromática completa · com linha</p>
+
+src/pages/MarcaPage.tsx:314
+  <p className="text-xs text-muted-foreground">Relatórios, ofícios e publicações técnicas — nome por extenso separado por linha divisória.</p>
+
+src/pages/MarcaPage.tsx:318
+  <p className="text-xs font-semibold text-foreground">Cromática compacta · sem linha</p>
+
+src/pages/MarcaPage.tsx:319
+  <p className="text-xs text-muted-foreground">Versão compacta, para uso do dia a dia.</p>
+
+src/pages/MarcaPage.tsx:329
+  <p className="text-xs font-semibold text-foreground">Completa · negativo</p>
+
+src/pages/MarcaPage.tsx:330
+  <p className="text-xs text-muted-foreground">Uso direto sobre preto ou imagens escuras.</p>
+
+src/pages/MarcaPage.tsx:340
+  <p className="text-xs font-semibold text-foreground">Completa · sobre azul</p>
+
+src/pages/MarcaPage.tsx:341
+  <p className="text-xs text-muted-foreground">Cromática aplicada sobre o azul institucional.</p>
+
+src/pages/MarcaPage.tsx:364
+  <p className="font-heading text-2xl font-bold text-foreground mb-2">X = altura do símbolo</p>
+
+src/pages/MarcaPage.tsx:365
   <p className="text-xs text-muted-foreground leading-relaxed">
 
-src/pages/MarcaPage.tsx:226
-  <p className="font-heading text-2xl font-bold text-foreground mb-2">X = altura da letra S</p>
-
-src/pages/MarcaPage.tsx:227
+src/pages/MarcaPage.tsx:392
   <p className="text-xs text-muted-foreground leading-relaxed">
 
-src/pages/MarcaPage.tsx:231
-  <p className="text-xs text-muted-foreground leading-relaxed">
+src/pages/MarcaPage.tsx:410
+  <p className="text-sm font-semibold text-foreground">{c.nome}</p>
 
-src/pages/MarcaPage.tsx:284
-  <p className="text-xs text-muted-foreground leading-relaxed">
+src/pages/MarcaPage.tsx:411
+  <p className="text-xs text-muted-foreground">{c.desc}</p>
 
-src/pages/MarcaPage.tsx:303
-  <p className="text-xs font-semibold mt-2">1 · Logotipo solto</p>
-
-src/pages/MarcaPage.tsx:309
-  <p className="text-xs font-semibold mt-2">2 · Logotipo protegido</p>
-
-src/pages/MarcaPage.tsx:315
-  <p className="text-xs font-semibold mt-2">3 · Janela aberta</p>
-
-src/pages/MarcaPage.tsx:325
-  <p className="text-sm font-semibold text-foreground">{j.title}</p>
-
-src/pages/MarcaPage.tsx:326
-  <p className="text-xs text-muted-foreground leading-relaxed">{j.desc}</p>
-
-src/pages/MarcaPage.tsx:333
+src/pages/MarcaPage.tsx:423
   <p className="text-xs text-muted-foreground mb-3">
 
-src/pages/MarcaPage.tsx:360
-  <p className="text-xs text-muted-foreground leading-relaxed">
+src/pages/MarcaPage.tsx:428
+  <p className="text-xs font-semibold text-foreground mb-1.5">Azul Institucional</p>
 
-src/pages/MarcaPage.tsx:414
-  <p className="text-[11px] text-center text-muted-foreground leading-tight">{u.label}</p>
+src/pages/MarcaPage.tsx:436
+  <p className="text-xs font-semibold text-foreground mb-1.5">Laranja</p>
 
-src/pages/MarcaPage.tsx:427
-  <p className="text-xs text-foreground leading-relaxed self-center">{r}</p>
+src/pages/MarcaPage.tsx:446
+  <p className="text-xs text-muted-foreground mb-3">
 
-src/pages/MarcaPage.tsx:455
-  <p className="text-sm font-semibold text-foreground truncate">{d.label}</p>
+src/pages/MarcaPage.tsx:454
+  <p className="text-xs font-mono">{c.baseHex}</p>
 
-src/pages/MarcaPage.tsx:456
-  <p className="text-xs text-muted-foreground truncate">{d.file}</p>
+src/pages/MarcaPage.tsx:458
+  <p className="text-xs font-mono">{c.compHex}</p>
+
+src/pages/MarcaPage.tsx:465
+  <p className="text-xs text-muted-foreground mb-3">
 
 src/pages/MarcaPage.tsx:473
-  <p className="text-sm font-semibold text-foreground">Manual da Marca Cisec · Setembro 2024</p>
+  <p className="text-xs font-semibold text-foreground">{s.nome}</p>
 
-src/pages/MarcaPage.tsx:474
-  <p className="text-xs text-muted-foreground">PDF oficial · Cisec Nacional</p>
+src/pages/MarcaPage.tsx:492
+  <p className="font-heading text-5xl font-bold text-foreground leading-none mb-3" style={{ fontFamily: "Montserrat" }}>
+
+src/pages/MarcaPage.tsx:496
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src/pages/MarcaPage.tsx:502
+  <p className="text-4xl text-foreground leading-tight mb-3" style={{ fontFamily: "Lora, Georgia, serif", fontStyle: "italic" }}>
+
+src/pages/MarcaPage.tsx:505
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src/pages/MarcaPage.tsx:511
+  <p className="text-xs font-mono text-foreground leading-relaxed" style={{ fontFamily: "Montserrat" }}>
+
+src/pages/MarcaPage.tsx:530
+  <p className="text-xs font-semibold text-foreground mt-2">Fundo claro</p>
+
+src/pages/MarcaPage.tsx:531
+  <p className="text-xs text-muted-foreground">Use a versão positiva (cromática ou azul institucional).</p>
+
+src/pages/MarcaPage.tsx:541
+  <p className="text-xs font-semibold text-foreground mt-2">Fundo escuro</p>
+
+src/pages/MarcaPage.tsx:542
+  <p className="text-xs text-muted-foreground">Use a versão negativa (branca), com contraste suficiente.</p>
+
+src/pages/MarcaPage.tsx:548
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src/pages/MarcaPage.tsx:579
+  <p className="text-[11px] text-center text-muted-foreground leading-tight">{u.label}</p>
+
+src/pages/MarcaPage.tsx:583
+  <p className="text-xs text-muted-foreground leading-relaxed mt-4">
+
+src/pages/MarcaPage.tsx:610
+  <p className="text-sm font-semibold text-foreground truncate">{d.label}</p>
+
+src/pages/MarcaPage.tsx:611
+  <p className="text-xs text-muted-foreground truncate">{d.file}</p>
 
 src/pages/ModalAcessoTemplatePage.tsx:63
   <p className="text-sm text-success/80 mt-1">Aqui entraria o conteúdo restrito da sua aplicação.</p>
@@ -855,9 +897,6 @@ src/pages/ModalAcessoTemplatePage.tsx:88
 
 src/pages/ModalAcessoTemplatePage.tsx:140
   <p id="modal-pass-error" className="text-xs text-error font-medium">{error}</p>
-
-src/pages/ModelosBIPage.tsx:65
-  <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
 
 src/pages/NotFound.tsx:44
   <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
@@ -966,9 +1005,3 @@ src/pages/TwoFactorPage.tsx:101
 
 src/pages/TwoFactorPage.tsx:137
   <p className="text-xs text-muted-foreground">
-
-src/pages/modelos-bi/BIPlaceholderPage.tsx:26
-  <p className="text-sm text-muted-foreground">
-
-src/pages/modelos-bi/FarolEstrategicoHubPage.tsx:51
-  <p className="mt-2 text-sm text-muted-foreground">{it.description}</p>
