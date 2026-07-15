@@ -31,7 +31,7 @@ import HubPaineisSection, { HubPaineisImageSection } from "@/components/template
 import CisecFooterSection from "@/components/templates/CisecFooter";
 import cisecLogoColor from "@/assets/cisec-logo-cor.svg";
 import cisecLogoWhite from "@/assets/cisec-logo-white.svg";
-import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
+import headerBusinessBgAsset from "@/assets/header-business-bg.jpg.asset.json";
 const cisecLogo = cisecLogoColor;
 const headerBusinessBg = headerBusinessBgAsset.url;
 const cisecLogoCompleta = cisecLogo;
