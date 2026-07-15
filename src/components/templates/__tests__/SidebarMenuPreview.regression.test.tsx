@@ -17,9 +17,9 @@ describe("SidebarMenuPreview — 320px / logo 36×36", () => {
     Object.defineProperty(window, "innerHeight", { writable: true, value: 1600 });
   });
 
-  it("renderiza o logo CISEC-CE em 36×36 (h-9 w-9) proporcional ao header", () => {
+  it("renderiza o logo CISEC em 36×36 (h-9 w-9) proporcional ao header", () => {
     render(<SidebarMenuPreview />);
-    const logo = screen.getByAltText("CISEC-CE");
+    const logo = screen.getByAltText("CISEC");
     expect(logo.className).toMatch(/(^|\s)h-9(\s|$)/);
     expect(logo.className).toMatch(/(^|\s)w-9(\s|$)/);
     expect(logo.className).toMatch(/shrink-0/);

@@ -29,7 +29,7 @@ const menuItems: MenuItem[] = [
   { label: "Início", icon: <Home size={16} /> },
   {
     label: "Análises", icon: <BarChart3 size={16} />,
-    children: [{ label: "Execução Orçamentária" }, { label: "Repasses CISEC-CE" }, { label: "Indicadores de Gestão" }],
+    children: [{ label: "Execução Orçamentária" }, { label: "Repasses CISEC" }, { label: "Indicadores de Gestão" }],
   },
   {
     label: "Relatórios", icon: <FileText size={16} />,
@@ -60,16 +60,16 @@ const categoryData = [
 ];
 
 const tableRows = [
-  { id: "00001", servidor: "Ana Silva Pereira", diretoria: "Diretoria A", status: "Concluído", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "CISEC-CE", statusTag: "Regular" },
-  { id: "00002", servidor: "Bruno Souza Lima", diretoria: "Diretoria A", status: "Em ajuste", prazo: "15 Dias", descontos: "R$ 450,00", modalidade: "40h bimestral", unidade: "CISEC-CE", statusTag: "Atenção" },
-  { id: "00003", servidor: "Carla Mendes Rocha", diretoria: "Diretoria B", status: "Concluído", prazo: "30 Dias", descontos: "R$ 720,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC-CE", statusTag: "Regular" },
-  { id: "00004", servidor: "Diego Alves Castro", diretoria: "Diretoria C", status: "Em ajuste", prazo: "10 Dias", descontos: "R$ 380,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC-CE", statusTag: "Em Ajuste" },
-  { id: "00005", servidor: "Eduarda Lopes Tavares", diretoria: "Diretoria B", status: "Concluído", prazo: "25 Dias", descontos: "R$ 510,00", modalidade: "40h bimestral", unidade: "CISEC-CE", statusTag: "Regular" },
-  { id: "00006", servidor: "Felipe Nunes Araújo", diretoria: "Diretoria C", status: "Em ajuste", prazo: "18 Dias", descontos: "R$ 420,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC-CE", statusTag: "Em Ajuste" },
-  { id: "00007", servidor: "Gabriela Pinto Sá", diretoria: "Diretoria A", status: "Concluído", prazo: "22 Dias", descontos: "R$ 690,00", modalidade: "40h bimestral", unidade: "CISEC-CE", statusTag: "Regular" },
-  { id: "00008", servidor: "Henrique Costa Vieira", diretoria: "Diretoria B", status: "Em ajuste", prazo: "12 Dias", descontos: "R$ 350,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC-CE", statusTag: "Atenção" },
-  { id: "00009", servidor: "Isabela Ramos Duarte", diretoria: "Diretoria C", status: "Concluído", prazo: "28 Dias", descontos: "R$ 740,00", modalidade: "40h bimestral", unidade: "CISEC-CE", statusTag: "Regular" },
-  { id: "00010", servidor: "João Pedro Cardoso", diretoria: "Diretoria A", status: "Em ajuste", prazo: "9 Dias", descontos: "R$ 290,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC-CE", statusTag: "Em Ajuste" },
+  { id: "00001", servidor: "Ana Silva Pereira", diretoria: "Diretoria A", status: "Concluído", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "CISEC", statusTag: "Regular" },
+  { id: "00002", servidor: "Bruno Souza Lima", diretoria: "Diretoria A", status: "Em ajuste", prazo: "15 Dias", descontos: "R$ 450,00", modalidade: "40h bimestral", unidade: "CISEC", statusTag: "Atenção" },
+  { id: "00003", servidor: "Carla Mendes Rocha", diretoria: "Diretoria B", status: "Concluído", prazo: "30 Dias", descontos: "R$ 720,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC", statusTag: "Regular" },
+  { id: "00004", servidor: "Diego Alves Castro", diretoria: "Diretoria C", status: "Em ajuste", prazo: "10 Dias", descontos: "R$ 380,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC", statusTag: "Em Ajuste" },
+  { id: "00005", servidor: "Eduarda Lopes Tavares", diretoria: "Diretoria B", status: "Concluído", prazo: "25 Dias", descontos: "R$ 510,00", modalidade: "40h bimestral", unidade: "CISEC", statusTag: "Regular" },
+  { id: "00006", servidor: "Felipe Nunes Araújo", diretoria: "Diretoria C", status: "Em ajuste", prazo: "18 Dias", descontos: "R$ 420,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC", statusTag: "Em Ajuste" },
+  { id: "00007", servidor: "Gabriela Pinto Sá", diretoria: "Diretoria A", status: "Concluído", prazo: "22 Dias", descontos: "R$ 690,00", modalidade: "40h bimestral", unidade: "CISEC", statusTag: "Regular" },
+  { id: "00008", servidor: "Henrique Costa Vieira", diretoria: "Diretoria B", status: "Em ajuste", prazo: "12 Dias", descontos: "R$ 350,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC", statusTag: "Atenção" },
+  { id: "00009", servidor: "Isabela Ramos Duarte", diretoria: "Diretoria C", status: "Concluído", prazo: "28 Dias", descontos: "R$ 740,00", modalidade: "40h bimestral", unidade: "CISEC", statusTag: "Regular" },
+  { id: "00010", servidor: "João Pedro Cardoso", diretoria: "Diretoria A", status: "Em ajuste", prazo: "9 Dias", descontos: "R$ 290,00", modalidade: "40h bimestral", unidade: "DIRAE/CISEC", statusTag: "Em Ajuste" },
 ];
 
 function StatusDot({ status }: { status: string }) {
@@ -179,7 +179,7 @@ export default function DashboardBIPage() {
         </button>
 
         <div className="flex items-center gap-3 shrink-0">
-          <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-7 w-auto" />
+          <img src={cisecLogoReduzida} alt="CISEC" className="h-7 w-auto" />
         </div>
 
         <div className="w-px h-8 bg-primary/30 shrink-0" />
@@ -225,7 +225,7 @@ export default function DashboardBIPage() {
           >
             <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
               <div className={`flex items-center gap-2 min-w-0 ${collapsed && !isMobile ? "justify-center w-full" : ""}`}>
-                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-9 w-9 shrink-0" />
+                <img src={iconeCisecNegativo} alt="CISEC" className="h-9 w-9 shrink-0" />
                 {(!collapsed || isMobile) && <span className="text-sm font-semibold whitespace-nowrap">SIGLA</span>}
               </div>
               {(!collapsed || isMobile) && (
@@ -556,7 +556,7 @@ export default function DashboardBIPage() {
 
           {/* Institutional Footer */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
+            <img src={cisecLogoReduzida} alt="CISEC" className="h-5 w-auto opacity-60" />
             <span className="text-[10px] text-muted-foreground">Dashboard BI · Analytics v.2.0</span>
           </div>
         </main>

@@ -213,20 +213,20 @@ export default function FundamentosPage() {
     <div>
       <SEO
         title="Fundamentos — Design System CISEC"
-        description="Tipografia, cores, ícones, grid e espaçamento do Design System CISEC-CE. Alicerces visuais que garantem consistência e acessibilidade nos produtos digitais."
+        description="Tipografia, cores, ícones, grid e espaçamento do Design System CISEC. Alicerces visuais que garantem consistência e acessibilidade nos produtos digitais."
         path="/fundamentos"
       />
       <PageHeader
         badge="Fundamentos"
         title="Fundamentos"
-        description="Os alicerces visuais e técnicos do Design System CISEC-CE. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
+        description="Os alicerces visuais e técnicos do Design System CISEC. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
       />
 
       {/* Tipografia */}
       <SectionHeader
         id="tipografia"
         title="Tipografia"
-        description="O Design System CISEC-CE adota o trio tipográfico alinhado ao portal cisec.com.br: Montserrat (primária, corpo/UI), Lora (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
+        description="O Design System CISEC adota o trio tipográfico alinhado ao portal cisec.com.br: Montserrat (primária, corpo/UI), Lora (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
       />
 
       {/* Famílias oficiais — grid responsivo com alturas equalizadas */}
@@ -257,7 +257,7 @@ export default function FundamentosPage() {
           cssVar="--font-system"
           tailwindClass="font-system · font-lato"
           cssSnippet={`/* CSS puro */\n.legenda,\n.caption,\n.nota-rodape {\n  font-family: 'Lato', system-ui, sans-serif;\n  font-weight: 400;\n  font-size: 0.75rem;\n  line-height: 1.4;\n}`}
-          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC-CE · Dados de 2024\n</small>`}
+          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC · Dados de 2024\n</small>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-system: 'Lato', 'Montserrat', system-ui, sans-serif;\n  --font-lato: 'Lato', system-ui, sans-serif;\n}`}
           downloads={[
             { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Lato", note: "Inclui pesos 100–900 + itálicos. Licença SIL Open Font 1.1." },
@@ -446,7 +446,7 @@ export default function FundamentosPage() {
                 Corpo de texto · Montserrat
               </span>
               <p className="text-lg font-sans leading-relaxed mb-3">
-                <strong>Lead (text-lg).</strong> O CISEC-CE apoia o desenvolvimento de pequenos negócios com conteúdos, capacitações e ferramentas digitais acessíveis a todo empreendedor brasileiro.
+                <strong>Lead (text-lg).</strong> O CISEC apoia o desenvolvimento de pequenos negócios com conteúdos, capacitações e ferramentas digitais acessíveis a todo empreendedor brasileiro.
               </p>
               <p className="text-base font-sans leading-relaxed mb-3">
                 <strong>Body padrão (text-base).</strong> Use Montserrat em todo o texto corrido. A família suporta os pesos 300 a 900 e é otimizada para leitura em telas. Combine <em>itálico</em>, <strong>negrito</strong> e <span className="underline">sublinhado</span> com moderação.
@@ -669,7 +669,7 @@ export default function FundamentosPage() {
                   </p>
 
                   <p className="text-base leading-relaxed mb-3">
-                    Corpo em <strong>Montserrat Regular</strong>. O CISEC-CE captura, processa e analisa dados de saúde,
+                    Corpo em <strong>Montserrat Regular</strong>. O CISEC captura, processa e analisa dados de saúde,
                     transformando-os em informação estratégica para gestores públicos, profissionais e sociedade.
                   </p>
 
@@ -835,7 +835,7 @@ export default function FundamentosPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold border-b pb-2">Título de Seção (H2)</h2>
               <p className="leading-relaxed">
-                Este é um exemplo de <strong>texto corrido</strong> (body text) demonstrando a legibilidade e o espaçamento entre linhas padrão do Design System CISEC-CE. 
+                Este é um exemplo de <strong>texto corrido</strong> (body text) demonstrando a legibilidade e o espaçamento entre linhas padrão do Design System CISEC. 
                 Podemos utilizar variações como <em>texto em itálico</em> para dar ênfase, <span className="underline">texto sublinhado</span> para links ou termos específicos, 
                 e combinações de <strong><em>negrito com itálico</em></strong> quando necessário.
               </p>
@@ -920,7 +920,7 @@ h1, h2, h3, h4, h5, h6 {
       />
 
       {/* Cores */}
-      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC-CE 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
+      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
       <figure className="cisec-card mb-6 overflow-hidden">
         <button

@@ -45,7 +45,7 @@ const paineis: PainelCard[] = [
     sigla: "SIGLA",
     siglaCor: "bg-cisec-orange",
     titulo: "Ouvidoria e Gestão de Ouvidoria",
-    descricao: "Painel da Ouvidoria e Gestão de Ouvidoria do CISEC-CE para acompanhamento das manifestações.",
+    descricao: "Painel da Ouvidoria e Gestão de Ouvidoria do CISEC para acompanhamento das manifestações.",
     icon: <FileText size={32} />,
     imagem: hubThumb3,
   },
@@ -90,7 +90,7 @@ const paineis: PainelCard[] = [
     sigla: "DIFIN",
     siglaCor: "bg-success",
     titulo: "Gestão Orçamentária e Financeira",
-    descricao: "Acompanhamento do orçamento e da execução orçamentária do CISEC-CE.",
+    descricao: "Acompanhamento do orçamento e da execução orçamentária do CISEC.",
     icon: <PieChart size={32} />,
     imagem: hubThumb4,
   },
@@ -117,7 +117,7 @@ const paineis: PainelCard[] = [
     sigla: "SIGLA",
     siglaCor: "bg-cisec-orange",
     titulo: "Atividade COGER",
-    descricao: "A COGER do CISEC-CE atua na atividade correicional, apurando irregularidades.",
+    descricao: "A COGER do CISEC atua na atividade correicional, apurando irregularidades.",
     icon: <Shield size={32} />,
     imagem: hubThumb3,
   },
@@ -263,7 +263,7 @@ function HubPaineisPreview() {
             <button className="p-1 rounded text-white hover:bg-white/10 transition-colors" aria-label="Abrir menu">
               <Menu size={18} />
             </button>
-            <img src={cisecLogoWhite} alt="CISEC-CE" className="h-6 w-auto" />
+            <img src={cisecLogoWhite} alt="CISEC" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
             <span className="font-semibold text-sm">SIGLA</span>
             <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
@@ -318,7 +318,7 @@ function HubPaineisPreview() {
       {/* Footer */}
       <div className="border-t border-border py-4 px-4 text-center">
         <div className="flex items-center justify-center gap-3">
-          <img src={logoCisecCompleta2} alt="CISEC-CE" className="h-5 opacity-60" />
+          <img src={logoCisecCompleta2} alt="CISEC" className="h-5 opacity-60" />
         </div>
         <p className="text-[10px] text-muted-foreground mt-1"></p>
       </div>
@@ -348,7 +348,7 @@ function HubPaineisImagePreview() {
             <button className="p-1 rounded text-white hover:bg-white/10 transition-colors" aria-label="Abrir menu">
               <Menu size={18} />
             </button>
-            <img src={cisecLogoWhite} alt="CISEC-CE" className="h-6 w-auto" />
+            <img src={cisecLogoWhite} alt="CISEC" className="h-6 w-auto" />
             <span className="opacity-40 text-sm">|</span>
             <span className="font-semibold text-sm">SIGLA</span>
             <span className="text-sm opacity-80">Hub de Painéis Gerenciais</span>
@@ -403,7 +403,7 @@ function HubPaineisImagePreview() {
       {/* Footer */}
       <div className="border-t border-border py-4 px-4 text-center">
         <div className="flex items-center justify-center gap-3">
-          <img src={logoCisecCompleta2} alt="CISEC-CE" className="h-5 opacity-60" />
+          <img src={logoCisecCompleta2} alt="CISEC" className="h-5 opacity-60" />
         </div>
         <p className="text-[10px] text-muted-foreground mt-1"></p>
       </div>

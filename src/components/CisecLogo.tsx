@@ -25,7 +25,7 @@ interface CisecLogoProps {
 }
 
 /**
- * Marca institucional do CISEC-CE.
+ * Marca institucional do CISEC.
  * Sempre usa object-contain dentro de uma caixa width×height para preservar
  * proporção em qualquer breakpoint, sem distorção.
  */
@@ -36,7 +36,7 @@ export function CisecLogo({
   opacity,
   centered = true,
   className,
-  alt = "CISEC-CE",
+  alt = "CISEC",
 }: CisecLogoProps) {
   const { theme } = useTheme();
   const src =

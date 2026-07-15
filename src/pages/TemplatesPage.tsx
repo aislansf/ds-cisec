@@ -67,8 +67,8 @@ export const headerVariants: HeaderVariant[] = [
   { id: "ext-full-right", title: "Público externo · Background descolado", description: "Versão externa com menu à direita e background Carnaval.", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
   { id: "ext-red-left", title: "Público externo · Background Tropical", description: "Versão externa com menu à direita e background Tropical", audience: "externo", brandStyle: "reduzida", menuPosition: "direita" },
   // Fundo claro — Programa e Gestão
-  { id: "claro-full", title: "Fundo claro · Marca completa com título e subtítulo", description: "Header com fundo dourado, marca completa CISEC-CE, título do programa e assinatura Gov.br.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: true },
-  { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa CISEC-CE e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
+  { id: "claro-full", title: "Fundo claro · Marca completa com título e subtítulo", description: "Header com fundo dourado, marca completa CISEC, título do programa e assinatura Gov.br.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: true },
+  { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa CISEC e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
   // Testeira para aplicação de arte
   { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #16329C, marca CISEC branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#16329C" } },
   { id: "int-testeira-art-blue", title: "Testeira · Aplicação de arte (Azul)", description: "Faixa fina (36-52px) com fundo #1F3051, menu à esquerda e ícone de modo escuro — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#1F3051" } },
@@ -165,16 +165,16 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
     return (
       <div className="rounded-lg overflow-hidden border border-border">
         <div className={`${bg} flex items-center px-5 py-3 gap-4 min-h-[56px]`}>
-          {/* Logo CISEC-CE */}
+          {/* Logo CISEC */}
           <div className="flex items-center gap-3 shrink-0">
             {variant.audience === "claro-completa" ? (
-              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-[40px] w-auto" />
+              <img src={cisecLogoCompleta} alt="CISEC" className="h-[40px] w-auto" />
             ) : variant.audience === "claro-sem-gov" && variant.brandStyle === "completa" ? (
-              <img src={cisecLogoCompleta2} alt="CISEC-CE" className="h-[38px] w-auto" />
+              <img src={cisecLogoCompleta2} alt="CISEC" className="h-[38px] w-auto" />
             ) : variant.audience === "claro-sem-gov" && variant.brandStyle === "reduzida" ? (
-              <img src={cisecLogoReduzida2} alt="CISEC-CE" className="h-[38px] w-auto" />
+              <img src={cisecLogoReduzida2} alt="CISEC" className="h-[38px] w-auto" />
             ) : (
-              <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-[40px] w-auto" />
+              <img src={cisecLogoReduzida} alt="CISEC" className="h-[40px] w-auto" />
             )}
           </div>
 
@@ -259,9 +259,9 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
           ) : (
             <>
               {variant.brandStyle === "completa" ? (
-                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC-CE" className="h-[26px] w-auto" />
+                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC" className="h-[26px] w-auto" />
               ) : (
-                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC-CE" className="h-[22px] w-auto" />
+                <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC" className="h-[22px] w-auto" />
               )}
               <span className={variant.id === "ext-red-left" ? "text-sm" : "text-white/60 text-sm"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.6 } : undefined}>|</span>
               <span className="font-semibold text-sm" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>{sigla}</span>
@@ -313,10 +313,10 @@ function generateHeaderCode(variant: HeaderVariant): string {
     </div>`
       : `
     <div style="flex:1"></div>`;
-    return `<!-- Header CISEC-CE: ${variant.title} -->
+    return `<!-- Header CISEC: ${variant.title} -->
 <header class="cisec-header-light" style="background-color: ${bgHex};">
   <div class="cisec-header-light__inner">
-    <img src="${logoSrc}" alt="CISEC-CE" class="cisec-header-light__logo" />${titleHtml}
+    <img src="${logoSrc}" alt="CISEC" class="cisec-header-light__logo" />${titleHtml}
     <img src="/assets/marca-gov.png" alt="Governo do Brasil" class="cisec-header-light__gov" />
   </div>
 </header>
@@ -373,10 +373,10 @@ function generateHeaderCode(variant: HeaderVariant): string {
   const logoHtml = variant.visualBanner
     ? ""
     : variant.brandStyle === "completa"
-    ? `<img src="/assets/cisec-logo.svg" alt="CISEC-CE" class="header__logo" />`
+    ? `<img src="/assets/cisec-logo.svg" alt="CISEC" class="header__logo" />`
     : `<div class="header__logo-icon">F</div>`;
 
-  let html = `<!-- Header CISEC-CE: ${variant.title} -->
+  let html = `<!-- Header CISEC: ${variant.title} -->
 ${variant.visualBanner ? `<div class="cisec-header__visual-banner" role="img" aria-label="${variant.visualBanner.alt}"></div>
 ` : ""}\
 <header class="cisec-header" style="background-color: ${effectiveBgHex};">
@@ -527,7 +527,7 @@ export default function TemplatesPage() {
     { title: "Dashboard BI", desc: "Painel executivo com análise profunda de dados, indicadores de performance (KPIs) e gráficos avançados.", preview: "bg-cisec-orange-50" },
     { title: "Tela de Listagem", desc: "Tabela com filtros dinâmicos, busca, cards estatísticos avançados, tabela aninhada (nesting) e paginação.", preview: "bg-cisec-orange-50" },
     { title: "Tela de Formulário", desc: "Formulário com validação, steps e feedback.", preview: "bg-cisec-blue-50" },
-    { title: "Fluxo de Autenticação Completo", desc: "Login, Cadastro e 2FA com branding CISEC-CE e Gov.br.", preview: "bg-cisec-blue-50" },
+    { title: "Fluxo de Autenticação Completo", desc: "Login, Cadastro e 2FA com branding CISEC e Gov.br.", preview: "bg-cisec-blue-50" },
     { title: "Página de Erro", desc: "404, 500 e erros genéricos com ação de retorno.", preview: "bg-cisec-orange-50" },
     { title: "Modal de Acesso", desc: "Modal de senha para proteger conteúdos restritos. Modelo visual reutilizável (use autenticação real em produção).", preview: "bg-cisec-blue-50" },
     { title: "Página com Filtros e Tabela", desc: "Combinação de sidebar de filtros com tabela de resultados.", preview: "bg-cisec-blue-50" },
@@ -551,10 +551,10 @@ export default function TemplatesPage() {
     <div>
       <SEO
         title="Templates — Design System CISEC"
-        description="Catálogo de templates do CISEC-CE: dashboards, listagens, formulários, autenticação e modelos de cabeçalho prontos para implementação."
+        description="Catálogo de templates do CISEC: dashboards, listagens, formulários, autenticação e modelos de cabeçalho prontos para implementação."
         path="/templates"
       />
-      <PageHeader badge="Templates" title="Padrões de página" description="Padrões de página pré-definidos para os principais fluxos de uso dos produtos digitais do CISEC-CE." />
+      <PageHeader badge="Templates" title="Padrões de página" description="Padrões de página pré-definidos para os principais fluxos de uso dos produtos digitais do CISEC." />
 
       {/* ═══ CATÁLOGO DE COMPONENTES ═══ */}
       <SectionHeader
@@ -884,7 +884,7 @@ export default function TemplatesPage() {
               <li>Rótulo "Menu" oculto em <code className="text-[11px]">&lt; sm</code> (mobile).</li>
               <li>Ícone <code className="text-[11px]">Moon</code> (modo escuro) alinhado à direita.</li>
               <li>Estado hover: fundo <code className="text-[11px]">white/10</code>.</li>
-              <li>Sem marca CISEC-CE na faixa.</li>
+              <li>Sem marca CISEC na faixa.</li>
             </ul>
           </div>
           <div className="rounded-md border border-border p-3">
@@ -910,7 +910,7 @@ export default function TemplatesPage() {
           <div>
             <p className="font-semibold text-success mb-1">✓ Quando usar</p>
             <ul className="space-y-1">
-              <li>• Sempre no topo de todas as aplicações CISEC-CE</li>
+              <li>• Sempre no topo de todas as aplicações CISEC</li>
               <li>• Use marca completa quando há espaço horizontal suficiente</li>
               <li>• Use marca reduzida em telas estreitas ou aplicativos mobile</li>
               <li>• Aplique classificação de conteúdo quando exigido pela política institucional</li>
@@ -942,7 +942,7 @@ export default function TemplatesPage() {
       <SectionHeader
         id="modelos-login"
         title="Modelos de Login"
-        description="Templates de autenticação prontos para uso nos sistemas CISEC-CE. Sign In e Sign Up com a identidade visual do órgão."
+        description="Templates de autenticação prontos para uso nos sistemas CISEC. Sign In e Sign Up com a identidade visual do órgão."
       />
       <div className="mb-12">
         <AuthTemplatesSection />

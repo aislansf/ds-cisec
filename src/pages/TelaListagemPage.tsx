@@ -68,7 +68,7 @@ interface Row {
 const rows: Row[] = [
   {
     id: "PRG-00021", programa: "Empretec — Empreendedorismo", responsavel: "Ana Silva Pereira",
-    unidade: "DIRAE/CISEC-CE", modalidade: "Repasse trimestral", valor: "R$ 1.240.000,00", status: "Aprovado",
+    unidade: "DIRAE/CISEC", modalidade: "Repasse trimestral", valor: "R$ 1.240.000,00", status: "Aprovado",
     subRows: [
       { parcela: "1ª Parcela", vencimento: "10/03/2026", valor: "R$ 310.000,00", status: "Pago" },
       { parcela: "2ª Parcela", vencimento: "10/06/2026", valor: "R$ 310.000,00", status: "Pago" },
@@ -78,7 +78,7 @@ const rows: Row[] = [
   },
   {
     id: "PRG-00022", programa: "ALI — Agentes Locais de Inovação", responsavel: "Bruno Souza Lima",
-    unidade: "DIRAE/CISEC-CE", modalidade: "Repasse mensal", valor: "R$ 780.500,00", status: "Em Análise",
+    unidade: "DIRAE/CISEC", modalidade: "Repasse mensal", valor: "R$ 780.500,00", status: "Em Análise",
     subRows: [
       { parcela: "Janeiro", vencimento: "05/01/2026", valor: "R$ 65.000,00", status: "Pago" },
       { parcela: "Fevereiro", vencimento: "05/02/2026", valor: "R$ 65.000,00", status: "Pago" },
@@ -87,14 +87,14 @@ const rows: Row[] = [
   },
   {
     id: "PRG-00023", programa: "Cisectec — Consultoria Tecnológica", responsavel: "Carla Mendes Rocha",
-    unidade: "DIFIN/CISEC-CE", modalidade: "Repasse anual", valor: "R$ 2.150.000,00", status: "Aprovado",
+    unidade: "DIFIN/CISEC", modalidade: "Repasse anual", valor: "R$ 2.150.000,00", status: "Aprovado",
     subRows: [
       { parcela: "Parcela única", vencimento: "20/04/2026", valor: "R$ 2.150.000,00", status: "Pago" },
     ],
   },
   {
     id: "PRG-00024", programa: "Negócio a Negócio", responsavel: "Diego Alves Castro",
-    unidade: "DIRAE/CISEC-CE", modalidade: "Aquisição direta", valor: "R$ 4.890.000,00", status: "Pendente",
+    unidade: "DIRAE/CISEC", modalidade: "Aquisição direta", valor: "R$ 4.890.000,00", status: "Pendente",
     subRows: [
       { parcela: "Lote 1 — Ônibus rural", vencimento: "15/05/2026", valor: "R$ 2.890.000,00", status: "Pendente" },
       { parcela: "Lote 2 — Ônibus urbano", vencimento: "15/08/2026", valor: "R$ 2.000.000,00", status: "Pendente" },
@@ -102,7 +102,7 @@ const rows: Row[] = [
   },
   {
     id: "PRG-00025", programa: "SEI — Seu Negócio", responsavel: "Eduarda Santos Lima",
-    unidade: "DIPRO/CISEC-CE", modalidade: "Aquisição centralizada", valor: "R$ 6.320.000,00", status: "Aprovado",
+    unidade: "DIPRO/CISEC", modalidade: "Aquisição centralizada", valor: "R$ 6.320.000,00", status: "Aprovado",
     subRows: [
       { parcela: "Ensino Fundamental I", vencimento: "10/02/2026", valor: "R$ 2.500.000,00", status: "Pago" },
       { parcela: "Ensino Fundamental II", vencimento: "10/05/2026", valor: "R$ 2.000.000,00", status: "Pago" },
@@ -111,14 +111,14 @@ const rows: Row[] = [
   },
   {
     id: "PRG-00026", programa: "MEI - Microempreendedor", responsavel: "Fernanda Costa Reis",
-    unidade: "DIPRO/CISEC-CE", modalidade: "Repasse semestral", valor: "R$ 540.000,00", status: "Rejeitado",
+    unidade: "DIPRO/CISEC", modalidade: "Repasse semestral", valor: "R$ 540.000,00", status: "Rejeitado",
     subRows: [
       { parcela: "1º Semestre", vencimento: "30/06/2026", valor: "R$ 270.000,00", status: "Rejeitado" },
     ],
   },
   {
     id: "PRG-00027", programa: "Mais Educação", responsavel: "Gustavo Henrique Dias",
-    unidade: "DIRAE/CISEC-CE", modalidade: "Repasse trimestral", valor: "R$ 1.890.000,00", status: "Em Análise",
+    unidade: "DIRAE/CISEC", modalidade: "Repasse trimestral", valor: "R$ 1.890.000,00", status: "Em Análise",
     subRows: [
       { parcela: "1º Trimestre", vencimento: "31/03/2026", valor: "R$ 472.500,00", status: "Pago" },
       { parcela: "2º Trimestre", vencimento: "30/06/2026", valor: "R$ 472.500,00", status: "Em Análise" },
@@ -295,7 +295,7 @@ export default function TelaListagemPage() {
   // Modal "Novo registro"
   const [modalOpen, setModalOpen] = useState(false);
   const [form, setForm] = useState({
-    programa: "", responsavel: "", unidade: "DIRAE/CISEC-CE",
+    programa: "", responsavel: "", unidade: "DIRAE/CISEC",
     modalidade: "Repasse mensal", valor: "", inicio: "",
   });
   const [toast, setToast] = useState<string | null>(null);
@@ -349,7 +349,7 @@ export default function TelaListagemPage() {
     e.preventDefault();
     setModalOpen(false);
     setToast(`Registro "${form.programa || "Sem título"}" criado com sucesso.`);
-    setForm({ programa: "", responsavel: "", unidade: "DIRAE/CISEC-CE", modalidade: "Repasse mensal", valor: "", inicio: "" });
+    setForm({ programa: "", responsavel: "", unidade: "DIRAE/CISEC", modalidade: "Repasse mensal", valor: "", inicio: "" });
     setTimeout(() => setToast(null), 4000);
   };
 
@@ -357,7 +357,7 @@ export default function TelaListagemPage() {
     <div className="min-h-screen bg-background flex flex-col font-sans">
       <SEO
         title="Tela de Listagem — Design System CISEC"
-        description="Template de listagem do CISEC-CE com filtros dinâmicos, busca, paginação e estado persistido na URL para fluxos de programas e iniciativas."
+        description="Template de listagem do CISEC com filtros dinâmicos, busca, paginação e estado persistido na URL para fluxos de programas e iniciativas."
         path="/templates/tela-listagem"
       />
       <Link
@@ -411,7 +411,7 @@ export default function TelaListagemPage() {
           <aside className="w-[260px] bg-sidebar text-sidebar-foreground flex flex-col shrink-0 border-r border-sidebar-border">
             <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
               <div className="flex items-center gap-2">
-                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-5 w-5" />
+                <img src={iconeCisecNegativo} alt="CISEC" className="h-5 w-5" />
                 <span className="text-sm font-semibold">SIGLA</span>
               </div>
               <button
@@ -494,7 +494,7 @@ export default function TelaListagemPage() {
             <div className="border-t border-white/10 px-3 py-2">
               <div className="flex items-center gap-2 px-2 py-1.5 text-white/50 text-[10px]">
                 <Folder size={12} />
-                <span>CISEC-CE</span>
+                <span>CISEC</span>
               </div>
             </div>
           </aside>
@@ -540,9 +540,9 @@ export default function TelaListagemPage() {
           <KPICompare title="Programas ativos" current="142" previous="126 em 2025" color="#16A34A" />
           <KPIProgress title="Execução orçamentária" value="R$ 84,2M" target="R$ 120M" pct={70} color="#D98217" />
           <KPIRanking title="Top unidades por volume" items={[
-            { label: "DIRAE/CISEC-CE", value: "R$ 6,1M" },
-            { label: "DIPRO/CISEC-CE", value: "R$ 4,3M" },
-            { label: "DIFIN/CISEC-CE", value: "R$ 2,0M" },
+            { label: "DIRAE/CISEC", value: "R$ 6,1M" },
+            { label: "DIPRO/CISEC", value: "R$ 4,3M" },
+            { label: "DIFIN/CISEC", value: "R$ 2,0M" },
           ]} />
         </div>
 
@@ -864,7 +864,7 @@ export default function TelaListagemPage() {
 
           {/* Footer institucional */}
           <div className="flex items-center justify-end gap-3 px-5 py-3 border-t border-border bg-muted/30">
-            <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-5 w-auto opacity-60" />
+            <img src={cisecLogoReduzida} alt="CISEC" className="h-5 w-auto opacity-60" />
             <span className="text-[10px] text-muted-foreground">Tela de Listagem · v.1.0</span>
           </div>
         </div>
@@ -937,10 +937,10 @@ export default function TelaListagemPage() {
                     onChange={(e) => setForm({ ...form, unidade: e.target.value })}
                     className="w-full px-3 py-2 text-xs bg-background border border-border rounded focus:outline-none focus:ring-2 focus:ring-ring"
                   >
-                    <option>DIRAE/CISEC-CE</option>
-                    <option>DIPRO/CISEC-CE</option>
-                    <option>DIFIN/CISEC-CE</option>
-                    <option>CISEC-CE</option>
+                    <option>DIRAE/CISEC</option>
+                    <option>DIPRO/CISEC</option>
+                    <option>DIFIN/CISEC</option>
+                    <option>CISEC</option>
                   </select>
                 </div>
                 <div>

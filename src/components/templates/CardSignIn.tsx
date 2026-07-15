@@ -14,7 +14,7 @@ function CardSignInPreview() {
         <div className="max-w-sm mx-auto w-full space-y-6">
           {/* Logo */}
           <div className="flex justify-center">
-            <img src={cisecLogo} alt="CISEC-CE" className="h-14 w-auto" />
+            <img src={cisecLogo} alt="CISEC" className="h-14 w-auto" />
           </div>
 
           {/* Title */}
@@ -88,7 +88,7 @@ function CardSignInPreview() {
 
           {/* Footer */}
           <p className="text-center text-xs text-muted-foreground pt-4">
-            © 2025 CISEC-CE
+            © 2025 CISEC
           </p>
         </div>
       </div>
@@ -111,10 +111,10 @@ function CardSignInPreview() {
   );
 }
 
-const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC-CE -->
+const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC -->
 <div class="card-signin">
   <div class="card-signin__form">
-    <img src="/assets/cisec-logo.svg" alt="CISEC-CE" class="card-signin__logo" />
+    <img src="/assets/cisec-logo.svg" alt="CISEC" class="card-signin__logo" />
     <h2>Bem-vindo ao Sistema</h2>
     <p>Informe seu e-mail e senha para continuar.</p>
     <form>
@@ -135,7 +135,7 @@ const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC-CE -->
       <button type="submit">Entrar</button>
     </form>
     <p class="card-signin__register">Novo aqui? <a href="#">Criar uma conta</a></p>
-    <p class="card-signin__footer">© 2025 CISEC-CE</p>
+    <p class="card-signin__footer">© 2025 CISEC</p>
   </div>
   <div class="card-signin__image">
     <img src="/assets/cisec-empreendedora.jpg" alt="Mulher empreendedora trabalhando em casa" />
@@ -254,7 +254,7 @@ export default function CardSignInSection() {
   return (
     <ComponentPreview
       title="Modelo Card (Sign In)"
-      description="Layout com formulário à esquerda com ícones nos campos e imagem institucional à direita, seguindo o padrão visual CISEC-CE."
+      description="Layout com formulário à esquerda com ícones nos campos e imagem institucional à direita, seguindo o padrão visual CISEC."
       code={cardSignInCode}
     >
       <CardSignInPreview />

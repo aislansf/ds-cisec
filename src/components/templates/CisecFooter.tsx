@@ -113,7 +113,7 @@ export default function CisecFooterSection() {
     <div className="space-y-8">
       {/* Preview */}
       <div className="rounded-lg overflow-hidden border border-border">
-        <CisecFooter projectName="Design System CISEC-CE" version="v2.4.1" />
+        <CisecFooter projectName="Design System CISEC" version="v2.4.1" />
       </div>
 
       {/* Variação com nome longo */}

@@ -19,7 +19,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-muted/30 flex flex-col items-center justify-center p-4 font-poppins animate-fade-in">
       <Helmet>
         <title>Página não encontrada — Design System CISEC</title>
-        <meta name="description" content="A página solicitada não existe ou foi movida. Volte para o portal do Design System CISEC-CE." />
+        <meta name="description" content="A página solicitada não existe ou foi movida. Volte para o portal do Design System CISEC." />
         <meta name="robots" content="noindex,follow" />
       </Helmet>
       <div className="max-w-md w-full bg-card rounded-lg shadow-xl border border-border overflow-hidden">
@@ -64,7 +64,7 @@ const NotFound = () => {
 
         <div className="bg-muted/40 px-8 py-4 border-t border-border flex justify-between items-center text-[10px] text-muted-foreground">
           <span className="truncate">Rota: {location.pathname}</span>
-          <span>© {new Date().getFullYear()} CISEC-CE</span>
+          <span>© {new Date().getFullYear()} CISEC</span>
         </div>
       </div>
 

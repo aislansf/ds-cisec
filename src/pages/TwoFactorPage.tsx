@@ -57,14 +57,14 @@ export default function TwoFactorPage() {
         <div className="hidden lg:flex lg:w-1/2 relative bg-[#1F3051] overflow-hidden">
           <img
             src={exemploImg}
-            alt="Edifício CISEC-CE"
+            alt="Edifício CISEC"
             className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1F3051] via-[#1F3051]/40 to-transparent" />
 
           <div className="relative z-10 w-full flex flex-col justify-between p-12">
             <div>
-              <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-10 w-auto brightness-0 invert" />
+              <img src={cisecLogoCompleta} alt="CISEC" className="h-10 w-auto brightness-0 invert" />
               <div className="mt-12 space-y-6 max-w-lg">
                 <h2 className="text-3xl font-bold text-white leading-tight">
                   Verificação de Segurança em Duas Etapas.
@@ -85,7 +85,7 @@ export default function TwoFactorPage() {
         {/* Lado Direito: Formulário de 2FA */}
         <div className="w-full lg:w-1/2 flex flex-col bg-card overflow-y-auto">
           <div className="lg:hidden flex justify-center p-8 bg-[#FDF1D0] border-b border-[#e0b86a]">
-            <img src={cisecLogoCompleta} alt="CISEC-CE" className="h-8 w-auto" />
+            <img src={cisecLogoCompleta} alt="CISEC" className="h-8 w-auto" />
           </div>
 
           <div className="flex-1 flex items-center justify-center p-8 sm:p-12 md:p-16">
@@ -163,7 +163,7 @@ export default function TwoFactorPage() {
 
           <footer className="p-8 border-t border-border bg-muted/20 mt-auto">
             <div className="flex flex-col items-center gap-3">
-              <img src={cisecLogoReduzida} alt="CISEC-CE" className="h-6 opacity-40 grayscale" />
+              <img src={cisecLogoReduzida} alt="CISEC" className="h-6 opacity-40 grayscale" />
               <p className="text-[10px] text-muted-foreground text-center">
                 Segurança Nível 3 - Padrão Federal de Interoperabilidade.
               </p>

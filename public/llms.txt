@@ -1,6 +1,6 @@
 # Design System CISEC
 
-> Guia visual, técnico e operacional do Design System CISEC-CE: padrões de UI, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC.
+> Guia visual, técnico e operacional do Design System CISEC: padrões de UI, tokens, componentes, templates e modelos de BI para os produtos digitais do CISEC.
 
 O portal documenta fundamentos visuais, sistema de cores e tipografia, biblioteca de componentes, templates de telas e dashboards inspirados em Power BI.
 
@@ -26,6 +26,6 @@ O portal documenta fundamentos visuais, sistema de cores e tipografia, bibliotec
 
 ## Modelos de BI
 
-- [Modelos de BI](/modelos-bi): Hub de painéis analíticos do CISEC-CE.
+- [Modelos de BI](/modelos-bi): Hub de painéis analíticos do CISEC.
 - [Farol Estratégico — BI](/modelos-bi/farol-estrategico/bi): Painel BI do Farol Estratégico.
 - [Farol Estratégico — Docs](/modelos-bi/farol-estrategico/docs): Documentação técnica e integração com Power BI.

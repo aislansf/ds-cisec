@@ -110,7 +110,7 @@ function SidebarPreview() {
           <div className={`flex items-center gap-2 min-w-0 ${collapsed ? "justify-center w-full" : ""}`}>
             <img
               src={iconeCisecNegativo}
-              alt="CISEC-CE"
+              alt="CISEC"
               className="h-9 w-9 shrink-0"
             />
             {!collapsed && (
@@ -247,7 +247,7 @@ function SidebarPreview() {
 
 /* ─── Code generator ─── */
 function generateSidebarCode(): string {
-  return `<!-- Menu Lateral CISEC-CE -->
+  return `<!-- Menu Lateral CISEC -->
 <aside class="cisec-sidebar" id="sidebarMenu">
   <!-- Cabeçalho do menu -->
   <div class="cisec-sidebar__header">
@@ -312,7 +312,7 @@ function generateSidebarCode(): string {
   </nav>
 
   <!-- Rodapé -->
-  <div class="cisec-sidebar__footer">CISEC-CE</div>
+  <div class="cisec-sidebar__footer">CISEC</div>
 </aside>
 
 <!-- Overlay para mobile -->
@@ -320,7 +320,7 @@ function generateSidebarCode(): string {
 
 <style>
 :root {
-  /* Tokens alinhados ao design system CISEC-CE */
+  /* Tokens alinhados ao design system CISEC */
   --ds-sidebar-bg: hsl(228 72% 42%);
   --ds-sidebar-fg: hsl(228 30% 95%);
   --ds-sidebar-accent: hsl(228 75% 35%);
@@ -534,7 +534,7 @@ export default function SidebarMenuSection() {
       {/* Description */}
       <p className="text-sm text-muted-foreground mb-6">
         Menu lateral com navegação hierárquica, ícones nas seções principais, subitens expansíveis com hover,
-        buscador integrado e botão de fechar. Ideal para complementar o Header CISEC-CE.
+        buscador integrado e botão de fechar. Ideal para complementar o Header CISEC.
       </p>
 
       {/* Live preview */}
@@ -556,7 +556,7 @@ export default function SidebarMenuSection() {
         </button>
         {showCode && (
           <div className="mt-3">
-            <CodeBlock code={generateSidebarCode()} language="html" title="Menu Lateral CISEC-CE — Vanilla HTML/CSS/JS" />
+            <CodeBlock code={generateSidebarCode()} language="html" title="Menu Lateral CISEC — Vanilla HTML/CSS/JS" />
           </div>
         )}
       </div>

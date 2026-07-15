@@ -54,7 +54,7 @@ interface FormState {
 
 const initialForm: FormState = {
   programa: "", responsavel: "", email: "", cpf: "",
-  unidade: "DIRAE/CISEC-CE", modalidade: "Repasse mensal",
+  unidade: "DIRAE/CISEC", modalidade: "Repasse mensal",
   valor: "", observacoes: "",
   dataInicio: "", dataFim: "", parcelas: "12",
 };
@@ -365,7 +365,7 @@ export default function TelaFormularioPage() {
           <aside className="w-[260px] bg-sidebar text-sidebar-foreground flex flex-col shrink-0 border-r border-sidebar-border">
             <div className="flex items-center justify-between px-4 py-3 border-b border-sidebar-border">
               <div className="flex items-center gap-2">
-                <img src={iconeCisecNegativo} alt="CISEC-CE" className="h-5 w-5" />
+                <img src={iconeCisecNegativo} alt="CISEC" className="h-5 w-5" />
                 <span className="text-sm font-semibold">SIGLA</span>
               </div>
               <button onClick={() => setSidebarOpen(false)} className="p-1 rounded hover:bg-white/10 transition-colors" aria-label="Fechar menu">
@@ -427,7 +427,7 @@ export default function TelaFormularioPage() {
             <div className="border-t border-white/10 px-3 py-2">
               <div className="flex items-center gap-2 px-2 py-1.5 text-white/50 text-[10px]">
                 <Folder size={12} />
-                <span>CISEC-CE</span>
+                <span>CISEC</span>
               </div>
             </div>
           </aside>
@@ -519,10 +519,10 @@ export default function TelaFormularioPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <Field label="Unidade gestora" id="unidade" required error={errors.unidade}>
                         <select id="unidade" value={form.unidade} onChange={(e) => update("unidade", e.target.value)} className={inputCls(errors.unidade)}>
-                          <option>DIRAE/CISEC-CE</option>
-                          <option>DIFIN/CISEC-CE</option>
-                          <option>DIPRO/CISEC-CE</option>
-                          <option>DIGAP/CISEC-CE</option>
+                          <option>DIRAE/CISEC</option>
+                          <option>DIFIN/CISEC</option>
+                          <option>DIPRO/CISEC</option>
+                          <option>DIGAP/CISEC</option>
                         </select>
                       </Field>
                       <Field label="Modalidade" id="modalidade" required error={errors.modalidade}>
@@ -635,7 +635,7 @@ export default function TelaFormularioPage() {
 
           {/* Footer institucional */}
           <footer className="border-t border-border bg-card px-5 py-3 text-[10px] text-muted-foreground text-center">
-            CISEC-CE · Transformando vidas por meio da educação
+            CISEC · Transformando vidas por meio da educação
           </footer>
         </div>
       </div>

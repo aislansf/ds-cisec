@@ -16,7 +16,7 @@ export default function ComponentesPage() {
     <div>
       <SEO
         title="Componentes — Design System CISEC"
-        description="Biblioteca de componentes do Design System CISEC-CE: botões, inputs, cards, modais, tabelas e mais — com preview, código e diretrizes de uso e acessibilidade."
+        description="Biblioteca de componentes do Design System CISEC: botões, inputs, cards, modais, tabelas e mais — com preview, código e diretrizes de uso e acessibilidade."
         path="/componentes"
       />
       <PageHeader
@@ -1187,7 +1187,7 @@ const tdClass = "py-3 px-4 text-sm";
 
 <div className="overflow-x-auto">
   <table className="w-full text-sm">
-    <caption className="sr-only">Programas do CISEC-CE</caption>
+    <caption className="sr-only">Programas do CISEC</caption>
     <thead>
       <tr className="border-b-2 border-border">
         <th scope="col" className={thClass}>Programa</th>
@@ -1219,7 +1219,7 @@ const tdClass = "py-3 px-4 text-sm";
       >
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <caption className="sr-only">Programas do CISEC-CE</caption>
+            <caption className="sr-only">Programas do CISEC</caption>
             <thead>
               <tr className="border-b-2 border-border">
                 <th scope="col" className={thClass}>Programa</th>
@@ -1703,7 +1703,7 @@ const [expandedRow, setExpandedRow] = useState<number | null>(null);
   <thead>{/* ... */}</thead>
   <tbody>{/* ... */}</tbody>
   <caption className="caption-bottom mt-3 text-xs text-muted-foreground text-left">
-    Lista de programas educacionais do CISEC-CE
+    Lista de programas educacionais do CISEC
   </caption>
 </table>`}
       >
@@ -1728,7 +1728,7 @@ const [expandedRow, setExpandedRow] = useState<number | null>(null);
               ))}
             </tbody>
             <caption className="caption-bottom mt-3 text-xs text-muted-foreground text-left">
-              Lista de programas educacionais do CISEC-CE
+              Lista de programas educacionais do CISEC
             </caption>
           </table>
         </div>
@@ -3711,7 +3711,7 @@ function DescriptionListSection() {
 {/* Variante em grid (2 colunas) */}
 <dl className="grid grid-cols-1 md:grid-cols-2 gap-4">
   {[
-    { term: "Código do atendimento", value: "CISEC-CE-2026-00312" },
+    { term: "Código do atendimento", value: "CISEC-2026-00312" },
     { term: "Município", value: "Fortaleza – CE" },
   ].map((item, i) => (
     <div key={i} className="bg-muted/30 rounded-lg px-4 py-3">
@@ -3745,7 +3745,7 @@ function DescriptionListSection() {
           <p className="text-sm font-medium mb-3">Variante em grid (2 colunas)</p>
           <dl className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { term: "Código do atendimento", value: "CISEC-CE-2026-00312" },
+              { term: "Código do atendimento", value: "CISEC-2026-00312" },
               { term: "Solução", value: "Cisectec - Consultoria Tecnológica" },
               { term: "Município", value: "Fortaleza – CE" },
               { term: "UF", value: "Ceará" },
