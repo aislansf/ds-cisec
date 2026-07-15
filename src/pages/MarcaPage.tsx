@@ -97,9 +97,9 @@ export default function MarcaPage() {
         path="/marca"
       />
       <PageHeader
-        badge="Manual da Marca Cisec · Set/2024"
+        badge="Manual da Marca Cisec"
         title="Marca Cisec"
-        description="Diretrizes oficiais de uso do logotipo Cisec — versões, área de proteção, redução máxima, jeitos de assinar, parcerias e usos indevidos. Baseado no Manual da Marca Cisec (Setembro 2024)."
+        description="Diretrizes oficiais de uso do logotipo Cisec — versões, área de proteção, redução máxima, jeitos de assinar, parcerias e usos indevidos. Baseado no Manual da Marca Cisec."
       />
 
       {/* 1. Assinatura simples */}
@@ -435,7 +435,7 @@ export default function MarcaPage() {
         id="manual-oficial"
         badge="Documento de referência"
         title="Downloads"
-        description="Logotipos oficiais em SVG e o manual completo da marca Cisec (Setembro/2024)."
+        description="Logotipos oficiais em SVG e o manual completo da marca Cisec."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {downloads.map((d) => (
@@ -470,7 +470,7 @@ export default function MarcaPage() {
               <FileText size={18} />
             </div>
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-foreground">Manual da Marca Cisec · Setembro 2024</p>
+              <p className="text-sm font-semibold text-foreground">Manual da Marca Cisec</p>
               <p className="text-xs text-muted-foreground">PDF oficial · Cisec Nacional</p>
             </div>
           </div>

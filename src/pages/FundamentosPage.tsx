@@ -257,7 +257,7 @@ export default function FundamentosPage() {
           cssVar="--font-system"
           tailwindClass="font-system · font-lato"
           cssSnippet={`/* CSS puro */\n.legenda,\n.caption,\n.nota-rodape {\n  font-family: 'Lato', system-ui, sans-serif;\n  font-weight: 400;\n  font-size: 0.75rem;\n  line-height: 1.4;\n}`}
-          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC · Dados de 2024\n</small>`}
+          htmlSnippet={`<!-- HTML standalone -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">\n\n<small style="font-family: 'Lato', sans-serif; font-weight: 400;">\n  Fonte: CISEC\n</small>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-system: 'Lato', 'Montserrat', system-ui, sans-serif;\n  --font-lato: 'Lato', system-ui, sans-serif;\n}`}
           downloads={[
             { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Lato", note: "Inclui pesos 100–900 + itálicos. Licença SIL Open Font 1.1." },
@@ -920,7 +920,7 @@ h1, h2, h3, h4, h5, h6 {
       />
 
       {/* Cores */}
-      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
+      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
 
       <ColorSection />

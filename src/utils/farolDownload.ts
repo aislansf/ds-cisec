@@ -414,7 +414,7 @@ const vanillaJs = `/* Farol Estratégico — versão vanilla. Sem build. */
   const fmtPct = v => (v ?? 0).toFixed(0) + "%";
 
   const filterDefs = [
-    { key: "ppa", label: "PPA", options: ["Todos", "2024-2027", "2020-2023"] },
+    { key: "ppa", label: "PPA", options: ["Todos", "Ciclo atual", "Ciclo anterior"] },
     { key: "iniciativa", label: "Iniciativa", options: ["Todas", "Capacita +", "Inovação CE"] },
     { key: "acao", label: "Ação", options: ["Todas", "Atendimento", "Capacitação", "Mentoria"] },
     { key: "natureza", label: "Natureza", options: ["Todas", "Custeio", "Investimento"] },

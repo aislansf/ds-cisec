@@ -100,7 +100,7 @@ export default function ErrorPageTemplate() {
         {/* Footer info */}
         <div className="bg-muted/30 px-8 py-4 border-t border-border flex justify-between items-center text-[10px] text-muted-foreground">
           <span>ID da Sessão: 48f2-9bc1-55ea</span>
-          <span>© 2024 CISEC</span>
+          <span>© CISEC</span>
         </div>
       </div>
 
