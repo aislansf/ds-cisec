@@ -166,7 +166,7 @@ export default function MarcaPage() {
         id="sobre-cisec"
         badge="Contexto institucional"
         title="Sobre o CISEC"
-        description="O CISEC-CE é o Centro de Inteligência em Saúde do Estado do Ceará. Vinculado à Escola de Saúde Pública do Ceará (ESP/CE), atua como um hub centralizado para capturar, processar e analisar dados de saúde, transformando-os em informações estratégicas para gestores públicos, profissionais de saúde e a sociedade."
+        description="O CISEC é o Centro de Inteligência em Saúde do Estado do Ceará. Vinculado à Escola de Saúde Pública do Ceará (ESP/CE), atua como um hub centralizado para capturar, processar e analisar dados de saúde, transformando-os em informações estratégicas para gestores públicos, profissionais de saúde e a sociedade."
       />
       <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
