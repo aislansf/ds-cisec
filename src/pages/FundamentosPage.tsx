@@ -922,31 +922,6 @@ h1, h2, h3, h4, h5, h6 {
       {/* Cores */}
       <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
-      <figure className="cisec-card mb-6 overflow-hidden">
-        <button
-          type="button"
-          onClick={() => setPaletaOpen(true)}
-          aria-label="Ampliar imagem da paleta de cores"
-          className="block w-full rounded-md overflow-hidden cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-ring"
-        >
-          <img
-            src={paletaReferenciaBrasil.url}
-            alt="Paleta de cores Cisec — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
-            className="w-full h-auto rounded-md transition-transform hover:scale-[1.01]"
-            loading="lazy"
-          />
-        </button>
-        <figcaption className="text-xs text-muted-foreground mt-3">
-          Referência cromática institucional: a paleta do Design System parte da cor primária{" "}
-          <strong>#1F3051</strong> e expande para as cores que representam a diversidade brasileira.
-        </figcaption>
-      </figure>
-      <ImageLightbox
-        open={paletaOpen}
-        onClose={() => setPaletaOpen(false)}
-        src={paletaReferenciaBrasil.url}
-        alt="Paleta de cores Cisec — Nós representamos todo o Brasil. E a nossa paleta de cores também!"
-      />
 
       <ColorSection />
 
