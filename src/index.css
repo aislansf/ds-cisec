@@ -20,24 +20,34 @@
     --cisec-orange: 34 100% 56%;      /* Laranja #FF9E20 */
     --cisec-gray: 0 0% 38%;           /* Cinza #606060 */
 
-    /* Escala cromática do Azul Institucional (100% → 20%) */
-    --cisec-blue-50: 222 45% 96%;
-    --cisec-blue-100: 222 45% 88%;
-    --cisec-blue-200: 222 45% 76%;
-    --cisec-blue-300: 222 45% 60%;
-    --cisec-blue-400: 222 45% 44%;
-    --cisec-blue-500: 222 45% 22%;    /* base #1F3051 */
+    /* Escala tonal Azul Institucional (Manual v4/2026 — 100 / 80 / 60 / 40 / 20) */
+    --cisec-blue-50:  222 33% 87%;   /* #D2D8E9 · 20% */
+    --cisec-blue-100: 222 33% 87%;   /* #D2D8E9 · 20% */
+    --cisec-blue-200: 224 27% 73%;   /* #A6AECC · 40% */
+    --cisec-blue-300: 222 20% 55%;   /* #7983A3 · 60% */
+    --cisec-blue-400: 220 22% 38%;   /* #4C5974 · 80% */
+    --cisec-blue-500: 222 45% 22%;   /* #1F3051 · base (100%) */
     --cisec-blue-600: 222 45% 18%;
     --cisec-blue-700: 222 45% 14%;
 
-    /* Escala cromática do Laranja (100% → 20%) */
-    --cisec-orange-50: 34 100% 96%;
-    --cisec-orange-100: 34 100% 88%;
-    --cisec-orange-200: 34 100% 78%;
-    --cisec-orange-300: 34 100% 68%;
-    --cisec-orange-400: 34 100% 62%;
-    --cisec-orange-500: 34 100% 56%;  /* base #FF9E20 */
+    /* Escala tonal Laranja (Manual v4/2026 — 100 / 80 / 60 / 40 / 20) */
+    --cisec-orange-50:  34 100% 91%; /* #FFECD2 · 20% */
+    --cisec-orange-100: 34 100% 91%; /* #FFECD2 · 20% */
+    --cisec-orange-200: 33 100% 82%; /* #FFD8A5 · 40% */
+    --cisec-orange-300: 34 100% 73%; /* #FFC578 · 60% */
+    --cisec-orange-400: 34 100% 65%; /* #FFB14C · 80% */
+    --cisec-orange-500: 34 100% 56%; /* #FF9E20 · base (100%) */
     --cisec-orange-600: 34 90% 46%;
+
+    /* Escala neutra Cinza (Manual — apoio) */
+    --cisec-gray-50:  0 0% 96%;
+    --cisec-gray-100: 0 0% 90%;
+    --cisec-gray-200: 0 0% 80%;
+    --cisec-gray-300: 0 0% 65%;
+    --cisec-gray-400: 0 0% 50%;
+    --cisec-gray-500: 0 0% 38%;      /* #606060 · base */
+    --cisec-gray-600: 0 0% 28%;
+    --cisec-gray-700: 0 0% 18%;
 
     /* Complementares (uso pontual em ilustrações — nunca na marca) */
     --cisec-comp-blue-light: 213 100% 88%;
