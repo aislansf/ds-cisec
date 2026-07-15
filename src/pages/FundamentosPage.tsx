@@ -1195,8 +1195,9 @@ h1, h2, h3, h4, h5, h6 {
           ))}
         </div>
       </div>
+      </section>
 
-      {/* Motion */}
+      <section aria-labelledby="motion" className="mb-12 sm:mb-16">
       <SectionHeader id="motion" title="Motion e Transições" description="Animações sutis para feedback e hierarquia de atenção." />
 
       <div className="cisec-card mb-8">
