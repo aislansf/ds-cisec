@@ -88,7 +88,7 @@ function DashboardFooter() {
   return (
     <div className="flex items-center justify-end gap-3 px-5 py-2 border-t border-border bg-muted/30 rounded-b-lg">
       <img src={cisecLogoCompleta} alt="CISEC" className="h-5 w-auto opacity-60" />
-      <span className="text-[10px] text-muted-foreground">Programa - v.1.0</span>
+      <span className="text-[10px] text-muted-foreground">Painel CISEC · v.1.0</span>
     </div>
   );
 }
@@ -171,8 +171,8 @@ function DonutSection({ title, subtitle }: { title: string; subtitle: string }) 
 function PerformanceSection() {
   return (
     <div className="bg-card rounded-lg border border-border p-4">
-      <p className="text-sm font-bold text-[#D98217] mb-1">Desempenho Geral dos Programas</p>
-      <p className="text-[10px] text-muted-foreground mb-3">20 programas listados - 2320 Colaboradores listados</p>
+      <p className="text-sm font-bold text-[#D98217] mb-1">Cobertura Geral dos Indicadores de Saúde</p>
+      <p className="text-[10px] text-muted-foreground mb-3">20 indicadores listados · 184 municípios monitorados</p>
       <div className="space-y-3">
         {performanceData.map((d, i) => (
           <div key={i} className="flex items-center gap-3">
@@ -193,7 +193,7 @@ function PerformanceSection() {
 function BarChartSection() {
   return (
     <div className="bg-card rounded-lg border border-border p-4">
-      <p className="text-sm font-bold text-[#D98217] mb-3">Servidores por Diretoria</p>
+      <p className="text-sm font-bold text-[#D98217] mb-3">Notificações por Regional de Saúde</p>
       <div className="h-48">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={barData}>
@@ -231,24 +231,24 @@ function DashboardCompleta() {
         {/* Resumo */}
         <div className="bg-card rounded-lg border border-border p-3">
           <p className="text-xs font-semibold text-foreground mb-3">
-            <span className="font-bold italic">Resumo da Pesquisa:</span> Categoria - prioridade - setor
+            <span className="font-bold italic">Resumo da Consulta:</span> Agravo · prioridade · regional
           </p>
 
           {/* KPI row — 3 colunas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <KPICard icon={Users} title="Total de Servidores" subtitle="Servidores em análise (filtrados)" value="1.019" borderColor="#1F3051" />
-            <KPICard icon={FileCheck} title="Servidores Regulares" subtitle="Filtro (listar todos)" value="80.00%" borderColor="#16A34A" />
-            <KPICard icon={FileX} title="Servidores Irregulares" subtitle="Filtro (listar todos)" value="20.00%" borderColor="#DC2626" />
-            <KPICard icon={Clock} title="Em Análise" subtitle="Aguardando conformidade" value="20.00%" borderColor="#D98217" />
-            <KPICard icon={ShieldCheck} title="Auditoria em Andamento" subtitle="Aguardando conformidade" value="2.00%" borderColor="#16A34A" />
-            <KPICard icon={RefreshCw} title="Atualização de Dados" subtitle="Aguardando conformidade" value="+120" borderColor="#D98217" />
+            <KPICard icon={Users} title="Total de Notificações" subtitle="Notificações no período (filtrado)" value="1.019" borderColor="#1F3051" />
+            <KPICard icon={FileCheck} title="Casos Encerrados" subtitle="Investigação concluída" value="80.00%" borderColor="#16A34A" />
+            <KPICard icon={FileX} title="Descartados" subtitle="Não confirmados" value="20.00%" borderColor="#DC2626" />
+            <KPICard icon={Clock} title="Em Investigação" subtitle="Aguardando encerramento" value="20.00%" borderColor="#D98217" />
+            <KPICard icon={ShieldCheck} title="Surtos Ativos" subtitle="Em monitoramento" value="2.00%" borderColor="#16A34A" />
+            <KPICard icon={RefreshCw} title="Atualização SINAN" subtitle="Novos registros no dia" value="+120" borderColor="#D98217" />
           </div>
         </div>
 
         {/* Table — full width */}
         <div className="bg-card rounded-lg border border-border p-4">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+            <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
             <div className="flex items-center gap-3 text-[10px]">
               <StatusDot status="Atenção" />
               <StatusDot status="Regular" />
@@ -264,7 +264,7 @@ function DashboardCompleta() {
 
         {/* Bottom: Donut + Bar chart */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <DonutSection title="Distribuição por Modalidade" subtitle="20 programas listados" />
+          <DonutSection title="Distribuição por Agravo" subtitle="20 agravos monitorados" />
           <BarChartSection />
         </div>
       </div>
