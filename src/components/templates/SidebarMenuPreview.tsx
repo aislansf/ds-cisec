@@ -63,7 +63,7 @@ const menuItems: MenuItem[] = [
 function SidebarPreview() {
   const [open, setOpen] = useState(true);
   const [collapsed, setCollapsed] = useState(false);
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({ Programas: true });
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({ "Vigilância em Saúde": true });
   const [searchQuery, setSearchQuery] = useState("");
   const [activeItem, setActiveItem] = useState("Início");
   const searchRef = useRef<HTMLInputElement>(null);
@@ -288,7 +288,7 @@ function generateSidebarCode(): string {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5"/>
         </svg>
-        <span>Programas</span>
+        <span>Vigilância em Saúde</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cisec-sidebar__chevron">
           <polyline points="9 18 15 12 9 6"/>
         </svg>
@@ -307,7 +307,7 @@ function generateSidebarCode(): string {
         <circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
-      <span>Usuários</span>
+      <span>Profissionais de Saúde</span>
     </a>
   </nav>
 
