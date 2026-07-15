@@ -920,7 +920,7 @@ h1, h2, h3, h4, h5, h6 {
       />
 
       {/* Cores */}
-      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC 2024. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
+      <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
 
       <ColorSection />
