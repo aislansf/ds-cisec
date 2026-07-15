@@ -184,7 +184,7 @@ export default function FundamentosPage() {
         description="Os alicerces visuais e técnicos do Design System CISEC. Estas diretrizes garantem consistência e acessibilidade em todos os produtos digitais, em ambos os modos claro e escuro."
       />
 
-      {/* Tipografia */}
+      <section aria-labelledby="tipografia" className="mb-12 sm:mb-16">
       <SectionHeader
         id="tipografia"
         title="Tipografia"
@@ -880,13 +880,15 @@ h1, h2, h3, h4, h5, h6 {
 --text-4xl: 2.25rem;   /* 36px - Título principal */`}
         language="css"
       />
+      </section>
 
-      {/* Cores */}
+      <section aria-labelledby="cores" className="mb-12 sm:mb-16">
       <SectionHeader id="cores" title="Cores" description="Paleta institucional baseada no Manual da Marca CISEC. No dark mode, as cores são ajustadas para manter contraste e legibilidade." />
 
       <ColorSection />
+      </section>
 
-      {/* Iconografia */}
+      <section aria-labelledby="iconografia" className="mb-12 sm:mb-16">
       <SectionHeader id="iconografia" title="Iconografia" description="A biblioteca oficial do Design System é Lucide (lucide-react). Remix Icon é apresentada apenas como referência complementar, por ser a família utilizada no cisec.com.br/conta." />
 
       {/* Busca e filtros */}
@@ -1147,13 +1149,15 @@ h1, h2, h3, h4, h5, h6 {
 <!-- Modificadores de tamanho prontos: ri-xs, ri-sm, ri-1x, ri-lg, ri-xl, ri-2x ... ri-5x -->`}
         language="html"
       />
+      </section>
 
-      {/* Grid */}
+      <section aria-labelledby="grid" className="mb-12 sm:mb-16">
       <SectionHeader id="grid" title="Grid e Espaçamento" description="Sistema de grid responsivo com suporte a 16, 12, 8 e 4 colunas para desktop, tablet e mobile, com exemplos práticos para dashboards." />
 
       <GridSection />
+      </section>
 
-      {/* Elevation */}
+      <section aria-labelledby="elevacao" className="mb-12 sm:mb-16">
       <SectionHeader id="elevacao" title="Elevação e Sombras" description="Níveis de elevação para criar hierarquia visual e profundidade. As sombras se adaptam ao tema." />
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
@@ -1172,7 +1176,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       {/* Border Radius */}
-      <div className="cisec-card mb-8">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-4">Border Radius</h4>
         <div className="flex flex-wrap gap-4">
           {[
@@ -1191,11 +1195,12 @@ h1, h2, h3, h4, h5, h6 {
           ))}
         </div>
       </div>
+      </section>
 
-      {/* Motion */}
+      <section aria-labelledby="motion" className="mb-12 sm:mb-16">
       <SectionHeader id="motion" title="Motion e Transições" description="Animações sutis para feedback e hierarquia de atenção." />
 
-      <div className="cisec-card mb-8">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-3">Durações</h4>
         <div className="space-y-2 mb-6">
           {[
@@ -1322,8 +1327,9 @@ h1, h2, h3, h4, h5, h6 {
           </p>
         </div>
       </div>
+      </section>
 
-      {/* Responsiveness */}
+      <section aria-labelledby="responsividade">
       <SectionHeader id="responsividade" title="Responsividade" description="Breakpoints do sistema para design responsivo." />
 
       <div className="cisec-card">
@@ -1354,6 +1360,7 @@ h1, h2, h3, h4, h5, h6 {
           </table>
         </div>
       </div>
+      </section>
     </div>
   );
 }
