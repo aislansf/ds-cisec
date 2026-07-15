@@ -11,7 +11,7 @@ import {
   Legend, LabelList,
 } from "recharts";
 import { cisecCor as cisecLogoReduzida, cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
-import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
+import headerBusinessBgAsset from "@/assets/header-business-bg.jpg.asset.json";
 const headerBusinessBg = headerBusinessBgAsset.url;
 import { useTheme } from "@/hooks/useTheme";
 import { useIsMobile } from "@/hooks/use-mobile";

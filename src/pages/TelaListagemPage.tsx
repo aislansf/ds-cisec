@@ -11,7 +11,7 @@ import {
 import { cisecCor as cisecLogoReduzida } from "@/assets/cisec";
 import { cisecWhite as iconeCisecNegativo } from "@/assets/cisec";
 import { useTheme } from "@/hooks/useTheme";
-import headerBusinessBgAsset from "@/assets/header-business-bg.png.asset.json";
+import headerBusinessBgAsset from "@/assets/header-business-bg.jpg.asset.json";
 const headerBusinessBg = headerBusinessBgAsset.url;
 import { SEO } from "@/components/SEO";
 
