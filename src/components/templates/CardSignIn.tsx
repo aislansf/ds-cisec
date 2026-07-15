@@ -97,13 +97,13 @@ function CardSignInPreview() {
       <div className="relative hidden md:block rounded-r-xl overflow-hidden">
         <img
           src={exemploImg}
-          alt="Mulher empreendedora trabalhando em casa"
+          alt="Profissional de saúde analisando indicadores do CISEC"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#163F5F] to-white/0" />
         <div className="absolute bottom-6 left-6 right-6">
           <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Lora', 'Montserrat', sans-serif" }}>
-            Estimulamos o empreendedorismo
+            Inteligência em saúde para o cuidado com o cearense
           </p>
         </div>
       </div>
@@ -138,11 +138,11 @@ const cardSignInCode = `<!-- Modelo Card (Sign In) — CISEC -->
     <p class="card-signin__footer">© 2025 CISEC</p>
   </div>
   <div class="card-signin__image">
-    <img src="/assets/cisec-empreendedora.jpg" alt="Mulher empreendedora trabalhando em casa" />
+    <img src="/assets/cisec-empreendedora.jpg" alt="Profissional de saúde analisando indicadores do CISEC" />
     <div class="card-signin__overlay"></div>
     <div class="card-signin__caption">
-      <strong>Estimular o empreendedorismo e impulsionar os pequenos negócios</strong>
-      <span>Visão CISEC: ter excelência no desenvolvimento dos pequenos negócios, contribuindo para a construção de um Brasil mais justo, competitivo e sustentável.</span>
+      <strong>Inteligência em saúde para fortalecer o SUS no Ceará</strong>
+      <span>Visão CISEC: ser referência em inteligência em saúde pública, produzindo evidências para qualificar decisões e melhorar a saúde da população cearense.</span>
     </div>
   </div>
 </div>

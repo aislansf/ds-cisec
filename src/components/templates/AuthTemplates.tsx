@@ -25,7 +25,7 @@ function SignInPreview() {
             <label className="text-xs font-medium text-foreground">E-mail <span className="text-[#D98217]">*</span></label>
             <input
               type="email"
-              placeholder="usuario@ce.cisec.com.br"
+              placeholder="usuario@saude.ce.gov.br"
               className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
@@ -66,7 +66,7 @@ function SignInPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC · Centro de Inteligência em Saúde do Ceará
         </p>
       </div>
     </div>
@@ -85,7 +85,7 @@ function SignUpPreview() {
         </div>
         <h3 className="text-center text-lg font-semibold text-foreground mb-1">Criar conta</h3>
         <p className="text-center text-xs text-muted-foreground mb-6">
-          Preencha os campos abaixo para criar sua conta no sistema CISEC.
+          Preencha os campos abaixo para criar sua conta no sistema do CISEC.
         </p>
 
         {/* Card */}
@@ -102,7 +102,7 @@ function SignUpPreview() {
             <label className="text-xs font-medium text-foreground">E-mail <span className="text-[#D98217]">*</span></label>
             <input
               type="email"
-              placeholder="usuario@ce.cisec.com.br"
+              placeholder="usuario@saude.ce.gov.br"
               className="w-full h-10 rounded-lg border border-input bg-background px-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#1F3051]/30"
             />
           </div>
@@ -163,7 +163,7 @@ function SignUpPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC · Centro de Inteligência em Saúde do Ceará
         </p>
       </div>
     </div>
@@ -184,7 +184,7 @@ const signInCode = `<!-- Sign In — CISEC Design System -->
     <div style="background:#fff;border-radius:0.75rem;border:1px solid #e4e4e7;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06)">
       <div style="margin-bottom:1rem">
         <label style="font-size:0.75rem;font-weight:500">E-mail <span style="color:#D98217">*</span></label>
-        <input type="email" placeholder="usuario@ce.cisec.com.br"
+        <input type="email" placeholder="usuario@saude.ce.gov.br"
           style="width:100%;height:40px;border-radius:8px;border:1px solid #e4e4e7;padding:0 12px;font-size:0.875rem;margin-top:6px">
       </div>
       <div style="margin-bottom:1rem">
@@ -215,7 +215,7 @@ const signUpCode = `<!-- Sign Up — CISEC Design System -->
     </div>
     <h3 style="text-align:center;font-size:1.125rem;font-weight:600;margin-bottom:4px">Criar conta</h3>
     <p style="text-align:center;font-size:0.75rem;color:#71717a;margin-bottom:1.5rem">
-      Preencha os campos abaixo para criar sua conta no sistema CISEC.
+      Preencha os campos abaixo para criar sua conta no sistema do CISEC.
     </p>
     <div style="background:#fff;border-radius:0.75rem;border:1px solid #e4e4e7;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06)">
       <div style="margin-bottom:1rem">
@@ -225,7 +225,7 @@ const signUpCode = `<!-- Sign Up — CISEC Design System -->
       </div>
       <div style="margin-bottom:1rem">
         <label style="font-size:0.75rem;font-weight:500">E-mail <span style="color:#D98217">*</span></label>
-        <input type="email" placeholder="usuario@ce.cisec.com.br"
+        <input type="email" placeholder="usuario@saude.ce.gov.br"
           style="width:100%;height:40px;border-radius:8px;border:1px solid #e4e4e7;padding:0 12px;font-size:0.875rem;margin-top:6px">
       </div>
       <div style="margin-bottom:1rem">
@@ -334,7 +334,7 @@ function TwoFactorPreview() {
         </div>
 
         <p className="text-center text-[10px] text-muted-foreground mt-6">
-          © 2026 CISEC — Fundo Nacional de Desenvolvimento da Educação
+          © 2026 CISEC · Centro de Inteligência em Saúde do Ceará
         </p>
       </div>
     </div>

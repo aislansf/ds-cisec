@@ -20,37 +20,37 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   { label: "Início", icon: <Home size={16} />, iconName: "home" },
   {
-    label: "Programas", icon: <GraduationCap size={16} />, iconName: "graduation-cap",
+    label: "Vigilância em Saúde", icon: <GraduationCap size={16} />, iconName: "graduation-cap",
     children: [
-      { label: "Empretec" },
-      { label: "ALI" },
-      { label: "Cisectec" },
-      { label: "Negócio a Negócio" },
+      { label: "Epidemiológica" },
+      { label: "Ambiental" },
+      { label: "Sanitária" },
+      { label: "Saúde do Trabalhador" },
     ],
   },
   {
-    label: "Financeiro", icon: <Wallet size={16} />, iconName: "wallet",
+    label: "Indicadores", icon: <Wallet size={16} />, iconName: "wallet",
     children: [
-      { label: "Prestação de Contas" },
-      { label: "Repasses" },
-      { label: "Convênios" },
+      { label: "Morbimortalidade" },
+      { label: "Cobertura Vacinal" },
+      { label: "Determinantes Sociais" },
     ],
   },
   {
-    label: "Relatórios", icon: <BarChart3 size={16} />, iconName: "bar-chart-3",
+    label: "Painéis", icon: <BarChart3 size={16} />, iconName: "bar-chart-3",
     children: [
-      { label: "Indicadores" },
-      { label: "Dashboards" },
+      { label: "Regionais de Saúde" },
+      { label: "Municípios" },
       { label: "Exportações" },
     ],
   },
-  { label: "Usuários", icon: <Users size={16} />, iconName: "users" },
+  { label: "Profissionais de Saúde", icon: <Users size={16} />, iconName: "users" },
   {
-    label: "Documentos", icon: <FileText size={16} />, iconName: "file-text",
+    label: "Notas Técnicas", icon: <FileText size={16} />, iconName: "file-text",
     children: [
-      { label: "Normativos" },
-      { label: "Manuais" },
-      { label: "Resoluções" },
+      { label: "Boletins Epidemiológicos" },
+      { label: "Protocolos Clínicos" },
+      { label: "Portarias SESA" },
     ],
   },
   { label: "Notificações", icon: <Bell size={16} />, iconName: "bell" },
@@ -63,7 +63,7 @@ const menuItems: MenuItem[] = [
 function SidebarPreview() {
   const [open, setOpen] = useState(true);
   const [collapsed, setCollapsed] = useState(false);
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({ Programas: true });
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({ "Vigilância em Saúde": true });
   const [searchQuery, setSearchQuery] = useState("");
   const [activeItem, setActiveItem] = useState("Início");
   const searchRef = useRef<HTMLInputElement>(null);
@@ -288,16 +288,16 @@ function generateSidebarCode(): string {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5"/>
         </svg>
-        <span>Programas</span>
+        <span>Vigilância em Saúde</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cisec-sidebar__chevron">
           <polyline points="9 18 15 12 9 6"/>
         </svg>
       </button>
       <div class="cisec-sidebar__subitems">
-        <a href="#" class="cisec-sidebar__subitem">Empretec</a>
-        <a href="#" class="cisec-sidebar__subitem">ALI</a>
-        <a href="#" class="cisec-sidebar__subitem">Cisectec</a>
-        <a href="#" class="cisec-sidebar__subitem">Negócio a Negócio</a>
+        <a href="#" class="cisec-sidebar__subitem">Epidemiológica</a>
+        <a href="#" class="cisec-sidebar__subitem">Ambiental</a>
+        <a href="#" class="cisec-sidebar__subitem">Sanitária</a>
+        <a href="#" class="cisec-sidebar__subitem">Saúde do Trabalhador</a>
       </div>
     </div>
 
@@ -307,7 +307,7 @@ function generateSidebarCode(): string {
         <circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
-      <span>Usuários</span>
+      <span>Profissionais de Saúde</span>
     </a>
   </nav>
 

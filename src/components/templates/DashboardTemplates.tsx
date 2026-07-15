@@ -13,35 +13,35 @@ import {
 
 /* ─── Shared data ─── */
 const barData = [
-  { name: "Diretoria A", valor: 85 },
-  { name: "Diretoria B", valor: 60 },
-  { name: "Diretoria C", valor: 72 },
-  { name: "Diretoria D", valor: 45 },
-  { name: "Diretoria E", valor: 30 },
-  { name: "Diretoria F", valor: 18 },
+  { name: "Fortaleza", valor: 85 },
+  { name: "Cariri", valor: 60 },
+  { name: "Sertão Central", valor: 72 },
+  { name: "Litoral Leste", valor: 45 },
+  { name: "Vale do Jaguaribe", valor: 30 },
+  { name: "Sobral", valor: 18 },
 ];
 
 const donutData = [
-  { name: "Conformidade", value: 50, color: "#D98217" },
-  { name: "Nome do Status", value: 12.5, color: "#F0C06D" },
-  { name: "Nome do Status", value: 12.5, color: "#FBDFA2" },
-  { name: "Null Error", value: 12.5, color: "#CBD5E1" },
+  { name: "Encerrados", value: 50, color: "#D98217" },
+  { name: "Em investigação", value: 12.5, color: "#F0C06D" },
+  { name: "Suspeitos", value: 12.5, color: "#FBDFA2" },
+  { name: "Descartados", value: 12.5, color: "#CBD5E1" },
   { name: "Outros", value: 12.5, color: "#E2E8F0" },
 ];
 
 const performanceData = [
-  { label: "Excepcional", pct: 45, color: "#D98217" },
-  { label: "Alto Desempenho", pct: 35, color: "#16A34A" },
-  { label: "Adequados", pct: 25, color: "#1F3051" },
-  { label: "Inadequados", pct: 55, color: "#DC2626" },
+  { label: "Cobertura Ótima", pct: 45, color: "#D98217" },
+  { label: "Cobertura Adequada", pct: 35, color: "#16A34A" },
+  { label: "Cobertura Regular", pct: 25, color: "#1F3051" },
+  { label: "Cobertura Baixa", pct: 55, color: "#DC2626" },
 ];
 
 const tableRows = [
-  { id: "00001", servidor: "Nome até 00 caract..", diretoria: "Diretoria A", status: "Em ajuste", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "Unidade ou Sigla", statusTag: "Regular" },
-  { id: "00002", servidor: "Nome até 00 caract..", diretoria: "Diretoria A", status: "Em ajuste", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "Unidade ou Sigla", statusTag: "Atenção" },
-  { id: "00003", servidor: "Nome até 00 caract..", diretoria: "Diretoria A", status: "Em ajuste", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "Unidade ou Sigla", statusTag: "Regular" },
-  { id: "00004", servidor: "Nome até 00 caract..", diretoria: "Diretoria A", status: "Em ajuste", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "Unidade ou Sigla", statusTag: "Em Ajuste" },
-  { id: "00005", servidor: "Nome até 00 caract..", diretoria: "Diretoria A", status: "Em ajuste", prazo: "20 Dias", descontos: "R$ 600,00", modalidade: "40h bimestral", unidade: "Unidade ou Sigla", statusTag: "Em Ajuste" },
+  { id: "00001", servidor: "Município 00 caract..", diretoria: "Fortaleza", status: "Em investigação", prazo: "20 Dias", descontos: "142 casos", modalidade: "Dengue", unidade: "Unidade ou Sigla", statusTag: "Regular" },
+  { id: "00002", servidor: "Município 00 caract..", diretoria: "Fortaleza", status: "Em investigação", prazo: "20 Dias", descontos: "142 casos", modalidade: "Dengue", unidade: "Unidade ou Sigla", statusTag: "Atenção" },
+  { id: "00003", servidor: "Município 00 caract..", diretoria: "Fortaleza", status: "Em investigação", prazo: "20 Dias", descontos: "142 casos", modalidade: "Dengue", unidade: "Unidade ou Sigla", statusTag: "Regular" },
+  { id: "00004", servidor: "Município 00 caract..", diretoria: "Fortaleza", status: "Em investigação", prazo: "20 Dias", descontos: "142 casos", modalidade: "Dengue", unidade: "Unidade ou Sigla", statusTag: "Em Ajuste" },
+  { id: "00005", servidor: "Município 00 caract..", diretoria: "Fortaleza", status: "Em investigação", prazo: "20 Dias", descontos: "142 casos", modalidade: "Dengue", unidade: "Unidade ou Sigla", statusTag: "Em Ajuste" },
 ];
 
 function StatusDot({ status }: { status: string }) {
@@ -88,7 +88,7 @@ function DashboardFooter() {
   return (
     <div className="flex items-center justify-end gap-3 px-5 py-2 border-t border-border bg-muted/30 rounded-b-lg">
       <img src={cisecLogoCompleta} alt="CISEC" className="h-5 w-auto opacity-60" />
-      <span className="text-[10px] text-muted-foreground">Programa - v.1.0</span>
+      <span className="text-[10px] text-muted-foreground">Painel CISEC · v.1.0</span>
     </div>
   );
 }
@@ -101,12 +101,12 @@ function AuditTable({ rows = tableRows }: { rows?: typeof tableRows }) {
         <thead>
           <tr className="bg-[#1F3051] text-white">
             <th className="px-3 py-2 text-left font-medium">ID</th>
-            <th className="px-3 py-2 text-left font-medium">Servidor</th>
-            <th className="px-3 py-2 text-left font-medium">Diretoria</th>
+            <th className="px-3 py-2 text-left font-medium">Município</th>
+            <th className="px-3 py-2 text-left font-medium">Regional</th>
             <th className="px-3 py-2 text-left font-medium">Status</th>
             <th className="px-3 py-2 text-left font-medium">Prazo</th>
-            <th className="px-3 py-2 text-left font-medium">Descontos</th>
-            <th className="px-3 py-2 text-left font-medium">Modalidade</th>
+            <th className="px-3 py-2 text-left font-medium">Casos</th>
+            <th className="px-3 py-2 text-left font-medium">Agravo</th>
             <th className="px-3 py-2 text-left font-medium">Unidade</th>
             <th className="px-3 py-2 text-left font-medium">Status</th>
           </tr>
@@ -171,8 +171,8 @@ function DonutSection({ title, subtitle }: { title: string; subtitle: string }) 
 function PerformanceSection() {
   return (
     <div className="bg-card rounded-lg border border-border p-4">
-      <p className="text-sm font-bold text-[#D98217] mb-1">Desempenho Geral dos Programas</p>
-      <p className="text-[10px] text-muted-foreground mb-3">20 programas listados - 2320 Colaboradores listados</p>
+      <p className="text-sm font-bold text-[#D98217] mb-1">Cobertura Geral dos Indicadores de Saúde</p>
+      <p className="text-[10px] text-muted-foreground mb-3">20 indicadores listados · 184 municípios monitorados</p>
       <div className="space-y-3">
         {performanceData.map((d, i) => (
           <div key={i} className="flex items-center gap-3">
@@ -193,7 +193,7 @@ function PerformanceSection() {
 function BarChartSection() {
   return (
     <div className="bg-card rounded-lg border border-border p-4">
-      <p className="text-sm font-bold text-[#D98217] mb-3">Servidores por Diretoria</p>
+      <p className="text-sm font-bold text-[#D98217] mb-3">Notificações por Regional de Saúde</p>
       <div className="h-48">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={barData}>
@@ -231,24 +231,24 @@ function DashboardCompleta() {
         {/* Resumo */}
         <div className="bg-card rounded-lg border border-border p-3">
           <p className="text-xs font-semibold text-foreground mb-3">
-            <span className="font-bold italic">Resumo da Pesquisa:</span> Categoria - prioridade - setor
+            <span className="font-bold italic">Resumo da Consulta:</span> Agravo · prioridade · regional
           </p>
 
           {/* KPI row — 3 colunas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <KPICard icon={Users} title="Total de Servidores" subtitle="Servidores em análise (filtrados)" value="1.019" borderColor="#1F3051" />
-            <KPICard icon={FileCheck} title="Servidores Regulares" subtitle="Filtro (listar todos)" value="80.00%" borderColor="#16A34A" />
-            <KPICard icon={FileX} title="Servidores Irregulares" subtitle="Filtro (listar todos)" value="20.00%" borderColor="#DC2626" />
-            <KPICard icon={Clock} title="Em Análise" subtitle="Aguardando conformidade" value="20.00%" borderColor="#D98217" />
-            <KPICard icon={ShieldCheck} title="Auditoria em Andamento" subtitle="Aguardando conformidade" value="2.00%" borderColor="#16A34A" />
-            <KPICard icon={RefreshCw} title="Atualização de Dados" subtitle="Aguardando conformidade" value="+120" borderColor="#D98217" />
+            <KPICard icon={Users} title="Total de Notificações" subtitle="Notificações no período (filtrado)" value="1.019" borderColor="#1F3051" />
+            <KPICard icon={FileCheck} title="Casos Encerrados" subtitle="Investigação concluída" value="80.00%" borderColor="#16A34A" />
+            <KPICard icon={FileX} title="Descartados" subtitle="Não confirmados" value="20.00%" borderColor="#DC2626" />
+            <KPICard icon={Clock} title="Em Investigação" subtitle="Aguardando encerramento" value="20.00%" borderColor="#D98217" />
+            <KPICard icon={ShieldCheck} title="Surtos Ativos" subtitle="Em monitoramento" value="2.00%" borderColor="#16A34A" />
+            <KPICard icon={RefreshCw} title="Atualização SINAN" subtitle="Novos registros no dia" value="+120" borderColor="#D98217" />
           </div>
         </div>
 
         {/* Table — full width */}
         <div className="bg-card rounded-lg border border-border p-4">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+            <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
             <div className="flex items-center gap-3 text-[10px]">
               <StatusDot status="Atenção" />
               <StatusDot status="Regular" />
@@ -264,7 +264,7 @@ function DashboardCompleta() {
 
         {/* Bottom: Donut + Bar chart */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <DonutSection title="Distribuição por Modalidade" subtitle="20 programas listados" />
+          <DonutSection title="Distribuição por Agravo" subtitle="20 agravos monitorados" />
           <BarChartSection />
         </div>
       </div>
@@ -288,11 +288,11 @@ function DashboardReduzida() {
           <p className="text-xs font-bold text-foreground mb-2">Resumo:</p>
 
           {[
-            { title: "Servidores Regulares", sub: "Filtro (listar todos)", value: "80.00%", color: "#16A34A" },
-            { title: "Servidores Irregulares", sub: "Filtro (listar todos)", value: "20.00%", color: "#DC2626" },
-            { title: "Em Análise", sub: "Aguardando conformidade", value: "20.00%", color: "#D98217" },
-            { title: "Auditoria em Andamento", sub: "Aguardando conformidade", value: "2.00%", color: "#16A34A" },
-            { title: "Total de Servidores", sub: "Servidores em análise (filtrados)", value: "1.019", color: "#1F3051" },
+            { title: "Casos Encerrados", sub: "Filtro (listar todos)", value: "80.00%", color: "#16A34A" },
+            { title: "Descartados", sub: "Filtro (listar todos)", value: "20.00%", color: "#DC2626" },
+            { title: "Em Análise", sub: "Em monitoramento", value: "20.00%", color: "#D98217" },
+            { title: "Surtos Ativos", sub: "Em monitoramento", value: "2.00%", color: "#16A34A" },
+            { title: "Total de Notificações", sub: "Notificações no período (filtrado)", value: "1.019", color: "#1F3051" },
           ].map((kpi, i) => (
             <div key={i} className="border-b border-border pb-3 last:border-0">
               <p className="text-xs font-semibold" style={{ color: kpi.color }}>{kpi.title}</p>
@@ -309,13 +309,13 @@ function DashboardReduzida() {
         <div className="p-4 space-y-4 min-w-0">
           {/* Search bar */}
           <p className="text-xs text-muted-foreground">
-            <span className="font-bold italic">Pesquisa:</span> Categoria - prioridade - setor
+            <span className="font-bold italic">Consulta:</span> Agravo · prioridade · regional
           </p>
 
           {/* Table */}
           <div className="bg-card rounded-lg border border-border p-4 min-w-0">
             <div className="flex items-center justify-between mb-3">
-              <p className="text-sm font-bold text-[#D98217]">Auditoria e Irregularidade</p>
+              <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
               <div className="flex items-center gap-3 text-[10px]">
                 <StatusDot status="Atenção" />
                 <StatusDot status="Regular" />
@@ -327,12 +327,12 @@ function DashboardReduzida() {
                 <thead>
                   <tr className="bg-[#1F3051] text-white">
                     <th className="px-3 py-2 text-left font-medium">ID</th>
-                    <th className="px-3 py-2 text-left font-medium">Servidor</th>
-                    <th className="px-3 py-2 text-left font-medium">Diretoria</th>
+                    <th className="px-3 py-2 text-left font-medium">Município</th>
+                    <th className="px-3 py-2 text-left font-medium">Regional</th>
                     <th className="px-3 py-2 text-left font-medium">Status</th>
                     <th className="px-3 py-2 text-left font-medium">Prazo</th>
-                    <th className="px-3 py-2 text-left font-medium">Descontos</th>
-                    <th className="px-3 py-2 text-left font-medium">Modalidade</th>
+                    <th className="px-3 py-2 text-left font-medium">Casos</th>
+                    <th className="px-3 py-2 text-left font-medium">Agravo</th>
                     <th className="px-3 py-2 text-left font-medium">Unidade</th>
                     <th className="px-3 py-2 text-left font-medium">Status</th>
                   </tr>
@@ -363,7 +363,7 @@ function DashboardReduzida() {
           </div>
 
           {/* Bottom chart — full width */}
-          <DonutSection title="Distribuição por Modalidade" subtitle="20 programas listados" />
+          <DonutSection title="Distribuição por Agravo" subtitle="20 agravos monitorados" />
         </div>
       </div>
 
