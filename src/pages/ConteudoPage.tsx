@@ -122,7 +122,7 @@ export default function ConteudoPage() {
         {[
           { t: "Palavra-chave no título", d: "Coloque o termo principal nos primeiros 60 caracteres do H1." },
           { t: "Meta descrição", d: "Resuma a página em 140–160 caracteres, com a palavra-chave principal." },
-          { t: "URLs curtas", d: "/abrir-mei é melhor que /artigos/2024/05/como-abrir-mei-passo-a-passo." },
+          { t: "URLs curtas", d: "/abrir-mei é melhor que /artigos/aaaa/mm/como-abrir-mei-passo-a-passo." },
           { t: "Hierarquia de títulos", d: "Use H1 uma vez por página; H2 e H3 para subseções, em ordem." },
           { t: "Texto alternativo", d: "Toda imagem precisa de alt descrevendo o conteúdo, não \"imagem 01\"." },
           { t: "Links descritivos", d: "Prefira \"baixar edital\" a \"clique aqui\" — ajuda usuário e buscador." },
