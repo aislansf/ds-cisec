@@ -1176,7 +1176,7 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       {/* Border Radius */}
-      <div className="cisec-card mb-8">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-4">Border Radius</h4>
         <div className="flex flex-wrap gap-4">
           {[
@@ -1200,7 +1200,7 @@ h1, h2, h3, h4, h5, h6 {
       <section aria-labelledby="motion" className="mb-12 sm:mb-16">
       <SectionHeader id="motion" title="Motion e Transições" description="Animações sutis para feedback e hierarquia de atenção." />
 
-      <div className="cisec-card mb-8">
+      <div className="cisec-card mb-6">
         <h4 className="text-sm font-semibold mb-3">Durações</h4>
         <div className="space-y-2 mb-6">
           {[
