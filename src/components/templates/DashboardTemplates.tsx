@@ -74,7 +74,7 @@ function KPICard({ icon: Icon, title, subtitle, value, borderColor }: {
 /* ─── Dashboard Header ─── */
 function DashboardHeader({ withTabs = false }: { withTabs?: boolean }) {
   return (
-    <header className="rounded-t-lg font-sans bg-[#F0F3FF]">
+    <header className="rounded-t-lg font-sans bg-cisec-blue-50">
       <div className="flex items-center gap-4 px-5 py-3 min-h-[56px]">
         <img src={cisecLogoCompleta} alt="CISEC" className="h-7 w-auto flex-shrink-0" />
         <div className="flex-1" />

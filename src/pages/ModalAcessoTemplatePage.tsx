@@ -8,7 +8,7 @@ import { CisecLogo } from "@/components/CisecLogo";
  *
  * IMPORTANTE: este é apenas um MODELO visual reutilizável.
  * Não use senha hardcoded em produção — para acesso restrito real
- * utilize autenticação via Lovable Cloud (Supabase).
+ * utilize autenticação no servidor (ex.: login gov.br ou provedor OAuth/OIDC).
  */
 export default function ModalAcessoTemplatePage() {
   const [open, setOpen] = useState(true);

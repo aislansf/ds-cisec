@@ -399,11 +399,10 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
           {collapsed ? <PanelLeftOpen size={20} className="text-header-foreground" /> : <PanelLeftClose size={20} className="text-header-foreground" />}
         </button>
 
-        <a
-          href="https://cisec-ce.dscreator.com.br/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Ir para o site do Design System CISEC"
+        <button
+          type="button"
+          onClick={() => navigate("/")}
+          aria-label="Ir para a página inicial do Design System CISEC"
           className="inline-flex items-center rounded focus:outline-none focus:ring-2 focus:ring-ring"
         >
           <img
@@ -411,7 +410,7 @@ export default function DSLayout({ children }: { children: React.ReactNode }) {
             alt="CISEC"
             className="h-9"
           />
-        </a>
+        </button>
 
         <div className="h-6 w-px bg-header-foreground/20" />
 

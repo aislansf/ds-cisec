@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -23,7 +24,6 @@ export default {
         editorial: ["Lora", "Georgia", "serif"],
         lora: ["Lora", "Georgia", "serif"],
         // Aliases legados mantidos para compatibilidade
-        poppins: ["Montserrat", "system-ui", "sans-serif"],
         system: ["Montserrat", "system-ui", "sans-serif"],
         lato: ["Montserrat", "system-ui", "sans-serif"],
       },
@@ -210,5 +210,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

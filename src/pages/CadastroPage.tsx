@@ -31,7 +31,7 @@ export default function CadastroPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col font-poppins animate-fade-in">
+    <div className="min-h-screen bg-background flex flex-col font-sans animate-fade-in">
       <Link
         to="/templates/pagina-autenticacao"
         className="fixed top-4 right-4 z-50 inline-flex items-center gap-1.5 bg-primary text-primary-foreground px-3 py-1.5 rounded text-xs font-medium hover:opacity-90 transition-opacity"

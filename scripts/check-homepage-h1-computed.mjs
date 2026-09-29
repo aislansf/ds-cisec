@@ -2,7 +2,7 @@
 /**
  * Valida em tempo de execução, via computed style do navegador (Chromium
  * headless / Playwright), que TODOS os <h1> renderizados na Homepage
- * resolvem para a cor institucional #005EB8 — mesmo na presença de
+ * resolvem para a cor institucional #1F3051 — mesmo na presença de
  * regras CSS mais específicas, herança ou overrides em runtime.
  *
  * Uso:
@@ -15,9 +15,9 @@
  * Valida em runtime, via computed style do navegador, a cor dos
  * títulos da Homepage de acordo com o Design System:
  *
- *   <h1>  → SEMPRE #005EB8  (regra global em src/index.css)
- *   <h2>  → token --foreground (cor base do body) OU primary #005EB8
- *   <h3>  → token --foreground (cor base do body) OU primary #005EB8
+ *   <h1>  → SEMPRE #1F3051  (regra global em src/index.css)
+ *   <h2>  → token --foreground (cor base do body) OU primary #1F3051
+ *   <h3>  → token --foreground (cor base do body) OU primary #1F3051
  *
  * Qualquer outra cor (text-white, text-muted-foreground, text-[#...],
  * destructive, etc.) é considerada divergência do DS e falha o build.
@@ -27,8 +27,8 @@ const url =
   process.argv.slice(2).find((a) => !a.startsWith("--")) ||
   process.env.CHECK_URL ||
   DEFAULT_URL;
-const PRIMARY_HEX = "#005EB8";
-const PRIMARY_RGB = "rgb(0, 94, 184)";
+const PRIMARY_HEX = "#1F3051";
+const PRIMARY_RGB = "rgb(31, 48, 81)";
 
 function fail(msg) {
   console.error(`✗ Homepage H1 computed-color FAIL: ${msg}`);
@@ -176,8 +176,8 @@ async function checkViewport(vp) {
         issues.push(`font-weight=${it.fontWeight} (esperado ${tokens.section.fontWeight})`);
       if (it.letterSpacing !== tokens.normalLetterSpacing)
         issues.push(`letter-spacing=${it.letterSpacing} (esperado ${tokens.normalLetterSpacing})`);
-      if (!/poppins/i.test(it.fontFamily))
-        issues.push(`font-family=${it.fontFamily} (esperado Poppins)`);
+      if (!/montserrat/i.test(it.fontFamily))
+        issues.push(`font-family=${it.fontFamily} (esperado Montserrat)`);
       if (issues.length) {
         metricsErrors.push(`<${tag}> "${it.text}" → ${issues.join("; ")}`);
       }
@@ -188,7 +188,7 @@ async function checkViewport(vp) {
   }
 
   // h1 → não há token global de tamanho (PageHeader define escala
-  // responsiva). Validamos invariantes do DS: Poppins, peso ≥ 600,
+  // responsiva). Validamos invariantes do DS: Montserrat, peso ≥ 600,
   // letter-spacing normal e fonte estritamente maior que h2.
   const h1Items = await page.$$eval("h1", (els) =>
     els.map((el) => {
@@ -206,8 +206,8 @@ async function checkViewport(vp) {
   metricsTotal += h1Items.length;
   for (const it of h1Items) {
     const issues = [];
-    if (!/poppins/i.test(it.fontFamily))
-      issues.push(`font-family=${it.fontFamily} (esperado Poppins)`);
+    if (!/montserrat/i.test(it.fontFamily))
+      issues.push(`font-family=${it.fontFamily} (esperado Montserrat)`);
     if (parseInt(it.fontWeight, 10) < 600)
       issues.push(`font-weight=${it.fontWeight} (esperado ≥ 600)`);
     if (it.fontSize <= tokens.section.fontSize)

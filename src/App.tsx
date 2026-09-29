@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeProvider } from "@/hooks/useTheme";
 import DSLayout from "@/components/DSLayout";
 import HomePage from "@/pages/HomePage";
 import RouteLoadingFallback from "@/components/RouteLoadingFallback";
@@ -12,7 +13,7 @@ function lazyWithRetry<T extends { default: React.ComponentType<unknown> }>(
   factory: () => Promise<T>,
 ) {
   return lazy(async () => {
-    const flag = "lovable:chunk-reloaded";
+    const flag = "ds-cisec:chunk-reloaded";
     try {
       return await factory();
     } catch (err) {
@@ -51,6 +52,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
+    <ThemeProvider>
     <TooltipProvider>
       <BrowserRouter>
         <Suspense fallback={<RouteLoadingFallback />}>
@@ -93,6 +95,7 @@ const App = () => (
         </Suspense>
       </BrowserRouter>
     </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

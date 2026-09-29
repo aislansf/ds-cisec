@@ -22,7 +22,7 @@ export default function PaginaAutenticacaoPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col font-poppins animate-fade-in">
+    <div className="min-h-screen bg-background flex flex-col font-sans animate-fade-in">
       {/* Botão flutuante para voltar ao DS (padrão dos templates) */}
       <Link
         to="/templates"

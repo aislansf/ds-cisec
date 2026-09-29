@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
  * Garante que todos os <h1> renderizados na Homepage herdam a cor
- * institucional #005EB8 definida globalmente em src/index.css.
+ * institucional #1F3051 definida globalmente em src/index.css.
  *
  * Estratégia (estática, sem runtime):
- *  1. Confirma que src/index.css contém a regra global `h1 { color: #005EB8 }`.
+ *  1. Confirma que src/index.css contém a regra global `h1 { color: #1F3051 }`.
  *  2. Varre HomePage.tsx + componentes que ela usa (PageHeader em
  *     DSComponents.tsx) procurando tags <h1 ...> e falha se algum
  *     className contiver utilitário de cor que sobrescreva o padrão.
