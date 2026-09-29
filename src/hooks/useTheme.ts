@@ -1,10 +1,17 @@
-import { useState, useEffect, useCallback } from "react";
+import { createContext, useContext, useState, useEffect, useCallback, ReactNode, createElement } from "react";
 
 type Theme = "light" | "dark";
 
 const STORAGE_KEY = "cisec-ds-theme";
 
-export function useTheme() {
+interface ThemeContextValue {
+  theme: Theme;
+  toggleTheme: () => void;
+}
+
+const ThemeContext = createContext<ThemeContextValue | null>(null);
+
+export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
       const stored = localStorage.getItem(STORAGE_KEY) as Theme | null;
@@ -27,5 +34,13 @@ export function useTheme() {
     setThemeState(prev => (prev === "light" ? "dark" : "light"));
   }, []);
 
-  return { theme, toggleTheme };
+  return createElement(ThemeContext.Provider, { value: { theme, toggleTheme } }, children);
+}
+
+export function useTheme() {
+  const ctx = useContext(ThemeContext);
+  if (!ctx) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return ctx;
 }

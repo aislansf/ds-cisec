@@ -4,6 +4,7 @@ import { Download, FileText, BarChart3, ShieldAlert, Users } from "lucide-react"
 import {
   cisecHorizontalCor,
   cisecHorizontalWhite,
+  cisecWhiteHeader,
   cisecCompletaLinhaCor,
   cisecCompletaCor,
   cisecCompletaLinhaWhite,
@@ -152,13 +153,13 @@ export default function MarcaPage() {
     <div>
       <SEO
         title="Marca CISEC — Design System"
-        description="Diretrizes oficiais da marca CISEC — símbolo, versões, paleta, tipografia e aplicações — conforme o Manual de Marca CISEC (ESP/CE), versão 4/2026."
+        description="Diretrizes oficiais da marca CISEC — símbolo, versões, paleta, tipografia e aplicações — conforme o Manual de Marca CISEC, versão 4/2026."
         path="/marca"
       />
       <PageHeader
         badge="Manual de Marca · v4/2026"
         title="Marca CISEC"
-        description="Diretrizes oficiais da marca do Centro de Inteligência em Saúde do Estado do Ceará (CISEC/ESP-CE): símbolo, versões, área de proteção, paleta, tipografia, aplicações e usos indevidos."
+        description="Diretrizes oficiais da marca do Centro de Inteligência em Saúde e Cidadania (CISEC): símbolo, versões, área de proteção, paleta, tipografia, aplicações e usos indevidos."
       />
 
       {/* 1. Sobre o CISEC */}
@@ -166,7 +167,7 @@ export default function MarcaPage() {
         id="sobre-cisec"
         badge="Contexto institucional"
         title="Sobre o CISEC"
-        description="O CISEC é o Centro de Inteligência em Saúde do Estado do Ceará. Vinculado à Escola de Saúde Pública do Ceará (ESP/CE), atua como um hub centralizado para capturar, processar e analisar dados de saúde, transformando-os em informações estratégicas para gestores públicos, profissionais de saúde e a sociedade."
+        description="O CISEC é o CENTRO DE INTELIGÊNCIA DA SAÚDE E CIDADANIA. Atua como um hub centralizado para capturar, processar e analisar dados de saúde, transformando-os em informações estratégicas para gestores públicos, profissionais de saúde e a sociedade."
       />
       <div className="cisec-card mb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -282,7 +283,7 @@ export default function MarcaPage() {
           </div>
           <div className="space-y-2">
             <LogoFrame
-              src={cisecHorizontalWhite}
+              src={cisecWhiteHeader}
               alt="Marca CISEC negativo sobre laranja."
               bg=""
               imgClassName="h-16"
@@ -550,7 +551,7 @@ export default function MarcaPage() {
             </p>
           </div>
           <div className="rounded-lg border border-border bg-muted/30 p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-primary mb-1">Parcerias · ESP/CE e Governo do Ceará</p>
+            <p className="text-[11px] font-bold uppercase tracking-wider text-primary mb-1">Parcerias ·  e Governo do Ceará</p>
             <ul className="text-xs text-muted-foreground leading-relaxed space-y-1 list-disc pl-4">
               <li>Alinhe as marcas pelo centro, respeitando a área de proteção de cada uma.</li>
               <li>O ajuste de tamanho entre marcas de proporções diferentes deve ser <strong>óptico</strong>, não literal.</li>
@@ -581,7 +582,7 @@ export default function MarcaPage() {
           ))}
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed mt-4">
-          Em caso de dúvida sobre uma aplicação específica, consulte a equipe de comunicação do <strong>CISEC/ESP-CE</strong> antes de publicar o material.
+          Em caso de dúvida sobre uma aplicação específica, consulte a equipe de comunicação do <strong>CISEC</strong> antes de publicar o material.
         </p>
       </div>
 

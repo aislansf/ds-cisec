@@ -147,7 +147,7 @@ export default function PaginaFiltrosTabelaPage() {
       </Link>
 
       {/* ═══ Header · Fundo claro · Marca completa com título e subtítulo ═══ */}
-      <header className="bg-[#F0F3FF] border-b border-border flex items-center px-5 py-3 gap-4 min-h-[64px] shrink-0 sticky top-0 z-40">
+      <header className="bg-cisec-blue-50 border-b border-border flex items-center px-5 py-3 gap-4 min-h-[64px] shrink-0 sticky top-0 z-40">
         <button
           onClick={() => setSidebarOpen(o => !o)}
           className="p-1.5 hover:bg-[#0024A9]/10 rounded flex items-center gap-1.5 transition-colors shrink-0"
@@ -444,7 +444,7 @@ export default function PaginaFiltrosTabelaPage() {
         <section className="bg-card rounded-lg border border-border overflow-hidden flex flex-col">
           <div className="flex items-center justify-between px-4 py-3 border-b border-border">
             <div>
-              <h1 className="text-base font-semibold" style={{ color: "#16329C" }}>Iniciativas</h1>
+              <h1 className="text-base font-semibold" style={{ color: "#1F3051" }}>Iniciativas</h1>
               <p className="text-xs text-muted-foreground">
                 {filtered.length} de {rows.length} resultado{rows.length === 1 ? "" : "s"}
               </p>
@@ -453,7 +453,7 @@ export default function PaginaFiltrosTabelaPage() {
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-[#16329C] text-white">
+              <thead className="bg-[#1F3051] text-white">
                 <tr>
                   <th className="text-left font-medium px-4 py-2.5">ID</th>
                   <th className="text-left font-medium px-4 py-2.5">Iniciativa</th>

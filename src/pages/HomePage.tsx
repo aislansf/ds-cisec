@@ -6,8 +6,7 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/DSComponents";
 import { SEO } from "@/components/SEO";
-import { cisecWhite as cisecLogo } from "@/assets/cisec";
-import cisecHeroDark from "@/assets/marca/cisec-hero-dark.png.asset.json";
+import { cisecWhite as cisecLogo, cisecNegativo } from "@/assets/cisec";
 import { useTheme } from "@/hooks/useTheme";
 
 const sections = [
@@ -101,7 +100,7 @@ export default function HomePage() {
       {/* Hero */}
       <div className="rounded-xl bg-primary text-primary-foreground p-8 md:p-10 mb-10">
         <img
-          src={theme === "dark" ? cisecHeroDark.url : cisecLogo}
+          src={theme === "dark" ? cisecNegativo : cisecLogo}
           alt="Marca CISEC"
           className={
             theme === "dark"
@@ -143,7 +142,7 @@ export default function HomePage() {
       {/* === Brandbook Cisec · Março 2026 — Expressões Verbais === */}
       <section className="mb-12">
         <div className="flex items-baseline justify-between flex-wrap gap-2 mb-1">
-          <h2 className="text-xl font-bold" style={{ color: "#005EB8" }}>Brandbook Cisec · Março 2026</h2>
+          <h2 className="text-xl font-bold" style={{ color: "#1F3051" }}>Brandbook Cisec · Março 2026</h2>
         </div>
         <p className="text-xs text-muted-foreground mb-4">
           Conteúdo extraído literalmente do Guia de marca oficial do Cisec (pgs. 31–58).
@@ -193,7 +192,7 @@ export default function HomePage() {
         {/* Tom de voz — 4 pilares */}
         <div className="flex items-center gap-2 mb-3">
           <MessageCircle size={16} className="text-primary" />
-          <h3 className="text-sm font-bold uppercase tracking-wider" style={{ color: "#005EB8" }}>
+          <h3 className="text-sm font-bold uppercase tracking-wider" style={{ color: "#1F3051" }}>
             Tom de voz · 4 pilares
           </h3>
         </div>
@@ -282,7 +281,7 @@ export default function HomePage() {
       </section>
 
       {/* Principles */}
-      <h2 className="text-xl font-bold mb-4" style={{ color: "#005EB8" }}>Princípios</h2>
+      <h2 className="text-xl font-bold mb-4" style={{ color: "#1F3051" }}>Princípios</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
         {principles.map((p) => (
           <div key={p.title} className="cisec-card">
@@ -296,7 +295,7 @@ export default function HomePage() {
       </div>
 
       {/* Sections */}
-      <h2 className="text-xl font-bold mb-4" style={{ color: "#005EB8" }}>Navegue pelo sistema</h2>
+      <h2 className="text-xl font-bold mb-4" style={{ color: "#1F3051" }}>Navegue pelo sistema</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {sections.map((s) => (
           <button key={s.path} onClick={() => navigate(s.path)} className="cisec-card-hover text-left group">

@@ -51,7 +51,7 @@ export default function TwoFactorPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col font-poppins animate-fade-in">
+    <div className="min-h-screen bg-background flex flex-col font-sans animate-fade-in">
       <div className="flex-1 flex overflow-hidden">
         {/* Lado Esquerdo: Marca e Imagem (Desktop) */}
         <div className="hidden lg:flex lg:w-1/2 relative bg-[#1F3051] overflow-hidden">

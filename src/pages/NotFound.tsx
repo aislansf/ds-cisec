@@ -16,7 +16,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-muted/30 flex flex-col items-center justify-center p-4 font-poppins animate-fade-in">
+    <div className="min-h-screen bg-muted/30 flex flex-col items-center justify-center p-4 font-sans animate-fade-in">
       <Helmet>
         <title>Página não encontrada — Design System CISEC</title>
         <meta name="description" content="A página solicitada não existe ou foi movida. Volte para o portal do Design System CISEC." />

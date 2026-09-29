@@ -63,16 +63,16 @@ export const headerVariants: HeaderVariant[] = [
   { id: "cls-full-left", title: "Marca completa · Classificação de conteúdo", description: "Header com barra de classificação do conteúdo abaixo.", audience: "interno-classificado", brandStyle: "completa", menuPosition: "esquerda", showClassification: true },
   { id: "cls-full-right", title: "Marca completa · Classificação · Menu direito", description: "Com classificação e menu à direita.", audience: "interno-classificado", brandStyle: "completa", menuPosition: "direita", showClassification: true },
   // Público externo
-  { id: "ext-full-left", title: "Público externo · Background\u00a0Sky to Ocean", description: "Versão externa com menu à direita e background Sky to Ocean", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
-  { id: "ext-full-right", title: "Público externo · Background descolado", description: "Versão externa com menu à direita e background Carnaval.", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
-  { id: "ext-red-left", title: "Público externo · Background Tropical", description: "Versão externa com menu à direita e background Tropical", audience: "externo", brandStyle: "reduzida", menuPosition: "direita" },
+  { id: "ext-full-left", title: "Público externo · Degradê Azul Institucional", description: "Versão externa com menu à direita e degradê Azul Institucional (100% → 80%)", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
+  { id: "ext-full-right", title: "Público externo · Azul com acento Laranja", description: "Versão externa com menu à direita, degradê Azul Institucional e filete Laranja CISEC.", audience: "externo", brandStyle: "completa", menuPosition: "direita" },
+  { id: "ext-red-left", title: "Público externo · Degradê Laranja claro", description: "Versão externa com menu à direita e degradê Laranja CISEC (20% → 80%)", audience: "externo", brandStyle: "reduzida", menuPosition: "direita" },
   // Fundo claro — Programa e Gestão
   { id: "claro-full", title: "Fundo claro · Marca completa com título e subtítulo", description: "Header com fundo dourado, marca completa CISEC, título do programa e assinatura Gov.br.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: true },
   { id: "claro-full-clean", title: "Fundo claro · Marca completa · Sem título", description: "Header limpo com fundo dourado, marca completa CISEC e assinatura Gov.br, sem título do programa.", audience: "claro-completa", brandStyle: "completa", menuPosition: "sem", showTitle: false },
   // Testeira para aplicação de arte
-  { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #16329C, marca CISEC branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#16329C" } },
+  { id: "int-testeira-art", title: "Testeira · Aplicação de arte", description: "Faixa fina (36-52px) com fundo #4C5974 (Azul 80%), marca CISEC branca e menu à esquerda — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#4C5974" } },
   { id: "int-testeira-art-blue", title: "Testeira · Aplicação de arte (Azul)", description: "Faixa fina (36-52px) com fundo #1F3051, menu à esquerda e ícone de modo escuro — ideal para aplicação de arte na testeira.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#1F3051" } },
-  { id: "int-testeira-art-light", title: "Testeira · Aplicação de arte (Claro)", description: "Faixa fina (36-52px) com fundo branco, menu à esquerda e ícone de modo escuro na cor #16329C — ideal para aplicação de arte na testeira em fundo claro.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#FFFFFF", fg: "#16329C", border: true } },
+  { id: "int-testeira-art-light", title: "Testeira · Aplicação de arte (Claro)", description: "Faixa fina (36-52px) com fundo branco, menu à esquerda e ícone de modo escuro na cor #1F3051 — ideal para aplicação de arte na testeira em fundo claro.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", showTitle: false, testeira: { bg: "#FFFFFF", fg: "#1F3051", border: true } },
   // Composição visual (negócios)
   { id: "int-visual-business", title: "Composição visual (negócios)", description: "Header institucional com faixa visual de 112px acima — composição para campanhas e portais de negócios.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", visualBanner: { src: headerBusinessBg, alt: "Clareza que o mercado exige para o futuro dos negócios", height: 112 } },
   { id: "int-visual-business-clean", title: "Composição visual (negócios) · Sem título", description: "Header institucional com faixa visual de 112px — sem SIGLA e sem nome do sistema.", audience: "interno", brandStyle: "completa", menuPosition: "esquerda", visualBanner: { src: headerBusinessBg, alt: "Clareza que o mercado exige para o futuro dos negócios", height: 112 }, showTitle: false },
@@ -229,13 +229,13 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
         className={`${variant.visualBanner ? "" : `${bg} min-h-[56px]`} ${variant.id === "ext-red-left" ? "" : "text-white"} flex items-center px-4 gap-3`}
         style={
           variant.visualBanner
-            ? { height: "36px", minHeight: "36px", maxHeight: "52px", backgroundColor: "#123148" }
+            ? { height: "36px", minHeight: "36px", maxHeight: "52px", backgroundColor: "#1F3051" }
             : variant.id === "ext-full-left"
-            ? { backgroundImage: "linear-gradient(90deg, #005EB8 0%, #40BBFF 100%)" }
+            ? { backgroundImage: "linear-gradient(90deg, #1F3051 0%, #4C5974 100%)" }
             : variant.id === "ext-full-right"
-            ? { backgroundImage: "linear-gradient(120deg, #9285F9 0%, #CD5BE8 50%, #F4455A 100%)" }
+            ? { backgroundImage: "linear-gradient(120deg, #4C5974 0%, #1F3051 100%)", borderBottom: "3px solid #FF9E20" }
             : variant.id === "ext-red-left"
-            ? { backgroundImage: "linear-gradient(120deg, #84F4BC 0%, #40BBFF 100%)", color: "#16329C" }
+            ? { backgroundImage: "linear-gradient(120deg, #FFECD2 0%, #FFB14C 100%)", color: "#1F3051" }
             : undefined
         }
       >
@@ -263,21 +263,21 @@ export function HeaderPreview({ variant }: { variant: HeaderVariant }) {
               ) : (
                 <img src={variant.id === "ext-red-left" ? cisecLogo : cisecLogoWhite} alt="CISEC" className="h-[22px] w-auto" />
               )}
-              <span className={variant.id === "ext-red-left" ? "text-sm self-center" : "text-white/60 text-sm self-center"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.6 } : undefined}>|</span>
-              <span className="font-semibold text-sm leading-none self-center" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>{sigla}</span>
-              <span className={variant.id === "ext-red-left" ? "text-sm truncate self-center leading-none" : "text-sm text-white/80 truncate self-center leading-none"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.85 } : undefined}>{systemName}</span>
+              <span className={variant.id === "ext-red-left" ? "text-sm self-center" : "text-white/60 text-sm self-center"} style={variant.id === "ext-red-left" ? { color: "#1F3051", opacity: 0.6 } : undefined}>|</span>
+              <span className="font-semibold text-sm leading-none self-center" style={variant.id === "ext-red-left" ? { color: "#1F3051" } : undefined}>{sigla}</span>
+              <span className={variant.id === "ext-red-left" ? "text-sm truncate self-center leading-none" : "text-sm text-white/80 truncate self-center leading-none"} style={variant.id === "ext-red-left" ? { color: "#1F3051", opacity: 0.85 } : undefined}>{systemName}</span>
             </>
           )}
         </div>
 
         {/* Theme toggle */}
         <button className="p-1.5 hover:bg-white/10 rounded transition-colors" aria-label="Alternar tema">
-          <Sun size={16} className={variant.id === "ext-red-left" ? "" : "text-white/80"} style={variant.id === "ext-red-left" ? { color: "#16329C", opacity: 0.85 } : undefined} />
+          <Sun size={16} className={variant.id === "ext-red-left" ? "" : "text-white/80"} style={variant.id === "ext-red-left" ? { color: "#1F3051", opacity: 0.85 } : undefined} />
         </button>
 
         {/* Menu hamburger (right) */}
         {variant.menuPosition === "direita" && (
-          <button className="p-1.5 hover:bg-white/10 rounded flex items-center gap-1.5 transition-colors shrink-0" aria-label="Menu" style={variant.id === "ext-red-left" ? { color: "#16329C" } : undefined}>
+          <button className="p-1.5 hover:bg-white/10 rounded flex items-center gap-1.5 transition-colors shrink-0" aria-label="Menu" style={variant.id === "ext-red-left" ? { color: "#1F3051" } : undefined}>
             <Menu size={18} />
             <span className="text-[10px] hidden sm:inline">Menu</span>
           </button>
@@ -369,7 +369,7 @@ function generateHeaderCode(variant: HeaderVariant): string {
 
   const menuLeft = variant.menuPosition === "esquerda";
   const menuRight = variant.menuPosition === "direita";
-  const effectiveBgHex = variant.visualBanner ? "#123148" : bgHex;
+  const effectiveBgHex = variant.visualBanner ? "#1F3051" : bgHex;
   const logoHtml = variant.visualBanner
     ? ""
     : variant.brandStyle === "completa"
@@ -468,7 +468,9 @@ export default function TemplatesPage() {
     try {
       const saved = localStorage.getItem("custom-thumb-dashboard-institucional");
       if (saved) setCustomDashboardThumb(saved);
-    } catch {}
+    } catch {
+      // localStorage indisponível (modo privado / bloqueado): segue sem thumb customizada
+    }
   }, []);
 
   const ALLOWED_THUMB_TYPES = ["image/jpeg", "image/png", "image/webp"];
@@ -512,7 +514,7 @@ export default function TemplatesPage() {
 
   const resetCustomThumb = () => {
     setCustomDashboardThumb(null);
-    try { localStorage.removeItem("custom-thumb-dashboard-institucional"); } catch {}
+    try { localStorage.removeItem("custom-thumb-dashboard-institucional"); } catch { /* localStorage indisponível */ }
   };
 
   const componentTabs = [

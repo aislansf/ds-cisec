@@ -1,39 +1,40 @@
 // Marca oficial CISEC — fonte única para uso em toda a aplicação.
 // Fontes: Manual de Marca CISEC (Escola de Saúde Pública do Ceará), v4/2026.
-import cor from "./marca/cisec-cor.svg.asset.json";
-import white from "./marca/cisec-white.svg.asset.json";
-import black from "./marca/cisec-black.svg.asset.json";
-import horizontalCor from "./marca/cisec-horizontal-cor.png.asset.json";
-import horizontalWhite from "./marca/cisec-horizontal-white.png.asset.json";
-import completaCor from "./marca/cisec-completa-cor.png.asset.json";
-import completaLinhaCor from "./marca/cisec-completa-linha-cor.png.asset.json";
-import completaWhite from "./marca/cisec-completa-white.png.asset.json";
-import completaLinhaWhite from "./marca/cisec-completa-linha-white.png.asset.json";
-import simboloLaranja from "./marca/cisec-simbolo-laranja.png.asset.json";
-import simboloPreto from "./marca/cisec-simbolo-preto.png.asset.json";
-import simboloBranco from "./marca/cisec-simbolo-branco.png.asset.json";
+import cor from "./cisec-logo-cor.svg";
+import white from "./cisec-logo-white.svg";
+import whiteHeader from "./cisec-logo-white-header.svg";
+import negativo from "./cisec-logo-negativo.svg";
+import simboloPreto from "./cisec-simbolo.svg";
+import simboloBranco from "./cisec-simbolo-negativo.svg";
+import simboloLaranja from "./cisec-simbolo-negativo-cromatico-laranja.svg";
+import completaCor from "./cisec-logo-completa-compacta.svg";
+import completaLinhaCor from "./cisec-logo-completa-com-linhas.svg";
+import completaLinhaWhite from "./cisec-logo-completa-com-linhas-negativo.svg";
+import completaWhite from "./cisec-logo-completa-compacta-negativo.svg";
 
 // Aliases legados (mantidos para compatibilidade com imports existentes)
-export const cisecCor: string = horizontalCor.url;
-export const cisecWhite: string = horizontalWhite.url;
-export const cisecBlack: string = cor.url;
+export const cisecCor: string = cor;
+export const cisecWhite: string = white;
+export const cisecBlack: string = cor;
 
 // Marca horizontal (assinatura principal)
-export const cisecHorizontalCor: string = horizontalCor.url;
-export const cisecHorizontalWhite: string = horizontalWhite.url;
+export const cisecHorizontalCor: string = cor;
+export const cisecHorizontalWhite: string = white;
+export const cisecWhiteHeader: string = whiteHeader;
+export const cisecNegativo: string = negativo;
 
 // Versões compostas com nome institucional
-export const cisecCompletaCor: string = completaCor.url;
-export const cisecCompletaLinhaCor: string = completaLinhaCor.url;
-export const cisecCompletaWhite: string = completaWhite.url;
-export const cisecCompletaLinhaWhite: string = completaLinhaWhite.url;
+export const cisecCompletaCor: string = completaCor;
+export const cisecCompletaLinhaCor: string = completaLinhaCor;
+export const cisecCompletaWhite: string = completaWhite;
+export const cisecCompletaLinhaWhite: string = completaLinhaWhite;
 
 // Símbolos isolados
-export const cisecSimboloLaranja: string = simboloLaranja.url;
-export const cisecSimboloPreto: string = simboloPreto.url;
-export const cisecSimboloBranco: string = simboloBranco.url;
+export const cisecSimboloLaranja: string = simboloLaranja;
+export const cisecSimboloPreto: string = simboloPreto;
+export const cisecSimboloBranco: string = simboloBranco;
 
 // Legado SVG (mantido para uso alternativo)
-export const cisecCorSvg: string = cor.url;
-export const cisecWhiteSvg: string = white.url;
-export const cisecBlackSvg: string = black.url;
+export const cisecCorSvg: string = cor;
+export const cisecWhiteSvg: string = white;
+export const cisecBlackSvg: string = cor;

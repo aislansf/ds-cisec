@@ -33,7 +33,7 @@ describe("SidebarMenuPreview — 320px / logo 36×36", () => {
 
   it("aplica truncate e min-w-0 nos rótulos dos itens para evitar corte/overflow", () => {
     render(<SidebarMenuPreview />);
-    const labels = ["Início", "Programas", "Usuários", "Notificações", "Configurações"];
+    const labels = ["Início", "Vigilância em Saúde", "Profissionais de Saúde", "Notificações", "Configurações"];
     for (const label of labels) {
       const el = screen.getAllByText(label)[0];
       expect(el.className).toMatch(/truncate/);

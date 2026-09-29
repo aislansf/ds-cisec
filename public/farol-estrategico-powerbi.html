@@ -4,13 +4,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Farol Estratégico — Power BI HTML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <!-- Chart.js via CDN (compatível com o visual "HTML Content" do Power BI) -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   :root{
-    --primary:#005EB8;
-    --primary-2:#16329C;
-    --secondary:#2A4FDA;
+    --primary:#1F3051;
+    --primary-2:#1F3051;
+    --secondary:#FF9E20;
     --bg:#F5F7FB;
     --card:#FFFFFF;
     --fg:#0F172A;
@@ -22,7 +25,7 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
-    font-family:'Poppins','Segoe UI',system-ui,sans-serif;font-size:13px;line-height:1.4}
+    font-family:'Montserrat','Segoe UI',system-ui,sans-serif;font-size:13px;line-height:1.4}
   a{color:inherit;text-decoration:none}
   .app{padding:16px;max-width:1600px;margin:0 auto}
   .header{background:var(--primary-2);color:#fff;border-radius:8px;padding:14px 18px;
@@ -53,7 +56,7 @@
   .kpi.k-success::before{background:var(--success)}
   .kpi.k-warning::before{background:var(--warning)}
   .kpi .v{font-size:22px;font-weight:700;color:var(--primary)}
-  .kpi.k-secondary .v{color:var(--secondary)}
+  .kpi.k-secondary .v{color:var(--primary)}
   .kpi.k-success .v{color:var(--success)}
   .kpi.k-warning .v{color:var(--warning)}
   .kpi .l{font-size:11px;color:var(--muted);margin-top:4px}
@@ -67,7 +70,7 @@
   .chart-sm{position:relative;height:260px}
 
   table{width:100%;border-collapse:collapse;font-size:12px}
-  thead th{background:#F0F3FF;color:var(--primary-2);font-weight:600;
+  thead th{background:#D2D8E9;color:var(--primary-2);font-weight:600;
     text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-size:11px;
     text-transform:uppercase;letter-spacing:.04em}
   tbody td{padding:8px 10px;border-bottom:1px solid var(--border)}
@@ -193,8 +196,8 @@ despesasMensais.forEach(r=>{
 });
 
 /* ── Gráficos (Chart.js) ── */
-const C={primary:"#005EB8",secondary:"#2A4FDA",muted:"#94A3B8",border:"#E2E8F0"};
-Chart.defaults.font.family="'Poppins','Segoe UI',sans-serif";
+const C={primary:"#1F3051",secondary:"#FF9E20",muted:"#94A3B8",border:"#E2E8F0"};
+Chart.defaults.font.family="'Montserrat','Segoe UI',sans-serif";
 Chart.defaults.font.size=11;
 Chart.defaults.color="#475569";
 
@@ -216,7 +219,7 @@ new Chart(document.getElementById("chartTrimestre"),{
   type:"doughnut",
   data:{labels:trimestres.map(t=>t.l),
     datasets:[{data:trimestres.map(t=>t.v),
-      backgroundColor:["#005EB8","#2A4FDA","#94A3B8","#CBD5E1"],borderWidth:2}]},
+      backgroundColor:["#1F3051","#FF9E20","#94A3B8","#CBD5E1"],borderWidth:2}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:"60%",
     plugins:{legend:{position:"bottom",labels:{boxWidth:10}},
       tooltip:{callbacks:{label:c=>` ${c.label}: ${fmtFull(c.parsed)}`}}}}

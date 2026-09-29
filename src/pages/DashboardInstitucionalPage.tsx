@@ -229,7 +229,7 @@ export default function DashboardInstitucionalPage() {
       </Link>
 
       {/* ═══ HEADER · Fundo claro · Marca completa com título e subtítulo ═══ */}
-      <header className="bg-[#F0F3FF] border-b border-border flex items-center px-5 py-3 gap-4 min-h-[64px] shrink-0 sticky top-0 z-40">
+      <header className="bg-cisec-blue-50 border-b border-border flex items-center px-5 py-3 gap-4 min-h-[64px] shrink-0 sticky top-0 z-40">
         {/* Menu hamburger (à esquerda) */}
         <button
           onClick={() => setSidebarOpen((o) => !o)}

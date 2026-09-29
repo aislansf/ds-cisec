@@ -8,10 +8,6 @@
   <url><loc>https://cisec-ce.dscreator.com.br/marca</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/conteudo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/acessibilidade</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cisec-ce.dscreator.com.br/modelos-bi</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cisec-ce.dscreator.com.br/modelos-bi/farol-estrategico</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cisec-ce.dscreator.com.br/modelos-bi/farol-estrategico/bi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://cisec-ce.dscreator.com.br/modelos-bi/farol-estrategico/docs</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/templates/dashboard-institucional</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/templates/dashboard-bi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/templates/tela-listagem</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -22,4 +18,5 @@
   <url><loc>https://cisec-ce.dscreator.com.br/templates/pagina-erro</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/templates/modal-acesso</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://cisec-ce.dscreator.com.br/templates/pagina-filtros-tabela</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://cisec-ce.dscreator.com.br/templates/farol-estrategico</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

@@ -188,7 +188,7 @@ export default function FundamentosPage() {
       <SectionHeader
         id="tipografia"
         title="Tipografia"
-        description="O Design System CISEC adota o trio tipográfico alinhado ao portal cisec.com.br: Montserrat (primária, corpo/UI), Lora (secundária, display proprietária) e Lato (sistêmica, apoio institucional)."
+        description="O Design System CISEC adota o trio tipográfico alinhado ao portal cisec.com.br: Montserrat (primária, corpo/UI), Lora (secundária, display) e Lato (sistêmica, apoio institucional)."
       />
 
       {/* Famílias oficiais — grid responsivo com alturas equalizadas */}
@@ -267,7 +267,7 @@ export default function FundamentosPage() {
         <FontFamilyCard
           badge="Fonte Secundária"
           badgeClass="bg-secondary text-secondary-foreground"
-          source="Proprietária Cisec · CDN AEM"
+          source="Google Fonts (open-source)"
           name="Lora"
           fontStack="'Lora', 'Montserrat', sans-serif"
           summary="Sans-serif de display com personalidade institucional. Reservada para títulos de impacto, hero e números em destaque."
@@ -286,12 +286,12 @@ export default function FundamentosPage() {
           powerBi="Aplicar apenas em títulos de cartões KPI e cabeçalhos de páginas. Para o restante mantenha Montserrat. Caso o ambiente Power BI não carregue Lora, o fallback automático é Montserrat."
           cssVar="--font-display"
           tailwindClass="font-heading · font-display"
-          cssSnippet={`/* CSS puro */\n@font-face {\n  font-family: 'Lora';\n  src: url('/fonts/campuni-bold.woff2') format('woff2');\n  font-weight: 700;\n  font-display: swap;\n}\n\n.titulo-hero {\n  font-family: 'Lora', 'Montserrat', sans-serif;\n  font-weight: 700;\n  line-height: 1.1;\n}`}
-          htmlSnippet={`<!-- HTML standalone com fallback -->\n<style>\n  @font-face {\n    font-family: 'Lora';\n    src: url('https://static-p134603-e1404735.adobeaemcloud.com/.../fonts/campuni-bold.woff2') format('woff2');\n    font-weight: 700;\n    font-display: swap;\n  }\n</style>\n\n<h1 style="font-family: 'Lora', 'Montserrat', sans-serif; font-weight: 700;">\n  Transformando vidas\n</h1>`}
+          cssSnippet={`/* CSS puro */\n@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');\n\n.titulo-hero {\n  font-family: 'Lora', 'Montserrat', sans-serif;\n  font-weight: 700;\n  line-height: 1.1;\n}`}
+          htmlSnippet={`<!-- HTML standalone com fallback -->\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">\n\n<h1 style="font-family: 'Lora', 'Montserrat', sans-serif; font-weight: 700;">\n  Transformando vidas\n</h1>`}
           tokenSnippet={`/* tokens.css */\n:root {\n  --font-display: 'Lora', 'Montserrat', sans-serif;\n  --font-heading: 'Lora', 'Montserrat', sans-serif;\n}`}
-          footnote="Lora é proprietária da Cisec. Enquanto o arquivo oficial não estiver em /public/fonts/campuni-bold.woff2, o sistema usa Montserrat como fallback automático."
+          footnote="Lora é distribuída pelo Google Fonts sob licença SIL Open Font 1.1. Caso não carregue, o sistema usa Montserrat como fallback automático."
           downloads={[
-            { label: "Lora Bold (WOFF2) — CDN oficial Cisec AEM", url: "https://static-p134603-e1404735.adobeaemcloud.com/8d5fa04350fd5b585a87e5b1a26cf5cb42331dcc0a0fb644f29940873837ace3/fonts/campuni-bold.woff2", note: "Arquivo usado em cisec.com.br. Hospedar localmente em /public/fonts/campuni-bold.woff2 para produção." },
+            { label: "Google Fonts — página oficial (download .zip com TTF)", url: "https://fonts.google.com/specimen/Lora", note: "Inclui todos os pesos (400–700, com itálicos) e licença SIL Open Font 1.1." },
             { label: "Solicitação interna — Marca Cisec", url: "mailto:marca@cisec.com.br?subject=Solicitação%20da%20fonte%20Lora%20(TTF/OTF)", note: "Para receber o pacote completo (TTF/OTF) com todos os pesos — uso em Power BI, PowerPoint e impressos." },
           ]}
         />
@@ -848,13 +848,8 @@ export default function FundamentosPage() {
         code={`/* Montserrat (primária) — Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Lora (secundária) — fonte proprietária Cisec */
-@font-face {
-  font-family: 'Lora';
-  src: url('/fonts/campuni-bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
+/* Lora (secundária) — Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
 body {
   font-family: 'Montserrat', system-ui, sans-serif;

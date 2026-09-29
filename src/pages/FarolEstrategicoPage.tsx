@@ -183,7 +183,7 @@ export default function FarolEstrategicoPage() {
         />
         <div
           className="text-white flex items-center px-4 gap-3"
-          style={{ height: "36px", minHeight: "36px", maxHeight: "52px", backgroundColor: "#123148" }}
+          style={{ height: "36px", minHeight: "36px", maxHeight: "52px", backgroundColor: "#1F3051" }}
         >
           <button
             onClick={() => setSidebarOpen((o) => !o)}

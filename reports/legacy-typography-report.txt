@@ -1,1007 +1,1007 @@
-Relatório de tipografia legada — 2026-07-15T17:44:27.698Z
+Relatório de tipografia legada — 2026-09-29T16:19:40.516Z
 Total: 335 ocorrências
 ========================================================================
-src/components/ColorSection.tsx:48
-  <p className="text-sm font-semibold text-foreground">{name}</p>
-
-src/components/ColorSection.tsx:88
-  <p className="text-sm font-semibold text-foreground">{name}</p>
-
-src/components/ColorSection.tsx:119
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/ColorSection.tsx:141
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/components/ColorSection.tsx:170
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/components/ColorSection.tsx:198
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/components/ColorSection.tsx:231
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/ColorSection.tsx:246
-  <p className="text-xs font-semibold">{c.name}</p>
-
-src/components/ColorSection.tsx:260
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/ColorSection.tsx:311
-  <p className="text-sm font-semibold mb-1">{c.name}</p>
-
-src/components/ColorSection.tsx:340
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/ColorSection.tsx:353
-  <p className="text-xs font-semibold">{s.label}</p>
-
-src/components/ColorSection.tsx:375
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/ColorSection.tsx:428
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/components/DSComponents.tsx:73
-  {description && <p className="text-sm text-muted-foreground mb-4">{description}</p>}
-
-src/components/DSComponents.tsx:172
-  <p className="text-muted-foreground max-w-3xl text-lg leading-relaxed mt-2">
-
-src/components/GridSection.tsx:9
-  <p className="text-xs font-semibold text-foreground mb-2">{label} — {cols} colunas</p>
-
-src/components/GridSection.tsx:103
-  <p className="text-xs font-semibold text-foreground mb-2">{label}</p>
-
-src/components/GridSection.tsx:180
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/GridSection.tsx:194
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/GridSection.tsx:209
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/components/GridSection.tsx:259
-  <p className="text-sm text-muted-foreground">
-
-src/components/GridSection.tsx:309
-  <p className="text-sm text-muted-foreground">
-
-src/components/TokenExplorer.tsx:86
-  <p className="text-xs text-muted-foreground mt-1">
-
-src/components/TokenExplorer.tsx:128
-  <p className="text-xs font-semibold mb-2">Como usar:</p>
-
-src/components/TokenExplorer.tsx:191
-  <p className="text-xs font-semibold mb-2">Padrão de uso (gap, padding, margin):</p>
-
-src/components/bi/sections/Atendimentos.tsx:20
+src\components\bi\sections\Atendimentos.tsx:20
   <p className="text-sm text-muted-foreground">Acompanhamento das interações comerciais.</p>
 
-src/components/bi/sections/Configuracoes.tsx:6
+src\components\bi\sections\Configuracoes.tsx:6
   <p className="text-sm text-muted-foreground">Preferências do painel, gestão de responsáveis e dicionário de classificações.</p>
 
-src/components/bi/sections/Empresas.tsx:79
+src\components\bi\sections\Empresas.tsx:79
   <p className="text-sm text-muted-foreground">{total} empresas únicas com base nos filtros aplicados.</p>
 
-src/components/bi/sections/Empresas.tsx:222
+src\components\bi\sections\Empresas.tsx:222
   <p className="text-xs text-foreground/80 mt-1 italic">"{r.observacoes}"</p>
 
-src/components/bi/sections/ImportarPlanilha.tsx:65
+src\components\bi\sections\ImportarPlanilha.tsx:65
   <p className="text-sm text-muted-foreground">Fluxo de 4 etapas para envio, mapeamento e validação de novos registros.</p>
 
-src/components/bi/sections/ImportarPlanilha.tsx:83
+src\components\bi\sections\ImportarPlanilha.tsx:83
   <p className="text-sm font-medium">Arraste o arquivo aqui ou clique para selecionar</p>
 
-src/components/bi/sections/ImportarPlanilha.tsx:84
+src\components\bi\sections\ImportarPlanilha.tsx:84
   <p className="text-xs text-muted-foreground mt-1">Aceita XLS, XLSX e CSV</p>
 
-src/components/bi/sections/ImportarPlanilha.tsx:100
+src\components\bi\sections\ImportarPlanilha.tsx:100
   <p className="text-xs text-muted-foreground">{parsed.length} linhas detectadas. Mostrando as 5 primeiras.</p>
 
-src/components/bi/sections/Oportunidades.tsx:30
+src\components\bi\sections\Oportunidades.tsx:30
   <p className="text-sm text-muted-foreground">Empresas com potencial de conversão e equipamentos identificados.</p>
 
-src/components/bi/sections/Qualidade.tsx:35
+src\components\bi\sections\Qualidade.tsx:35
   <p className="text-sm text-muted-foreground">Diagnóstico da consistência e completude da base.</p>
 
-src/components/bi/sections/Regioes.tsx:29
+src\components\bi\sections\Regioes.tsx:29
   <p className="text-sm text-muted-foreground">Distribuição geográfica das empresas e atendimentos.</p>
 
-src/components/bi/sections/VisaoGeral.tsx:37
+src\components\bi\sections\VisaoGeral.tsx:37
   <p className="text-sm text-muted-foreground mt-1">
 
-src/components/templates/AuthTemplates.tsx:18
+src\components\ColorSection.tsx:48
+  <p className="text-sm font-semibold text-foreground">{name}</p>
+
+src\components\ColorSection.tsx:88
+  <p className="text-sm font-semibold text-foreground">{name}</p>
+
+src\components\ColorSection.tsx:119
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\ColorSection.tsx:141
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\components\ColorSection.tsx:170
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\components\ColorSection.tsx:198
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\components\ColorSection.tsx:231
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\ColorSection.tsx:246
+  <p className="text-xs font-semibold">{c.name}</p>
+
+src\components\ColorSection.tsx:260
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\ColorSection.tsx:311
+  <p className="text-sm font-semibold mb-1">{c.name}</p>
+
+src\components\ColorSection.tsx:340
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\ColorSection.tsx:353
+  <p className="text-xs font-semibold">{s.label}</p>
+
+src\components\ColorSection.tsx:375
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\ColorSection.tsx:428
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\components\DSComponents.tsx:73
+  {description && <p className="text-sm text-muted-foreground mb-4">{description}</p>}
+
+src\components\DSComponents.tsx:172
+  <p className="text-muted-foreground max-w-3xl text-lg leading-relaxed mt-2">
+
+src\components\GridSection.tsx:9
+  <p className="text-xs font-semibold text-foreground mb-2">{label} — {cols} colunas</p>
+
+src\components\GridSection.tsx:103
+  <p className="text-xs font-semibold text-foreground mb-2">{label}</p>
+
+src\components\GridSection.tsx:180
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\GridSection.tsx:194
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\GridSection.tsx:209
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\components\GridSection.tsx:259
+  <p className="text-sm text-muted-foreground">
+
+src\components\GridSection.tsx:309
+  <p className="text-sm text-muted-foreground">
+
+src\components\templates\AuthTemplates.tsx:18
   <p className="text-center text-xs text-muted-foreground mb-6">
 
-src/components/templates/AuthTemplates.tsx:62
+src\components\templates\AuthTemplates.tsx:62
   <p className="text-center text-xs text-muted-foreground">
 
-src/components/templates/AuthTemplates.tsx:87
+src\components\templates\AuthTemplates.tsx:87
   <p className="text-center text-xs text-muted-foreground mb-6">
 
-src/components/templates/AuthTemplates.tsx:159
+src\components\templates\AuthTemplates.tsx:159
   <p className="text-center text-xs text-muted-foreground">
 
-src/components/templates/AuthTemplates.tsx:298
+src\components\templates\AuthTemplates.tsx:298
   <p className="text-center text-xs text-muted-foreground mb-6">
 
-src/components/templates/AuthTemplates.tsx:326
+src\components\templates\AuthTemplates.tsx:326
   <p className="text-xs text-muted-foreground">
 
-src/components/templates/AuthTemplates.tsx:433
+src\components\templates\AuthTemplates.tsx:433
   <p className="text-xs text-muted-foreground mt-0.5">{descriptions[activeTab]}</p>
 
-src/components/templates/CardSignIn.tsx:23
+src\components\templates\CardSignIn.tsx:23
   <p className="text-sm text-muted-foreground mt-1">
 
-src/components/templates/CardSignIn.tsx:84
+src\components\templates\CardSignIn.tsx:84
   <p className="text-center text-sm text-muted-foreground">
 
-src/components/templates/CardSignIn.tsx:90
+src\components\templates\CardSignIn.tsx:90
   <p className="text-center text-xs text-muted-foreground pt-4">
 
-src/components/templates/CardSignIn.tsx:105
+src\components\templates\CardSignIn.tsx:105
   <p className="text-white text-2xl font-semibold leading-tight" style={{ fontFamily: "'Lora', 'Montserrat', sans-serif" }}>
 
-src/components/templates/DashboardTemplates.tsx:64
+src\components\templates\DashboardTemplates.tsx:64
   <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
 
-src/components/templates/DashboardTemplates.tsx:144
+src\components\templates\DashboardTemplates.tsx:144
   <p className="text-sm font-bold text-[#D98217] mb-1">{title}</p>
 
-src/components/templates/DashboardTemplates.tsx:174
+src\components\templates\DashboardTemplates.tsx:174
   <p className="text-sm font-bold text-[#D98217] mb-1">Cobertura Geral dos Indicadores de Saúde</p>
 
-src/components/templates/DashboardTemplates.tsx:196
+src\components\templates\DashboardTemplates.tsx:196
   <p className="text-sm font-bold text-[#D98217] mb-3">Notificações por Regional de Saúde</p>
 
-src/components/templates/DashboardTemplates.tsx:233
+src\components\templates\DashboardTemplates.tsx:233
   <p className="text-xs font-semibold text-foreground mb-3">
 
-src/components/templates/DashboardTemplates.tsx:251
+src\components\templates\DashboardTemplates.tsx:251
   <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
 
-src/components/templates/DashboardTemplates.tsx:288
+src\components\templates\DashboardTemplates.tsx:288
   <p className="text-xs font-bold text-foreground mb-2">Resumo:</p>
 
-src/components/templates/DashboardTemplates.tsx:298
+src\components\templates\DashboardTemplates.tsx:298
   <p className="text-xs font-semibold" style={{ color: kpi.color }}>{kpi.title}</p>
 
-src/components/templates/DashboardTemplates.tsx:311
+src\components\templates\DashboardTemplates.tsx:311
   <p className="text-xs text-muted-foreground">
 
-src/components/templates/DashboardTemplates.tsx:318
+src\components\templates\DashboardTemplates.tsx:318
   <p className="text-sm font-bold text-[#D98217]">Notificações e Investigações</p>
 
-src/components/templates/HubPaineisTemplate.tsx:166
+src\components\templates\HubPaineisTemplate.tsx:166
   <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{card.descricao}</p>
 
-src/components/templates/HubPaineisTemplate.tsx:177
+src\components\templates\HubPaineisTemplate.tsx:177
   <p className="text-xs opacity-80 mb-4 line-clamp-3">{card.descricao}</p>
 
-src/components/templates/HubPaineisTemplate.tsx:223
+src\components\templates\HubPaineisTemplate.tsx:223
   <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{card.descricao}</p>
 
-src/components/templates/HubPaineisTemplate.tsx:234
+src\components\templates\HubPaineisTemplate.tsx:234
   <p className="text-xs opacity-80 mb-4 line-clamp-3">{card.descricao}</p>
 
-src/components/templates/SidebarMenuPreview.tsx:535
+src\components\templates\SidebarMenuPreview.tsx:535
   <p className="text-sm text-muted-foreground mb-6">
 
-src/components/templates/SidebarMenuPreview.tsx:543
+src\components\templates\SidebarMenuPreview.tsx:543
   <p className="text-xs text-muted-foreground mb-4">
 
-src/components/ui/card.tsx:26
-  <p ref={ref} className={cn("text-sm text-muted-foreground", className)} {...props} />
-
-src/components/ui/form.tsx:106
-  return <p ref={ref} id={formDescriptionId} className={cn("text-sm text-muted-foreground", className)} {...props} />;
-
-src/components/ui/form.tsx:121
-  <p ref={ref} id={formMessageId} className={cn("text-sm font-medium text-destructive", className)} {...props}>
-
-src/pages/AcessibilidadePage.tsx:19
-  <p className="text-sm text-muted-foreground">Texto foreground sobre Primary — adequado em ambos os temas</p>
-
-src/pages/AcessibilidadePage.tsx:23
-  <p className="text-sm text-muted-foreground">Texto foreground sobre Secondary — adequado para texto grande</p>
-
-src/pages/AcessibilidadePage.tsx:27
-  <p className="text-sm text-muted-foreground">Texto foreground sobre Card — adaptativo ao tema</p>
-
-src/pages/AcessibilidadePage.tsx:31
-  <p className="text-xs text-accent-foreground"><strong>Dica:</strong> Com o dark mode, todos os tokens de cor foram calibrados para manter contraste AA. Sempre use tokens semânticos em vez de cores fixas.</p>
-
-src/pages/AcessibilidadePage.tsx:156
-  <p className="text-sm text-muted-foreground mb-3">
-
-src/pages/AcessibilidadePage.tsx:159
-  <p className="text-sm text-muted-foreground">
-
-src/pages/CadastroPage.tsx:59
-  <p className="text-lg text-white/80">
-
-src/pages/CadastroPage.tsx:67
-  <p className="text-sm">
-
-src/pages/CadastroPage.tsx:84
-  <p className="text-sm text-muted-foreground leading-relaxed">
-
-src/pages/CadastroPage.tsx:153
-  <p className="text-xs text-muted-foreground mt-1">Mínimo de 8 caracteres, com letras e números.</p>
-
-src/pages/CadastroPage.tsx:172
-  <p className="text-sm text-muted-foreground">
-
-src/pages/CadastroPage.tsx:186
-  <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-
-src/pages/ComponentesPage.tsx:641
-  <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
-
-src/pages/ComponentesPage.tsx:650
-  <p id="field-error" role="alert" className="text-xs text-error mt-1">Este campo é obrigatório</p>
-
-src/pages/ComponentesPage.tsx:692
-  <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
-
-src/pages/ComponentesPage.tsx:702
-  <p id="field-error" role="alert" className="text-xs text-error mt-1">Este campo é obrigatório</p>
-
-src/pages/ComponentesPage.tsx:1012
-  <p className="text-sm font-semibold">{a.title}</p>
-
-src/pages/ComponentesPage.tsx:1013
-  <p className="text-xs text-muted-foreground">{a.msg}</p>
-
-src/pages/ComponentesPage.tsx:1029
-  <p className="text-sm font-semibold">{a.title}</p>
-
-src/pages/ComponentesPage.tsx:1030
-  <p className="text-xs text-muted-foreground">{a.msg}</p>
-
-src/pages/ComponentesPage.tsx:1053
-  <p className="text-sm text-muted-foreground">Conteúdo do card com informações relevantes.</p>
-
-src/pages/ComponentesPage.tsx:1062
-  <p className="text-3xl font-bold text-primary">1.247</p>
-
-src/pages/ComponentesPage.tsx:1063
-  <p className="text-xs text-muted-foreground mt-1">Escolas atendidas</p>
-
-src/pages/ComponentesPage.tsx:1064
-  <p className="text-xs text-success mt-2">↑ 12% em relação ao mês anterior</p>
-
-src/pages/ComponentesPage.tsx:1069
-  <p className="text-xs opacity-80 mb-1">Destaque</p>
-
-src/pages/ComponentesPage.tsx:1071
-  <p className="text-xs opacity-80">Para informações de destaque institucional.</p>
-
-src/pages/ComponentesPage.tsx:1081
-  <p className="text-sm text-muted-foreground">Conteúdo do card com informações relevantes.</p>
-
-src/pages/ComponentesPage.tsx:1089
-  <p className="text-3xl font-bold text-primary">1.247</p>
-
-src/pages/ComponentesPage.tsx:1090
-  <p className="text-xs text-muted-foreground mt-1">Escolas atendidas</p>
-
-src/pages/ComponentesPage.tsx:1091
-  <p className="text-xs text-success mt-2">↑ 12% em relação ao mês anterior</p>
-
-src/pages/ComponentesPage.tsx:1095
-  <p className="text-xs opacity-80 mb-1">Destaque</p>
-
-src/pages/ComponentesPage.tsx:1097
-  <p className="text-xs opacity-80">Para informações de destaque institucional.</p>
-
-src/pages/ComponentesPage.tsx:2098
-  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-
-src/pages/ComponentesPage.tsx:2150
-  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Tem certeza de que deseja prosseguir com esta ação? Esta operação não pode ser desfeita.</p>
-
-src/pages/ComponentesPage.tsx:2191
-  <p className="text-sm flex-1">Registro salvo com sucesso!</p>
-
-src/pages/ComponentesPage.tsx:2211
-  <p className="text-sm flex-1">Registro salvo com sucesso!</p>
-
-src/pages/ComponentesPage.tsx:2557
-  <p className="text-sm text-muted-foreground mb-4 max-w-sm mx-auto">
-
-src/pages/ComponentesPage.tsx:2568
-  <p className="text-sm text-muted-foreground mb-4 max-w-sm mx-auto">
-
-src/pages/ComponentesPage.tsx:3046
-  <p className="text-sm font-medium mb-2">Atalhos de período</p>
-
-src/pages/ComponentesPage.tsx:3245
-  <p className="text-3xl font-bold text-foreground leading-none mb-1">{kpi.value}</p>
-
-src/pages/ComponentesPage.tsx:3246
-  <p className="text-sm text-muted-foreground">{kpi.label}</p>
-
-src/pages/ComponentesPage.tsx:3247
-  <p className="text-xs text-muted-foreground/70 mt-2">{kpi.comparison}</p>
-
-src/pages/ComponentesPage.tsx:3282
-  <p className="text-3xl font-bold text-foreground leading-none mb-1">{kpi.value}</p>
-
-src/pages/ComponentesPage.tsx:3283
-  <p className="text-sm text-muted-foreground">{kpi.label}</p>
-
-src/pages/ComponentesPage.tsx:3284
-  <p className="text-xs text-muted-foreground/70 mt-2">{kpi.comparison}</p>
-
-src/pages/ComponentesPage.tsx:3291
-  <p className="text-sm font-medium mb-3">Variante compacta (inline)</p>
-
-src/pages/ComponentesPage.tsx:3381
-  <p className="text-sm font-medium mb-1">
-
-src/pages/ComponentesPage.tsx:3384
-  <p className="text-xs text-muted-foreground">PDF, XLSX, JPG, PNG · Até 10MB por arquivo · Máximo 20 arquivos</p>
-
-src/pages/ComponentesPage.tsx:3433
-  <p className="text-sm font-medium mb-1">Arraste arquivos aqui ou <span className="text-primary underline">selecione do computador</span></p>
-
-src/pages/ComponentesPage.tsx:3434
-  <p className="text-xs text-muted-foreground">PDF, XLSX, JPG, PNG · Até 10MB por arquivo · Máximo 20 arquivos</p>
-
-src/pages/ComponentesPage.tsx:3630
-  <p className="text-sm text-muted-foreground">{steps[currentStep - 1].description} — Conteúdo da etapa apareceria aqui.</p>
-
-src/pages/ComponentesPage.tsx:3654
-  <p className="text-sm font-medium mb-3">Variante vertical</p>
-
-src/pages/ComponentesPage.tsx:3672
-  <p className={`text-sm font-medium ${isActive ? "text-primary" : "text-foreground"}`}>{step.label}</p>
-
-src/pages/ComponentesPage.tsx:3673
-  <p className="text-xs text-muted-foreground">{step.description}</p>
-
-src/pages/ComponentesPage.tsx:3745
-  <p className="text-sm font-medium mb-3">Variante em grid (2 colunas)</p>
-
-src/pages/ComponentesPage.tsx:3782
-  <p className="text-2xl font-bold mb-3">78,4%</p>
-
-src/pages/ComponentesPage.tsx:3796
-  <p className="text-2xl font-bold">1.247</p>
-
-src/pages/ComponentesPage.tsx:3797
-  <p className="text-xs text-muted-foreground">Mar/2026</p>
-
-src/pages/ComponentesPage.tsx:3800
-  <p className="text-2xl font-bold text-muted-foreground/50">1.102</p>
-
-src/pages/ComponentesPage.tsx:3801
-  <p className="text-xs text-muted-foreground">Fev/2026</p>
-
-src/pages/ComponentesPage.tsx:3818
-  <p className="text-xs opacity-70 mb-1">Total acumulado 2026</p>
-
-src/pages/ComponentesPage.tsx:3819
-  <p className="text-3xl font-bold">R$ 8,6B</p>
-
-src/pages/ComponentesPage.tsx:3820
-  <p className="text-sm opacity-80 mt-2">Recursos transferidos para educação básica em todo o Brasil</p>
-
-src/pages/ComponentesPage.tsx:3833
-  <p className="text-2xl font-bold mb-3">78,4%</p>
-
-src/pages/ComponentesPage.tsx:3849
-  <p className="text-2xl font-bold text-foreground">1.247</p>
-
-src/pages/ComponentesPage.tsx:3850
-  <p className="text-xs text-muted-foreground">Mar/2026</p>
-
-src/pages/ComponentesPage.tsx:3853
-  <p className="text-2xl font-bold text-muted-foreground/50">1.102</p>
-
-src/pages/ComponentesPage.tsx:3854
-  <p className="text-xs text-muted-foreground">Fev/2026</p>
-
-src/pages/ComponentesPage.tsx:3903
-  <p className={`text-xl font-bold ${item.color}`}>{item.count}</p>
-
-src/pages/ComponentesPage.tsx:3904
-  <p className="text-xs text-muted-foreground">{item.label}</p>
-
-src/pages/ComponentesPage.tsx:3914
-  <p className="text-xs opacity-70 mb-1">Total acumulado 2026</p>
-
-src/pages/ComponentesPage.tsx:3915
-  <p className="text-3xl font-bold">R$ 8,6B</p>
-
-src/pages/ComponentesPage.tsx:3916
-  <p className="text-sm opacity-80 mt-2">Recursos transferidos para educação básica em todo o Brasil</p>
-
-src/pages/ComponentesPage.tsx:4056
-  <p className="text-2xl font-bold">R$ 250K</p>
-
-src/pages/ComponentesPage.tsx:4057
-  <p className="text-xs text-muted-foreground">Total mensal de vendas</p>
-
-src/pages/ComponentesPage.tsx:4070
-  <p className="text-2xl font-bold">R$ 320K</p>
-
-src/pages/ComponentesPage.tsx:4071
-  <p className="text-xs text-muted-foreground">Vendas mensais Projeto A</p>
-
-src/pages/ComponentesPage.tsx:4084
-  <p className="text-2xl font-bold mt-2">R$ 550K</p>
-
-src/pages/ComponentesPage.tsx:4085
-  <p className="text-xs text-muted-foreground">Variação de vendas</p>
-
-src/pages/ComponentesPage.tsx:4111
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com gráfico circular (donut)</p>
-
-src/pages/ComponentesPage.tsx:4126
-  <p className="text-2xl font-bold text-foreground">{m.value}</p>
-
-src/pages/ComponentesPage.tsx:4127
-  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
-
-src/pages/ComponentesPage.tsx:4137
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com mini barras (sparkline)</p>
-
-src/pages/ComponentesPage.tsx:4151
-  <p className="text-2xl font-bold text-foreground">{m.value}</p>
-
-src/pages/ComponentesPage.tsx:4152
-  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
-
-src/pages/ComponentesPage.tsx:4163
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com gráfico de área e variação</p>
-
-src/pages/ComponentesPage.tsx:4181
-  <p className="text-2xl font-bold text-foreground">{m.value}</p>
-
-src/pages/ComponentesPage.tsx:4182
-  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
-
-src/pages/ComponentesPage.tsx:4191
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com donut e trend trimestral</p>
-
-src/pages/ComponentesPage.tsx:4215
-  <p className="text-2xl font-bold text-foreground">{m.value}</p>
-
-src/pages/ComponentesPage.tsx:4216
-  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
-
-src/pages/ComponentesPage.tsx:4226
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Tabela trimestral + Cards de resumo</p>
-
-src/pages/ComponentesPage.tsx:4261
-  <p className="font-semibold text-sm">{row.q}</p>
-
-src/pages/ComponentesPage.tsx:4284
-  <p className="text-sm text-muted-foreground mb-4">
-
-src/pages/ComponentesPage.tsx:4302
-  <p className="text-sm opacity-70 mb-4">
-
-src/pages/ComponentesPage.tsx:4317
-  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards mistos de indicadores</p>
-
-src/pages/ComponentesPage.tsx:4325
-  <p className="text-sm text-muted-foreground mb-4">Lucro total de R$ 12.500 neste mês, mostrando crescimento estável e positivo.</p>
-
-src/pages/ComponentesPage.tsx:4340
-  <p className="text-lg font-bold text-foreground">R$ 870K</p>
-
-src/pages/ComponentesPage.tsx:4344
-  <p className="text-lg font-bold text-muted-foreground/50">R$ 1M</p>
-
-src/pages/ComponentesPage.tsx:4348
-  <p className="text-lg font-bold text-primary">R$ 130K</p>
-
-src/pages/ConteudoPage.tsx:64
-  <p className="text-xs text-muted-foreground">{p.desc}</p>
-
-src/pages/ConteudoPage.tsx:88
-  <p className="text-xs font-medium text-success mb-1">✓ Recomendado</p>
-
-src/pages/ConteudoPage.tsx:89
-  <p className="text-sm whitespace-pre-line">{bp.good}</p>
-
-src/pages/ConteudoPage.tsx:92
-  <p className="text-xs font-medium text-error mb-1">✗ Evite</p>
-
-src/pages/ConteudoPage.tsx:93
-  <p className="text-sm whitespace-pre-line">{bp.bad}</p>
-
-src/pages/ConteudoPage.tsx:132
-  <p className="text-xs text-muted-foreground">{item.d}</p>
-
-src/pages/DashboardBIPage.tsx:96
-  <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
-
-src/pages/DashboardBIPage.tsx:187
-  <p className="text-sm font-semibold text-primary leading-tight">
-
-src/pages/DashboardBIPage.tsx:190
-  <p className="text-xs text-primary/70 leading-tight">
-
-src/pages/DashboardBIPage.tsx:376
-  <p className="text-xs font-semibold text-foreground mb-3 uppercase tracking-wider">
-
-src/pages/DashboardBIPage.tsx:395
-  <p className="text-sm font-bold text-primary mb-4">Evolução dos Repasses</p>
-
-src/pages/DashboardBIPage.tsx:429
-  <p className="text-sm font-bold text-primary mb-4">Distribuição por Programa</p>
-
-src/pages/DashboardBIPage.tsx:469
-  <p className="text-sm font-bold text-primary">Detalhamento de Execução</p>
-
-src/pages/DashboardInstitucionalPage.tsx:100
-  <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
-
-src/pages/DashboardInstitucionalPage.tsx:120
-  <p className="text-sm font-bold text-primary mb-1">Desempenho Geral dos Programas</p>
-
-src/pages/DashboardInstitucionalPage.tsx:141
-  <p className="text-sm font-bold text-primary mb-1">Distribuição por Modalidade</p>
-
-src/pages/DashboardInstitucionalPage.tsx:170
-  <p className="text-sm font-bold text-primary mb-3">Servidores por Diretoria</p>
-
-src/pages/DashboardInstitucionalPage.tsx:251
-  <p className="text-sm font-semibold text-[#0024A9] leading-tight">
-
-src/pages/DashboardInstitucionalPage.tsx:254
-  <p className="text-xs text-[#0024A9]/70 leading-tight">
-
-src/pages/DashboardInstitucionalPage.tsx:448
-  <p className="text-xs font-semibold text-foreground mb-3">
-
-src/pages/DashboardInstitucionalPage.tsx:464
-  <p className="text-sm font-bold text-primary">Auditoria e Irregularidade</p>
-
-src/pages/ErrorPageTemplate.tsx:81
-  <p className="text-muted-foreground mb-8 leading-relaxed">
-
-src/pages/ErrorPageTemplate.tsx:95
-  <p className="mt-8 text-xs text-muted-foreground">
-
-src/pages/FarolEstrategicoPage.tsx:54
-  <p className="text-2xl md:text-3xl font-bold mt-1" style={{ color }}>{value}</p>
-
-src/pages/FarolEstrategicoPage.tsx:55
-  <p className="text-xs text-muted-foreground mt-1">{label}</p>
-
-src/pages/FarolEstrategicoPage.tsx:405
-  <p className="text-sm font-bold text-primary">Filtros Estratégicos</p>
-
-src/pages/FarolEstrategicoPage.tsx:473
-  <p className="text-sm font-bold text-primary mb-1">Despesa Planejada vs Executada</p>
-
-src/pages/FarolEstrategicoPage.tsx:509
-  <p className="text-sm font-bold text-foreground mt-0.5">{formatBRL(Math.round(t.total * factor))}</p>
-
-src/pages/FarolEstrategicoPage.tsx:524
-  <p className="text-sm font-bold text-primary">Detalhamento por Natureza</p>
-
-src/pages/FundamentosPage.tsx:337
-  <p className="text-xs font-bold text-primary">{t.name}</p>
-
-src/pages/FundamentosPage.tsx:410
-  <p className="text-lg font-sans leading-relaxed mb-3">
-
-src/pages/FundamentosPage.tsx:413
-  <p className="text-base font-sans leading-relaxed mb-3">
-
-src/pages/FundamentosPage.tsx:416
-  <p className="text-sm font-sans leading-relaxed text-muted-foreground">
-
-src/pages/FundamentosPage.tsx:435
-  <p className="text-sm font-medium">12 de março de 2025</p>
-
-src/pages/FundamentosPage.tsx:573
+src\components\TokenExplorer.tsx:86
   <p className="text-xs text-muted-foreground mt-1">
 
-src/pages/FundamentosPage.tsx:633
-  <p className="text-base leading-relaxed mb-3">
+src\components\TokenExplorer.tsx:128
+  <p className="text-xs font-semibold mb-2">Como usar:</p>
 
-src/pages/FundamentosPage.tsx:680
-  <p className="text-sm text-muted-foreground">
+src\components\TokenExplorer.tsx:191
+  <p className="text-xs font-semibold mb-2">Padrão de uso (gap, padding, margin):</p>
 
-src/pages/FundamentosPage.tsx:735
-  <p className={`text-base ${p.w}`}>Aa Cisec</p>
+src\components\ui\card.tsx:26
+  <p ref={ref} className={cn("text-sm text-muted-foreground", className)} {...props} />
 
-src/pages/FundamentosPage.tsx:760
-  <p className={`text-sm ${s.cls}`}>
+src\components\ui\form.tsx:106
+  return <p ref={ref} id={formDescriptionId} className={cn("text-sm text-muted-foreground", className)} {...props} />;
 
-src/pages/FundamentosPage.tsx:774
-  <p className="font-heading text-3xl font-bold leading-tight">Aa — Lora</p>
+src\components\ui\form.tsx:121
+  <p ref={ref} id={formMessageId} className={cn("text-sm font-medium text-destructive", className)} {...props}>
 
-src/pages/FundamentosPage.tsx:775
-  <p className="font-heading text-sm text-muted-foreground mt-2">Títulos e display · pesos 600/700/900</p>
+src\pages\AcessibilidadePage.tsx:19
+  <p className="text-sm text-muted-foreground">Texto foreground sobre Primary — adequado em ambos os temas</p>
 
-src/pages/FundamentosPage.tsx:779
-  <p className="font-sans text-3xl font-bold leading-tight">Aa — Montserrat</p>
+src\pages\AcessibilidadePage.tsx:23
+  <p className="text-sm text-muted-foreground">Texto foreground sobre Secondary — adequado para texto grande</p>
 
-src/pages/FundamentosPage.tsx:780
-  <p className="font-sans text-sm text-muted-foreground mt-2">Corpo, UI e legendas · pesos 300–800</p>
+src\pages\AcessibilidadePage.tsx:27
+  <p className="text-sm text-muted-foreground">Texto foreground sobre Card — adaptativo ao tema</p>
 
-src/pages/FundamentosPage.tsx:794
-  <p className="text-lg font-medium text-muted-foreground">Este é um exemplo de lead text ou subtítulo que acompanha o título principal para dar mais contexto.</p>
+src\pages\AcessibilidadePage.tsx:31
+  <p className="text-xs text-accent-foreground"><strong>Dica:</strong> Com o dark mode, todos os tokens de cor foram calibrados para manter contraste AA. Sempre use tokens semânticos em vez de cores fixas.</p>
 
-src/pages/FundamentosPage.tsx:799
-  <p className="leading-relaxed">
-
-src/pages/FundamentosPage.tsx:806
-  <p className="text-sm leading-relaxed text-muted-foreground">
-
-src/pages/FundamentosPage.tsx:836
-  <p className="text-xs text-muted-foreground italic">
-
-src/pages/FundamentosPage.tsx:931
-  <p className="text-xs text-muted-foreground italic py-6 text-center">Nenhum ícone encontrado. Tente outro termo ou troque a coleção.</p>
-
-src/pages/FundamentosPage.tsx:947
-  <p className="text-xs text-muted-foreground mb-4">Open-source, traço consistente e boa legibilidade em ambos os temas. Já instalada no projeto.</p>
-
-src/pages/FundamentosPage.tsx:1003
-  <p className="text-xs text-muted-foreground max-w-4xl mb-4">
-
-src/pages/FundamentosPage.tsx:1009
-  <p className="text-xs text-muted-foreground mb-4">Links oficiais para baixar a biblioteca, navegar o catálogo completo e incorporar em projetos React, sites e dashboards.</p>
-
-src/pages/FundamentosPage.tsx:1039
-  <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
-
-src/pages/FundamentosPage.tsx:1063
-  <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
-
-src/pages/FundamentosPage.tsx:1172
-  <p className="font-semibold text-sm">{s.label}</p>
-
-src/pages/FundamentosPage.tsx:1192
-  <p className="text-xs font-medium">{r.label}</p>
-
-src/pages/FundamentosPage.tsx:1325
-  <p className="text-xs text-muted-foreground">
-
-src/pages/HomePage.tsx:115
-  <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
-
-src/pages/HomePage.tsx:139
-  <p className="text-xs text-muted-foreground">Todos os tokens, componentes e templates são compatíveis com modo claro e escuro. Use o toggle no header para alternar.</p>
-
-src/pages/HomePage.tsx:148
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/pages/HomePage.tsx:161
-  <p className="font-heading text-2xl md:text-3xl leading-tight mt-4 mb-3 text-foreground">
-
-src/pages/HomePage.tsx:165
-  <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
-
-src/pages/HomePage.tsx:184
-  <p className="text-sm text-muted-foreground leading-relaxed">
-
-src/pages/HomePage.tsx:206
-  <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-
-src/pages/HomePage.tsx:263
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/HomePage.tsx:293
-  <p className="text-xs text-muted-foreground">{p.desc}</p>
-
-src/pages/HomePage.tsx:307
-  <p className="text-xs text-muted-foreground">{s.desc}</p>
-
-src/pages/HomePage.tsx:317
-  <p className="text-2xl font-bold text-primary">20+</p>
-
-src/pages/HomePage.tsx:318
-  <p className="text-xs text-muted-foreground">Componentes</p>
-
-src/pages/HomePage.tsx:321
-  <p className="text-2xl font-bold text-secondary">50+</p>
-
-src/pages/HomePage.tsx:322
-  <p className="text-xs text-muted-foreground">Tokens</p>
-
-src/pages/HomePage.tsx:325
-  <p className="text-2xl font-bold text-primary">7</p>
-
-src/pages/HomePage.tsx:326
-  <p className="text-xs text-muted-foreground">Templates</p>
-
-src/pages/HomePage.tsx:329
-  <p className="text-2xl font-bold text-secondary">2</p>
-
-src/pages/HomePage.tsx:330
-  <p className="text-xs text-muted-foreground">Temas (Light/Dark)</p>
-
-src/pages/MarcaPage.tsx:180
-  <p className="text-sm font-semibold text-foreground mb-1">{f.title}</p>
-
-src/pages/MarcaPage.tsx:181
-  <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
-
-src/pages/MarcaPage.tsx:199
-  <p className="text-xs font-semibold text-foreground">Positivo</p>
-
-src/pages/MarcaPage.tsx:200
-  <p className="text-xs text-muted-foreground">Uso padrão sobre fundos claros.</p>
-
-src/pages/MarcaPage.tsx:210
-  <p className="text-xs font-semibold text-foreground">Negativo</p>
-
-src/pages/MarcaPage.tsx:211
-  <p className="text-xs text-muted-foreground">Badge azul institucional — avatares e favicons.</p>
-
-src/pages/MarcaPage.tsx:221
-  <p className="text-xs font-semibold text-foreground">Cromático · Azul + Laranja</p>
-
-src/pages/MarcaPage.tsx:222
-  <p className="text-xs text-muted-foreground">Badge azul com símbolo em laranja.</p>
-
-src/pages/MarcaPage.tsx:232
-  <p className="text-xs font-semibold text-foreground">Cromático · Laranja + Branco</p>
-
-src/pages/MarcaPage.tsx:233
-  <p className="text-xs text-muted-foreground">Badge de cantos arredondados em laranja.</p>
-
-src/pages/MarcaPage.tsx:247
-  <p className="text-xs text-muted-foreground leading-relaxed mt-3">
-
-src/pages/MarcaPage.tsx:269
-  <p className="text-xs font-semibold text-foreground">Negativo · sobre preto</p>
-
-src/pages/MarcaPage.tsx:270
-  <p className="text-xs text-muted-foreground">Fundos escuros ou fotográficos.</p>
-
-src/pages/MarcaPage.tsx:280
-  <p className="text-xs font-semibold text-foreground">Negativo cromático · sobre azul</p>
-
-src/pages/MarcaPage.tsx:281
-  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em branco.</p>
-
-src/pages/MarcaPage.tsx:291
-  <p className="text-xs font-semibold text-foreground">Negativo · sobre laranja</p>
-
-src/pages/MarcaPage.tsx:292
-  <p className="text-xs text-muted-foreground">Aplicação sobre o laranja institucional.</p>
-
-src/pages/MarcaPage.tsx:296
-  <p className="text-xs font-semibold text-foreground">Cromática · sobre claro</p>
-
-src/pages/MarcaPage.tsx:297
-  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em azul institucional.</p>
-
-src/pages/MarcaPage.tsx:313
-  <p className="text-xs font-semibold text-foreground">Cromática completa · com linha</p>
-
-src/pages/MarcaPage.tsx:314
-  <p className="text-xs text-muted-foreground">Relatórios, ofícios e publicações técnicas — nome por extenso separado por linha divisória.</p>
-
-src/pages/MarcaPage.tsx:318
-  <p className="text-xs font-semibold text-foreground">Cromática compacta · sem linha</p>
-
-src/pages/MarcaPage.tsx:319
-  <p className="text-xs text-muted-foreground">Versão compacta, para uso do dia a dia.</p>
-
-src/pages/MarcaPage.tsx:329
-  <p className="text-xs font-semibold text-foreground">Completa · negativo</p>
-
-src/pages/MarcaPage.tsx:330
-  <p className="text-xs text-muted-foreground">Uso direto sobre preto ou imagens escuras.</p>
-
-src/pages/MarcaPage.tsx:340
-  <p className="text-xs font-semibold text-foreground">Completa · sobre azul</p>
-
-src/pages/MarcaPage.tsx:341
-  <p className="text-xs text-muted-foreground">Cromática aplicada sobre o azul institucional.</p>
-
-src/pages/MarcaPage.tsx:364
-  <p className="font-heading text-2xl font-bold text-foreground mb-2">X = altura do símbolo</p>
-
-src/pages/MarcaPage.tsx:365
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:392
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:410
-  <p className="text-sm font-semibold text-foreground">{c.nome}</p>
-
-src/pages/MarcaPage.tsx:411
-  <p className="text-xs text-muted-foreground">{c.desc}</p>
-
-src/pages/MarcaPage.tsx:423
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/pages/MarcaPage.tsx:428
-  <p className="text-xs font-semibold text-foreground mb-1.5">Azul Institucional</p>
-
-src/pages/MarcaPage.tsx:436
-  <p className="text-xs font-semibold text-foreground mb-1.5">Laranja</p>
-
-src/pages/MarcaPage.tsx:446
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/pages/MarcaPage.tsx:454
-  <p className="text-xs font-mono">{c.baseHex}</p>
-
-src/pages/MarcaPage.tsx:458
-  <p className="text-xs font-mono">{c.compHex}</p>
-
-src/pages/MarcaPage.tsx:465
-  <p className="text-xs text-muted-foreground mb-3">
-
-src/pages/MarcaPage.tsx:473
-  <p className="text-xs font-semibold text-foreground">{s.nome}</p>
-
-src/pages/MarcaPage.tsx:492
-  <p className="font-heading text-5xl font-bold text-foreground leading-none mb-3" style={{ fontFamily: "Montserrat" }}>
-
-src/pages/MarcaPage.tsx:496
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:502
-  <p className="text-4xl text-foreground leading-tight mb-3" style={{ fontFamily: "Lora, Georgia, serif", fontStyle: "italic" }}>
-
-src/pages/MarcaPage.tsx:505
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:511
-  <p className="text-xs font-mono text-foreground leading-relaxed" style={{ fontFamily: "Montserrat" }}>
-
-src/pages/MarcaPage.tsx:530
-  <p className="text-xs font-semibold text-foreground mt-2">Fundo claro</p>
-
-src/pages/MarcaPage.tsx:531
-  <p className="text-xs text-muted-foreground">Use a versão positiva (cromática ou azul institucional).</p>
-
-src/pages/MarcaPage.tsx:541
-  <p className="text-xs font-semibold text-foreground mt-2">Fundo escuro</p>
-
-src/pages/MarcaPage.tsx:542
-  <p className="text-xs text-muted-foreground">Use a versão negativa (branca), com contraste suficiente.</p>
-
-src/pages/MarcaPage.tsx:548
-  <p className="text-xs text-muted-foreground leading-relaxed">
-
-src/pages/MarcaPage.tsx:579
-  <p className="text-[11px] text-center text-muted-foreground leading-tight">{u.label}</p>
-
-src/pages/MarcaPage.tsx:583
-  <p className="text-xs text-muted-foreground leading-relaxed mt-4">
-
-src/pages/MarcaPage.tsx:610
-  <p className="text-sm font-semibold text-foreground truncate">{d.label}</p>
-
-src/pages/MarcaPage.tsx:611
-  <p className="text-xs text-muted-foreground truncate">{d.file}</p>
-
-src/pages/ModalAcessoTemplatePage.tsx:63
-  <p className="text-sm text-success/80 mt-1">Aqui entraria o conteúdo restrito da sua aplicação.</p>
-
-src/pages/ModalAcessoTemplatePage.tsx:88
-  <p className="text-xs text-primary-foreground/80 text-center">
-
-src/pages/ModalAcessoTemplatePage.tsx:140
-  <p id="modal-pass-error" className="text-xs text-error font-medium">{error}</p>
-
-src/pages/NotFound.tsx:44
-  <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-
-src/pages/NotFound.tsx:57
-  <p className="mt-8 text-xs text-muted-foreground">
-
-src/pages/PaginaAutenticacaoPage.tsx:81
-  <p className="text-sm text-muted-foreground leading-relaxed">
-
-src/pages/PaginaAutenticacaoPage.tsx:173
-  <p className="text-xs text-muted-foreground text-center">
-
-src/pages/PaginaAutenticacaoPage.tsx:207
-  <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-
-src/pages/PaginaFiltrosTabelaPage.tsx:162
-  <p className="text-sm font-semibold text-[#0024A9] leading-tight truncate">
-
-src/pages/PaginaFiltrosTabelaPage.tsx:165
-  <p className="text-xs text-[#0024A9]/70 leading-tight truncate">
-
-src/pages/PaginaFiltrosTabelaPage.tsx:448
-  <p className="text-xs text-muted-foreground">
-
-src/pages/TelaFormularioPage.tsx:452
-  <p className="text-xs text-muted-foreground">Preencha as etapas a seguir para registrar um novo programa.</p>
-
-src/pages/TelaFormularioPage.tsx:468
-  <p className="text-sm text-muted-foreground mt-1">O programa <strong className="text-foreground">{form.programa}</strong> foi registrado com sucesso.</p>
-
-src/pages/TelaFormularioPage.tsx:484
-  <p className="text-xs text-muted-foreground -mt-3">Dados básicos do programa e do responsável.</p>
-
-src/pages/TelaFormularioPage.tsx:517
-  <p className="text-xs text-muted-foreground -mt-3">Defina a unidade gestora, modalidade e valor.</p>
-
-src/pages/TelaFormularioPage.tsx:557
-  <p className="text-xs text-muted-foreground -mt-3">Defina o período de execução e o número de parcelas.</p>
-
-src/pages/TelaFormularioPage.tsx:579
-  <p className="text-xs text-muted-foreground -mt-3">Confira os dados antes de enviar.</p>
-
-src/pages/TelaFormularioPage.tsx:652
-  <p className="text-xs">{toast.msg}</p>
-
-src/pages/TelaListagemPage.tsx:138
-  <p className="text-2xl font-bold text-foreground leading-none">{value}</p>
-
-src/pages/TelaListagemPage.tsx:156
-  <p className="text-2xl font-bold text-foreground mt-1 leading-none">{current}</p>
-
-src/pages/TelaListagemPage.tsx:171
-  <p className="text-2xl font-bold text-foreground mt-1 leading-none">{value}</p>
-
-src/pages/TelaListagemPage.tsx:521
-  <p className="text-xs text-muted-foreground">Acompanhamento dos programas e parcelas em execução.</p>
-
-src/pages/TelaListagemPage.tsx:651
-  <p className="text-sm font-bold text-secondary">Programas e Repasses</p>
-
-src/pages/TemplatesPage.tsx:186
-  <p className="text-sm font-semibold text-[#0024A9] leading-tight">Título do Programa - Exemplo</p>
-
-src/pages/TemplatesPage.tsx:187
-  <p className="text-xs text-[#0024A9]/70 leading-tight">Apenas um exemplo de subtítulo do programa</p>
-
-src/pages/TemplatesPage.tsx:774
-  <p className="text-xs text-info/80 mt-1">Este é um alerta para informações neutras ou guias de sistema.</p>
-
-src/pages/TemplatesPage.tsx:781
-  <p className="text-xs text-success/80 mt-1">Sua operação foi concluída com êxito conforme esperado.</p>
-
-src/pages/TemplatesPage.tsx:790
-  <p className="text-xs text-warning/80 mt-1">Revise os dados antes de prosseguir com esta ação.</p>
-
-src/pages/TemplatesPage.tsx:797
-  <p className="text-xs text-error/80 mt-1">Houve um problema ao processar sua solicitação no servidor.</p>
-
-src/pages/TemplatesPage.tsx:838
-  <p className="text-xs text-muted-foreground mt-0.5">{variant.description}</p>
-
-src/pages/TemplatesPage.tsx:865
-  <p className="text-xs text-muted-foreground mb-4">
-
-src/pages/TemplatesPage.tsx:1170
-  <p className="text-xs text-muted-foreground">{t.desc}</p>
-
-src/pages/TemplatesPage.tsx:1216
-  <p className="text-xs text-muted-foreground mb-3 truncate">
-
-src/pages/TokensPage.tsx:47
+src\pages\AcessibilidadePage.tsx:156
   <p className="text-sm text-muted-foreground mb-3">
 
-src/pages/TokensPage.tsx:52
+src\pages\AcessibilidadePage.tsx:159
   <p className="text-sm text-muted-foreground">
 
-src/pages/TokensPage.tsx:109
-  <p className="text-sm text-muted-foreground">
-
-src/pages/TwoFactorPage.tsx:72
+src\pages\CadastroPage.tsx:59
   <p className="text-lg text-white/80">
 
-src/pages/TwoFactorPage.tsx:101
+src\pages\CadastroPage.tsx:67
+  <p className="text-sm">
+
+src\pages\CadastroPage.tsx:84
   <p className="text-sm text-muted-foreground leading-relaxed">
 
-src/pages/TwoFactorPage.tsx:137
+src\pages\CadastroPage.tsx:153
+  <p className="text-xs text-muted-foreground mt-1">Mínimo de 8 caracteres, com letras e números.</p>
+
+src\pages\CadastroPage.tsx:172
+  <p className="text-sm text-muted-foreground">
+
+src\pages\CadastroPage.tsx:186
+  <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
+
+src\pages\ComponentesPage.tsx:641
+  <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
+
+src\pages\ComponentesPage.tsx:650
+  <p id="field-error" role="alert" className="text-xs text-error mt-1">Este campo é obrigatório</p>
+
+src\pages\ComponentesPage.tsx:692
+  <p className="text-xs text-muted-foreground mt-1">Informe seu e-mail institucional</p>
+
+src\pages\ComponentesPage.tsx:702
+  <p id="field-error" role="alert" className="text-xs text-error mt-1">Este campo é obrigatório</p>
+
+src\pages\ComponentesPage.tsx:1012
+  <p className="text-sm font-semibold">{a.title}</p>
+
+src\pages\ComponentesPage.tsx:1013
+  <p className="text-xs text-muted-foreground">{a.msg}</p>
+
+src\pages\ComponentesPage.tsx:1029
+  <p className="text-sm font-semibold">{a.title}</p>
+
+src\pages\ComponentesPage.tsx:1030
+  <p className="text-xs text-muted-foreground">{a.msg}</p>
+
+src\pages\ComponentesPage.tsx:1053
+  <p className="text-sm text-muted-foreground">Conteúdo do card com informações relevantes.</p>
+
+src\pages\ComponentesPage.tsx:1062
+  <p className="text-3xl font-bold text-primary">1.247</p>
+
+src\pages\ComponentesPage.tsx:1063
+  <p className="text-xs text-muted-foreground mt-1">Escolas atendidas</p>
+
+src\pages\ComponentesPage.tsx:1064
+  <p className="text-xs text-success mt-2">↑ 12% em relação ao mês anterior</p>
+
+src\pages\ComponentesPage.tsx:1069
+  <p className="text-xs opacity-80 mb-1">Destaque</p>
+
+src\pages\ComponentesPage.tsx:1071
+  <p className="text-xs opacity-80">Para informações de destaque institucional.</p>
+
+src\pages\ComponentesPage.tsx:1081
+  <p className="text-sm text-muted-foreground">Conteúdo do card com informações relevantes.</p>
+
+src\pages\ComponentesPage.tsx:1089
+  <p className="text-3xl font-bold text-primary">1.247</p>
+
+src\pages\ComponentesPage.tsx:1090
+  <p className="text-xs text-muted-foreground mt-1">Escolas atendidas</p>
+
+src\pages\ComponentesPage.tsx:1091
+  <p className="text-xs text-success mt-2">↑ 12% em relação ao mês anterior</p>
+
+src\pages\ComponentesPage.tsx:1095
+  <p className="text-xs opacity-80 mb-1">Destaque</p>
+
+src\pages\ComponentesPage.tsx:1097
+  <p className="text-xs opacity-80">Para informações de destaque institucional.</p>
+
+src\pages\ComponentesPage.tsx:2098
+  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+
+src\pages\ComponentesPage.tsx:2150
+  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Tem certeza de que deseja prosseguir com esta ação? Esta operação não pode ser desfeita.</p>
+
+src\pages\ComponentesPage.tsx:2191
+  <p className="text-sm flex-1">Registro salvo com sucesso!</p>
+
+src\pages\ComponentesPage.tsx:2211
+  <p className="text-sm flex-1">Registro salvo com sucesso!</p>
+
+src\pages\ComponentesPage.tsx:2557
+  <p className="text-sm text-muted-foreground mb-4 max-w-sm mx-auto">
+
+src\pages\ComponentesPage.tsx:2568
+  <p className="text-sm text-muted-foreground mb-4 max-w-sm mx-auto">
+
+src\pages\ComponentesPage.tsx:3046
+  <p className="text-sm font-medium mb-2">Atalhos de período</p>
+
+src\pages\ComponentesPage.tsx:3245
+  <p className="text-3xl font-bold text-foreground leading-none mb-1">{kpi.value}</p>
+
+src\pages\ComponentesPage.tsx:3246
+  <p className="text-sm text-muted-foreground">{kpi.label}</p>
+
+src\pages\ComponentesPage.tsx:3247
+  <p className="text-xs text-muted-foreground/70 mt-2">{kpi.comparison}</p>
+
+src\pages\ComponentesPage.tsx:3282
+  <p className="text-3xl font-bold text-foreground leading-none mb-1">{kpi.value}</p>
+
+src\pages\ComponentesPage.tsx:3283
+  <p className="text-sm text-muted-foreground">{kpi.label}</p>
+
+src\pages\ComponentesPage.tsx:3284
+  <p className="text-xs text-muted-foreground/70 mt-2">{kpi.comparison}</p>
+
+src\pages\ComponentesPage.tsx:3291
+  <p className="text-sm font-medium mb-3">Variante compacta (inline)</p>
+
+src\pages\ComponentesPage.tsx:3381
+  <p className="text-sm font-medium mb-1">
+
+src\pages\ComponentesPage.tsx:3384
+  <p className="text-xs text-muted-foreground">PDF, XLSX, JPG, PNG · Até 10MB por arquivo · Máximo 20 arquivos</p>
+
+src\pages\ComponentesPage.tsx:3433
+  <p className="text-sm font-medium mb-1">Arraste arquivos aqui ou <span className="text-primary underline">selecione do computador</span></p>
+
+src\pages\ComponentesPage.tsx:3434
+  <p className="text-xs text-muted-foreground">PDF, XLSX, JPG, PNG · Até 10MB por arquivo · Máximo 20 arquivos</p>
+
+src\pages\ComponentesPage.tsx:3630
+  <p className="text-sm text-muted-foreground">{steps[currentStep - 1].description} — Conteúdo da etapa apareceria aqui.</p>
+
+src\pages\ComponentesPage.tsx:3654
+  <p className="text-sm font-medium mb-3">Variante vertical</p>
+
+src\pages\ComponentesPage.tsx:3672
+  <p className={`text-sm font-medium ${isActive ? "text-primary" : "text-foreground"}`}>{step.label}</p>
+
+src\pages\ComponentesPage.tsx:3673
+  <p className="text-xs text-muted-foreground">{step.description}</p>
+
+src\pages\ComponentesPage.tsx:3745
+  <p className="text-sm font-medium mb-3">Variante em grid (2 colunas)</p>
+
+src\pages\ComponentesPage.tsx:3782
+  <p className="text-2xl font-bold mb-3">78,4%</p>
+
+src\pages\ComponentesPage.tsx:3796
+  <p className="text-2xl font-bold">1.247</p>
+
+src\pages\ComponentesPage.tsx:3797
+  <p className="text-xs text-muted-foreground">Mar/2026</p>
+
+src\pages\ComponentesPage.tsx:3800
+  <p className="text-2xl font-bold text-muted-foreground/50">1.102</p>
+
+src\pages\ComponentesPage.tsx:3801
+  <p className="text-xs text-muted-foreground">Fev/2026</p>
+
+src\pages\ComponentesPage.tsx:3818
+  <p className="text-xs opacity-70 mb-1">Total acumulado 2026</p>
+
+src\pages\ComponentesPage.tsx:3819
+  <p className="text-3xl font-bold">R$ 8,6B</p>
+
+src\pages\ComponentesPage.tsx:3820
+  <p className="text-sm opacity-80 mt-2">Recursos transferidos para educação básica em todo o Brasil</p>
+
+src\pages\ComponentesPage.tsx:3833
+  <p className="text-2xl font-bold mb-3">78,4%</p>
+
+src\pages\ComponentesPage.tsx:3849
+  <p className="text-2xl font-bold text-foreground">1.247</p>
+
+src\pages\ComponentesPage.tsx:3850
+  <p className="text-xs text-muted-foreground">Mar/2026</p>
+
+src\pages\ComponentesPage.tsx:3853
+  <p className="text-2xl font-bold text-muted-foreground/50">1.102</p>
+
+src\pages\ComponentesPage.tsx:3854
+  <p className="text-xs text-muted-foreground">Fev/2026</p>
+
+src\pages\ComponentesPage.tsx:3903
+  <p className={`text-xl font-bold ${item.color}`}>{item.count}</p>
+
+src\pages\ComponentesPage.tsx:3904
+  <p className="text-xs text-muted-foreground">{item.label}</p>
+
+src\pages\ComponentesPage.tsx:3914
+  <p className="text-xs opacity-70 mb-1">Total acumulado 2026</p>
+
+src\pages\ComponentesPage.tsx:3915
+  <p className="text-3xl font-bold">R$ 8,6B</p>
+
+src\pages\ComponentesPage.tsx:3916
+  <p className="text-sm opacity-80 mt-2">Recursos transferidos para educação básica em todo o Brasil</p>
+
+src\pages\ComponentesPage.tsx:4056
+  <p className="text-2xl font-bold">R$ 250K</p>
+
+src\pages\ComponentesPage.tsx:4057
+  <p className="text-xs text-muted-foreground">Total mensal de vendas</p>
+
+src\pages\ComponentesPage.tsx:4070
+  <p className="text-2xl font-bold">R$ 320K</p>
+
+src\pages\ComponentesPage.tsx:4071
+  <p className="text-xs text-muted-foreground">Vendas mensais Projeto A</p>
+
+src\pages\ComponentesPage.tsx:4084
+  <p className="text-2xl font-bold mt-2">R$ 550K</p>
+
+src\pages\ComponentesPage.tsx:4085
+  <p className="text-xs text-muted-foreground">Variação de vendas</p>
+
+src\pages\ComponentesPage.tsx:4111
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com gráfico circular (donut)</p>
+
+src\pages\ComponentesPage.tsx:4126
+  <p className="text-2xl font-bold text-foreground">{m.value}</p>
+
+src\pages\ComponentesPage.tsx:4127
+  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
+
+src\pages\ComponentesPage.tsx:4137
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com mini barras (sparkline)</p>
+
+src\pages\ComponentesPage.tsx:4151
+  <p className="text-2xl font-bold text-foreground">{m.value}</p>
+
+src\pages\ComponentesPage.tsx:4152
+  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
+
+src\pages\ComponentesPage.tsx:4163
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com gráfico de área e variação</p>
+
+src\pages\ComponentesPage.tsx:4181
+  <p className="text-2xl font-bold text-foreground">{m.value}</p>
+
+src\pages\ComponentesPage.tsx:4182
+  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
+
+src\pages\ComponentesPage.tsx:4191
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards com donut e trend trimestral</p>
+
+src\pages\ComponentesPage.tsx:4215
+  <p className="text-2xl font-bold text-foreground">{m.value}</p>
+
+src\pages\ComponentesPage.tsx:4216
+  <p className="text-xs text-muted-foreground">{m.subtitle}</p>
+
+src\pages\ComponentesPage.tsx:4226
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Tabela trimestral + Cards de resumo</p>
+
+src\pages\ComponentesPage.tsx:4261
+  <p className="font-semibold text-sm">{row.q}</p>
+
+src\pages\ComponentesPage.tsx:4284
+  <p className="text-sm text-muted-foreground mb-4">
+
+src\pages\ComponentesPage.tsx:4302
+  <p className="text-sm opacity-70 mb-4">
+
+src\pages\ComponentesPage.tsx:4317
+  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Cards mistos de indicadores</p>
+
+src\pages\ComponentesPage.tsx:4325
+  <p className="text-sm text-muted-foreground mb-4">Lucro total de R$ 12.500 neste mês, mostrando crescimento estável e positivo.</p>
+
+src\pages\ComponentesPage.tsx:4340
+  <p className="text-lg font-bold text-foreground">R$ 870K</p>
+
+src\pages\ComponentesPage.tsx:4344
+  <p className="text-lg font-bold text-muted-foreground/50">R$ 1M</p>
+
+src\pages\ComponentesPage.tsx:4348
+  <p className="text-lg font-bold text-primary">R$ 130K</p>
+
+src\pages\ConteudoPage.tsx:64
+  <p className="text-xs text-muted-foreground">{p.desc}</p>
+
+src\pages\ConteudoPage.tsx:88
+  <p className="text-xs font-medium text-success mb-1">✓ Recomendado</p>
+
+src\pages\ConteudoPage.tsx:89
+  <p className="text-sm whitespace-pre-line">{bp.good}</p>
+
+src\pages\ConteudoPage.tsx:92
+  <p className="text-xs font-medium text-error mb-1">✗ Evite</p>
+
+src\pages\ConteudoPage.tsx:93
+  <p className="text-sm whitespace-pre-line">{bp.bad}</p>
+
+src\pages\ConteudoPage.tsx:132
+  <p className="text-xs text-muted-foreground">{item.d}</p>
+
+src\pages\DashboardBIPage.tsx:96
+  <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
+
+src\pages\DashboardBIPage.tsx:187
+  <p className="text-sm font-semibold text-primary leading-tight">
+
+src\pages\DashboardBIPage.tsx:190
+  <p className="text-xs text-primary/70 leading-tight">
+
+src\pages\DashboardBIPage.tsx:376
+  <p className="text-xs font-semibold text-foreground mb-3 uppercase tracking-wider">
+
+src\pages\DashboardBIPage.tsx:395
+  <p className="text-sm font-bold text-primary mb-4">Evolução dos Repasses</p>
+
+src\pages\DashboardBIPage.tsx:429
+  <p className="text-sm font-bold text-primary mb-4">Distribuição por Programa</p>
+
+src\pages\DashboardBIPage.tsx:469
+  <p className="text-sm font-bold text-primary">Detalhamento de Execução</p>
+
+src\pages\DashboardInstitucionalPage.tsx:100
+  <p className="text-xs font-semibold mt-1" style={{ color: borderColor }}>{title}</p>
+
+src\pages\DashboardInstitucionalPage.tsx:120
+  <p className="text-sm font-bold text-primary mb-1">Desempenho Geral dos Programas</p>
+
+src\pages\DashboardInstitucionalPage.tsx:141
+  <p className="text-sm font-bold text-primary mb-1">Distribuição por Modalidade</p>
+
+src\pages\DashboardInstitucionalPage.tsx:170
+  <p className="text-sm font-bold text-primary mb-3">Servidores por Diretoria</p>
+
+src\pages\DashboardInstitucionalPage.tsx:251
+  <p className="text-sm font-semibold text-[#0024A9] leading-tight">
+
+src\pages\DashboardInstitucionalPage.tsx:254
+  <p className="text-xs text-[#0024A9]/70 leading-tight">
+
+src\pages\DashboardInstitucionalPage.tsx:448
+  <p className="text-xs font-semibold text-foreground mb-3">
+
+src\pages\DashboardInstitucionalPage.tsx:464
+  <p className="text-sm font-bold text-primary">Auditoria e Irregularidade</p>
+
+src\pages\ErrorPageTemplate.tsx:81
+  <p className="text-muted-foreground mb-8 leading-relaxed">
+
+src\pages\ErrorPageTemplate.tsx:95
+  <p className="mt-8 text-xs text-muted-foreground">
+
+src\pages\FarolEstrategicoPage.tsx:54
+  <p className="text-2xl md:text-3xl font-bold mt-1" style={{ color }}>{value}</p>
+
+src\pages\FarolEstrategicoPage.tsx:55
+  <p className="text-xs text-muted-foreground mt-1">{label}</p>
+
+src\pages\FarolEstrategicoPage.tsx:405
+  <p className="text-sm font-bold text-primary">Filtros Estratégicos</p>
+
+src\pages\FarolEstrategicoPage.tsx:473
+  <p className="text-sm font-bold text-primary mb-1">Despesa Planejada vs Executada</p>
+
+src\pages\FarolEstrategicoPage.tsx:509
+  <p className="text-sm font-bold text-foreground mt-0.5">{formatBRL(Math.round(t.total * factor))}</p>
+
+src\pages\FarolEstrategicoPage.tsx:524
+  <p className="text-sm font-bold text-primary">Detalhamento por Natureza</p>
+
+src\pages\FundamentosPage.tsx:337
+  <p className="text-xs font-bold text-primary">{t.name}</p>
+
+src\pages\FundamentosPage.tsx:410
+  <p className="text-lg font-sans leading-relaxed mb-3">
+
+src\pages\FundamentosPage.tsx:413
+  <p className="text-base font-sans leading-relaxed mb-3">
+
+src\pages\FundamentosPage.tsx:416
+  <p className="text-sm font-sans leading-relaxed text-muted-foreground">
+
+src\pages\FundamentosPage.tsx:435
+  <p className="text-sm font-medium">12 de março de 2025</p>
+
+src\pages\FundamentosPage.tsx:573
+  <p className="text-xs text-muted-foreground mt-1">
+
+src\pages\FundamentosPage.tsx:633
+  <p className="text-base leading-relaxed mb-3">
+
+src\pages\FundamentosPage.tsx:680
+  <p className="text-sm text-muted-foreground">
+
+src\pages\FundamentosPage.tsx:735
+  <p className={`text-base ${p.w}`}>Aa Cisec</p>
+
+src\pages\FundamentosPage.tsx:760
+  <p className={`text-sm ${s.cls}`}>
+
+src\pages\FundamentosPage.tsx:774
+  <p className="font-heading text-3xl font-bold leading-tight">Aa — Lora</p>
+
+src\pages\FundamentosPage.tsx:775
+  <p className="font-heading text-sm text-muted-foreground mt-2">Títulos e display · pesos 600/700/900</p>
+
+src\pages\FundamentosPage.tsx:779
+  <p className="font-sans text-3xl font-bold leading-tight">Aa — Montserrat</p>
+
+src\pages\FundamentosPage.tsx:780
+  <p className="font-sans text-sm text-muted-foreground mt-2">Corpo, UI e legendas · pesos 300–800</p>
+
+src\pages\FundamentosPage.tsx:794
+  <p className="text-lg font-medium text-muted-foreground">Este é um exemplo de lead text ou subtítulo que acompanha o título principal para dar mais contexto.</p>
+
+src\pages\FundamentosPage.tsx:799
+  <p className="leading-relaxed">
+
+src\pages\FundamentosPage.tsx:806
+  <p className="text-sm leading-relaxed text-muted-foreground">
+
+src\pages\FundamentosPage.tsx:836
+  <p className="text-xs text-muted-foreground italic">
+
+src\pages\FundamentosPage.tsx:926
+  <p className="text-xs text-muted-foreground italic py-6 text-center">Nenhum ícone encontrado. Tente outro termo ou troque a coleção.</p>
+
+src\pages\FundamentosPage.tsx:942
+  <p className="text-xs text-muted-foreground mb-4">Open-source, traço consistente e boa legibilidade em ambos os temas. Já instalada no projeto.</p>
+
+src\pages\FundamentosPage.tsx:998
+  <p className="text-xs text-muted-foreground max-w-4xl mb-4">
+
+src\pages\FundamentosPage.tsx:1004
+  <p className="text-xs text-muted-foreground mb-4">Links oficiais para baixar a biblioteca, navegar o catálogo completo e incorporar em projetos React, sites e dashboards.</p>
+
+src\pages\FundamentosPage.tsx:1034
+  <p className="text-xs text-muted-foreground mb-4">Use a prop <code className="text-[11px] bg-muted px-1 rounded">size</code> (px) ou <code className="text-[11px] bg-muted px-1 rounded">className</code> com Tailwind (<code className="text-[11px] bg-muted px-1 rounded">w-5 h-5</code>).</p>
+
+src\pages\FundamentosPage.tsx:1058
+  <p className="text-xs text-muted-foreground mb-4">Conjunto base usado no portal "Minha Conta Cisec" — navegação, autenticação, serviços e atendimento.</p>
+
+src\pages\FundamentosPage.tsx:1167
+  <p className="font-semibold text-sm">{s.label}</p>
+
+src\pages\FundamentosPage.tsx:1187
+  <p className="text-xs font-medium">{r.label}</p>
+
+src\pages\FundamentosPage.tsx:1320
+  <p className="text-xs text-muted-foreground">
+
+src\pages\HomePage.tsx:114
+  <p className="opacity-80 max-w-2xl leading-relaxed mb-6">
+
+src\pages\HomePage.tsx:138
+  <p className="text-xs text-muted-foreground">Todos os tokens, componentes e templates são compatíveis com modo claro e escuro. Use o toggle no header para alternar.</p>
+
+src\pages\HomePage.tsx:147
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\pages\HomePage.tsx:160
+  <p className="font-heading text-2xl md:text-3xl leading-tight mt-4 mb-3 text-foreground">
+
+src\pages\HomePage.tsx:164
+  <p className="text-sm text-muted-foreground max-w-3xl leading-relaxed">
+
+src\pages\HomePage.tsx:183
+  <p className="text-sm text-muted-foreground leading-relaxed">
+
+src\pages\HomePage.tsx:205
+  <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+
+src\pages\HomePage.tsx:262
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\HomePage.tsx:292
+  <p className="text-xs text-muted-foreground">{p.desc}</p>
+
+src\pages\HomePage.tsx:306
+  <p className="text-xs text-muted-foreground">{s.desc}</p>
+
+src\pages\HomePage.tsx:316
+  <p className="text-2xl font-bold text-primary">20+</p>
+
+src\pages\HomePage.tsx:317
+  <p className="text-xs text-muted-foreground">Componentes</p>
+
+src\pages\HomePage.tsx:320
+  <p className="text-2xl font-bold text-secondary">50+</p>
+
+src\pages\HomePage.tsx:321
+  <p className="text-xs text-muted-foreground">Tokens</p>
+
+src\pages\HomePage.tsx:324
+  <p className="text-2xl font-bold text-primary">7</p>
+
+src\pages\HomePage.tsx:325
+  <p className="text-xs text-muted-foreground">Templates</p>
+
+src\pages\HomePage.tsx:328
+  <p className="text-2xl font-bold text-secondary">2</p>
+
+src\pages\HomePage.tsx:329
+  <p className="text-xs text-muted-foreground">Temas (Light/Dark)</p>
+
+src\pages\MarcaPage.tsx:181
+  <p className="text-sm font-semibold text-foreground mb-1">{f.title}</p>
+
+src\pages\MarcaPage.tsx:182
+  <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
+
+src\pages\MarcaPage.tsx:200
+  <p className="text-xs font-semibold text-foreground">Positivo</p>
+
+src\pages\MarcaPage.tsx:201
+  <p className="text-xs text-muted-foreground">Uso padrão sobre fundos claros.</p>
+
+src\pages\MarcaPage.tsx:211
+  <p className="text-xs font-semibold text-foreground">Negativo</p>
+
+src\pages\MarcaPage.tsx:212
+  <p className="text-xs text-muted-foreground">Badge azul institucional — avatares e favicons.</p>
+
+src\pages\MarcaPage.tsx:222
+  <p className="text-xs font-semibold text-foreground">Cromático · Azul + Laranja</p>
+
+src\pages\MarcaPage.tsx:223
+  <p className="text-xs text-muted-foreground">Badge azul com símbolo em laranja.</p>
+
+src\pages\MarcaPage.tsx:233
+  <p className="text-xs font-semibold text-foreground">Cromático · Laranja + Branco</p>
+
+src\pages\MarcaPage.tsx:234
+  <p className="text-xs text-muted-foreground">Badge de cantos arredondados em laranja.</p>
+
+src\pages\MarcaPage.tsx:248
+  <p className="text-xs text-muted-foreground leading-relaxed mt-3">
+
+src\pages\MarcaPage.tsx:270
+  <p className="text-xs font-semibold text-foreground">Negativo · sobre preto</p>
+
+src\pages\MarcaPage.tsx:271
+  <p className="text-xs text-muted-foreground">Fundos escuros ou fotográficos.</p>
+
+src\pages\MarcaPage.tsx:281
+  <p className="text-xs font-semibold text-foreground">Negativo cromático · sobre azul</p>
+
+src\pages\MarcaPage.tsx:282
+  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em branco.</p>
+
+src\pages\MarcaPage.tsx:292
+  <p className="text-xs font-semibold text-foreground">Negativo · sobre laranja</p>
+
+src\pages\MarcaPage.tsx:293
+  <p className="text-xs text-muted-foreground">Aplicação sobre o laranja institucional.</p>
+
+src\pages\MarcaPage.tsx:297
+  <p className="text-xs font-semibold text-foreground">Cromática · sobre claro</p>
+
+src\pages\MarcaPage.tsx:298
+  <p className="text-xs text-muted-foreground">Símbolo em laranja, logotipo em azul institucional.</p>
+
+src\pages\MarcaPage.tsx:314
+  <p className="text-xs font-semibold text-foreground">Cromática completa · com linha</p>
+
+src\pages\MarcaPage.tsx:315
+  <p className="text-xs text-muted-foreground">Relatórios, ofícios e publicações técnicas — nome por extenso separado por linha divisória.</p>
+
+src\pages\MarcaPage.tsx:319
+  <p className="text-xs font-semibold text-foreground">Cromática compacta · sem linha</p>
+
+src\pages\MarcaPage.tsx:320
+  <p className="text-xs text-muted-foreground">Versão compacta, para uso do dia a dia.</p>
+
+src\pages\MarcaPage.tsx:330
+  <p className="text-xs font-semibold text-foreground">Completa · negativo</p>
+
+src\pages\MarcaPage.tsx:331
+  <p className="text-xs text-muted-foreground">Uso direto sobre preto ou imagens escuras.</p>
+
+src\pages\MarcaPage.tsx:341
+  <p className="text-xs font-semibold text-foreground">Completa · sobre azul</p>
+
+src\pages\MarcaPage.tsx:342
+  <p className="text-xs text-muted-foreground">Cromática aplicada sobre o azul institucional.</p>
+
+src\pages\MarcaPage.tsx:365
+  <p className="font-heading text-2xl font-bold text-foreground mb-2">X = altura do símbolo</p>
+
+src\pages\MarcaPage.tsx:366
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\MarcaPage.tsx:393
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\MarcaPage.tsx:411
+  <p className="text-sm font-semibold text-foreground">{c.nome}</p>
+
+src\pages\MarcaPage.tsx:412
+  <p className="text-xs text-muted-foreground">{c.desc}</p>
+
+src\pages\MarcaPage.tsx:424
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\pages\MarcaPage.tsx:429
+  <p className="text-xs font-semibold text-foreground mb-1.5">Azul Institucional</p>
+
+src\pages\MarcaPage.tsx:437
+  <p className="text-xs font-semibold text-foreground mb-1.5">Laranja</p>
+
+src\pages\MarcaPage.tsx:447
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\pages\MarcaPage.tsx:455
+  <p className="text-xs font-mono">{c.baseHex}</p>
+
+src\pages\MarcaPage.tsx:459
+  <p className="text-xs font-mono">{c.compHex}</p>
+
+src\pages\MarcaPage.tsx:466
+  <p className="text-xs text-muted-foreground mb-3">
+
+src\pages\MarcaPage.tsx:474
+  <p className="text-xs font-semibold text-foreground">{s.nome}</p>
+
+src\pages\MarcaPage.tsx:493
+  <p className="font-heading text-5xl font-bold text-foreground leading-none mb-3" style={{ fontFamily: "Montserrat" }}>
+
+src\pages\MarcaPage.tsx:497
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\MarcaPage.tsx:503
+  <p className="text-4xl text-foreground leading-tight mb-3" style={{ fontFamily: "Lora, Georgia, serif", fontStyle: "italic" }}>
+
+src\pages\MarcaPage.tsx:506
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\MarcaPage.tsx:512
+  <p className="text-xs font-mono text-foreground leading-relaxed" style={{ fontFamily: "Montserrat" }}>
+
+src\pages\MarcaPage.tsx:531
+  <p className="text-xs font-semibold text-foreground mt-2">Fundo claro</p>
+
+src\pages\MarcaPage.tsx:532
+  <p className="text-xs text-muted-foreground">Use a versão positiva (cromática ou azul institucional).</p>
+
+src\pages\MarcaPage.tsx:542
+  <p className="text-xs font-semibold text-foreground mt-2">Fundo escuro</p>
+
+src\pages\MarcaPage.tsx:543
+  <p className="text-xs text-muted-foreground">Use a versão negativa (branca), com contraste suficiente.</p>
+
+src\pages\MarcaPage.tsx:549
+  <p className="text-xs text-muted-foreground leading-relaxed">
+
+src\pages\MarcaPage.tsx:580
+  <p className="text-[11px] text-center text-muted-foreground leading-tight">{u.label}</p>
+
+src\pages\MarcaPage.tsx:584
+  <p className="text-xs text-muted-foreground leading-relaxed mt-4">
+
+src\pages\MarcaPage.tsx:611
+  <p className="text-sm font-semibold text-foreground truncate">{d.label}</p>
+
+src\pages\MarcaPage.tsx:612
+  <p className="text-xs text-muted-foreground truncate">{d.file}</p>
+
+src\pages\ModalAcessoTemplatePage.tsx:63
+  <p className="text-sm text-success/80 mt-1">Aqui entraria o conteúdo restrito da sua aplicação.</p>
+
+src\pages\ModalAcessoTemplatePage.tsx:88
+  <p className="text-xs text-primary-foreground/80 text-center">
+
+src\pages\ModalAcessoTemplatePage.tsx:140
+  <p id="modal-pass-error" className="text-xs text-error font-medium">{error}</p>
+
+src\pages\NotFound.tsx:44
+  <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
+
+src\pages\NotFound.tsx:57
+  <p className="mt-8 text-xs text-muted-foreground">
+
+src\pages\PaginaAutenticacaoPage.tsx:81
+  <p className="text-sm text-muted-foreground leading-relaxed">
+
+src\pages\PaginaAutenticacaoPage.tsx:173
+  <p className="text-xs text-muted-foreground text-center">
+
+src\pages\PaginaAutenticacaoPage.tsx:207
+  <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
+
+src\pages\PaginaFiltrosTabelaPage.tsx:162
+  <p className="text-sm font-semibold text-[#0024A9] leading-tight truncate">
+
+src\pages\PaginaFiltrosTabelaPage.tsx:165
+  <p className="text-xs text-[#0024A9]/70 leading-tight truncate">
+
+src\pages\PaginaFiltrosTabelaPage.tsx:448
+  <p className="text-xs text-muted-foreground">
+
+src\pages\TelaFormularioPage.tsx:452
+  <p className="text-xs text-muted-foreground">Preencha as etapas a seguir para registrar um novo programa.</p>
+
+src\pages\TelaFormularioPage.tsx:468
+  <p className="text-sm text-muted-foreground mt-1">O programa <strong className="text-foreground">{form.programa}</strong> foi registrado com sucesso.</p>
+
+src\pages\TelaFormularioPage.tsx:484
+  <p className="text-xs text-muted-foreground -mt-3">Dados básicos do programa e do responsável.</p>
+
+src\pages\TelaFormularioPage.tsx:517
+  <p className="text-xs text-muted-foreground -mt-3">Defina a unidade gestora, modalidade e valor.</p>
+
+src\pages\TelaFormularioPage.tsx:557
+  <p className="text-xs text-muted-foreground -mt-3">Defina o período de execução e o número de parcelas.</p>
+
+src\pages\TelaFormularioPage.tsx:579
+  <p className="text-xs text-muted-foreground -mt-3">Confira os dados antes de enviar.</p>
+
+src\pages\TelaFormularioPage.tsx:652
+  <p className="text-xs">{toast.msg}</p>
+
+src\pages\TelaListagemPage.tsx:138
+  <p className="text-2xl font-bold text-foreground leading-none">{value}</p>
+
+src\pages\TelaListagemPage.tsx:156
+  <p className="text-2xl font-bold text-foreground mt-1 leading-none">{current}</p>
+
+src\pages\TelaListagemPage.tsx:171
+  <p className="text-2xl font-bold text-foreground mt-1 leading-none">{value}</p>
+
+src\pages\TelaListagemPage.tsx:521
+  <p className="text-xs text-muted-foreground">Acompanhamento dos programas e parcelas em execução.</p>
+
+src\pages\TelaListagemPage.tsx:651
+  <p className="text-sm font-bold text-secondary">Programas e Repasses</p>
+
+src\pages\TemplatesPage.tsx:186
+  <p className="text-sm font-semibold text-[#0024A9] leading-tight">Título do Programa - Exemplo</p>
+
+src\pages\TemplatesPage.tsx:187
+  <p className="text-xs text-[#0024A9]/70 leading-tight">Apenas um exemplo de subtítulo do programa</p>
+
+src\pages\TemplatesPage.tsx:776
+  <p className="text-xs text-info/80 mt-1">Este é um alerta para informações neutras ou guias de sistema.</p>
+
+src\pages\TemplatesPage.tsx:783
+  <p className="text-xs text-success/80 mt-1">Sua operação foi concluída com êxito conforme esperado.</p>
+
+src\pages\TemplatesPage.tsx:792
+  <p className="text-xs text-warning/80 mt-1">Revise os dados antes de prosseguir com esta ação.</p>
+
+src\pages\TemplatesPage.tsx:799
+  <p className="text-xs text-error/80 mt-1">Houve um problema ao processar sua solicitação no servidor.</p>
+
+src\pages\TemplatesPage.tsx:840
+  <p className="text-xs text-muted-foreground mt-0.5">{variant.description}</p>
+
+src\pages\TemplatesPage.tsx:867
+  <p className="text-xs text-muted-foreground mb-4">
+
+src\pages\TemplatesPage.tsx:1172
+  <p className="text-xs text-muted-foreground">{t.desc}</p>
+
+src\pages\TemplatesPage.tsx:1218
+  <p className="text-xs text-muted-foreground mb-3 truncate">
+
+src\pages\TokensPage.tsx:47
+  <p className="text-sm text-muted-foreground mb-3">
+
+src\pages\TokensPage.tsx:52
+  <p className="text-sm text-muted-foreground">
+
+src\pages\TokensPage.tsx:109
+  <p className="text-sm text-muted-foreground">
+
+src\pages\TwoFactorPage.tsx:72
+  <p className="text-lg text-white/80">
+
+src\pages\TwoFactorPage.tsx:101
+  <p className="text-sm text-muted-foreground leading-relaxed">
+
+src\pages\TwoFactorPage.tsx:137
   <p className="text-xs text-muted-foreground">

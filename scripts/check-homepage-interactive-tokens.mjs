@@ -5,7 +5,7 @@
  * interativos da Homepage — <button>, [role="button"], <a> com texto
  * visível — usam tokens tipográficos e de cor do Design System:
  *
- *   - font-family : Poppins
+ *   - font-family : Montserrat
  *   - font-weight : ≥ 500 (medium/semibold/bold)
  *   - font-size   : ∈ { 12, 14, 16, 18 } px  (escala do DS)
  *   - line-height : explícita (não "normal") e ≥ font-size
@@ -118,7 +118,7 @@ async function checkViewport(vp) {
         const lhPx = cs.lineHeight === "normal" ? NaN : parseFloat(cs.lineHeight);
         const weight = parseInt(cs.fontWeight, 10) || 400;
         const issues = [];
-        if (!/poppins/i.test(cs.fontFamily))
+        if (!/montserrat/i.test(cs.fontFamily))
           issues.push(`font-family=${cs.fontFamily}`);
         if (!allowedSizes.some((s) => Math.abs(s - fontPx) < 0.5))
           issues.push(`font-size=${fontPx}px (permitido: ${allowedSizes.join("/")}px)`);
